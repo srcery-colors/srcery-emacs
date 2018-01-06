@@ -116,24 +116,11 @@
             (war           (if (true-color-p) "#dc752f" "#dc752f"))
 
 
-            ;; colors
-            (aqua          (if (true-color-p) "#2d9574" "#2aa198"))
-            (aqua-bg       (if (true-color-p) "#293235" "#262626"))
-            ;; (green         (if (true-color-p) "#67b11d" "#67b11d"))
-            (green-bg      (if (true-color-p) "#293235" "#262626"))
-            (green-bg-s    (if (true-color-p) "#29422d" "#262626"))
-            ;; (cyan          (if (true-color-p) "#28def0" "#00ffff"))
-            ;; (red           (if (true-color-p) "#f2241f" "#d70000"))
             (red-bg        (if (true-color-p) "#3c2a2c" "#262626"))
             (red-bg-s      (if (true-color-p) "#512e31" "#262626"))
-            ;; (blue          (if (true-color-p) "#4f97d7" "#268bd2"))
             (blue-bg       (if (true-color-p) "#293239" "#262626"))
             (magenta       (if (true-color-p) "#a31db1" "#af00df"))
-            ;; (yellow        (if (true-color-p) "#b1951d" "#875f00"))
             (yellow-bg     (if (true-color-p) "#32322c" "#262626"))
-
-            ;; placeholder
-            (grey          (if (true-color-p) "#918175" "white"))
 
             (black          (if (true-color-p) "#1C1B19" "black"))
             (red            (if (true-color-p) "#EF2F27" "red"))
@@ -191,10 +178,10 @@
             `(font-lock-warning-face ((,class (:foreground ,war :background ,bg1))))
             `(fringe ((,class (:background ,bg1 :foreground ,base))))
             `(header-line ((,class :background ,bg4)))
-            `(highlight ((,class (:foreground ,base :background ,highlight))))
+            `(highlight ((,class (:foreground ,black :background ,magenta))))
             `(hl-line ((,class (:background ,bg2))))
-            `(isearch ((,class (:foreground ,bg1 :background ,mat))))
-            `(lazy-highlight ((,class (:background ,green-bg-s :weight normal))))
+            `(isearch ((,class (:foreground ,bright-white :background ,magenta))))
+            `(lazy-highlight ((,class (:background ,magenta :foreground ,bright-white :weight normal))))
             `(link ((,class (:foreground ,comment :underline t))))
             `(link-visited ((,class (:foreground ,comp :underline t))))
             `(match ((,class (:background ,highlight :foreground ,mat))))
@@ -262,9 +249,9 @@
             `(diff-removed           ((,class :background nil :foreground ,red)))
 
 ;;;;; diff-hl
-            `(diff-hl-change ((,class :background ,blue-bg :foreground ,blue)))
-            `(diff-hl-delete ((,class :background ,red-bg :foreground ,red)))
-            `(diff-hl-insert ((,class :background ,green-bg :foreground ,green)))
+            `(diff-hl-change ((,class :foreground ,blue)))
+            `(diff-hl-delete ((,class :foreground ,red)))
+            `(diff-hl-insert ((,class :foreground ,green)))
 
 ;;;;; dired
             `(dired-directory ((,class (:foreground ,keyword :background ,bg1 :inherit bold))))
@@ -279,8 +266,8 @@
 
 ;;;;; ediff
             `(ediff-current-diff-A ((,class(:background ,red-bg-s :foreground ,red))))
-            `(ediff-current-diff-Ancestor ((,class(:background ,aqua-bg :foreground ,aqua))))
-            `(ediff-current-diff-B ((,class(:background ,green-bg-s :foreground ,green))))
+            `(ediff-current-diff-Ancestor ((,class(:background ,black :foreground ,cyan))))
+            `(ediff-current-diff-B ((,class(:foreground ,green))))
             `(ediff-current-diff-C ((,class(:background ,blue-bg :foreground ,blue))))
             `(ediff-even-diff-A ((,class(:background ,bg3))))
             `(ediff-even-diff-Ancestor ((,class(:background ,bg3))))
@@ -333,7 +320,7 @@
 
 ;;;;; evil
             `(evil-ex-substitute-matches ((,class (:background ,red-bg :foreground ,red))))
-            `(evil-ex-substitute-replacement ((,class (:background ,green-bg :foreground ,green))))
+            `(evil-ex-substitute-replacement ((,class (:foreground ,green))))
 
 ;;;;; flycheck
             `(flycheck-error
@@ -369,7 +356,7 @@
             `(jabber-roster-user-error ((,class (:foreground ,err))))
             `(jabber-roster-user-offline ((,class (:foreground ,base))))
             `(jabber-roster-user-online ((,class (:inherit bold :foreground ,green))))
-            `(jabber-roster-user-xa ((,class (:foreground ,aqua))))
+            `(jabber-roster-user-xa ((,class (:foreground ,cyan))))
 
 ;;;;; git-gutter-fr
             `(git-gutter-fr:added ((,class (:foreground ,green :inherit bold))))
@@ -438,11 +425,11 @@
             `(helm-swoop-target-word-face ((,class (:background ,highlight :foreground ,mat))))
 
 ;;;;; highlights
-            `(hi-yellow ((,class (:foreground ,yellow :background ,yellow-bg))))
-            `(hi-green  ((,class (:foreground ,green :background ,green-bg))))
+            `(hi-yellow ((,class (:foreground ,yellow))))
+            `(hi-green  ((,class (:foreground ,green))))
 
 ;;;;; highlight-indentation
-            `(highlight-indentation-face ((,class (:background ,gray))))
+            `(highlight-indentation-face ((,class (:background ,white))))
 
 ;;;;; highlight-symbol
             `(highlight-symbol-face ((,class (:background ,bg2))))
@@ -491,7 +478,7 @@
             `(font-latex-string-face ((,class (:foreground ,str))))
 
 ;;;;; linum-mode
-            `(linum ((,class (:foreground ,gray :background ,black))))
+            `(linum ((,class (:foreground ,white :background ,black))))
 
 ;;;;; linum-relative
             `(linum-relative-current-face ((,class (:foreground ,yellow))))
@@ -510,7 +497,7 @@
             `(magit-branch ((,class (:foreground ,const :inherit bold))))
             `(magit-branch-current ((,class (:background ,blue-bg :foreground ,blue :inherit bold :box t))))
             `(magit-branch-local ((,class (:background ,blue-bg :foreground ,blue :inherit bold))))
-            `(magit-branch-remote ((,class (:background ,aqua-bg :foreground ,aqua :inherit bold))))
+            `(magit-branch-remote ((,class (:background ,black :foreground ,cyan :inherit bold))))
             `(magit-diff-context-highlight ((,class (:background ,bg2 :foreground ,base))))
             `(magit-diff-file-header ((,class (:foreground ,comment))))
             `(magit-diff-file-heading ((,class (:foreground ,comment))))
@@ -585,7 +572,7 @@
             `(org-date-selected ((,class (:background ,func :foreground ,bg1))))
             `(org-document-info-keyword ((,class (:foreground ,meta))))
             `(org-document-title ((,class (:foreground ,func :inherit bold :height ,(if srcery-theme-org-height 1.4 1.0) :underline t))))
-            `(org-done ((,class (:foreground ,suc :inherit bold :background ,green-bg))))
+            `(org-done ((,class (:foreground ,green :inherit bold))))
             `(org-ellipsis ((,class (:foreground ,keyword))))
             `(org-footnote  ((,class (:underline t :foreground ,base))))
             `(org-hide ((,class (:foreground ,base))))
@@ -646,11 +633,11 @@
             `(rainbow-delimiters-mismatched-face ((,class :foreground ,err :overline t)))
 
 ;;;;; shm
-            `(shm-current-face ((,class (:background ,green-bg-s))))
+            `(shm-current-face ((,class (:background ,green, :foreground ,black))))
             `(shm-quarantine-face ((,class (:background ,red-bg-s))))
 
 ;;;;; show-paren
-            `(show-paren-match ((,class (:background ,green-bg-s))))
+            `(show-paren-match ((,class (:background ,green :foreground ,black))))
             `(show-paren-mismatch ((,class (:background ,red-bg-s))))
 
 ;;;;; smartparens
