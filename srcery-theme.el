@@ -143,19 +143,19 @@
             (magenta        (if (true-color-p) "#E02C6D" "magenta"))
             (cyan           (if (true-color-p) "#0AAEB3" "cyan"))
             (white          (if (true-color-p) "#918175" "white"))
-            (bright_black   (if (true-color-p) "#2D2B28" "brightblack"))
-            (bright_red     (if (true-color-p) "#F75341" "brightred"))
-            (bright_green   (if (true-color-p) "#98BC37" "brightgreen"))
-            (bright_yellow  (if (true-color-p) "#FED06E" "brightyellow"))
-            (bright_blue    (if (true-color-p) "#2C78BF" "brightblue"))
-            (bright_magenta (if (true-color-p) "#FF5C8F" "brightmagenta"))
-            (bright_cyan    (if (true-color-p) "#53FDE9" "brightcyan"))
-            (bright_white   (if (true-color-p) "#FCE8C3" "brightwhite"))
+            (bright-black   (if (true-color-p) "#2D2B28" "brightblack"))
+            (bright-red     (if (true-color-p) "#F75341" "brightred"))
+            (bright-green   (if (true-color-p) "#98BC37" "brightgreen"))
+            (bright-yellow  (if (true-color-p) "#FED06E" "brightyellow"))
+            (bright-blue    (if (true-color-p) "#2C78BF" "brightblue"))
+            (bright-magenta (if (true-color-p) "#FF5C8F" "brightmagenta"))
+            (bright-cyan    (if (true-color-p) "#53FDE9" "brightcyan"))
+            (bright-white   (if (true-color-p) "#FCE8C3" "brightwhite"))
 
             ;; X colors
             (orange         (if (true-color-p) "#D75F00" "color-166"))
-            (bright_orange  (if (true-color-p) "#FF8700" "color-208"))
-            (hard_black     (if (true-color-p) "#121212" "color-233"))
+            (bright-orange  (if (true-color-p) "#FF8700" "color-208"))
+            (hard-black     (if (true-color-p) "#121212" "color-233"))
             (xgrey1         (if (true-color-p) "#262626" "color-235"))
             (xgrey2         (if (true-color-p) "#303030" "color-236"))
             (xgrey3         (if (true-color-p) "#3A3A3A" "color-237"))
@@ -549,7 +549,7 @@
             `(markdown-header-face-6 ((,class (:bold nil :foreground ,head2))))
 
 ;;;;; mode-line
-            `(mode-line           ((,class (:foreground ,base :background ,bright_black :box (:color ,border :line-width 1)))))
+            `(mode-line           ((,class (:foreground ,base :background ,bright-black :box (:color ,border :line-width 1)))))
             `(mode-line-inactive  ((,class (:foreground ,base :background ,bg1  :box (:color ,border :line-width 1)))))
             `(mode-line-buffer-id ((,class (:inherit bold :foreground ,func))))
 
