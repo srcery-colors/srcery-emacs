@@ -238,9 +238,9 @@
             `(diff-indicator-added   ((,class :background nil :foreground ,green)))
             `(diff-indicator-changed ((,class :background nil :foreground ,red)))
             `(diff-indicator-removed ((,class :background nil :foreground ,red)))
-            `(diff-refine-added      ((,class :background ,green :foreground ,bg4)))
-            `(diff-refine-changed    ((,class :background ,red :foreground ,bg4)))
-            `(diff-refine-removed    ((,class :background ,red :foreground ,bg4)))
+            `(diff-refine-added      ((,class :background ,green :foreground ,black)))
+            `(diff-refine-changed    ((,class :background ,blue :foreground ,white)))
+            `(diff-refine-removed    ((,class :background ,red :foreground ,white)))
             `(diff-removed           ((,class :background nil :foreground ,red)))
 
 ;;;;; diff-hl
