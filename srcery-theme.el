@@ -185,7 +185,7 @@
             `(region ((,class (:inverse-video ,t))))
             `(secondary-selection ((,class (:background ,xgrey2))))
             `(success ((,class (:foreground ,green))))
-            `(tooltip ((,class (:background ,ttip-sl :foreground ,bright-white :bold nil :italic nil :underline nil))))
+            `(tooltip ((,class (:background ,bright-blue :foreground ,bright-white :bold nil :italic nil :underline nil))))
             `(vertical-border ((,class (:foreground ,bg4))))
             `(warning ((,class (:foreground ,war))))
 
@@ -229,7 +229,7 @@
             `(company-tooltip-common-selection ((,class (:foreground ,black))))
             `(company-tooltip-mouse ((,class (:inherit highlight))))
             `(company-tooltip-search ((,class (:inherit match))))
-            `(company-tooltip-selection ((,class (:background ,ttip-sl :foreground ,black))))
+            `(company-tooltip-selection ((,class (:background ,bright-blue :foreground ,black))))
 
 ;;;;; diff
             `(diff-added             ((,class :background nil :foreground ,green)))
@@ -601,9 +601,9 @@
 
 ;;;;; popup
             `(popup-face ((,class (:background ,ttip-bg :foreground ,ttip))))
-            `(popup-tip-face ((,class (:background ,ttip-sl :foreground ,bright-white :bold nil :italic nil :underline nil))))
+            `(popup-tip-face ((,class (:background ,bright-blue :foreground ,bright-white :bold nil :italic nil :underline nil))))
             `(popup-menu-face ((,class (:background ,ttip-bg :foreground ,bright-white))))
-            `(popup-enu-selection-face ((,class (:background ,ttip-sl :foreground ,bright-white))))
+            `(popup-enu-selection-face ((,class (:background ,bright-blue :foreground ,bright-white))))
             `(popup-menu-mouse-face ((,class (:inherit highlight))))
             `(popup-isearch-match ((,class (:inherit match))))
             `(popup-scroll-bar-foreground-face ((,class (:background ,act2))))
