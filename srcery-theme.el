@@ -197,7 +197,7 @@
             `(anzu-mode-line ((,class (:foreground ,yellow :inherit bold))))
 
 ;;;;; auto-complete
-            `(ac-completion-face ((,class (:background ,ttip-bg :foreground ,ttip))))
+            `(ac-completion-face ((,class (:background ,bright-black :foreground ,bright-white))))
 
 ;;;;; avy
             `(avy-lead-face   ((,class (:background ,blue-bg :foreground ,magenta))))
@@ -217,15 +217,15 @@
 
 ;;;;; company
             `(company-echo-common ((,class (:background ,bright-white :foreground ,black))))
-            `(company-preview ((,class (:background ,ttip-bg :foreground ,ttip))))
-            `(company-preview-common ((,class (:background ,ttip-bg :foreground ,bright-white))))
+            `(company-preview ((,class (:background ,bright-black :foreground ,bright-white))))
+            `(company-preview-common ((,class (:background ,bright-black :foreground ,bright-white))))
             `(company-preview-search ((,class (:inherit match))))
             `(company-scrollbar-bg ((,class (:background ,bright-black))))
             `(company-scrollbar-fg ((,class (:background ,act2))))
             `(company-template-field ((,class (:inherit region))))
-            `(company-tooltip ((,class (:background ,ttip-bg :foreground ,ttip))))
+            `(company-tooltip ((,class (:background ,bright-black :foreground ,bright-white))))
             `(company-tooltip-annotation ((,class (:foreground ,red))))
-            `(company-tooltip-common ((,class (:background ,ttip-bg :foreground ,bright-white))))
+            `(company-tooltip-common ((,class (:background ,bright-black :foreground ,bright-white))))
             `(company-tooltip-common-selection ((,class (:foreground ,black))))
             `(company-tooltip-mouse ((,class (:inherit highlight))))
             `(company-tooltip-search ((,class (:inherit match))))
@@ -497,9 +497,9 @@
             `(magit-diff-file-header ((,class (:foreground ,comment))))
             `(magit-diff-file-heading ((,class (:foreground ,comment))))
             `(magit-diff-file-heading-highlight ((,class (:foreground ,comment))))
-            `(magit-diff-hunk-header ((,class (:background ,ttip-bg :foreground ,ttip))))
-            `(magit-diff-hunk-heading ((,class (:background ,ttip-bg :foreground ,ttip))))
-            `(magit-diff-hunk-heading-highlight ((,class (:background ,ttip-bg :foreground ,ttip))))
+            `(magit-diff-hunk-header ((,class (:background ,bright-black :foreground ,bright-white))))
+            `(magit-diff-hunk-heading ((,class (:background ,bright-black :foreground ,bright-white))))
+            `(magit-diff-hunk-heading-highlight ((,class (:background ,bright-black :foreground ,bright-white))))
             `(magit-hash ((,class (:foreground ,blue))))
             `(magit-hunk-heading           ((,class (:background ,bg3))))
             `(magit-hunk-heading-highlight ((,class (:background ,bg3))))
@@ -600,9 +600,9 @@
             `(persp-selected-face ((,class (:inherit bold :foreground ,yellow))))
 
 ;;;;; popup
-            `(popup-face ((,class (:background ,ttip-bg :foreground ,ttip))))
+            `(popup-face ((,class (:background ,bright-black :foreground ,bright-white))))
             `(popup-tip-face ((,class (:background ,bright-blue :foreground ,bright-white :bold nil :italic nil :underline nil))))
-            `(popup-menu-face ((,class (:background ,ttip-bg :foreground ,bright-white))))
+            `(popup-menu-face ((,class (:background ,bright-black :foreground ,bright-white))))
             `(popup-enu-selection-face ((,class (:background ,bright-blue :foreground ,bright-white))))
             `(popup-menu-mouse-face ((,class (:inherit highlight))))
             `(popup-isearch-match ((,class (:inherit match))))
