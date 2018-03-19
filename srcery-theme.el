@@ -32,6 +32,7 @@
 ;; Should work well in a 256 color terminal.
 
 ;;; Code:
+;; https://www.gnu.org/software/emacs/manual/html_node/elisp/Defining-Faces.html
 (defmacro dyn-let (varlist fn setfaces setvars)
   (list 'let (append varlist (funcall fn)) setfaces setvars))
 
@@ -156,17 +157,17 @@
             theme-name
 
 ;;;;; basics
-            `(cursor ((,class (:background ,cursor))))
-            `(custom-button ((,class :background ,bg2 :foreground ,base :box (:line-width 2 :style released-button))))
-            `(default ((,class (:background ,bg1 :foreground ,base))))
+            `(cursor ((,class (:background ,bright-white))))
+            `(custom-button ((,class :background ,black :foreground ,bright-white :box (:line-width 2 :style released-button))))
+            `(default ((,class (:background ,black :foreground ,bright-white))))
             `(default-italic ((,class (:italic t))))
-            `(error ((,class (:foreground ,err))))
-            `(eval-sexp-fu-flash ((,class (:background ,suc :foreground ,bg1))))
-            `(eval-sexp-fu-flash-error ((,class (:background ,err :foreground ,bg1))))
-            `(font-lock-builtin-face ((,class (:foreground ,keyword))))
-            `(font-lock-comment-face ((,class (:foreground ,comment))))
-            `(font-lock-constant-face ((,class (:foreground ,const))))
-            `(font-lock-doc-face ((,class (:foreground ,doc))))
+            `(error ((,class (:foreground ,red :inherit bold))))
+            `(eval-sexp-fu-flash ((,class (:background ,green :foreground ,bright-white))))
+            `(eval-sexp-fu-flash-error ((,class (:background ,bright-red :foreground ,bright-white))))
+            `(font-lock-builtin-face ((,class (:foreground ,blue))))
+            `(font-lock-comment-face ((,class (:foreground ,white :italic t))))
+            `(font-lock-constant-face ((,class (:foreground ,bright-magenta))))
+            `(font-lock-doc-face ((,class (:foreground ,green))))
             `(font-lock-function-name-face ((,class (:foreground ,func))))
             `(font-lock-keyword-face ((,class (:inherit bold :foreground ,keyword))))
             `(font-lock-negation-char-face ((,class (:foreground ,const))))
