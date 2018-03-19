@@ -251,9 +251,9 @@
 ;;;;; dired
             `(dired-directory ((,class (:foreground ,red :background ,black :inherit bold))))
             `(dired-flagged ((,class (:foreground ,red))))
-            `(dired-header ((,class (:foreground ,comp :inherit bold))))
+            `(dired-header ((,class (:foreground ,green :inherit bold))))
             `(dired-ignored ((,class (:inherit shadow))))
-            `(dired-mark ((,class (:foreground ,comp :inherit bold))))
+            `(dired-mark ((,class (:foreground ,green :inherit bold))))
             `(dired-marked ((,class (:foreground ,magenta :inherit bold))))
             `(dired-perm-write ((,class (:foreground ,bright-white :underline t))))
             `(dired-symlink ((,class (:foreground ,cyan :background ,black :inherit bold))))
@@ -365,7 +365,7 @@
             `(gnus-emphasis-highlight-words ((,class (:background ,green :foreground ,black))))
             `(gnus-header-content ((,class (:foreground ,red))))
             `(gnus-header-from ((,class (:foreground ,blue))))
-            `(gnus-header-name ((,class (:foreground ,comp))))
+            `(gnus-header-name ((,class (:foreground ,green))))
             `(gnus-header-subject ((,class (:foreground ,yellow :inherit bold))))
             `(gnus-summary-cancelled ((,class (:background ,bright-orange :foreground ,black))))
 
@@ -377,13 +377,13 @@
 ;;;;; helm
             `(helm-bookmark-directory ((,class (:inherit helm-ff-directory))))
             `(helm-bookmark-file ((,class (:foreground ,bright-white))))
-            `(helm-bookmark-gnus ((,class (:foreground ,comp))))
-            `(helm-bookmark-info ((,class (:foreground ,comp))))
-            `(helm-bookmark-man ((,class (:foreground ,comp))))
-            `(helm-bookmark-w3m ((,class (:foreground ,comp))))
+            `(helm-bookmark-gnus ((,class (:foreground ,green))))
+            `(helm-bookmark-info ((,class (:foreground ,green))))
+            `(helm-bookmark-man ((,class (:foreground ,green))))
+            `(helm-bookmark-w3m ((,class (:foreground ,green))))
             `(helm-buffer-directory ((,class (:foreground ,bright-white :background ,black))))
             `(helm-buffer-file ((,class (:foreground ,bright-white :background ,black))))
-            `(helm-buffer-not-saved ((,class (:foreground ,comp :background ,black))))
+            `(helm-buffer-not-saved ((,class (:foreground ,green :background ,black))))
             `(helm-buffer-process ((,class (:foreground ,red :background ,black))))
             `(helm-buffer-saved-out ((,class (:foreground ,bright-white :background ,black))))
             `(helm-buffer-size ((,class (:foreground ,bright-white :background ,black))))
@@ -408,10 +408,10 @@
             `(helm-moccur-buffer ((,class (:foreground ,blue :background ,black))))
             `(helm-selection ((,class (:background ,magenta))))
             `(helm-selection-line ((,class (:background ,bright-black))))
-            `(helm-separator ((,class (:foreground ,comp :background ,black))))
-            `(helm-source-header ((,class (:background ,comp :foreground ,black :inherit bold))))
+            `(helm-separator ((,class (:foreground ,green :background ,black))))
+            `(helm-source-header ((,class (:background ,green :foreground ,black :inherit bold))))
             `(helm-time-zone-current ((,class (:foreground ,red :background ,black))))
-            `(helm-time-zone-home ((,class (:foreground ,comp :background ,black))))
+            `(helm-time-zone-home ((,class (:foreground ,green :background ,black))))
             `(helm-visible-mark ((,class (:foreground ,red :background ,bg3))))
 
 ;;;;; helm-swoop
@@ -434,10 +434,10 @@
             `(hydra-face-red ((,class (:foreground ,red))))
 
 ;;;;; ido
-            `(ido-first-match ((,class (:foreground ,comp :inherit bold))))
+            `(ido-first-match ((,class (:foreground ,green :inherit bold))))
             `(ido-only-match ((,class (:foreground ,mat :inherit bold))))
             `(ido-subdir ((,class (:foreground ,red))))
-            `(ido-vertical-match-face ((,class (:foreground ,comp :underline nil))))
+            `(ido-vertical-match-face ((,class (:foreground ,green :underline nil))))
 
 ;;;;; info
             `(info-header-xref ((,class (:foreground ,yellow :underline t))))
@@ -460,7 +460,7 @@
             `(ivy-remote ((,class (:foreground ,cyan))))
 
 ;;;;; latex
-            `(font-latex-bold-face ((,class (:foreground ,comp))))
+            `(font-latex-bold-face ((,class (:foreground ,green))))
             `(font-latex-italic-face ((,class (:foreground ,red :italic t))))
             `(font-latex-match-reference-keywords ((,class (:foreground ,bright-magenta))))
             `(font-latex-match-variable-keywords ((,class (:foreground ,blue))))
@@ -520,7 +520,7 @@
 ;;;;; man
             `(Man-overstrike ((,class (:foreground ,head1 :inherit bold))))
             `(Man-reverse ((,class (:foreground ,magenta))))
-            `(Man-underline ((,class (:foreground ,comp :underline t))))
+            `(Man-underline ((,class (:foreground ,green :underline t))))
 
 ;;;;; markdown
             `(markdown-header-face-1 ((,class (:inherit bold :foreground ,head1 :height ,(if srcery-theme-org-height 1.3 1.0) :background ,(when srcery-theme-org-highlight head1-bg)))))
@@ -538,9 +538,9 @@
 ;;;;; mu4e
             `(mu4e-cited-1-face ((,class (:foreground ,bright-white))))
             `(mu4e-cited-7-face ((,class (:foreground ,bright-white))))
-            `(mu4e-header-marks-face ((,class (:foreground ,comp))))
+            `(mu4e-header-marks-face ((,class (:foreground ,green))))
             `(mu4e-header-key-face ((,class (:foreground ,head2 :inherit bold))))
-            `(mu4e-view-url-number-face ((,class (:foreground ,comp))))
+            `(mu4e-view-url-number-face ((,class (:foreground ,green))))
             `(mu4e-unread-face ((,class (:foreground ,yellow :inherit bold))))
 
 ;;;;; neotree
@@ -550,16 +550,16 @@
             `(neo-root-dir-face ((,class (:foreground ,yellow :inherit bold))))
 
 ;;;;; org
-            `(org-agenda-clocking ((,class (:background ,magenta :foreground ,comp))))
+            `(org-agenda-clocking ((,class (:background ,magenta :foreground ,green))))
             `(org-agenda-date ((,class (:foreground ,blue :height ,(if srcery-theme-org-height 1.1 1.0)))))
             `(org-agenda-date-today ((,class (:foreground ,red :slant italic :inherit bold :height ,(if srcery-theme-org-height 1.3 1.0)))))
             `(org-agenda-date-weekend ((,class (:inherit bold :foreground ,blue))))
             `(org-agenda-done ((,class (:foreground ,green :height ,(if srcery-theme-org-height 1.2 1.0)))))
-            `(org-agenda-structure ((,class (:inherit bold :foreground ,comp))))
+            `(org-agenda-structure ((,class (:inherit bold :foreground ,green))))
             `(org-block ((,class (:background ,cblk-bg :foreground ,cblk))))
             `(org-block-begin-line ((,class (:background ,cblk-ln-bg :foreground ,cblk-ln))))
             `(org-block-end-line ((,class (:background ,cblk-ln-bg :foreground ,cblk-ln))))
-            `(org-clock-overlay ((,class (:foreground ,comp))))
+            `(org-clock-overlay ((,class (:foreground ,green))))
             `(org-code ((,class (:foreground ,cyan))))
             `(org-column ((,class (:background ,magenta))))
             `(org-column-title ((,class (:background ,magenta))))
@@ -585,7 +585,7 @@
             `(org-mode-line-clock-overrun ((,class (:foreground ,err))))
             `(org-priority ((,class (:foreground ,bright-orange :inherit bold))))
             `(org-quote ((,class (:inherit org-block :slant italic))))
-            `(org-scheduled ((,class (:foreground ,comp))))
+            `(org-scheduled ((,class (:foreground ,green))))
             `(org-scheduled-today ((,class (:foreground ,yellow :height ,(if srcery-theme-org-height 1.2 1.0)))))
             `(org-sexp-date ((,class (:foreground ,bright-white))))
             `(org-special-keyword ((,class (:foreground ,yellow))))
@@ -640,13 +640,13 @@
             `(sp-show-pair-match-face ((,class (:foreground ,mat :inherit bold :underline t))))
 
 ;;;;; spaceline
-            `(spaceline-python-venv ((,class (:foreground ,comp))))
+            `(spaceline-python-venv ((,class (:foreground ,green))))
             `(spaceline-flycheck-error  ((,class (:foreground ,err))))
             `(spaceline-flycheck-info   ((,class (:foreground ,red))))
             `(spaceline-flycheck-warning((,class (:foreground ,bright-orange))))
 
 ;;;;; spacemacs-specific
-            `(spacemacs-transient-state-title-face ((,class (:background nil :foreground ,comp :box nil :inherit bold))))
+            `(spacemacs-transient-state-title-face ((,class (:background nil :foreground ,green :box nil :inherit bold))))
 
 ;;;;; swiper
             `(swiper-line-face ((,class (:background ,magenta :inherit bold))))
@@ -694,8 +694,8 @@
 ;;;;; whitespace-mode
             `(whitespace-empty ((,class (:background nil :foreground ,yellow))))
             `(whitespace-indentation ((,class (:background nil :foreground ,bright-orange))))
-            `(whitespace-line ((,class (:background nil :foreground ,comp))))
-            `(whitespace-newline ((,class (:background nil :foreground ,comp))))
+            `(whitespace-line ((,class (:background nil :foreground ,green))))
+            `(whitespace-newline ((,class (:background nil :foreground ,green))))
             `(whitespace-space ((,class (:background nil :foreground ,act2))))
             `(whitespace-space-after-tab ((,class (:background nil :foreground ,yellow))))
             `(whitespace-space-before-tab ((,class (:background nil :foreground ,yellow))))
@@ -705,9 +705,9 @@
 ;;;;; other, need more work
             `(ac-completion-face ((,class (:underline t :foreground ,red))))
             `(ffap ((,class (:foreground ,bright-white))))
-            `(flx-highlight-face ((,class (:foreground ,comp :underline nil))))
+            `(flx-highlight-face ((,class (:foreground ,green :underline nil))))
             `(icompletep-determined ((,class :foreground ,red)))
-            `(js2-external-variable ((,class (:foreground ,comp))))
+            `(js2-external-variable ((,class (:foreground ,green))))
             `(js2-function-param ((,class (:foreground ,bright-magenta))))
             `(js2-jsdoc-html-tag-delimiter ((,class (:foreground ,bright-green))))
             `(js2-jsdoc-html-tag-name ((,class (:foreground ,red))))
@@ -720,11 +720,11 @@
             `(js3-instance-member-face ((,class (:foreground ,bright-magenta))))
             `(js3-jsdoc-tag-face ((,class (:foreground ,red))))
             `(js3-warning-face ((,class (:underline ,red))))
-            `(slime-repl-inputed-output-face ((,class (:foreground ,comp))))
+            `(slime-repl-inputed-output-face ((,class (:foreground ,green))))
             `(trailing-whitespace ((,class :foreground nil :background ,err)))
             `(undo-tree-visualizer-current-face ((,class :foreground ,red)))
             `(undo-tree-visualizer-default-face ((,class :foreground ,bright-white)))
-            `(undo-tree-visualizer-register-face ((,class :foreground ,comp)))
+            `(undo-tree-visualizer-register-face ((,class :foreground ,green)))
             `(undo-tree-visualizer-unmodified-face ((,class :foreground ,blue))))
 
            (custom-theme-set-variables
