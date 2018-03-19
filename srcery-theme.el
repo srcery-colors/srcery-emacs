@@ -200,10 +200,10 @@
             `(ac-completion-face ((,class (:background ,bright-black :foreground ,bright-white))))
 
 ;;;;; avy
-            `(avy-lead-face   ((,class (:background ,blue-bg :foreground ,magenta))))
-            `(avy-lead-face-0 ((,class (:background ,blue-bg :foreground ,blue))))
-            `(avy-lead-face-1 ((,class (:background ,blue-bg :foreground ,magenta))))
-            `(avy-lead-face-2 ((,class (:background ,blue-bg :foreground ,blue))))
+            `(avy-lead-face   ((,class (:background ,blue :foreground ,magenta))))
+            `(avy-lead-face-0 ((,class (:background ,blue :foreground ,blue))))
+            `(avy-lead-face-1 ((,class (:background ,blue :foreground ,magenta))))
+            `(avy-lead-face-2 ((,class (:background ,blue :foreground ,blue))))
 
 ;;;;; cider
             `(cider-enlightened ((,class (:background nil :box (:color ,yellow :line-width -1 :style nil) :foreground ,yellow))))
@@ -263,7 +263,7 @@
             `(ediff-current-diff-A ((,class(:background ,red-bg-s :foreground ,red))))
             `(ediff-current-diff-Ancestor ((,class(:background ,black :foreground ,cyan))))
             `(ediff-current-diff-B ((,class(:foreground ,green))))
-            `(ediff-current-diff-C ((,class(:background ,blue-bg :foreground ,blue))))
+            `(ediff-current-diff-C ((,class(:background ,blue :foreground ,blue))))
             `(ediff-even-diff-A ((,class(:background ,bg3))))
             `(ediff-even-diff-Ancestor ((,class(:background ,bg3))))
             `(ediff-even-diff-B ((,class(:background ,bg3))))
@@ -359,7 +359,7 @@
             `(git-gutter-fr:modified ((,class (:foreground ,red :inherit bold))))
 
 ;;;;; git-timemachine
-            `(git-timemachine-minibuffer-detail-face ((,class (:foreground ,blue :inherit bold :background ,blue-bg))))
+            `(git-timemachine-minibuffer-detail-face ((,class (:foreground ,blue :inherit bold :background ,blue))))
 
 ;;;;; gnus
             `(gnus-emphasis-highlight-words ((,class (:background ,green :foreground ,black))))
@@ -490,8 +490,8 @@
             `(magit-blame-summary ((,class :background ,yellow-bg :foreground ,yellow)))
             `(magit-blame-date    ((,class :background ,yellow-bg :foreground ,green)))
             `(magit-branch ((,class (:foreground ,bright-magenta :inherit bold))))
-            `(magit-branch-current ((,class (:background ,blue-bg :foreground ,blue :inherit bold :box t))))
-            `(magit-branch-local ((,class (:background ,blue-bg :foreground ,blue :inherit bold))))
+            `(magit-branch-current ((,class (:background ,blue :foreground ,blue :inherit bold :box t))))
+            `(magit-branch-local ((,class (:background ,blue :foreground ,blue :inherit bold))))
             `(magit-branch-remote ((,class (:background ,black :foreground ,cyan :inherit bold))))
             `(magit-diff-context-highlight ((,class (:background ,bright-black :foreground ,bright-white))))
             `(magit-diff-file-header ((,class (:foreground ,comment))))
