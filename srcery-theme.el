@@ -168,10 +168,10 @@
             `(font-lock-comment-face ((,class (:foreground ,white :italic t))))
             `(font-lock-constant-face ((,class (:foreground ,bright-magenta))))
             `(font-lock-doc-face ((,class (:foreground ,green))))
-            `(font-lock-function-name-face ((,class (:foreground ,func))))
+            `(font-lock-function-name-face ((,class (:foreground ,yellow))))
             `(font-lock-keyword-face ((,class (:foreground ,red))))
             `(font-lock-negation-char-face ((,class (:foreground ,bright-magenta))))
-            `(font-lock-preprocessor-face ((,class (:foreground ,func))))
+            `(font-lock-preprocessor-face ((,class (:foreground ,yellow))))
             `(font-lock-reference-face ((,class (:foreground ,bright-magenta))))
             `(font-lock-string-face ((,class (:foreground ,str))))
             `(font-lock-type-face ((,class (:foreground ,type))))
@@ -240,7 +240,7 @@
 ;;;;; diff
             `(diff-added             ((,class :background nil :foreground ,green)))
             `(diff-changed           ((,class :background nil :foreground ,keyword)))
-            `(diff-header            ((,class :background ,cblk-ln-bg :foreground ,func)))
+            `(diff-header            ((,class :background ,cblk-ln-bg :foreground ,yellow)))
             `(diff-indicator-added   ((,class :background nil :foreground ,green)))
             `(diff-indicator-changed ((,class :background nil :foreground ,keyword)))
             `(diff-indicator-removed ((,class :background nil :foreground ,red)))
@@ -298,7 +298,7 @@
             `(enh-ruby-op-face ((,class (:background ,bg1 :foreground ,bright-white))))
 
 ;;;;; erc
-            `(erc-input-face ((,class (:foreground ,func))))
+            `(erc-input-face ((,class (:foreground ,yellow))))
             `(erc-my-nick-face ((,class (:foreground ,keyword))))
             `(erc-nick-default-face ((,class (:foreground ,keyword))))
             `(erc-nick-prefix-face ((,class (:foreground ,yellow))))
@@ -372,7 +372,7 @@
             `(gnus-header-content ((,class (:foreground ,keyword))))
             `(gnus-header-from ((,class (:foreground ,var))))
             `(gnus-header-name ((,class (:foreground ,comp))))
-            `(gnus-header-subject ((,class (:foreground ,func :inherit bold))))
+            `(gnus-header-subject ((,class (:foreground ,yellow :inherit bold))))
             `(gnus-summary-cancelled ((,class (:background ,war :foreground ,bg1))))
 
 ;;;;; guide-key
@@ -446,9 +446,9 @@
             `(ido-vertical-match-face ((,class (:foreground ,comp :underline nil))))
 
 ;;;;; info
-            `(info-header-xref ((,class (:foreground ,func :underline t))))
+            `(info-header-xref ((,class (:foreground ,yellow :underline t))))
             `(info-menu ((,class (:foreground ,suc))))
-            `(info-node ((,class (:foreground ,func :inherit bold))))
+            `(info-node ((,class (:foreground ,yellow :inherit bold))))
             `(info-quoted-name ((,class (:foreground ,keyword))))
             `(info-reference-item ((,class (:background nil :underline t :inherit bold))))
             `(info-string ((,class (:foreground ,str))))
@@ -487,12 +487,12 @@
 ;;;;; magit
             `(magit-blame-culprit ((,class :background ,yellow-bg :foreground ,yellow)))
             `(magit-blame-header  ((,class :background ,yellow-bg :foreground ,green)))
-            `(magit-blame-sha1    ((,class :background ,yellow-bg :foreground ,func)))
+            `(magit-blame-sha1    ((,class :background ,yellow-bg :foreground ,yellow)))
             `(magit-blame-subject ((,class :background ,yellow-bg :foreground ,yellow)))
             `(magit-blame-time    ((,class :background ,yellow-bg :foreground ,green)))
             `(magit-blame-name    ((,class :background ,yellow-bg :foreground ,yellow)))
             `(magit-blame-heading ((,class :background ,yellow-bg :foreground ,green)))
-            `(magit-blame-hash    ((,class :background ,yellow-bg :foreground ,func)))
+            `(magit-blame-hash    ((,class :background ,yellow-bg :foreground ,yellow)))
             `(magit-blame-summary ((,class :background ,yellow-bg :foreground ,yellow)))
             `(magit-blame-date    ((,class :background ,yellow-bg :foreground ,green)))
             `(magit-branch ((,class (:foreground ,bright-magenta :inherit bold))))
@@ -510,7 +510,7 @@
             `(magit-hunk-heading           ((,class (:background ,bg3))))
             `(magit-hunk-heading-highlight ((,class (:background ,bg3))))
             `(magit-item-highlight ((,class :background ,bg2)))
-            `(magit-log-author ((,class (:foreground ,func))))
+            `(magit-log-author ((,class (:foreground ,yellow))))
             `(magit-log-head-label-head ((,class (:background ,yellow :foreground ,bg1 :inherit bold))))
             `(magit-log-head-label-local ((,class (:background ,keyword :foreground ,bg1 :inherit bold))))
             `(magit-log-head-label-remote ((,class (:background ,suc :foreground ,bg1 :inherit bold))))
@@ -518,7 +518,7 @@
             `(magit-log-head-label-wip ((,class (:background ,cyan :foreground ,bg1 :inherit bold))))
             `(magit-log-sha1 ((,class (:foreground ,str))))
             `(magit-process-ng ((,class (:foreground ,war :inherit bold))))
-            `(magit-process-ok ((,class (:foreground ,func :inherit bold))))
+            `(magit-process-ok ((,class (:foreground ,yellow :inherit bold))))
             `(magit-section-heading        ((,class (:foreground ,keyword :inherit bold))))
             `(magit-section-highlight      ((,class (:background ,bg2))))
             `(magit-section-title ((,class (:background ,bg1 :foreground ,keyword :inherit bold))))
@@ -539,7 +539,7 @@
 ;;;;; mode-line
             `(mode-line           ((,class (:foreground ,bright-white :background ,bright-black :box (:color ,border :line-width 1)))))
             `(mode-line-inactive  ((,class (:foreground ,bright-white :background ,bg1  :box (:color ,border :line-width 1)))))
-            `(mode-line-buffer-id ((,class (:inherit bold :foreground ,func))))
+            `(mode-line-buffer-id ((,class (:inherit bold :foreground ,yellow))))
 
 ;;;;; mu4e
             `(mu4e-cited-1-face ((,class (:foreground ,bright-white))))
@@ -553,7 +553,7 @@
             `(neo-dir-link-face ((,class (:foreground ,keyword :inherit bold))))
             `(neo-expand-btn-face ((,class (:foreground ,bright-white))))
             `(neo-file-link-face ((,class (:foreground ,bright-white))))
-            `(neo-root-dir-face ((,class (:foreground ,func :inherit bold))))
+            `(neo-root-dir-face ((,class (:foreground ,yellow :inherit bold))))
 
 ;;;;; org
             `(org-agenda-clocking ((,class (:background ,highlight :foreground ,comp))))
@@ -570,9 +570,9 @@
             `(org-column ((,class (:background ,highlight))))
             `(org-column-title ((,class (:background ,highlight))))
             `(org-date ((,class (:underline t :foreground ,var))))
-            `(org-date-selected ((,class (:background ,func :foreground ,bg1))))
+            `(org-date-selected ((,class (:background ,yellow :foreground ,bg1))))
             `(org-document-info-keyword ((,class (:foreground ,meta))))
-            `(org-document-title ((,class (:foreground ,func :inherit bold :height ,(if srcery-theme-org-height 1.4 1.0) :underline t))))
+            `(org-document-title ((,class (:foreground ,yellow :inherit bold :height ,(if srcery-theme-org-height 1.4 1.0) :underline t))))
             `(org-done ((,class (:foreground ,green :inherit bold))))
             `(org-ellipsis ((,class (:foreground ,keyword))))
             `(org-footnote  ((,class (:underline t :foreground ,bright-white))))
@@ -592,9 +592,9 @@
             `(org-priority ((,class (:foreground ,war :inherit bold))))
             `(org-quote ((,class (:inherit org-block :slant italic))))
             `(org-scheduled ((,class (:foreground ,comp))))
-            `(org-scheduled-today ((,class (:foreground ,func :height ,(if srcery-theme-org-height 1.2 1.0)))))
+            `(org-scheduled-today ((,class (:foreground ,yellow :height ,(if srcery-theme-org-height 1.2 1.0)))))
             `(org-sexp-date ((,class (:foreground ,bright-white))))
-            `(org-special-keyword ((,class (:foreground ,func))))
+            `(org-special-keyword ((,class (:foreground ,yellow))))
             `(org-table ((,class (:foreground ,bright-white :background ,head1-bg))))
             `(org-time-grid ((,class (:foreground ,str))))
             `(org-todo ((,class (:foreground ,war :inherit bold :background ,yellow-bg))))
@@ -603,7 +603,7 @@
             `(org-warning ((,class (:foreground ,err))))
 
 ;;;;; perspective
-            `(persp-selected-face ((,class (:inherit bold :foreground ,func))))
+            `(persp-selected-face ((,class (:inherit bold :foreground ,yellow))))
 
 ;;;;; popup
             `(popup-face ((,class (:background ,ttip-bg :foreground ,ttip))))
@@ -623,12 +623,12 @@
 
 ;;;;; rainbow-delimiters
             `(rainbow-delimiters-depth-1-face ((,class :foreground ,keyword)))
-            `(rainbow-delimiters-depth-2-face ((,class :foreground ,func)))
+            `(rainbow-delimiters-depth-2-face ((,class :foreground ,yellow)))
             `(rainbow-delimiters-depth-3-face ((,class :foreground ,str)))
             `(rainbow-delimiters-depth-4-face ((,class :foreground ,green)))
             `(rainbow-delimiters-depth-5-face ((,class :foreground ,yellow)))
             `(rainbow-delimiters-depth-6-face ((,class :foreground ,keyword)))
-            `(rainbow-delimiters-depth-7-face ((,class :foreground ,func)))
+            `(rainbow-delimiters-depth-7-face ((,class :foreground ,yellow)))
             `(rainbow-delimiters-depth-8-face ((,class :foreground ,str)))
             `(rainbow-delimiters-unmatched-face ((,class :foreground ,err :overline t)))
             `(rainbow-delimiters-mismatched-face ((,class :foreground ,err :overline t)))
@@ -678,7 +678,7 @@
             `(web-mode-constant-face ((,class (:inherit ,font-lock-constant-face))))
             `(web-mode-doctype-face ((,class (:inherit ,font-lock-comment-face))))
             `(web-mode-function-name-face ((,class (:inherit ,font-lock-function-name-face))))
-            `(web-mode-html-attr-name-face ((,class (:foreground ,func))))
+            `(web-mode-html-attr-name-face ((,class (:foreground ,yellow))))
             `(web-mode-html-attr-value-face ((,class (:foreground ,keyword))))
             `(web-mode-html-tag-face ((,class (:foreground ,keyword))))
             `(web-mode-keyword-face ((,class (:foreground ,keyword))))
@@ -690,12 +690,12 @@
 ;;;;; which-key
             `(which-key-command-description-face ((,class (:foreground ,bright-white))))
             `(which-key-group-description-face ((,class (:foreground ,keyword))))
-            `(which-key-key-face ((,class (:foreground ,func :inherit bold))))
+            `(which-key-key-face ((,class (:foreground ,yellow :inherit bold))))
             `(which-key-separator-face ((,class (:background nil :foreground ,str))))
-            `(which-key-special-key-face ((,class (:background ,func :foreground ,bg1))))
+            `(which-key-special-key-face ((,class (:background ,yellow :foreground ,bg1))))
 
 ;;;;; which-function-mode
-            `(which-func ((,class (:foreground ,func))))
+            `(which-func ((,class (:foreground ,yellow))))
 
 ;;;;; whitespace-mode
             `(whitespace-empty ((,class (:background nil :foreground ,yellow))))
