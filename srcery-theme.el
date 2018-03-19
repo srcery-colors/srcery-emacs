@@ -280,7 +280,7 @@
 ;;;;; ein
             `(ein:cell-input-area((,class (:background ,bright-black))))
             `(ein:cell-input-prompt ((,class (:foreground ,green))))
-            `(ein:cell-output-prompt ((,class (:foreground ,err))))
+            `(ein:cell-output-prompt ((,class (:foreground ,red))))
             `(ein:notification-tab-normal ((,class (:foreground ,red))))
             `(ein:notification-tab-selected ((,class (:foreground ,green :inherit bold))))
 
@@ -320,10 +320,10 @@
 ;;;;; flycheck
             `(flycheck-error
               ((,(append '((supports :underline (:style line))) class)
-                (:underline (:style line :color ,err)))
-               (,class (:foreground ,bright-white :background ,err :inherit bold :underline t))))
+                (:underline (:style line :color ,red)))
+               (,class (:foreground ,bright-white :background ,red :inherit bold :underline t))))
             `(flycheck-error-list-checker-name ((,class (:foreground ,red))))
-            `(flycheck-fringe-error ((,class (:foreground ,err :inherit bold))))
+            `(flycheck-fringe-error ((,class (:foreground ,red :inherit bold))))
             `(flycheck-fringe-info ((,class (:foreground ,red :inherit bold))))
             `(flycheck-fringe-warning ((,class (:foreground ,bright-orange :inherit bold))))
             `(flycheck-info
@@ -348,7 +348,7 @@
             `(jabber-roster-user-away ((,class (:foreground ,yellow))))
             `(jabber-roster-user-chatty ((,class (:inherit bold :foreground ,green))))
             `(jabber-roster-user-dnd ((,class (:foreground ,red))))
-            `(jabber-roster-user-error ((,class (:foreground ,err))))
+            `(jabber-roster-user-error ((,class (:foreground ,red))))
             `(jabber-roster-user-offline ((,class (:foreground ,bright-white))))
             `(jabber-roster-user-online ((,class (:inherit bold :foreground ,green))))
             `(jabber-roster-user-xa ((,class (:foreground ,cyan))))
@@ -582,7 +582,7 @@
             `(org-level-8 ((,class (:bold nil :foreground ,head4))))
             `(org-link ((,class (:underline t :foreground ,comment))))
             `(org-meta-line ((,class (:foreground ,meta))))
-            `(org-mode-line-clock-overrun ((,class (:foreground ,err))))
+            `(org-mode-line-clock-overrun ((,class (:foreground ,red))))
             `(org-priority ((,class (:foreground ,bright-orange :inherit bold))))
             `(org-quote ((,class (:inherit org-block :slant italic))))
             `(org-scheduled ((,class (:foreground ,green))))
@@ -594,7 +594,7 @@
             `(org-todo ((,class (:foreground ,bright-orange :inherit bold :background ,yellow-bg))))
             `(org-verbatim ((,class (:foreground ,red))))
             `(org-verse ((,class (:inherit org-block :slant italic))))
-            `(org-warning ((,class (:foreground ,err))))
+            `(org-warning ((,class (:foreground ,red))))
 
 ;;;;; perspective
             `(persp-selected-face ((,class (:inherit bold :foreground ,yellow))))
@@ -624,8 +624,8 @@
             `(rainbow-delimiters-depth-6-face ((,class :foreground ,red)))
             `(rainbow-delimiters-depth-7-face ((,class :foreground ,yellow)))
             `(rainbow-delimiters-depth-8-face ((,class :foreground ,bright-green)))
-            `(rainbow-delimiters-unmatched-face ((,class :foreground ,err :overline t)))
-            `(rainbow-delimiters-mismatched-face ((,class :foreground ,err :overline t)))
+            `(rainbow-delimiters-unmatched-face ((,class :foreground ,red :overline t)))
+            `(rainbow-delimiters-mismatched-face ((,class :foreground ,red :overline t)))
 
 ;;;;; shm
             `(shm-current-face ((,class (:background ,green, :foreground ,black))))
@@ -641,7 +641,7 @@
 
 ;;;;; spaceline
             `(spaceline-python-venv ((,class (:foreground ,green))))
-            `(spaceline-flycheck-error  ((,class (:foreground ,err))))
+            `(spaceline-flycheck-error  ((,class (:foreground ,red))))
             `(spaceline-flycheck-info   ((,class (:foreground ,red))))
             `(spaceline-flycheck-warning((,class (:foreground ,bright-orange))))
 
@@ -700,7 +700,7 @@
             `(whitespace-space-after-tab ((,class (:background nil :foreground ,yellow))))
             `(whitespace-space-before-tab ((,class (:background nil :foreground ,yellow))))
             `(whitespace-tab ((,class (:background nil))))
-            `(whitespace-trailing ((,class (:background ,err :foreground ,bright-orange))))
+            `(whitespace-trailing ((,class (:background ,red :foreground ,bright-orange))))
 
 ;;;;; other, need more work
             `(ac-completion-face ((,class (:underline t :foreground ,red))))
@@ -721,7 +721,7 @@
             `(js3-jsdoc-tag-face ((,class (:foreground ,red))))
             `(js3-warning-face ((,class (:underline ,red))))
             `(slime-repl-inputed-output-face ((,class (:foreground ,green))))
-            `(trailing-whitespace ((,class :foreground nil :background ,err)))
+            `(trailing-whitespace ((,class :foreground nil :background ,red)))
             `(undo-tree-visualizer-current-face ((,class :foreground ,red)))
             `(undo-tree-visualizer-default-face ((,class :foreground ,bright-white)))
             `(undo-tree-visualizer-register-face ((,class :foreground ,green)))
