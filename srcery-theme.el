@@ -184,7 +184,7 @@
             `(page-break-lines ((,class (:foreground ,xgrey3))))
             `(region ((,class (:inverse-video ,t))))
             `(secondary-selection ((,class (:background ,xgrey2))))
-            `(success ((,class (:foreground ,suc))))
+            `(success ((,class (:foreground ,green))))
             `(tooltip ((,class (:background ,ttip-sl :foreground ,bright-white :bold nil :italic nil :underline nil))))
             `(vertical-border ((,class (:foreground ,bg4))))
             `(warning ((,class (:foreground ,war))))
@@ -212,7 +212,7 @@
             `(cider-result-overlay-face ((,class (:background nil :box (:color ,blue :line-width -1 :style nil) :foreground ,blue))))
             `(cider-test-error-face ((,class (:background ,war :foreground ,black))))
             `(cider-test-failure-face ((,class (:background ,err :foreground ,black))))
-            `(cider-test-success-face ((,class (:background ,suc :foreground ,black))))
+            `(cider-test-success-face ((,class (:background ,green :foreground ,black))))
             `(cider-traced-face ((,class :box (:color ,cyan :line-width -1 :style nil))))
 
 ;;;;; company
@@ -279,10 +279,10 @@
 
 ;;;;; ein
             `(ein:cell-input-area((,class (:background ,bright-black))))
-            `(ein:cell-input-prompt ((,class (:foreground ,suc))))
+            `(ein:cell-input-prompt ((,class (:foreground ,green))))
             `(ein:cell-output-prompt ((,class (:foreground ,err))))
             `(ein:notification-tab-normal ((,class (:foreground ,red))))
-            `(ein:notification-tab-selected ((,class (:foreground ,suc :inherit bold))))
+            `(ein:notification-tab-selected ((,class (:foreground ,green :inherit bold))))
 
 ;;;;; eldoc
             `(eldoc-highlight-function-argument ((,class (:foreground ,mat :inherit bold))))
@@ -305,7 +305,7 @@
             `(eshell-ls-backup ((,class (:inherit font-lock-comment-face))))
             `(eshell-ls-clutter ((,class (:inherit font-lock-comment-face))))
             `(eshell-ls-directory ((,class (:foreground ,red :inherit bold))))
-            `(eshell-ls-executable ((,class (:foreground ,suc :inherit bold))))
+            `(eshell-ls-executable ((,class (:foreground ,green :inherit bold))))
             `(eshell-ls-missing ((,class (:inherit font-lock-warning-face))))
             `(eshell-ls-product ((,class (:inherit font-lock-doc-face))))
             `(eshell-ls-special ((,class (:foreground ,yellow :inherit bold))))
@@ -362,7 +362,7 @@
             `(git-timemachine-minibuffer-detail-face ((,class (:foreground ,blue :inherit bold :background ,blue-bg))))
 
 ;;;;; gnus
-            `(gnus-emphasis-highlight-words ((,class (:background ,suc :foreground ,black))))
+            `(gnus-emphasis-highlight-words ((,class (:background ,green :foreground ,black))))
             `(gnus-header-content ((,class (:foreground ,red))))
             `(gnus-header-from ((,class (:foreground ,blue))))
             `(gnus-header-name ((,class (:foreground ,comp))))
@@ -391,7 +391,7 @@
             `(helm-ff-directory ((,class (:foreground ,red :background ,black :inherit bold))))
             `(helm-ff-dotted-directory ((,class (:foreground ,red :background ,black :inherit bold))))
             `(helm-ff-dotted-symlink-directory ((,class (:foreground ,cyan :background ,black :inherit bold))))
-            `(helm-ff-executable ((,class (:foreground ,suc :background ,black :weight normal))))
+            `(helm-ff-executable ((,class (:foreground ,green :background ,black :weight normal))))
             `(helm-ff-file ((,class (:foreground ,bright-white :background ,black :weight normal))))
             `(helm-ff-invalid-symlink ((,class (:foreground ,red :background ,black :inherit bold))))
             `(helm-ff-prefix ((,class (:foreground ,black :background ,red :weight normal))))
@@ -441,7 +441,7 @@
 
 ;;;;; info
             `(info-header-xref ((,class (:foreground ,yellow :underline t))))
-            `(info-menu ((,class (:foreground ,suc))))
+            `(info-menu ((,class (:foreground ,green))))
             `(info-node ((,class (:foreground ,yellow :inherit bold))))
             `(info-quoted-name ((,class (:foreground ,red))))
             `(info-reference-item ((,class (:background nil :underline t :inherit bold))))
@@ -507,7 +507,7 @@
             `(magit-log-author ((,class (:foreground ,yellow))))
             `(magit-log-head-label-head ((,class (:background ,yellow :foreground ,black :inherit bold))))
             `(magit-log-head-label-local ((,class (:background ,red :foreground ,black :inherit bold))))
-            `(magit-log-head-label-remote ((,class (:background ,suc :foreground ,black :inherit bold))))
+            `(magit-log-head-label-remote ((,class (:background ,green :foreground ,black :inherit bold))))
             `(magit-log-head-label-tags ((,class (:background ,magenta :foreground ,black :inherit bold))))
             `(magit-log-head-label-wip ((,class (:background ,cyan :foreground ,black :inherit bold))))
             `(magit-log-sha1 ((,class (:foreground ,bright-green))))
@@ -554,7 +554,7 @@
             `(org-agenda-date ((,class (:foreground ,blue :height ,(if srcery-theme-org-height 1.1 1.0)))))
             `(org-agenda-date-today ((,class (:foreground ,red :slant italic :inherit bold :height ,(if srcery-theme-org-height 1.3 1.0)))))
             `(org-agenda-date-weekend ((,class (:inherit bold :foreground ,blue))))
-            `(org-agenda-done ((,class (:foreground ,suc :height ,(if srcery-theme-org-height 1.2 1.0)))))
+            `(org-agenda-done ((,class (:foreground ,green :height ,(if srcery-theme-org-height 1.2 1.0)))))
             `(org-agenda-structure ((,class (:inherit bold :foreground ,comp))))
             `(org-block ((,class (:background ,cblk-bg :foreground ,cblk))))
             `(org-block-begin-line ((,class (:background ,cblk-ln-bg :foreground ,cblk-ln))))
