@@ -191,7 +191,7 @@
 
 ;;;;; ahs
             `(ahs-face ((,class (:background ,magenta))))
-            `(ahs-plugin-whole-buffer-face ((,class (:background ,mat :foreground ,black))))
+            `(ahs-plugin-whole-buffer-face ((,class (:background ,yellow :foreground ,black))))
 
 ;;;;; anzu-mode
             `(anzu-mode-line ((,class (:foreground ,yellow :inherit bold))))
@@ -285,7 +285,7 @@
             `(ein:notification-tab-selected ((,class (:foreground ,green :inherit bold))))
 
 ;;;;; eldoc
-            `(eldoc-highlight-function-argument ((,class (:foreground ,mat :inherit bold))))
+            `(eldoc-highlight-function-argument ((,class (:foreground ,yellow :inherit bold))))
 
 ;;;;; enh-ruby
             `(enh-ruby-string-delimiter-face ((,class (:foreground ,bright-green))))
@@ -297,7 +297,7 @@
             `(erc-nick-default-face ((,class (:foreground ,red))))
             `(erc-nick-prefix-face ((,class (:foreground ,yellow))))
             `(erc-notice-face ((,class (:foreground ,bright-green))))
-            `(erc-prompt-face ((,class (:foreground ,mat :inherit bold))))
+            `(erc-prompt-face ((,class (:foreground ,yellow :inherit bold))))
             `(erc-timestamp-face ((,class (:foreground ,red))))
 
 ;;;;; eshell
@@ -417,7 +417,7 @@
 ;;;;; helm-swoop
             `(helm-swoop-target-line-block-face ((,class (:foreground ,bright-white :background ,magenta))))
             `(helm-swoop-target-line-face ((,class (:background ,magenta))))
-            `(helm-swoop-target-word-face ((,class (:background ,magenta :foreground ,mat))))
+            `(helm-swoop-target-word-face ((,class (:background ,magenta :foreground ,yellow))))
 
 ;;;;; highlights
             `(hi-yellow ((,class (:foreground ,yellow))))
@@ -435,7 +435,7 @@
 
 ;;;;; ido
             `(ido-first-match ((,class (:foreground ,green :inherit bold))))
-            `(ido-only-match ((,class (:foreground ,mat :inherit bold))))
+            `(ido-only-match ((,class (:foreground ,yellow :inherit bold))))
             `(ido-subdir ((,class (:foreground ,red))))
             `(ido-vertical-match-face ((,class (:foreground ,green :underline nil))))
 
@@ -637,7 +637,7 @@
 
 ;;;;; smartparens
             `(sp-pair-overlay-face ((,class (:background ,magenta :foreground nil))))
-            `(sp-show-pair-match-face ((,class (:foreground ,mat :inherit bold :underline t))))
+            `(sp-show-pair-match-face ((,class (:foreground ,yellow :inherit bold :underline t))))
 
 ;;;;; spaceline
             `(spaceline-python-venv ((,class (:foreground ,green))))
