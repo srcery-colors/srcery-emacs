@@ -402,7 +402,7 @@
             `(helm-match ((,class (:background ,head1-bg :foreground ,head1))))
             `(helm-match-item ((,class (:background ,head1-bg :foreground ,head1))))
             `(helm-moccur-buffer ((,class (:foreground ,blue :background ,black))))
-            `(helm-selection ((,class (:background ,magenta))))
+            `(helm-selection ((,class (:background ,white :foreground ,black))))
             `(helm-selection-line ((,class (:background ,bright-black))))
             `(helm-separator ((,class (:foreground ,green :background ,black))))
             `(helm-source-header ((,class (:background ,green :foreground ,black :inherit bold))))
