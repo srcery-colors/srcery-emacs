@@ -180,7 +180,7 @@
             `(fringe ((,class (:foreground ,bright-white))))
             `(header-line ((,class :background ,bg4)))
             `(highlight ((,class (:foreground ,bright-white :background ,bright-magenta))))
-            `(hl-line ((,class (:background ,bg2))))
+            `(hl-line ((,class (:background ,bright-black))))
             `(isearch ((,class (:foreground ,bright-white :background ,magenta))))
             `(lazy-highlight ((,class (:background ,magenta :foreground ,bright-white :weight normal))))
             `(link ((,class (:foreground ,comment :underline t))))
@@ -226,7 +226,7 @@
             `(company-preview ((,class (:background ,ttip-bg :foreground ,ttip))))
             `(company-preview-common ((,class (:background ,ttip-bg :foreground ,bright-white))))
             `(company-preview-search ((,class (:inherit match))))
-            `(company-scrollbar-bg ((,class (:background ,bg2))))
+            `(company-scrollbar-bg ((,class (:background ,bright-black))))
             `(company-scrollbar-fg ((,class (:background ,act2))))
             `(company-template-field ((,class (:inherit region))))
             `(company-tooltip ((,class (:background ,ttip-bg :foreground ,ttip))))
@@ -284,7 +284,7 @@
             `(ediff-odd-diff-C ((,class(:background ,bg4))))
 
 ;;;;; ein
-            `(ein:cell-input-area((,class (:background ,bg2))))
+            `(ein:cell-input-area((,class (:background ,bright-black))))
             `(ein:cell-input-prompt ((,class (:foreground ,suc))))
             `(ein:cell-output-prompt ((,class (:foreground ,err))))
             `(ein:notification-tab-normal ((,class (:foreground ,keyword))))
@@ -413,7 +413,7 @@
             `(helm-match-item ((,class (:background ,head1-bg :foreground ,head1))))
             `(helm-moccur-buffer ((,class (:foreground ,blue :background ,bg1))))
             `(helm-selection ((,class (:background ,highlight))))
-            `(helm-selection-line ((,class (:background ,bg2))))
+            `(helm-selection-line ((,class (:background ,bright-black))))
             `(helm-separator ((,class (:foreground ,comp :background ,bg1))))
             `(helm-source-header ((,class (:background ,comp :foreground ,bg1 :inherit bold))))
             `(helm-time-zone-current ((,class (:foreground ,keyword :background ,bg1))))
@@ -433,7 +433,7 @@
             `(highlight-indentation-face ((,class (:background ,white))))
 
 ;;;;; highlight-symbol
-            `(highlight-symbol-face ((,class (:background ,bg2))))
+            `(highlight-symbol-face ((,class (:background ,bright-black))))
 
 ;;;;; hydra
             `(hydra-face-blue ((,class (:foreground ,blue))))
@@ -499,7 +499,7 @@
             `(magit-branch-current ((,class (:background ,blue-bg :foreground ,blue :inherit bold :box t))))
             `(magit-branch-local ((,class (:background ,blue-bg :foreground ,blue :inherit bold))))
             `(magit-branch-remote ((,class (:background ,black :foreground ,cyan :inherit bold))))
-            `(magit-diff-context-highlight ((,class (:background ,bg2 :foreground ,bright-white))))
+            `(magit-diff-context-highlight ((,class (:background ,bright-black :foreground ,bright-white))))
             `(magit-diff-file-header ((,class (:foreground ,comment))))
             `(magit-diff-file-heading ((,class (:foreground ,comment))))
             `(magit-diff-file-heading-highlight ((,class (:foreground ,comment))))
@@ -509,7 +509,7 @@
             `(magit-hash ((,class (:foreground ,blue))))
             `(magit-hunk-heading           ((,class (:background ,bg3))))
             `(magit-hunk-heading-highlight ((,class (:background ,bg3))))
-            `(magit-item-highlight ((,class :background ,bg2)))
+            `(magit-item-highlight ((,class :background ,bright-black)))
             `(magit-log-author ((,class (:foreground ,yellow))))
             `(magit-log-head-label-head ((,class (:background ,yellow :foreground ,bg1 :inherit bold))))
             `(magit-log-head-label-local ((,class (:background ,keyword :foreground ,bg1 :inherit bold))))
@@ -520,7 +520,7 @@
             `(magit-process-ng ((,class (:foreground ,war :inherit bold))))
             `(magit-process-ok ((,class (:foreground ,yellow :inherit bold))))
             `(magit-section-heading        ((,class (:foreground ,keyword :inherit bold))))
-            `(magit-section-highlight      ((,class (:background ,bg2))))
+            `(magit-section-highlight      ((,class (:background ,bright-black))))
             `(magit-section-title ((,class (:background ,bg1 :foreground ,keyword :inherit bold))))
 
 ;;;;; man
@@ -613,13 +613,13 @@
             `(popup-menu-mouse-face ((,class (:inherit highlight))))
             `(popup-isearch-match ((,class (:inherit match))))
             `(popup-scroll-bar-foreground-face ((,class (:background ,act2))))
-            `(popup-scroll-bar-background-face ((,class (:background ,bg2))))
+            `(popup-scroll-bar-background-face ((,class (:background ,bright-black))))
 
 ;;;;; powerline
             `(powerline-active1 ((,class (:background ,act2 :foreground ,bright-white))))
             `(powerline-active2 ((,class (:background ,act2 :foreground ,bright-white))))
-            `(powerline-inactive1 ((,class (:background ,bg2 :foreground ,bright-white))))
-            `(powerline-inactive2 ((,class (:background ,bg2 :foreground ,bright-white))))
+            `(powerline-inactive1 ((,class (:background ,bright-black :foreground ,bright-white))))
+            `(powerline-inactive2 ((,class (:background ,bright-black :foreground ,bright-white))))
 
 ;;;;; rainbow-delimiters
             `(rainbow-delimiters-depth-1-face ((,class :foreground ,keyword)))
