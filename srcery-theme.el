@@ -186,7 +186,7 @@
             `(secondary-selection ((,class (:background ,xgrey2))))
             `(success ((,class (:foreground ,green))))
             `(tooltip ((,class (:background ,bright-blue :foreground ,bright-white :bold nil :italic nil :underline nil))))
-            `(vertical-border ((,class (:foreground ,bg4))))
+            `(vertical-border ((,class (:foreground ,magenta))))
             `(warning ((,class (:foreground ,war))))
 
 ;;;;; ahs
