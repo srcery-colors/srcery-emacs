@@ -173,7 +173,7 @@
             `(font-lock-negation-char-face ((,class (:foreground ,bright-magenta))))
             `(font-lock-preprocessor-face ((,class (:foreground ,yellow))))
             `(font-lock-reference-face ((,class (:foreground ,bright-magenta))))
-            `(font-lock-string-face ((,class (:foreground ,str))))
+            `(font-lock-string-face ((,class (:foreground ,bright-green))))
             `(font-lock-type-face ((,class (:foreground ,type))))
             `(font-lock-variable-name-face ((,class (:foreground ,var))))
             `(font-lock-warning-face ((,class (:foreground ,war :background ,bg1))))
@@ -294,7 +294,7 @@
             `(eldoc-highlight-function-argument ((,class (:foreground ,mat :inherit bold))))
 
 ;;;;; enh-ruby
-            `(enh-ruby-string-delimiter-face ((,class (:foreground ,str))))
+            `(enh-ruby-string-delimiter-face ((,class (:foreground ,bright-green))))
             `(enh-ruby-op-face ((,class (:background ,bg1 :foreground ,bright-white))))
 
 ;;;;; erc
@@ -302,7 +302,7 @@
             `(erc-my-nick-face ((,class (:foreground ,keyword))))
             `(erc-nick-default-face ((,class (:foreground ,keyword))))
             `(erc-nick-prefix-face ((,class (:foreground ,yellow))))
-            `(erc-notice-face ((,class (:foreground ,str))))
+            `(erc-notice-face ((,class (:foreground ,bright-green))))
             `(erc-prompt-face ((,class (:foreground ,mat :inherit bold))))
             `(erc-timestamp-face ((,class (:foreground ,keyword))))
 
@@ -451,7 +451,7 @@
             `(info-node ((,class (:foreground ,yellow :inherit bold))))
             `(info-quoted-name ((,class (:foreground ,keyword))))
             `(info-reference-item ((,class (:background nil :underline t :inherit bold))))
-            `(info-string ((,class (:foreground ,str))))
+            `(info-string ((,class (:foreground ,bright-green))))
             `(info-title-1 ((,class (:height 1.4 :inherit bold))))
             `(info-title-2 ((,class (:height 1.3 :inherit bold))))
             `(info-title-3 ((,class (:height 1.3))))
@@ -476,7 +476,7 @@
             `(font-latex-sectioning-3-face ((,class (:inherit bold :foreground ,head2 :height ,(if srcery-theme-org-height 1.2 1.0) :background ,(when srcery-theme-org-highlight head2-bg)))))
             `(font-latex-sectioning-4-face ((,class (:bold nil :foreground ,head3 :height ,(if srcery-theme-org-height 1.1 1.0) :background ,(when srcery-theme-org-highlight head3-bg)))))
             `(font-latex-sectioning-5-face ((,class (:bold nil :foreground ,head4 :background ,(when srcery-theme-org-highlight head4-bg)))))
-            `(font-latex-string-face ((,class (:foreground ,str))))
+            `(font-latex-string-face ((,class (:foreground ,bright-green))))
 
 ;;;;; linum-mode
             `(linum ((,class (:foreground ,white :background ,black))))
@@ -516,7 +516,7 @@
             `(magit-log-head-label-remote ((,class (:background ,suc :foreground ,bg1 :inherit bold))))
             `(magit-log-head-label-tags ((,class (:background ,magenta :foreground ,bg1 :inherit bold))))
             `(magit-log-head-label-wip ((,class (:background ,cyan :foreground ,bg1 :inherit bold))))
-            `(magit-log-sha1 ((,class (:foreground ,str))))
+            `(magit-log-sha1 ((,class (:foreground ,bright-green))))
             `(magit-process-ng ((,class (:foreground ,war :inherit bold))))
             `(magit-process-ok ((,class (:foreground ,yellow :inherit bold))))
             `(magit-section-heading        ((,class (:foreground ,keyword :inherit bold))))
@@ -596,7 +596,7 @@
             `(org-sexp-date ((,class (:foreground ,bright-white))))
             `(org-special-keyword ((,class (:foreground ,yellow))))
             `(org-table ((,class (:foreground ,bright-white :background ,head1-bg))))
-            `(org-time-grid ((,class (:foreground ,str))))
+            `(org-time-grid ((,class (:foreground ,bright-green))))
             `(org-todo ((,class (:foreground ,war :inherit bold :background ,yellow-bg))))
             `(org-verbatim ((,class (:foreground ,keyword))))
             `(org-verse ((,class (:inherit org-block :slant italic))))
@@ -624,12 +624,12 @@
 ;;;;; rainbow-delimiters
             `(rainbow-delimiters-depth-1-face ((,class :foreground ,keyword)))
             `(rainbow-delimiters-depth-2-face ((,class :foreground ,yellow)))
-            `(rainbow-delimiters-depth-3-face ((,class :foreground ,str)))
+            `(rainbow-delimiters-depth-3-face ((,class :foreground ,bright-green)))
             `(rainbow-delimiters-depth-4-face ((,class :foreground ,green)))
             `(rainbow-delimiters-depth-5-face ((,class :foreground ,yellow)))
             `(rainbow-delimiters-depth-6-face ((,class :foreground ,keyword)))
             `(rainbow-delimiters-depth-7-face ((,class :foreground ,yellow)))
-            `(rainbow-delimiters-depth-8-face ((,class :foreground ,str)))
+            `(rainbow-delimiters-depth-8-face ((,class :foreground ,bright-green)))
             `(rainbow-delimiters-unmatched-face ((,class :foreground ,err :overline t)))
             `(rainbow-delimiters-mismatched-face ((,class :foreground ,err :overline t)))
 
@@ -682,7 +682,7 @@
             `(web-mode-html-attr-value-face ((,class (:foreground ,keyword))))
             `(web-mode-html-tag-face ((,class (:foreground ,keyword))))
             `(web-mode-keyword-face ((,class (:foreground ,keyword))))
-            `(web-mode-string-face ((,class (:foreground ,str))))
+            `(web-mode-string-face ((,class (:foreground ,bright-green))))
             `(web-mode-symbol-face ((,class (:foreground ,type))))
             `(web-mode-type-face ((,class (:inherit ,font-lock-type-face))))
             `(web-mode-warning-face ((,class (:inherit ,font-lock-warning-face))))
@@ -691,7 +691,7 @@
             `(which-key-command-description-face ((,class (:foreground ,bright-white))))
             `(which-key-group-description-face ((,class (:foreground ,keyword))))
             `(which-key-key-face ((,class (:foreground ,yellow :inherit bold))))
-            `(which-key-separator-face ((,class (:background nil :foreground ,str))))
+            `(which-key-separator-face ((,class (:background nil :foreground ,bright-green))))
             `(which-key-special-key-face ((,class (:background ,yellow :foreground ,bg1))))
 
 ;;;;; which-function-mode
@@ -715,9 +715,9 @@
             `(icompletep-determined ((,class :foreground ,keyword)))
             `(js2-external-variable ((,class (:foreground ,comp))))
             `(js2-function-param ((,class (:foreground ,bright-magenta))))
-            `(js2-jsdoc-html-tag-delimiter ((,class (:foreground ,str))))
+            `(js2-jsdoc-html-tag-delimiter ((,class (:foreground ,bright-green))))
             `(js2-jsdoc-html-tag-name ((,class (:foreground ,keyword))))
-            `(js2-jsdoc-value ((,class (:foreground ,str))))
+            `(js2-jsdoc-value ((,class (:foreground ,bright-green))))
             `(js2-private-function-call ((,class (:foreground ,bright-magenta))))
             `(js2-private-member ((,class (:foreground ,bright-white))))
             `(js3-error-face ((,class (:underline ,war))))
