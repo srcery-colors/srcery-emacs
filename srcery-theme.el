@@ -200,10 +200,10 @@
             `(ac-completion-face ((,class (:background ,bright-black :foreground ,bright-white))))
 
 ;;;;; avy
-            `(avy-lead-face   ((,class (:background ,blue :foreground ,magenta))))
-            `(avy-lead-face-0 ((,class (:background ,blue :foreground ,blue))))
-            `(avy-lead-face-1 ((,class (:background ,blue :foreground ,magenta))))
-            `(avy-lead-face-2 ((,class (:background ,blue :foreground ,blue))))
+            `(avy-lead-face   ((,class (:background ,bright-black :foreground ,bright-magenta))))
+            `(avy-lead-face-0 ((,class (:background ,bright-black :foreground ,bright-yellow))))
+            `(avy-lead-face-1 ((,class (:background ,bright-black :foreground ,bright-green))))
+            `(avy-lead-face-2 ((,class (:background ,bright-black :foreground ,bright-blue))))
 
 ;;;;; cider
             `(cider-enlightened ((,class (:background nil :box (:color ,yellow :line-width -1 :style nil) :foreground ,yellow))))
