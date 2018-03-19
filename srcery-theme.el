@@ -221,7 +221,7 @@
             `(company-preview-common ((,class (:background ,bright-black :foreground ,bright-white))))
             `(company-preview-search ((,class (:inherit match))))
             `(company-scrollbar-bg ((,class (:background ,bright-black))))
-            `(company-scrollbar-fg ((,class (:background ,act2))))
+            `(company-scrollbar-fg ((,class (:background ,xgrey4))))
             `(company-template-field ((,class (:inherit region))))
             `(company-tooltip ((,class (:background ,bright-black :foreground ,bright-white))))
             `(company-tooltip-annotation ((,class (:foreground ,red))))
@@ -606,12 +606,12 @@
             `(popup-enu-selection-face ((,class (:background ,bright-blue :foreground ,bright-white))))
             `(popup-menu-mouse-face ((,class (:inherit highlight))))
             `(popup-isearch-match ((,class (:inherit match))))
-            `(popup-scroll-bar-foreground-face ((,class (:background ,act2))))
+            `(popup-scroll-bar-foreground-face ((,class (:background ,xgrey4))))
             `(popup-scroll-bar-background-face ((,class (:background ,bright-black))))
 
 ;;;;; powerline
-            `(powerline-active1 ((,class (:background ,act2 :foreground ,bright-white))))
-            `(powerline-active2 ((,class (:background ,act2 :foreground ,bright-white))))
+            `(powerline-active1 ((,class (:background ,xgrey4 :foreground ,bright-white))))
+            `(powerline-active2 ((,class (:background ,xgrey4 :foreground ,bright-white))))
             `(powerline-inactive1 ((,class (:background ,bright-black :foreground ,bright-white))))
             `(powerline-inactive2 ((,class (:background ,bright-black :foreground ,bright-white))))
 
@@ -696,7 +696,7 @@
             `(whitespace-indentation ((,class (:background nil :foreground ,bright-orange))))
             `(whitespace-line ((,class (:background nil :foreground ,green))))
             `(whitespace-newline ((,class (:background nil :foreground ,green))))
-            `(whitespace-space ((,class (:background nil :foreground ,act2))))
+            `(whitespace-space ((,class (:background nil :foreground ,xgrey4))))
             `(whitespace-space-after-tab ((,class (:background nil :foreground ,yellow))))
             `(whitespace-space-before-tab ((,class (:background nil :foreground ,yellow))))
             `(whitespace-tab ((,class (:background nil))))
