@@ -172,14 +172,14 @@
             `(font-lock-variable-name-face ((,class (:foreground ,blue))))
             `(font-lock-warning-face ((,class (:foreground ,bright-orange :background ,black))))
             `(fringe ((,class (:foreground ,bright-white))))
-            `(header-line ((,class :background ,bg4)))
-            `(highlight ((,class (:foreground ,bright-white :background ,bright-magenta))))
+            `(header-line ((,class :background ,black)))
+            `(highlight ((,class (:foreground ,bright-white :background ,magenta))))
             `(hl-line ((,class (:background ,bright-black))))
             `(isearch ((,class (:foreground ,bright-white :background ,magenta))))
             `(lazy-highlight ((,class (:background ,magenta :foreground ,bright-white :weight normal))))
-            `(link ((,class (:foreground ,comment :underline t))))
-            `(link-visited ((,class (:foreground ,comp :underline t))))
-            `(match ((,class (:background ,highlight :foreground ,mat))))
+            `(link ((,class (:foreground ,bright-green :underline t))))
+            `(link-visited ((,class (:foreground ,green :underline t))))
+            `(match ((,class (:background ,magenta :foreground ,bright-white))))
             `(minibuffer-prompt ((,class (:inherit bold :foreground ,keyword))))
             `(page-break-lines ((,class (:foreground ,act2))))
             `(region ((,class (:inverse-video ,t))))
@@ -190,7 +190,7 @@
             `(warning ((,class (:foreground ,war))))
 
 ;;;;; ahs
-            `(ahs-face ((,class (:background ,highlight))))
+            `(ahs-face ((,class (:background ,magenta))))
             `(ahs-plugin-whole-buffer-face ((,class (:background ,mat :foreground ,black))))
 
 ;;;;; anzu-mode
@@ -406,7 +406,7 @@
             `(helm-match ((,class (:background ,head1-bg :foreground ,head1))))
             `(helm-match-item ((,class (:background ,head1-bg :foreground ,head1))))
             `(helm-moccur-buffer ((,class (:foreground ,blue :background ,black))))
-            `(helm-selection ((,class (:background ,highlight))))
+            `(helm-selection ((,class (:background ,magenta))))
             `(helm-selection-line ((,class (:background ,bright-black))))
             `(helm-separator ((,class (:foreground ,comp :background ,black))))
             `(helm-source-header ((,class (:background ,comp :foreground ,black :inherit bold))))
@@ -415,9 +415,9 @@
             `(helm-visible-mark ((,class (:foreground ,keyword :background ,bg3))))
 
 ;;;;; helm-swoop
-            `(helm-swoop-target-line-block-face ((,class (:foreground ,bright-white :background ,highlight))))
-            `(helm-swoop-target-line-face ((,class (:background ,highlight))))
-            `(helm-swoop-target-word-face ((,class (:background ,highlight :foreground ,mat))))
+            `(helm-swoop-target-line-block-face ((,class (:foreground ,bright-white :background ,magenta))))
+            `(helm-swoop-target-line-face ((,class (:background ,magenta))))
+            `(helm-swoop-target-word-face ((,class (:background ,magenta :foreground ,mat))))
 
 ;;;;; highlights
             `(hi-yellow ((,class (:foreground ,yellow))))
@@ -452,7 +452,7 @@
             `(info-title-4 ((,class (:height 1.2))))
 
 ;;;;; ivy
-            `(ivy-current-match ((,class (:background ,highlight :inherit bold))))
+            `(ivy-current-match ((,class (:background ,magenta :inherit bold))))
             `(ivy-minibuffer-match-face-1 ((,class (:inherit bold))))
             `(ivy-minibuffer-match-face-2 ((,class (:foreground ,head1 :underline t))))
             `(ivy-minibuffer-match-face-3 ((,class (:foreground ,head4 :underline t))))
@@ -519,7 +519,7 @@
 
 ;;;;; man
             `(Man-overstrike ((,class (:foreground ,head1 :inherit bold))))
-            `(Man-reverse ((,class (:foreground ,highlight))))
+            `(Man-reverse ((,class (:foreground ,magenta))))
             `(Man-underline ((,class (:foreground ,comp :underline t))))
 
 ;;;;; markdown
@@ -550,7 +550,7 @@
             `(neo-root-dir-face ((,class (:foreground ,yellow :inherit bold))))
 
 ;;;;; org
-            `(org-agenda-clocking ((,class (:background ,highlight :foreground ,comp))))
+            `(org-agenda-clocking ((,class (:background ,magenta :foreground ,comp))))
             `(org-agenda-date ((,class (:foreground ,blue :height ,(if srcery-theme-org-height 1.1 1.0)))))
             `(org-agenda-date-today ((,class (:foreground ,keyword :slant italic :inherit bold :height ,(if srcery-theme-org-height 1.3 1.0)))))
             `(org-agenda-date-weekend ((,class (:inherit bold :foreground ,blue))))
@@ -561,8 +561,8 @@
             `(org-block-end-line ((,class (:background ,cblk-ln-bg :foreground ,cblk-ln))))
             `(org-clock-overlay ((,class (:foreground ,comp))))
             `(org-code ((,class (:foreground ,cyan))))
-            `(org-column ((,class (:background ,highlight))))
-            `(org-column-title ((,class (:background ,highlight))))
+            `(org-column ((,class (:background ,magenta))))
+            `(org-column-title ((,class (:background ,magenta))))
             `(org-date ((,class (:underline t :foreground ,blue))))
             `(org-date-selected ((,class (:background ,yellow :foreground ,black))))
             `(org-document-info-keyword ((,class (:foreground ,meta))))
@@ -636,7 +636,7 @@
             `(show-paren-mismatch ((,class (:background ,red-bg-s))))
 
 ;;;;; smartparens
-            `(sp-pair-overlay-face ((,class (:background ,highlight :foreground nil))))
+            `(sp-pair-overlay-face ((,class (:background ,magenta :foreground nil))))
             `(sp-show-pair-match-face ((,class (:foreground ,mat :inherit bold :underline t))))
 
 ;;;;; spaceline
@@ -649,7 +649,7 @@
             `(spacemacs-transient-state-title-face ((,class (:background nil :foreground ,comp :box nil :inherit bold))))
 
 ;;;;; swiper
-            `(swiper-line-face ((,class (:background ,highlight :inherit bold))))
+            `(swiper-line-face ((,class (:background ,magenta :inherit bold))))
             `(swiper-match-face-1 ((,class (:inherit bold))))
             `(swiper-match-face-2 ((,class (:foreground ,head1 :underline t))))
             `(swiper-match-face-3 ((,class (:foreground ,head4 :underline t))))
