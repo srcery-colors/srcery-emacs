@@ -221,15 +221,15 @@
             `(company-preview-common ((,class (:background ,bright-black :foreground ,bright-white))))
             `(company-preview-search ((,class (:inherit match))))
             `(company-scrollbar-bg ((,class (:background ,bright-black))))
-            `(company-scrollbar-fg ((,class (:background ,xgrey4))))
+            `(company-scrollbar-fg ((,class (:background ,white))))
             `(company-template-field ((,class (:inherit region))))
             `(company-tooltip ((,class (:background ,bright-black :foreground ,bright-white))))
             `(company-tooltip-annotation ((,class (:foreground ,red))))
             `(company-tooltip-common ((,class (:background ,bright-black :foreground ,bright-white))))
-            `(company-tooltip-common-selection ((,class (:foreground ,black))))
+            `(company-tooltip-common-selection ((,class (:foreground ,bright-white))))
             `(company-tooltip-mouse ((,class (:inherit highlight))))
             `(company-tooltip-search ((,class (:inherit match))))
-            `(company-tooltip-selection ((,class (:background ,bright-blue :foreground ,black))))
+            `(company-tooltip-selection ((,class (:background ,magenta :foreground ,black))))
 
 ;;;;; diff
             `(diff-added             ((,class :background nil :foreground ,green)))
