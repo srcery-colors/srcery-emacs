@@ -169,7 +169,7 @@
             `(font-lock-constant-face ((,class (:foreground ,bright-magenta))))
             `(font-lock-doc-face ((,class (:foreground ,green))))
             `(font-lock-function-name-face ((,class (:foreground ,func))))
-            `(font-lock-keyword-face ((,class (:inherit bold :foreground ,keyword))))
+            `(font-lock-keyword-face ((,class (:foreground ,red))))
             `(font-lock-negation-char-face ((,class (:foreground ,const))))
             `(font-lock-preprocessor-face ((,class (:foreground ,func))))
             `(font-lock-reference-face ((,class (:foreground ,const))))
