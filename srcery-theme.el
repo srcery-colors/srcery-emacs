@@ -527,8 +527,8 @@
             `(markdown-header-face-6 ((,class (:bold nil :foreground ,head2))))
 
 ;;;;; mode-line
-            `(mode-line           ((,class (:foreground ,bright-white :background ,bright-black :box (:color ,border :line-width 1)))))
-            `(mode-line-inactive  ((,class (:foreground ,bright-white :background ,black  :box (:color ,border :line-width 1)))))
+            `(mode-line           ((,class (:foreground ,bright-white :background ,bright-black :box (:color ,bright-black :line-width 1)))))
+            `(mode-line-inactive  ((,class (:foreground ,bright-white :background ,black  :box (:color ,bright-black :line-width 1)))))
             `(mode-line-buffer-id ((,class (:inherit bold :foreground ,yellow))))
 
 ;;;;; mu4e
