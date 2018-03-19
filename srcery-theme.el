@@ -554,7 +554,7 @@
             `(org-agenda-structure ((,class (:inherit bold :foreground ,green))))
             `(org-block ((,class (:background ,bright-black :foreground ,bright-white))))
             `(org-block-begin-line ((,class (:background ,bright-black :foreground ,bright-magenta))))
-            `(org-block-end-line ((,class (:background ,bright-black :foreground ,bright-mangenta))))
+            `(org-block-end-line ((,class (:background ,bright-black :foreground ,bright-magenta))))
             `(org-clock-overlay ((,class (:foreground ,green))))
             `(org-code ((,class (:foreground ,cyan))))
             `(org-column ((,class (:background ,magenta))))
