@@ -187,7 +187,7 @@
             `(success ((,class (:foreground ,green))))
             `(tooltip ((,class (:background ,bright-blue :foreground ,bright-white :bold nil :italic nil :underline nil))))
             `(vertical-border ((,class (:foreground ,magenta))))
-            `(warning ((,class (:foreground ,war))))
+            `(warning ((,class (:foreground ,bright-orange))))
 
 ;;;;; ahs
             `(ahs-face ((,class (:background ,magenta))))
@@ -210,7 +210,7 @@
             `(cider-enlightened-local ((,class (:foreground ,yellow))))
             `(cider-instrumented-face ((,class (:background nil :box (:color ,red :line-width -1 :style nil) :foreground ,red))))
             `(cider-result-overlay-face ((,class (:background nil :box (:color ,blue :line-width -1 :style nil) :foreground ,blue))))
-            `(cider-test-error-face ((,class (:background ,war :foreground ,black))))
+            `(cider-test-error-face ((,class (:background ,bright-orange :foreground ,black))))
             `(cider-test-failure-face ((,class (:background ,err :foreground ,black))))
             `(cider-test-success-face ((,class (:background ,green :foreground ,black))))
             `(cider-traced-face ((,class :box (:color ,cyan :line-width -1 :style nil))))
@@ -257,7 +257,7 @@
             `(dired-marked ((,class (:foreground ,magenta :inherit bold))))
             `(dired-perm-write ((,class (:foreground ,bright-white :underline t))))
             `(dired-symlink ((,class (:foreground ,cyan :background ,black :inherit bold))))
-            `(dired-warning ((,class (:foreground ,war))))
+            `(dired-warning ((,class (:foreground ,bright-orange))))
 
 ;;;;; ediff
             `(ediff-current-diff-A ((,class(:background ,red-bg-s :foreground ,red))))
@@ -325,15 +325,15 @@
             `(flycheck-error-list-checker-name ((,class (:foreground ,red))))
             `(flycheck-fringe-error ((,class (:foreground ,err :inherit bold))))
             `(flycheck-fringe-info ((,class (:foreground ,red :inherit bold))))
-            `(flycheck-fringe-warning ((,class (:foreground ,war :inherit bold))))
+            `(flycheck-fringe-warning ((,class (:foreground ,bright-orange :inherit bold))))
             `(flycheck-info
               ((,(append '((supports :underline (:style line))) class)
                 (:underline (:style line :color ,red)))
                (,class (:foreground ,bright-white :background ,red :inherit bold :underline t))))
             `(flycheck-warning
               ((,(append '((supports :underline (:style line))) class)
-                (:underline (:style line :color ,war)))
-               (,class (:foreground ,bright-white :background ,war :inherit bold :underline t))))
+                (:underline (:style line :color ,bright-orange)))
+               (,class (:foreground ,bright-white :background ,bright-orange :inherit bold :underline t))))
 
 ;;;;; jabber
             `(jabber-activity-face ((,class (:inherit bold :foreground ,red))))
@@ -355,7 +355,7 @@
 
 ;;;;; git-gutter-fr
             `(git-gutter-fr:added ((,class (:foreground ,green :inherit bold))))
-            `(git-gutter-fr:deleted ((,class (:foreground ,war :inherit bold))))
+            `(git-gutter-fr:deleted ((,class (:foreground ,bright-orange :inherit bold))))
             `(git-gutter-fr:modified ((,class (:foreground ,red :inherit bold))))
 
 ;;;;; git-timemachine
@@ -367,7 +367,7 @@
             `(gnus-header-from ((,class (:foreground ,blue))))
             `(gnus-header-name ((,class (:foreground ,comp))))
             `(gnus-header-subject ((,class (:foreground ,yellow :inherit bold))))
-            `(gnus-summary-cancelled ((,class (:background ,war :foreground ,black))))
+            `(gnus-summary-cancelled ((,class (:background ,bright-orange :foreground ,black))))
 
 ;;;;; guide-key
             `(guide-key/highlight-command-face ((,class (:foreground ,bright-white))))
@@ -511,7 +511,7 @@
             `(magit-log-head-label-tags ((,class (:background ,magenta :foreground ,black :inherit bold))))
             `(magit-log-head-label-wip ((,class (:background ,cyan :foreground ,black :inherit bold))))
             `(magit-log-sha1 ((,class (:foreground ,bright-green))))
-            `(magit-process-ng ((,class (:foreground ,war :inherit bold))))
+            `(magit-process-ng ((,class (:foreground ,bright-orange :inherit bold))))
             `(magit-process-ok ((,class (:foreground ,yellow :inherit bold))))
             `(magit-section-heading        ((,class (:foreground ,red :inherit bold))))
             `(magit-section-highlight      ((,class (:background ,bright-black))))
@@ -583,7 +583,7 @@
             `(org-link ((,class (:underline t :foreground ,comment))))
             `(org-meta-line ((,class (:foreground ,meta))))
             `(org-mode-line-clock-overrun ((,class (:foreground ,err))))
-            `(org-priority ((,class (:foreground ,war :inherit bold))))
+            `(org-priority ((,class (:foreground ,bright-orange :inherit bold))))
             `(org-quote ((,class (:inherit org-block :slant italic))))
             `(org-scheduled ((,class (:foreground ,comp))))
             `(org-scheduled-today ((,class (:foreground ,yellow :height ,(if srcery-theme-org-height 1.2 1.0)))))
@@ -591,7 +591,7 @@
             `(org-special-keyword ((,class (:foreground ,yellow))))
             `(org-table ((,class (:foreground ,bright-white :background ,head1-bg))))
             `(org-time-grid ((,class (:foreground ,bright-green))))
-            `(org-todo ((,class (:foreground ,war :inherit bold :background ,yellow-bg))))
+            `(org-todo ((,class (:foreground ,bright-orange :inherit bold :background ,yellow-bg))))
             `(org-verbatim ((,class (:foreground ,red))))
             `(org-verse ((,class (:inherit org-block :slant italic))))
             `(org-warning ((,class (:foreground ,err))))
@@ -643,7 +643,7 @@
             `(spaceline-python-venv ((,class (:foreground ,comp))))
             `(spaceline-flycheck-error  ((,class (:foreground ,err))))
             `(spaceline-flycheck-info   ((,class (:foreground ,red))))
-            `(spaceline-flycheck-warning((,class (:foreground ,war))))
+            `(spaceline-flycheck-warning((,class (:foreground ,bright-orange))))
 
 ;;;;; spacemacs-specific
             `(spacemacs-transient-state-title-face ((,class (:background nil :foreground ,comp :box nil :inherit bold))))
@@ -693,14 +693,14 @@
 
 ;;;;; whitespace-mode
             `(whitespace-empty ((,class (:background nil :foreground ,yellow))))
-            `(whitespace-indentation ((,class (:background nil :foreground ,war))))
+            `(whitespace-indentation ((,class (:background nil :foreground ,bright-orange))))
             `(whitespace-line ((,class (:background nil :foreground ,comp))))
             `(whitespace-newline ((,class (:background nil :foreground ,comp))))
             `(whitespace-space ((,class (:background nil :foreground ,act2))))
             `(whitespace-space-after-tab ((,class (:background nil :foreground ,yellow))))
             `(whitespace-space-before-tab ((,class (:background nil :foreground ,yellow))))
             `(whitespace-tab ((,class (:background nil))))
-            `(whitespace-trailing ((,class (:background ,err :foreground ,war))))
+            `(whitespace-trailing ((,class (:background ,err :foreground ,bright-orange))))
 
 ;;;;; other, need more work
             `(ac-completion-face ((,class (:underline t :foreground ,red))))
@@ -714,7 +714,7 @@
             `(js2-jsdoc-value ((,class (:foreground ,bright-green))))
             `(js2-private-function-call ((,class (:foreground ,bright-magenta))))
             `(js2-private-member ((,class (:foreground ,bright-white))))
-            `(js3-error-face ((,class (:underline ,war))))
+            `(js3-error-face ((,class (:underline ,bright-orange))))
             `(js3-external-variable-face ((,class (:foreground ,blue))))
             `(js3-function-param-face ((,class (:foreground ,red))))
             `(js3-instance-member-face ((,class (:foreground ,bright-magenta))))
