@@ -211,8 +211,8 @@
             `(cider-instrumented-face ((,class (:background nil :box (:color ,red :line-width -1 :style nil) :foreground ,red))))
             `(cider-result-overlay-face ((,class (:background nil :box (:color ,blue :line-width -1 :style nil) :foreground ,blue))))
             `(cider-test-error-face ((,class (:background ,bright-orange :foreground ,black))))
-            `(cider-test-failure-face ((,class (:background ,err :foreground ,black))))
-            `(cider-test-success-face ((,class (:background ,green :foreground ,black))))
+            `(cider-test-failure-face ((,class (:background ,red :foreground ,bright-white))))
+            `(cider-test-success-face ((,class (:background ,bright-green :foreground ,black))))
             `(cider-traced-face ((,class :box (:color ,cyan :line-width -1 :style nil))))
 
 ;;;;; company
