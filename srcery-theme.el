@@ -729,7 +729,7 @@
 
            (custom-theme-set-variables
             theme-name
-            `(ansi-color-names-vector [,bg4 ,red ,green ,yellow ,blue ,magenta ,cyan ,bright-white]))
+            `(ansi-color-names-vector [,black ,red ,green ,yellow ,blue ,magenta ,cyan ,bright-white]))
 
            ))
 
