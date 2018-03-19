@@ -556,7 +556,7 @@
             `(org-agenda-date-weekend ((,class (:inherit bold :foreground ,blue))))
             `(org-agenda-done ((,class (:foreground ,green :height ,(if srcery-theme-org-height 1.2 1.0)))))
             `(org-agenda-structure ((,class (:inherit bold :foreground ,green))))
-            `(org-block ((,class (:background ,cblk-bg :foreground ,cblk))))
+            `(org-block ((,class (:background ,bright-black :foreground ,cblk))))
             `(org-block-begin-line ((,class (:background ,cblk-ln-bg :foreground ,cblk-ln))))
             `(org-block-end-line ((,class (:background ,cblk-ln-bg :foreground ,cblk-ln))))
             `(org-clock-overlay ((,class (:foreground ,green))))
