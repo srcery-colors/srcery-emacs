@@ -219,13 +219,13 @@
             `(company-scrollbar-bg ((,class (:background ,bright-black))))
             `(company-scrollbar-fg ((,class (:background ,white))))
             `(company-template-field ((,class (:inherit region))))
-            `(company-tooltip ((,class (:background ,bright-black :foreground ,bright-white))))
+            `(company-tooltip ((,class (:background ,bright-black :foreground ,white))))
             `(company-tooltip-annotation ((,class (:foreground ,red))))
             `(company-tooltip-common ((,class (:background ,bright-black :foreground ,bright-white))))
-            `(company-tooltip-common-selection ((,class (:foreground ,bright-white))))
+            `(company-tooltip-common-selection ((,class (:foreground ,bright-yellow))))
             `(company-tooltip-mouse ((,class (:inherit highlight))))
             `(company-tooltip-search ((,class (:inherit match))))
-            `(company-tooltip-selection ((,class (:background ,magenta :foreground ,black))))
+            `(company-tooltip-selection ((,class (:foreground ,bright-yellow))))
 
 ;;;;; diff
             `(diff-added             ((,class :background nil :foreground ,green)))
