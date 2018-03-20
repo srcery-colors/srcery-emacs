@@ -205,6 +205,9 @@
             `(cider-test-success-face ((,class (:background ,bright-green :foreground ,black))))
             `(cider-traced-face ((,class :box (:color ,cyan :line-width -1 :style nil))))
 
+;;;;; clojure
+            `(clojure-keyword-face ((,class (:foreground ,blue))))
+
 ;;;;; company
             `(company-echo-common ((,class (:background ,bright-white :foreground ,black))))
             `(company-preview ((,class (:background ,xgrey1 :foreground ,bright-white))))
