@@ -460,12 +460,12 @@
             `(font-latex-italic-face ((,class (:foreground ,red :italic t))))
             `(font-latex-match-reference-keywords ((,class (:foreground ,bright-magenta))))
             `(font-latex-match-variable-keywords ((,class (:foreground ,blue))))
-            `(font-latex-sectioning-0-face ((,class (:inherit bold :foreground ,head3 :height ,(if srcery-theme-org-height 1.3 1.0) :background ,(when srcery-theme-org-highlight head3-bg)))))
-            `(font-latex-sectioning-1-face ((,class (:inherit bold :foreground ,head4 :height ,(if srcery-theme-org-height 1.3 1.0) :background ,(when srcery-theme-org-highlight head4-bg)))))
-            `(font-latex-sectioning-2-face ((,class (:inherit bold :foreground ,head1 :height ,(if srcery-theme-org-height 1.3 1.0) :background ,(when srcery-theme-org-highlight head1-bg)))))
-            `(font-latex-sectioning-3-face ((,class (:inherit bold :foreground ,head2 :height ,(if srcery-theme-org-height 1.2 1.0) :background ,(when srcery-theme-org-highlight head2-bg)))))
-            `(font-latex-sectioning-4-face ((,class (:bold nil :foreground ,head3 :height ,(if srcery-theme-org-height 1.1 1.0) :background ,(when srcery-theme-org-highlight head3-bg)))))
-            `(font-latex-sectioning-5-face ((,class (:bold nil :foreground ,head4 :background ,(when srcery-theme-org-highlight head4-bg)))))
+            `(font-latex-sectioning-0-face ((,class (:inherit bold :foreground ,bright-green :height ,(if srcery-theme-org-height 1.3 1.0)))))
+            `(font-latex-sectioning-1-face ((,class (:inherit bold :foreground ,bright-yellow :height ,(if srcery-theme-org-height 1.3 1.0)))))
+            `(font-latex-sectioning-2-face ((,class (:inherit bold :foreground ,blue :height ,(if srcery-theme-org-height 1.3 1.0)))))
+            `(font-latex-sectioning-3-face ((,class (:inherit bold :foreground ,cyan :height ,(if srcery-theme-org-height 1.2 1.0)))))
+            `(font-latex-sectioning-4-face ((,class (:bold nil :foreground ,bright-green :height ,(if srcery-theme-org-height 1.1 1.0)))))
+            `(font-latex-sectioning-5-face ((,class (:bold nil :foreground ,yellow))))
             `(font-latex-string-face ((,class (:foreground ,bright-green))))
 
 ;;;;; linum-mode
