@@ -50,11 +50,6 @@
   :type 'boolean
   :group 'srcery-theme)
 
-(defcustom srcery-theme-org-highlight nil
-  "Highlight org headings."
-  :type 'boolean
-  :group 'srcery-theme)
-
 (defcustom srcery-theme-custom-colors nil
   "Specify a list of custom colors"
   :type 'alist
@@ -568,10 +563,10 @@
             `(org-footnote  ((,class (:underline t :foreground ,bright-white))))
             `(org-hide ((,class (:foreground ,bright-white))))
             `(org-kbd ((,class (:inherit region :foreground ,bright-white :box (:line-width 1 :style released-button)))))
-            `(org-level-1 ((,class (:inherit bold :foreground ,blue :height ,(if srcery-theme-org-height 1.3 1.0) :background ,(when srcery-theme-org-highlight head1-bg)))))
-            `(org-level-2 ((,class (:inherit bold :foreground ,cyan :height ,(if srcery-theme-org-height 1.2 1.0) :background ,(when srcery-theme-org-highlight head2-bg)))))
-            `(org-level-3 ((,class (:bold nil :foreground ,bright-green :height ,(if srcery-theme-org-height 1.1 1.0) :background ,(when srcery-theme-org-highlight head3-bg)))))
-            `(org-level-4 ((,class (:bold nil :foreground ,yellow :background ,(when srcery-theme-org-highlight head4-bg)))))
+            `(org-level-1 ((,class (:inherit bold :foreground ,blue :height ,(if srcery-theme-org-height 1.3 1.0)))))
+            `(org-level-2 ((,class (:inherit bold :foreground ,cyan :height ,(if srcery-theme-org-height 1.2 1.0)))))
+            `(org-level-3 ((,class (:bold nil :foreground ,bright-green :height ,(if srcery-theme-org-height 1.1 1.0)))))
+            `(org-level-4 ((,class (:bold nil :foreground ,yellow))))
             `(org-level-5 ((,class (:bold nil :foreground ,blue))))
             `(org-level-6 ((,class (:bold nil :foreground ,cyan))))
             `(org-level-7 ((,class (:bold nil :foreground ,bright-green))))
