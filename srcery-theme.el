@@ -245,7 +245,7 @@
             `(diff-hl-insert ((,class :foreground ,green)))
 
 ;;;;; dired
-            `(dired-directory ((,class (:foreground ,red :background ,black :inherit bold))))
+            `(dired-directory ((,class (:foreground ,blue :background ,black :inherit bold))))
             `(dired-flagged ((,class (:foreground ,red))))
             `(dired-header ((,class (:foreground ,green :inherit bold))))
             `(dired-ignored ((,class (:inherit shadow))))
