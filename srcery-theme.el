@@ -256,7 +256,7 @@
             `(dired-warning ((,class (:foreground ,bright-orange))))
 
 ;;;;; ediff
-            `(ediff-current-diff-A ((,class(:background ,red-bg-s :foreground ,red))))
+            `(ediff-current-diff-A ((,class(:background ,xgrey1 :foreground ,red))))
             `(ediff-current-diff-Ancestor ((,class(:background ,black :foreground ,cyan))))
             `(ediff-current-diff-B ((,class(:foreground ,green))))
             `(ediff-current-diff-C ((,class(:background ,blue :foreground ,blue))))
@@ -612,24 +612,26 @@
             `(powerline-inactive2 ((,class (:background ,bright-black :foreground ,bright-white))))
 
 ;;;;; rainbow-delimiters
-            `(rainbow-delimiters-depth-1-face ((,class :foreground ,red)))
-            `(rainbow-delimiters-depth-2-face ((,class :foreground ,yellow)))
-            `(rainbow-delimiters-depth-3-face ((,class :foreground ,bright-green)))
-            `(rainbow-delimiters-depth-4-face ((,class :foreground ,green)))
+            `(rainbow-delimiters-depth-1-face ((,class :foreground ,magenta)))
+            `(rainbow-delimiters-depth-2-face ((,class :foreground ,red)))
+            `(rainbow-delimiters-depth-3-face ((,class :foreground ,orange)))
+            `(rainbow-delimiters-depth-4-face ((,class :foreground ,blue)))
             `(rainbow-delimiters-depth-5-face ((,class :foreground ,yellow)))
-            `(rainbow-delimiters-depth-6-face ((,class :foreground ,red)))
-            `(rainbow-delimiters-depth-7-face ((,class :foreground ,yellow)))
+            `(rainbow-delimiters-depth-6-face ((,class :foreground ,cyan)))
+            `(rainbow-delimiters-depth-7-face ((,class :foreground ,green)))
             `(rainbow-delimiters-depth-8-face ((,class :foreground ,bright-green)))
-            `(rainbow-delimiters-unmatched-face ((,class :foreground ,red :overline t)))
-            `(rainbow-delimiters-mismatched-face ((,class :foreground ,red :overline t)))
+            `(rainbow-delimiters-unmatched-face ((,class :background ,red)))
+            `(rainbow-delimiters-mismatched-face ((,class :background ,red)))
+            ;; `(rainbow-delimiters-unmatched-face ((,class :foreground ,red :overline t :inhert bold)))
+            ;; `(rainbow-delimiters-mismatched-face ((,class :foreground ,red :overline t :inherit bold)))
 
 ;;;;; shm
             `(shm-current-face ((,class (:background ,green, :foreground ,black))))
-            `(shm-quarantine-face ((,class (:background ,red-bg-s))))
+            `(shm-quarantine-face ((,class (:background ,xgrey1))))
 
 ;;;;; show-paren
             `(show-paren-match ((,class (:background ,green :foreground ,black))))
-            `(show-paren-mismatch ((,class (:background ,red-bg-s))))
+            `(show-paren-mismatch ((,class (:background ,xgrey1))))
 
 ;;;;; smartparens
             `(sp-pair-overlay-face ((,class (:background ,magenta :foreground nil))))
