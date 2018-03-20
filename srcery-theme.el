@@ -69,7 +69,6 @@
 
             ;; generic
             ;; (act1          (if (true-color-p) "#2D2B28" "brightblack"))
-            (act2          (if (true-color-p) "#4E4E4E" "color-239"))
             (bg3           (if (true-color-p) "#4E4E4E" "color-239"))
             (bg4           (if (true-color-p) "#080808" "color-232"))
             (border        (if (true-color-p) "#2D2B28" "brightblack"))
