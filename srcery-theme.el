@@ -213,19 +213,19 @@
 
 ;;;;; company
             `(company-echo-common ((,class (:background ,bright-white :foreground ,black))))
-            `(company-preview ((,class (:background ,bright-black :foreground ,bright-white))))
-            `(company-preview-common ((,class (:background ,bright-black :foreground ,bright-white))))
+            `(company-preview ((,class (:background ,xgrey1 :foreground ,bright-white))))
+            `(company-preview-common ((,class (:background ,xgrey1 :foreground ,bright-white))))
             `(company-preview-search ((,class (:inherit match))))
-            `(company-scrollbar-bg ((,class (:background ,bright-black))))
+            `(company-scrollbar-bg ((,class (:background ,xgrey1))))
             `(company-scrollbar-fg ((,class (:background ,white))))
             `(company-template-field ((,class (:inherit region))))
-            `(company-tooltip ((,class (:background ,bright-black :foreground ,white))))
+            `(company-tooltip ((,class (:background ,xgrey1 :foreground ,white))))
             `(company-tooltip-annotation ((,class (:foreground ,red))))
-            `(company-tooltip-common ((,class (:background ,bright-black :foreground ,bright-white))))
-            `(company-tooltip-common-selection ((,class (:foreground ,bright-yellow))))
+            `(company-tooltip-common ((,class (:background ,xgrey1 :foreground ,bright-white))))
+            `(company-tooltip-common-selection ((,class (:foreground ,bright-magenta))))
             `(company-tooltip-mouse ((,class (:inherit highlight))))
             `(company-tooltip-search ((,class (:inherit match))))
-            `(company-tooltip-selection ((,class (:foreground ,bright-yellow))))
+            `(company-tooltip-selection ((,class (:foreground ,magenta))))
 
 ;;;;; diff
             `(diff-added             ((,class :background nil :foreground ,green)))
@@ -399,8 +399,8 @@
             `(helm-grep-match ((,class (:foreground nil :background nil :inherit helm-match))))
             `(helm-header ((,class (:foreground ,bright-white :background ,black :underline nil :box nil))))
             `(helm-header-line-left-margin ((,class (:foreground ,red :background ,nil))))
-            `(helm-match ((,class (:background ,head1-bg :foreground ,head1))))
-            `(helm-match-item ((,class (:background ,head1-bg :foreground ,head1))))
+            `(helm-match ((,class (:foreground ,magenta))))
+            `(helm-match-item ((,class (:background ,blue :foreground ,magenta))))
             `(helm-moccur-buffer ((,class (:foreground ,blue :background ,black))))
             `(helm-selection ((,class (:inverse-video ,t))))
             `(helm-selection-line ((,class (:background ,bright-black))))
@@ -413,7 +413,7 @@
 ;;;;; helm-swoop
             `(helm-swoop-target-line-block-face ((,class (:foreground ,bright-white :background ,magenta))))
             `(helm-swoop-target-line-face ((,class (:background ,magenta))))
-            `(helm-swoop-target-word-face ((,class (:background ,magenta :foreground ,yellow))))
+            `(helm-swoop-target-word-face ((,class (:background ,magenta :foreground ,bright-white))))
 
 ;;;;; highlights
             `(hi-yellow ((,class (:foreground ,yellow))))
