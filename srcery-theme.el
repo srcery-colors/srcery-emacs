@@ -524,9 +524,14 @@
             `(markdown-header-face-6 ((,class (:bold nil :foreground ,cyan))))
 
 ;;;;; mode-line
-            `(mode-line           ((,class (:foreground ,bright-white :background ,bright-black :box (:color ,bright-black :line-width 1)))))
-            `(mode-line-inactive  ((,class (:foreground ,bright-white :background ,black  :box (:color ,bright-black :line-width 1)))))
+            `(mode-line           ((,class (:foreground ,bright-white :background ,bright-black))))
+            `(mode-line-inactive  ((,class (:foreground ,white :background ,bright-black))))
             `(mode-line-buffer-id ((,class (:inherit bold :foreground ,yellow))))
+            `(mode-line-highlight ((,class (:box (:color ,magenta :line-width 1)))))
+            `(mode-line-buffer-id-inactive ((,class (:foreground ,bright-white :inherit bold))))
+            `(magit-mode-line-process ((,class (:foreground ,blue))))
+            ;; `(mode-line-emphasis ((,class (:inherit bold :foreground ,yellow))))
+
 
 ;;;;; mu4e
             `(mu4e-cited-1-face ((,class (:foreground ,bright-white))))
@@ -577,6 +582,7 @@
             `(org-link ((,class (:foreground ,white :underline t))))
             `(org-meta-line ((,class (:foreground ,white))))
             `(org-mode-line-clock-overrun ((,class (:foreground ,red))))
+            `(org-mode-line-clock ((,class (:foreground ,bright-green))))
             `(org-priority ((,class (:foreground ,bright-orange :inherit bold))))
             `(org-quote ((,class (:inherit org-block :slant italic))))
             `(org-scheduled ((,class (:foreground ,green))))
@@ -604,10 +610,11 @@
             `(popup-scroll-bar-background-face ((,class (:background ,bright-black))))
 
 ;;;;; powerline
-            `(powerline-active1 ((,class (:background ,xgrey4 :foreground ,bright-white))))
-            `(powerline-active2 ((,class (:background ,xgrey4 :foreground ,bright-white))))
-            `(powerline-inactive1 ((,class (:background ,bright-black :foreground ,bright-white))))
-            `(powerline-inactive2 ((,class (:background ,bright-black :foreground ,bright-white))))
+            `(powerline-active0 ((,class (:foreground ,bright-white))))
+            `(powerline-active1 ((,class (:foreground ,bright-white))))
+            `(powerline-active2 ((,class (:foreground ,bright-white))))
+            `(powerline-inactive1 ((,class (:background ,bright-black :foreground ,white))))
+            `(powerline-inactive2 ((,class (:background ,bright-black :foreground ,white))))
 
 ;;;;; rainbow-delimiters
             `(rainbow-delimiters-depth-1-face ((,class :foreground ,magenta)))
@@ -642,6 +649,18 @@
             `(spaceline-flycheck-error  ((,class (:foreground ,red))))
             `(spaceline-flycheck-info   ((,class (:foreground ,red))))
             `(spaceline-flycheck-warning((,class (:foreground ,bright-orange))))
+            `(spaceline-evil-normal   ((,class (:background ,xgrey4 :foreground ,bright-white))))
+            `(spaceline-evil-insert   ((,class (:background ,bright-white :foreground ,black))))
+            `(spaceline-evil-replace  ((,class (:background ,bright-red :foreground ,bright-white))))
+            `(spaceline-evil-visual   ((,class (:background ,cyan :foreground ,black))))
+            `(spaceline-evil-motion   ((,class (:background ,bright-magenta :foreground ,black))))
+            `(spaceline-evil-emacs    ((,class (:background ,red :foreground ,bright-white))))
+            `(spacemacs-normal-face   ((,class (:background ,xgrey4 :foreground ,bright-white))))
+            `(spacemacs-insert-face   ((,class (:background ,bright-white :foreground ,black))))
+            `(spacemacs-replace-face  ((,class (:background ,bright-red :foreground ,bright-white))))
+            `(spacemacs-visual-face   ((,class (:background ,cyan :foreground ,black))))
+            `(spacemacs-motion-face   ((,class (:background ,magenta :foreground ,bright-white))))
+            `(spacemacs-emacs-face    ((,class (:background ,red :foreground ,bright-white))))
 
 ;;;;; spacemacs-specific
             `(spacemacs-transient-state-title-face ((,class (:background nil :foreground ,green :box nil :inherit bold))))
