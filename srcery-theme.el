@@ -655,8 +655,8 @@
 
 ;;;;; term
             `(term ((,class (:foreground ,bright-white :background ,black))))
-            `(term-color-black ((,class (:foreground ,bg4))))
-            `(term-color-blue ((,class (:foreground ,red))))
+            `(term-color-black ((,class (:foreground ,black))))
+            `(term-color-blue ((,class (:foreground ,blue))))
             `(term-color-cyan ((,class (:foreground ,cyan))))
             `(term-color-green ((,class (:foreground ,green))))
             `(term-color-magenta ((,class (:foreground ,magenta))))
