@@ -351,8 +351,8 @@
 
 ;;;;; git-gutter-fr
             `(git-gutter-fr:added ((,class (:foreground ,green :inherit bold))))
-            `(git-gutter-fr:deleted ((,class (:foreground ,bright-orange :inherit bold))))
-            `(git-gutter-fr:modified ((,class (:foreground ,red :inherit bold))))
+            `(git-gutter-fr:deleted ((,class (:foreground ,red :inherit bold))))
+            `(git-gutter-fr:modified ((,class (:foreground ,blue :inherit bold))))
 
 ;;;;; git-timemachine
             `(git-timemachine-minibuffer-detail-face ((,class (:foreground ,blue :inherit bold :background ,blue))))
