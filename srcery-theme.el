@@ -514,17 +514,17 @@
             `(magit-section-title ((,class (:background ,black :foreground ,red :inherit bold))))
 
 ;;;;; man
-            `(Man-overstrike ((,class (:foreground ,head1 :inherit bold))))
+            `(Man-overstrike ((,class (:foreground ,blue :inherit bold))))
             `(Man-reverse ((,class (:foreground ,magenta))))
             `(Man-underline ((,class (:foreground ,green :underline t))))
 
 ;;;;; markdown
-            `(markdown-header-face-1 ((,class (:inherit bold :foreground ,head1 :height ,(if srcery-theme-org-height 1.3 1.0) :background ,(when srcery-theme-org-highlight head1-bg)))))
-            `(markdown-header-face-2 ((,class (:inherit bold :foreground ,head2 :height ,(if srcery-theme-org-height 1.2 1.0) :background ,(when srcery-theme-org-highlight head2-bg)))))
-            `(markdown-header-face-3 ((,class (:bold nil :foreground ,head3 :height ,(if srcery-theme-org-height 1.1 1.0) :background ,(when srcery-theme-org-highlight head3-bg)))))
-            `(markdown-header-face-4 ((,class (:bold nil :foreground ,head4 :background ,(when srcery-theme-org-highlight head4-bg)))))
-            `(markdown-header-face-5 ((,class (:bold nil :foreground ,head1))))
-            `(markdown-header-face-6 ((,class (:bold nil :foreground ,head2))))
+            `(markdown-header-face-1 ((,class (:inherit bold :foreground ,blue :height ,(if srcery-theme-org-height 1.3 1.0)))))
+            `(markdown-header-face-2 ((,class (:inherit bold :foreground ,bright-cyan :height ,(if srcery-theme-org-height 1.2 1.0)))))
+            `(markdown-header-face-3 ((,class (:bold nil :foreground ,bright-green :height ,(if srcery-theme-org-height 1.1 1.0)))))
+            `(markdown-header-face-4 ((,class (:bold nil :foreground ,yellow))))
+            `(markdown-header-face-5 ((,class (:bold nil :foreground ,blue))))
+            `(markdown-header-face-6 ((,class (:bold nil :foreground ,cyan))))
 
 ;;;;; mode-line
             `(mode-line           ((,class (:foreground ,bright-white :background ,bright-black :box (:color ,bright-black :line-width 1)))))
@@ -535,7 +535,7 @@
             `(mu4e-cited-1-face ((,class (:foreground ,bright-white))))
             `(mu4e-cited-7-face ((,class (:foreground ,bright-white))))
             `(mu4e-header-marks-face ((,class (:foreground ,green))))
-            `(mu4e-header-key-face ((,class (:foreground ,head2 :inherit bold))))
+            `(mu4e-header-key-face ((,class (:foreground ,cyan :inherit bold))))
             `(mu4e-view-url-number-face ((,class (:foreground ,green))))
             `(mu4e-unread-face ((,class (:foreground ,yellow :inherit bold))))
 
@@ -568,14 +568,14 @@
             `(org-footnote  ((,class (:underline t :foreground ,bright-white))))
             `(org-hide ((,class (:foreground ,bright-white))))
             `(org-kbd ((,class (:inherit region :foreground ,bright-white :box (:line-width 1 :style released-button)))))
-            `(org-level-1 ((,class (:inherit bold :foreground ,head1 :height ,(if srcery-theme-org-height 1.3 1.0) :background ,(when srcery-theme-org-highlight head1-bg)))))
-            `(org-level-2 ((,class (:inherit bold :foreground ,head2 :height ,(if srcery-theme-org-height 1.2 1.0) :background ,(when srcery-theme-org-highlight head2-bg)))))
-            `(org-level-3 ((,class (:bold nil :foreground ,head3 :height ,(if srcery-theme-org-height 1.1 1.0) :background ,(when srcery-theme-org-highlight head3-bg)))))
-            `(org-level-4 ((,class (:bold nil :foreground ,head4 :background ,(when srcery-theme-org-highlight head4-bg)))))
-            `(org-level-5 ((,class (:bold nil :foreground ,head1))))
-            `(org-level-6 ((,class (:bold nil :foreground ,head2))))
-            `(org-level-7 ((,class (:bold nil :foreground ,head3))))
-            `(org-level-8 ((,class (:bold nil :foreground ,head4))))
+            `(org-level-1 ((,class (:inherit bold :foreground ,blue :height ,(if srcery-theme-org-height 1.3 1.0) :background ,(when srcery-theme-org-highlight head1-bg)))))
+            `(org-level-2 ((,class (:inherit bold :foreground ,cyan :height ,(if srcery-theme-org-height 1.2 1.0) :background ,(when srcery-theme-org-highlight head2-bg)))))
+            `(org-level-3 ((,class (:bold nil :foreground ,bright-green :height ,(if srcery-theme-org-height 1.1 1.0) :background ,(when srcery-theme-org-highlight head3-bg)))))
+            `(org-level-4 ((,class (:bold nil :foreground ,yellow :background ,(when srcery-theme-org-highlight head4-bg)))))
+            `(org-level-5 ((,class (:bold nil :foreground ,blue))))
+            `(org-level-6 ((,class (:bold nil :foreground ,cyan))))
+            `(org-level-7 ((,class (:bold nil :foreground ,bright-green))))
+            `(org-level-8 ((,class (:bold nil :foreground ,yellow))))
             `(org-link ((,class (:underline t :foreground ,comment))))
             `(org-meta-line ((,class (:foreground ,meta))))
             `(org-mode-line-clock-overrun ((,class (:foreground ,red))))
@@ -585,7 +585,7 @@
             `(org-scheduled-today ((,class (:foreground ,yellow :height ,(if srcery-theme-org-height 1.2 1.0)))))
             `(org-sexp-date ((,class (:foreground ,bright-white))))
             `(org-special-keyword ((,class (:foreground ,yellow))))
-            `(org-table ((,class (:foreground ,bright-white :background ,head1-bg))))
+            `(org-table ((,class (:foreground ,bright-white :background ,blue-bg))))
             `(org-time-grid ((,class (:foreground ,bright-green))))
             `(org-todo ((,class (:foreground ,bright-orange :inherit bold :background ,yellow-bg))))
             `(org-verbatim ((,class (:foreground ,red))))
@@ -651,9 +651,9 @@
 ;;;;; swiper
             `(swiper-line-face ((,class (:background ,magenta :inherit bold))))
             `(swiper-match-face-1 ((,class (:inherit bold))))
-            `(swiper-match-face-2 ((,class (:foreground ,head1 :underline t))))
-            `(swiper-match-face-3 ((,class (:foreground ,head4 :underline t))))
-            `(swiper-match-face-4 ((,class (:foreground ,head3 :underline t))))
+            `(swiper-match-face-2 ((,class (:foreground ,blue :underline t))))
+            `(swiper-match-face-3 ((,class (:foreground ,yellow :underline t))))
+            `(swiper-match-face-4 ((,class (:foreground ,bright-green :underline t))))
 
 ;;;;; term
             `(term ((,class (:foreground ,bright-white :background ,black))))
