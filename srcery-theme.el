@@ -630,12 +630,14 @@
             `(shm-quarantine-face ((,class (:background ,xgrey1))))
 
 ;;;;; show-paren
-            `(show-paren-match ((,class (:background ,green :foreground ,black))))
-            `(show-paren-mismatch ((,class (:background ,xgrey1))))
+            `(show-paren-match ((,class (:inverse-video ,t))))
+            `(show-paren-mismatch ((,class (:background ,red :foreground ,bright-white))))
 
 ;;;;; smartparens
             `(sp-pair-overlay-face ((,class (:background ,magenta :foreground nil))))
-            `(sp-show-pair-match-face ((,class (:foreground ,yellow :inherit bold :underline t))))
+
+            ;;TODO add opt
+            `(sp-show-pair-match-face ((,class (:inverse-video ,t))))
 
 ;;;;; spaceline
             `(spaceline-python-venv ((,class (:foreground ,green))))
