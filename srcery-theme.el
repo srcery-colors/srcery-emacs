@@ -450,9 +450,9 @@
 ;;;;; ivy
             `(ivy-current-match ((,class (:background ,magenta :inherit bold))))
             `(ivy-minibuffer-match-face-1 ((,class (:inherit bold))))
-            `(ivy-minibuffer-match-face-2 ((,class (:foreground ,head1 :underline t))))
-            `(ivy-minibuffer-match-face-3 ((,class (:foreground ,head4 :underline t))))
-            `(ivy-minibuffer-match-face-4 ((,class (:foreground ,head3 :underline t))))
+            `(ivy-minibuffer-match-face-2 ((,class (:foreground ,blue :underline t))))
+            `(ivy-minibuffer-match-face-3 ((,class (:foreground ,yellow :underline t))))
+            `(ivy-minibuffer-match-face-4 ((,class (:foreground ,bright-green :underline t))))
             `(ivy-remote ((,class (:foreground ,cyan))))
 
 ;;;;; latex
