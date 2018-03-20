@@ -300,18 +300,18 @@
             `(eshell-ls-archive ((,class (:foreground ,red :inherit bold))))
             `(eshell-ls-backup ((,class (:inherit font-lock-comment-face))))
             `(eshell-ls-clutter ((,class (:inherit font-lock-comment-face))))
-            `(eshell-ls-directory ((,class (:foreground ,red :inherit bold))))
-            `(eshell-ls-executable ((,class (:foreground ,green :inherit bold))))
+            `(eshell-ls-directory ((,class (:foreground ,blue :inherit bold))))
+            `(eshell-ls-executable ((,class (:foreground ,orange :inherit bold))))
             `(eshell-ls-missing ((,class (:inherit font-lock-warning-face))))
             `(eshell-ls-product ((,class (:inherit font-lock-doc-face))))
-            `(eshell-ls-special ((,class (:foreground ,yellow :inherit bold))))
+            `(eshell-ls-special ((,class (:foreground ,magenta :inherit bold))))
             `(eshell-ls-symlink ((,class (:foreground ,cyan :inherit bold))))
             `(eshell-ls-unreadable ((,class (:foreground ,bright-white))))
-            `(eshell-prompt ((,class (:foreground ,red :inherit bold))))
+            `(eshell-prompt ((,class (:foreground ,magenta :inherit bold))))
 
 ;;;;; evil
-            `(evil-ex-substitute-matches ((,class (:background ,red-bg :foreground ,red))))
-            `(evil-ex-substitute-replacement ((,class (:foreground ,green))))
+            `(evil-ex-substitute-matches ((,class (:background ,red :foreground ,bright-white))))
+            `(evil-ex-substitute-replacement ((,class (:background ,bright-green :foreground ,black))))
 
 ;;;;; flycheck
             `(flycheck-error
@@ -408,11 +408,11 @@
             `(helm-source-header ((,class (:background ,green :foreground ,black :inherit bold))))
             `(helm-time-zone-current ((,class (:foreground ,red :background ,black))))
             `(helm-time-zone-home ((,class (:foreground ,green :background ,black))))
-            `(helm-visible-mark ((,class (:foreground ,red :background ,bg3))))
+            `(helm-visible-mark ((,class (:foreground ,red :background ,black))))
 
 ;;;;; helm-swoop
-            `(helm-swoop-target-line-block-face ((,class (:foreground ,bright-white :background ,magenta))))
-            `(helm-swoop-target-line-face ((,class (:background ,magenta))))
+            `(helm-swoop-target-line-block-face ((,class (:foreground ,yellow :background ,black))))
+            `(helm-swoop-target-line-face ((,class (:background ,black :foreground ,magenta))))
             `(helm-swoop-target-word-face ((,class (:background ,magenta :foreground ,bright-white))))
 
 ;;;;; highlights
