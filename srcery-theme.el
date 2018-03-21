@@ -382,7 +382,7 @@
             `(helm-buffer-size ((,class (:foreground ,bright-white :background ,black))))
             `(helm-candidate-number ((,class (:background ,black :foreground ,red :inherit bold))))
             `(helm-ff-directory ((,class (:foreground ,blue :background ,black :inherit bold))))
-            `(helm-ff-dotted-directory ((,class (:foreground ,red :background ,black :inherit bold))))
+            `(helm-ff-dotted-directory ((,class (:foreground ,blue :background ,black :inherit bold))))
             `(helm-ff-dotted-symlink-directory ((,class (:foreground ,cyan :background ,black :inherit bold))))
             `(helm-ff-executable ((,class (:foreground ,green :background ,black :weight normal))))
             `(helm-ff-file ((,class (:foreground ,bright-white :background ,black :weight normal))))
@@ -402,7 +402,7 @@
             `(helm-selection ((,class (:background ,bright-black :foreground ,bright-magenta :inherit bold))))
             `(helm-selection-line ((,class (:background ,bright-black))))
             `(helm-separator ((,class (:foreground ,green :background ,black))))
-            `(helm-source-header ((,class (:background ,green :foreground ,black :inherit bold))))
+            `(helm-source-header ((,class (:background ,black :foreground ,green :underline t))))
             `(helm-time-zone-current ((,class (:foreground ,red :background ,black))))
             `(helm-time-zone-home ((,class (:foreground ,green :background ,black))))
             `(helm-visible-mark ((,class (:foreground ,red :background ,black))))
@@ -410,7 +410,7 @@
 ;;;;; helm-swoop
             `(helm-swoop-target-line-block-face ((,class (:foreground ,yellow :background ,black))))
             `(helm-swoop-target-line-face ((,class (:background ,bright-black))))
-            `(helm-swoop-target-word-face ((,class (:background ,magenta :foreground ,bright-white))))
+            `(helm-swoop-target-word-face ((,class (:foreground ,magenta))))
 
 ;;;;; highlights
             `(hi-yellow ((,class (:foreground ,yellow))))
