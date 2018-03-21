@@ -232,8 +232,8 @@
             `(diff-indicator-changed ((,class :background nil :foreground ,red)))
             `(diff-indicator-removed ((,class :background nil :foreground ,red)))
             `(diff-refine-added      ((,class :background ,green :foreground ,black)))
-            `(diff-refine-changed    ((,class :background ,blue :foreground ,white)))
-            `(diff-refine-removed    ((,class :background ,red :foreground ,white)))
+            `(diff-refine-changed    ((,class :background ,blue :foreground ,bright-white)))
+            `(diff-refine-removed    ((,class :background ,red :foreground ,bright-white)))
             `(diff-removed           ((,class :background nil :foreground ,red)))
 
 ;;;;; diff-hl
@@ -524,11 +524,11 @@
             `(markdown-header-face-6 ((,class (:bold nil :foreground ,cyan))))
 
 ;;;;; mode-line
-            `(mode-line           ((,class (:foreground ,bright-white :background ,bright-black))))
+            `(mode-line           ((,class (:foreground ,white :background ,bright-black))))
             `(mode-line-inactive  ((,class (:foreground ,white :background ,bright-black))))
-            `(mode-line-buffer-id ((,class (:inherit bold :foreground ,yellow))))
-            `(mode-line-highlight ((,class (:box (:color ,magenta :line-width 1)))))
-            `(mode-line-buffer-id-inactive ((,class (:foreground ,bright-white :inherit bold))))
+            `(mode-line-buffer-id ((,class (:foreground ,yellow))))
+            `(mode-line-highlight ((,class (:background ,bright-black :box (:color ,magenta :line-width 1)))))
+            `(mode-line-buffer-id-inactive ((,class (:foreground ,bright-white))))
             `(magit-mode-line-process ((,class (:foreground ,blue))))
             ;; `(mode-line-emphasis ((,class (:inherit bold :foreground ,yellow))))
 
@@ -591,7 +591,7 @@
             `(org-special-keyword ((,class (:foreground ,yellow))))
             `(org-table ((,class (:foreground ,bright-white :background ,xgrey1))))
             `(org-time-grid ((,class (:foreground ,bright-green))))
-            `(org-todo ((,class (:foreground ,bright-orange :inherit bold))))
+            `(org-todo ((,class (:foreground ,bright-red :inherit bold))))
             `(org-verbatim ((,class (:foreground ,bright-orange))))
             `(org-verse ((,class (:inherit org-block :slant italic))))
             `(org-warning ((,class (:foreground ,red))))
@@ -611,7 +611,7 @@
 
 ;;;;; powerline
             `(powerline-active0 ((,class (:foreground ,bright-white))))
-            `(powerline-active1 ((,class (:foreground ,bright-white))))
+            `(powerline-active1 ((,class (:background ,xgrey2 :foreground ,bright-white))))
             `(powerline-active2 ((,class (:foreground ,bright-white))))
             `(powerline-inactive1 ((,class (:background ,bright-black :foreground ,white))))
             `(powerline-inactive2 ((,class (:background ,bright-black :foreground ,white))))
