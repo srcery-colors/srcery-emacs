@@ -304,6 +304,9 @@
             `(jabber-roster-user-offline ((,class (:foreground ,bright-white))))
             `(jabber-roster-user-online ((,class (:inherit bold :foreground ,green))))
             `(jabber-roster-user-xa ((,class (:foreground ,cyan))))
+;;;;; git
+            `(git-commit-summary ((,class (:foreground ,red))))
+
 
 ;;;;; git-gutter-fr
             `(git-gutter-fr:added ((,class (:foreground ,green :inherit bold))))
