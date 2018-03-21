@@ -397,9 +397,9 @@
             `(helm-header ((,class (:foreground ,bright-white :background ,black :underline nil :box nil))))
             `(helm-header-line-left-margin ((,class (:foreground ,red :background ,nil))))
             `(helm-match ((,class (:foreground ,magenta))))
-            `(helm-match-item ((,class (:background ,blue :foreground ,magenta))))
+            `(helm-match-item ((,class (:foreground ,magenta))))
             `(helm-moccur-buffer ((,class (:foreground ,blue :background ,black))))
-            `(helm-selection ((,class (:inverse-video ,t))))
+            `(helm-selection ((,class (:background ,bright-black :foreground ,bright-magenta :inherit bold))))
             `(helm-selection-line ((,class (:background ,bright-black))))
             `(helm-separator ((,class (:foreground ,green :background ,black))))
             `(helm-source-header ((,class (:background ,green :foreground ,black :inherit bold))))
@@ -409,7 +409,7 @@
 
 ;;;;; helm-swoop
             `(helm-swoop-target-line-block-face ((,class (:foreground ,yellow :background ,black))))
-            `(helm-swoop-target-line-face ((,class (:background ,black :foreground ,magenta))))
+            `(helm-swoop-target-line-face ((,class (:background ,bright-black))))
             `(helm-swoop-target-word-face ((,class (:background ,magenta :foreground ,bright-white))))
 
 ;;;;; highlights
