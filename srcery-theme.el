@@ -652,7 +652,7 @@
             `(term-color-green ((,class (:foreground ,green))))
             `(term-color-magenta ((,class (:foreground ,magenta))))
             `(term-color-red ((,class (:foreground ,red))))
-            `(term-color-white ((,class (:foreground ,bright-white))))
+            `(term-color-white ((,class (:foreground ,white))))
             `(term-color-yellow ((,class (:foreground ,yellow))))
 
 ;;;;; web-mode
