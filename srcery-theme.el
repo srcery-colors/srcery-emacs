@@ -36,6 +36,7 @@
 (defmacro dyn-let (varlist fn setfaces setvars)
   (list 'let (append varlist (funcall fn)) setfaces setvars))
 
+
 (defgroup srcery-theme nil
   "Srcery-theme options."
   :group 'faces)
@@ -107,7 +108,7 @@
             theme-name
 
 ;;;;; basics
-            `(cursor ((,class (:background ,bright-white))))
+            `(cursor ((,class (:background ,bright-white :foreground ,black))))
             `(custom-button ((,class :background ,black :foreground ,bright-white :box (:line-width 2 :style released-button))))
             `(default ((,class (:background ,black :foreground ,bright-white))))
             `(default-italic ((,class (:italic t))))
