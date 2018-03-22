@@ -619,7 +619,7 @@
 ;;;;; spaceline
             `(spaceline-python-venv ((,class (:foreground ,green))))
             `(spaceline-flycheck-error  ((,class (:foreground ,red))))
-            `(spaceline-flycheck-info   ((,class (:foreground ,red))))
+            `(spaceline-flycheck-info   ((,class (:foreground ,bright-white))))
             `(spaceline-flycheck-warning((,class (:foreground ,bright-orange))))
             `(spaceline-evil-normal   ((,class (:background ,xgrey4 :foreground ,bright-white))))
             `(spaceline-evil-insert   ((,class (:background ,bright-white :foreground ,black))))
