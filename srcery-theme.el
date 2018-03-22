@@ -612,8 +612,9 @@
             `(sp-pair-overlay-face ((,class (:background ,magenta :foreground nil))))
             `(sp-show-pair-match-face ((,class (:foreground ,magenta :inherit bold))))
 
-            ;;TODO add opt
-            `(sp-show-pair-match-face ((,class (:inverse-video ,t))))
+;;;;; evil-snipe
+            `(evil-snipe-first-match-face ((,class (:foreground ,yellow))))
+            `(evil-snipe-matches-face ((,class (:foreground ,magenta))))
 
 ;;;;; spaceline
             `(spaceline-python-venv ((,class (:foreground ,green))))
