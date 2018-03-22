@@ -92,7 +92,14 @@
             (xgrey2         (if (true-color-p) "#303030" "color-236"))
             (xgrey3         (if (true-color-p) "#3A3A3A" "color-237"))
             (xgrey4         (if (true-color-p) "#444444" "color-238"))
-            (xgrey5         (if (true-color-p) "#4E4E4E" "color-239")))
+            (xgrey5         (if (true-color-p) "#4E4E4E" "color-239"))
+            (xgrey6         (if (true-color-p) "#585858" "color-240"))
+            (xgrey7         (if (true-color-p) "#626262" "color-241"))
+            (xgrey8         (if (true-color-p) "#6C6C6C" "color-242"))
+            (xgrey9         (if (true-color-p) "#767676" "color-243"))
+            (xgrey10        (if (true-color-p) "#808080" "color-244"))
+            (xgrey11        (if (true-color-p) "#8A8A8A" "color-245"))
+            (xgrey12        (if (true-color-p) "#949494" "color-246")))
 
            custom-colors-override
 
