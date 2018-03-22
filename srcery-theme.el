@@ -718,9 +718,8 @@
 
            (custom-theme-set-variables
             theme-name
-            `(ansi-color-names-vector [,black ,red ,green ,yellow ,blue ,magenta ,cyan ,bright-white]))
-
-           ))
+            `(ansi-color-names-vector [,black ,red ,green ,yellow ,blue ,magenta ,cyan ,bright-white])
+            `(hl-paren-colors '(,bright-white ,xgrey12 ,xgrey11, xgrey10)))))
 
 
 ;;;###autoload
