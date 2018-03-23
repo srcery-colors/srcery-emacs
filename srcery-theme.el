@@ -366,11 +366,11 @@
             `(helm-grep-match ((,class (:foreground nil :background nil :inherit helm-match))))
             `(helm-header ((,class (:foreground ,bright-white :background ,black :underline nil :box nil))))
             `(helm-header-line-left-margin ((,class (:foreground ,red :background ,nil))))
-            `(helm-match ((,class (:foreground ,bright-magenta))))
+            `(helm-match ((,class (:foreground ,magenta))))
             `(helm-match-item ((,class (:foreground ,magenta))))
             `(helm-moccur-buffer ((,class (:foreground ,blue :background ,black))))
-            `(helm-selection ((,class (:background ,bright-black :foreground ,magenta :inherit bold))))
-            `(helm-selection-line ((,class (:background ,bright-black))))
+            `(helm-selection ((,class (:background ,bright-black :inherit bold))))
+            `(helm-selection-line ((,class (:background ,bright-black :inherit bold))))
             `(helm-separator ((,class (:foreground ,green :background ,black))))
             `(helm-source-header ((,class (:background ,black :foreground ,green :underline t))))
             `(helm-time-zone-current ((,class (:foreground ,red :background ,black))))
@@ -379,8 +379,8 @@
 
 ;;;;; helm-swoop
             `(helm-swoop-target-line-block-face ((,class (:foreground ,yellow :background ,black))))
-            `(helm-swoop-target-line-face ((,class (:background ,bright-black))))
-            `(helm-swoop-target-word-face ((,class (:foreground ,magenta))))
+            `(helm-swoop-target-line-face ((,class (:background ,bright-black :inherit bold))))
+            `(helm-swoop-target-word-face ((,class (:foreground ,magenta :inherit bold))))
 
 ;;;;; highlights
             `(hi-yellow ((,class (:foreground ,yellow))))
@@ -613,8 +613,8 @@
             `(sp-show-pair-match-face ((,class (:foreground ,magenta :inherit bold))))
 
 ;;;;; evil-snipe
-            `(evil-snipe-first-match-face ((,class (:foreground ,yellow))))
-            `(evil-snipe-matches-face ((,class (:foreground ,magenta))))
+            `(evil-snipe-first-match-face ((,class (:foreground ,bright-white :background ,magenta))))
+            `(evil-snipe-matches-face ((,class (:background ,magenta :foreground ,bright-white))))
 
 ;;;;; spaceline
             `(spaceline-python-venv ((,class (:foreground ,green))))
