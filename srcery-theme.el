@@ -498,7 +498,7 @@
             `(magit-diff-file-header ((,class (:foreground ,yellow))))
 
             `(magit-diff-file-heading ((,class (:foreground ,bright-white :weight light))))
-            `(magit-diff-file-heading-highlight ((,class (:foreground ,bright-white :weight bold))))
+            `(magit-diff-file-heading-highlight ((,class (:weight bold))))
             `(magit-diff-file-heading-selection ((,class (:foreground ,bright-white :weight bold :background ,bright-black))))
 
             `(magit-diff-hunk-heading ((,class (:foreground ,bright-white :background ,bright-black :weight light))))
