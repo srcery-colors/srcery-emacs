@@ -1,0 +1,86 @@
+[[file:assets/title.png]]
+
+Port of  [[https://github.com/roosta/vim-srcery][vim-srcery]], a colorscheme that focus ease of use and clearly defined contrasting colors with a
+slightly earthy tone.
+
+** Requirements
+   Emacs 24 or above
+*** GUI
+   Should work out of the box. I recommend [[https://github.com/tarsius/paren-face][paren-face]] and
+   [[https://github.com/tsdh/highlight-parentheses.el][highlight-parentheses.el]] if you enjoy lisp at all.
+*** Terminal
+
+    To use Srcery in the terminal you need to change your terminal emulator’s
+    so-called “ASCII” colors to the ones in the table below.
+
+    |                |    |         |               |
+    | TERMCOL        | NR | HEX     | RGB           |
+    |----------------+----+---------+---------------|
+    | black          |  0 | #1C1B19 | 28,  27,  25  |
+    | red            |  1 | #EF2F27 | 239, 47, 39   |
+    | green          |  2 | #519F50 | 81,  159, 80  |
+    | yellow         |  3 | #FBB829 | 251, 184, 41  |
+    | blue           |  4 | #2C78BF | 44, 120, 191  |
+    | magenta        |  5 | #E02C6D | 224, 44,  109 |
+    | cyan           |  6 | #0AAEB3 | 10, 174, 179  |
+    | white          |  7 | #918175 | 145, 129, 117 |
+    |----------------+----+---------+---------------|
+    | bright-black   |  8 | #2D2C29 | 45, 44, 41    |
+    | brright-red    |  9 | #F75341 | 247, 83, 65   |
+    | bright-green   | 10 | #98BC37 | 152, 188, 55  |
+    | bright-yellow  | 11 | #FED06E | 254, 208, 110 |
+    | bright-blue    | 12 | #68A8E4 | 104, 168, 228 |
+    | bright-magenta | 13 | #FF5C8F | 255, 92, 143  |
+    | bright-cyan    | 14 | #53FDE9 | 83, 253, 233  |
+    | bright-White   | 15 | #FCE8C3 | 252, 232, 195 |
+
+    See [[https://github.com/roosta/vim-srcery/tree/master/term_colors][vim-srcery/term_colors]] for a list of terminal configs.
+
+    In addition to the table above Srcery uses a few unmodified xterm colors.
+    Since most terminals have these defined it pads out the color selection
+    nicely without over complicating things.
+
+    Make sure your ~$TERM~ supports 256 colors,
+
+** Customization
+   Srcery has a couple of options that can be tweaked via ~M-x customize~:
+*** srcery-theme-org-height
+    This toggles the use of varying org headings heights.
+*** srcery-theme-custom-colors
+    A list of colors to override. Srcery only has the 16 colors defined and
+    overriding them won't have any effect in the terminal but if you'd like to
+    change any of the colors this is how:
+
+    #+BEGIN_SRC emacs-lisp
+      (custom-set-variables '(srcery-theme-custom-colors
+                              '((black . "#121212")
+                                (green . "#00AFAF"))))
+    #+END_SRC
+** Supported modes
+   - company
+   - ein
+   - erc
+   - gnus
+   - helm
+   - ido
+   - info
+   - magit
+   - mu4e
+   - neotree
+   - org
+   - evil-snipe
+   - paren-face
+   - cider
+   - dired
+   - flycheck
+   - git-gutter
+   - ivy
+   - latex
+   - powerline
+   - spaceline
+   - and others, more coming
+
+    Modes are still a work in progress.
+** Attribution
+   I'm new to elisp, so I used the [[https://github.com/nashamri/spacemacs-theme][spacemacs-theme]] as a base for emacs-srcery.
+   Huge thanks to everyone involved with that theme, and [[https://github.com/syl20bnr/spacemacs][Spacemacs]] itself.
