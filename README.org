@@ -41,7 +41,10 @@ contrasting colors with a slightly earthy tone.
     nicely without over complicating things.
 
     Make sure your ~$TERM~ supports 256 colors,
-
+** Installation
+   TODO
+** Screenshots
+   TODO
 ** Customization
    Srcery has a couple of options that can be tweaked via ~M-x customize~:
 *** srcery-theme-org-height
