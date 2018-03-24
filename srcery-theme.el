@@ -541,6 +541,7 @@
             `(magit-bisect-bad ((,class (:foreground ,red))))
             `(magit-bisect-good ((,class (:foreground ,green))))
             `(magit-bisect-skip ((,class (:foreground ,bright-white))))
+            `(magit-diff-conflict-heading ((,class (:foreground ,bright-white))))
 
 ;;;;; man
             `(Man-overstrike ((,class (:foreground ,blue :inherit bold))))
