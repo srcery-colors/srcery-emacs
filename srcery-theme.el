@@ -534,7 +534,7 @@
             `(org-date ((,class (:underline t :foreground ,blue))))
             `(org-date-selected ((,class (:background ,yellow :foreground ,black))))
             `(org-document-info-keyword ((,class (:foreground ,white))))
-            `(org-document-info ((,class (:foreground ,bright-blue))))
+            `(org-document-info ((,class (:foreground ,bright-magenta))))
             `(org-document-title ((,class (:foreground ,yellow :inherit bold :height ,(if srcery-theme-org-height 1.4 1.0)))))
             `(org-done ((,class (:foreground ,green :inherit bold))))
             `(org-ellipsis ((,class (:foreground ,red))))
