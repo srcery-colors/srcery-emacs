@@ -624,7 +624,7 @@
             `(org-special-keyword ((,class (:foreground ,yellow))))
             `(org-table ((,class (:foreground ,bright-white :background ,xgrey1))))
             `(org-time-grid ((,class (:foreground ,bright-green))))
-            `(org-todo ((,class (:foreground ,bright-red :inherit bold))))
+            `(org-todo ((,class (:foreground ,yellow :inherit bold))))
             `(org-verbatim ((,class (:foreground ,bright-orange))))
             `(org-verse ((,class (:inherit org-block :slant italic))))
             `(org-warning ((,class (:foreground ,red))))
