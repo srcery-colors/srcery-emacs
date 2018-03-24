@@ -670,6 +670,9 @@
             `(show-paren-match ((,class (:foreground ,magenta :inherit bold))))
             `(show-paren-mismatch ((,class (:background ,red :foreground ,bright-white))))
 
+;;;;; paren-face
+            `(parenthesis ((,class (:foreground ,xgrey3))))
+
 ;;;;; smartparens
             `(sp-pair-overlay-face ((,class (:background ,magenta :foreground nil))))
             `(sp-show-pair-match-face ((,class (:foreground ,magenta :inherit bold))))
