@@ -320,6 +320,14 @@
             `(git-gutter-fr:added ((,class (:foreground ,green :inherit bold))))
             `(git-gutter-fr:deleted ((,class (:foreground ,red :inherit bold))))
             `(git-gutter-fr:modified ((,class (:foreground ,blue :inherit bold))))
+            `(git-gutter+-added ((,class (:foreground ,green))))
+            `(git-gutter+-deleted ((,class (:foreground ,red))))
+            `(git-gutter+-separator ((,class (:foreground ,cyan))))
+            `(git-gutter+-modified ((,class (:foreground ,magenta))))
+            `(git-gutter+-unchanged ((,class (:foreground ,bright-white))))
+            `(git-gutter:added ((,class (:foreground ,green))))
+            `(git-gutter:modified ((,class (:foreground ,magenta))))
+            `(git-gutter:unchanged ((,class (:foreground ,bright-white))))
 
 ;;;;; git-timemachine
             `(git-timemachine-minibuffer-detail-face ((,class (:foreground ,blue :inherit bold :background ,blue))))
