@@ -331,6 +331,11 @@
             `(jabber-roster-user-xa ((,class (:foreground ,cyan))))
 ;;;;; git
             `(git-commit-summary ((,class (:foreground ,red))))
+            `(git-commit-nonempty-second-line ((,class (:foreground ,yellow))))
+            `(diff-file-header ((,class (:foreground ,bright-white))))
+            `(diff-hunk-header ((,class (:foreground ,yellow))))
+            `(diff-function ((,class (:foreground ,yellow))))
+            `(diff-header ((,class (:foreground ,bright-white))))
 
 
 ;;;;; git-gutter-fr
@@ -477,19 +482,28 @@
             `(magit-blame-hash    ((,class :foreground ,yellow)))
             `(magit-blame-summary ((,class :foreground ,yellow)))
             `(magit-blame-date    ((,class :foreground ,green)))
+            `(magit-log-date    ((,class :foreground ,bright-white)))
+            `(magit-log-graph    ((,class :foreground ,bright-white)))
+            `(magit-reflog-amend    ((,class :foreground ,magenta)))
+            `(magit-reflog-other    ((,class :foreground ,cyan)))
+            `(magit-reflog-rebase    ((,class :foreground ,magenta)))
+            `(magit-reflog-remote    ((,class :foreground ,cyan)))
+            `(magit-reflog-reset    ((,class :foreground ,red)))
             `(magit-branch ((,class (:foreground ,bright-magenta :inherit bold))))
             `(magit-branch-current ((,class (:background ,black :foreground ,blue :inherit bold :box t))))
             `(magit-branch-local ((,class (:background ,black :foreground ,blue :inherit bold))))
             `(magit-branch-remote ((,class (:background ,black :foreground ,orange :inherit bold))))
 
             `(magit-diff-context-highlight ((,class (:background ,bright-black :foreground ,bright-white))))
-            `(magit-diff-file-header ((,class (:foreground ,white))))
-            `(magit-diff-file-heading ((,class (:foreground ,white :weight light))))
-            `(magit-diff-file-heading-highlight ((,class (:foreground ,white :weight bold))))
-            `(magit-diff-file-heading-selection ((,class (:foreground ,white :weight bold :background ,bright-black))))
-            `(magit-diff-hunk-header ((,class (:background ,bright-black :foreground ,bright-white))))
-            `(magit-diff-hunk-heading ((,class (:background ,bright-black :foreground ,bright-white))))
-            `(magit-diff-hunk-heading-highlight ((,class (:background ,bright-black :foreground ,bright-white))))
+            `(magit-diff-file-header ((,class (:foreground ,yellow))))
+
+            `(magit-diff-file-heading ((,class (:foreground ,bright-white :weight light))))
+            `(magit-diff-file-heading-highlight ((,class (:foreground ,bright-white :weight bold))))
+            `(magit-diff-file-heading-selection ((,class (:foreground ,bright-white :weight bold :background ,bright-black))))
+
+            `(magit-diff-hunk-heading ((,class (:foreground ,bright-white :background ,bright-black :weight light))))
+            `(magit-diff-hunk-heading-highlight ((,class (:foreground ,bright-white :background ,bright-black :weight bold))))
+            `(magit-diff-hunk-heading-selection ((,class (:foreground ,black :background ,white :weight bold))))
 
             `(magit-diff-added ((,class (:foreground ,green :weight light))))
             `(magit-diff-removed ((,class (:foreground ,red :weight light))))
@@ -497,11 +511,12 @@
             `(magit-diff-added-highlight ((,class (:foreground ,green :weight bold))))
             `(magit-diff-removed-highlight ((,class (:foreground ,red :weight bold))))
             `(magit-diff-context-highlight ((,class (:foreground ,bright-white :weight bold))))
-            `(magit-diff-base ((,class (:foreground ,white :weight bold))))
+            `(magit-diff-base ((,class (:foreground ,white :weight light))))
+            `(magit-diff-base-highlight ((,class (:foreground ,white :weight bold))))
+            `(magit-diff-lines-boundary ((,class (:background ,white :foreground ,black))))
+            `(magit-diff-lines-heading ((,class (:background ,white :foreground ,black))))
 
             `(magit-hash ((,class (:foreground ,yellow))))
-            `(magit-hunk-heading ((,class (:background ,black))))
-            `(magit-hunk-heading-highlight ((,class (:background ,black))))
             `(magit-item-highlight ((,class :background ,bright-black)))
             `(magit-log-author ((,class (:foreground ,yellow))))
             `(magit-log-head-label-head ((,class (:background ,yellow :foreground ,black :inherit bold))))
@@ -512,14 +527,20 @@
             `(magit-log-sha1 ((,class (:foreground ,bright-green))))
             `(magit-process-ng ((,class (:foreground ,bright-orange :inherit bold))))
             `(magit-process-ok ((,class (:foreground ,yellow :inherit bold))))
-            `(magit-section-heading        ((,class (:foreground ,red :inherit bold))))
-            `(magit-section-highlight      ((,class (:background ,bright-black))))
-            `(magit-section-title ((,class (:background ,black :foreground ,red :inherit bold))))
+
+            `(magit-section-heading ((,class (:foreground ,red))))
+            `(magit-section-highlight ((,class (:weight bold))))
+            `(section-heading-selection ((,class (:foreground ,red :weight bold))))
+            `(magit-section-title ((,class (:background ,black :foreground ,red :weight bold))))
+
             `(magit-cherry-equivalent ((,class (:foreground ,magenta))))
             `(magit-cherry-unmatched ((,class (:foreground ,cyan))))
 
             `(magit-reflog-checkout ((,class (:foreground ,blue))))
             `(magit-reflog-cherry-pick ((,class (:foreground ,bright-green))))
+            `(magit-bisect-bad ((,class (:foreground ,red))))
+            `(magit-bisect-good ((,class (:foreground ,green))))
+            `(magit-bisect-skip ((,class (:foreground ,bright-white))))
 
 ;;;;; man
             `(Man-overstrike ((,class (:foreground ,blue :inherit bold))))
