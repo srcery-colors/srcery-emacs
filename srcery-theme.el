@@ -164,13 +164,19 @@
 
 ;;;;; cider
             `(cider-enlightened ((,class (:background nil :box (:color ,yellow :line-width -1 :style nil) :foreground ,yellow))))
+            `(cider-enlightened-face ((,class (:background nil :box (:color ,white :line-width -1 :style nil) :foreground ,blue))))
             `(cider-enlightened-local ((,class (:foreground ,bright-yellow))))
             `(cider-instrumented-face ((,class (:background nil :box (:color ,red :line-width -1 :style nil) :foreground ,red))))
             `(cider-result-overlay-face ((,class (:background nil :box (:color ,blue :line-width -1 :style nil) :foreground ,blue))))
             `(cider-test-error-face ((,class (:background ,bright-orange :foreground ,black))))
             `(cider-test-failure-face ((,class (:background ,red :foreground ,bright-white))))
-            `(cider-test-success-face ((,class (:background ,bright-green :foreground ,black))))
+            `(cider-test-success-face ((,class (:background ,green :foreground ,black))))
             `(cider-traced-face ((,class :box (:color ,cyan :line-width -1 :style nil))))
+            `(cider-fringe-good-face ((,class :foreground ,green)))
+            `(cider-fragile-button-face ((,class :foreground ,orange :box (:style released-button))))
+            `(cider-stacktrace-promoted-button-face ((,class :foreground ,red :box (:style released-button))))
+            `(cider-stacktrace-suppressed-button-face ((,class :foreground ,white :box (:style pressed-button))))
+            `(cider-enlightened-local-face ((,class :foreground ,yellow :weight bold)))
 
 ;;;;; clojure
             `(clojure-keyword-face ((,class (:foreground ,blue))))
