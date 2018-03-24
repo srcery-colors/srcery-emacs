@@ -89,18 +89,10 @@
             (orange         (if (true-color-p) "#D75F00" "color-166"))
             (bright-orange  (if (true-color-p) "#FF8700" "color-208"))
             (hard-black     (if (true-color-p) "#121212" "color-233"))
-            (xgrey1         (if (true-color-p) "#262626" "color-235"))
-            (xgrey2         (if (true-color-p) "#303030" "color-236"))
-            (xgrey3         (if (true-color-p) "#3A3A3A" "color-237"))
-            (xgrey4         (if (true-color-p) "#444444" "color-238"))
-            (xgrey5         (if (true-color-p) "#4E4E4E" "color-239"))
-            (xgrey6         (if (true-color-p) "#585858" "color-240"))
-            (xgrey7         (if (true-color-p) "#626262" "color-241"))
-            (xgrey8         (if (true-color-p) "#6C6C6C" "color-242"))
-            (xgrey9         (if (true-color-p) "#767676" "color-243"))
-            (xgrey10        (if (true-color-p) "#808080" "color-244"))
-            (xgrey11        (if (true-color-p) "#8A8A8A" "color-245"))
-            (xgrey12        (if (true-color-p) "#949494" "color-246")))
+            (xgray1         (if (true-color-p) "#262626" "color-235"))
+            (xgray2         (if (true-color-p) "#303030" "color-236"))
+            (xgray3         (if (true-color-p) "#3A3A3A" "color-237"))
+            (xgray4         (if (true-color-p) "#444444" "color-238")))
 
            custom-colors-override
 
@@ -138,9 +130,9 @@
             `(link-visited ((,class (:inherit font-lock-comment-face :underline t))))
             `(match ((,class (:inverse-video t))))
             `(minibuffer-prompt ((,class (:weight bold :foreground ,yellow))))
-            `(page-break-lines ((,class (:foreground ,xgrey3))))
+            `(page-break-lines ((,class (:foreground ,xgray3))))
             `(region ((,class (:inverse-video ,t))))
-            `(secondary-selection ((,class (:background ,xgrey2))))
+            `(secondary-selection ((,class (:background ,xgray2))))
             `(success ((,class (:foreground ,green))))
             `(tooltip ((,class (:background ,bright-blue :foreground ,bright-white :bold nil :italic nil :underline nil))))
             `(vertical-border ((,class (:foreground ,magenta))))
@@ -183,22 +175,22 @@
 
 ;;;;; company
             `(company-echo-common ((,class (:background ,bright-white :foreground ,black))))
-            `(company-preview ((,class (:background ,xgrey1 :foreground ,bright-white))))
-            `(company-preview-common ((,class (:background ,xgrey1 :foreground ,bright-white))))
+            `(company-preview ((,class (:background ,xgray1 :foreground ,bright-white))))
+            `(company-preview-common ((,class (:background ,xgray1 :foreground ,bright-white))))
             `(company-preview-search ((,class (:inherit match))))
-            `(company-scrollbar-bg ((,class (:background ,xgrey1))))
+            `(company-scrollbar-bg ((,class (:background ,xgray1))))
             `(company-scrollbar-fg ((,class (:background ,white))))
             `(company-template-field ((,class (:inherit region))))
-            `(company-tooltip ((,class (:background ,xgrey1 :foreground ,white))))
+            `(company-tooltip ((,class (:background ,xgray1 :foreground ,white))))
             `(company-tooltip-annotation ((,class (:foreground ,red))))
-            `(company-tooltip-common ((,class (:background ,xgrey1 :foreground ,bright-white))))
+            `(company-tooltip-common ((,class (:background ,xgray1 :foreground ,bright-white))))
             `(company-tooltip-common-selection ((,class (:foreground ,bright-magenta))))
             `(company-tooltip-mouse ((,class (:inherit highlight))))
             `(company-tooltip-search ((,class (:inherit match))))
             `(company-tooltip-selection ((,class (:foreground ,magenta))))
 
 ;;;;; racer
-            `(racer-tooltip ((,class (:foreground ,bright-white :background ,xgrey1))))
+            `(racer-tooltip ((,class (:foreground ,bright-white :background ,xgray1))))
             `(racer-help-heading-face ((,class (:foreground ,bright-white :weight bold))))
 
 ;;;;; rust
@@ -237,7 +229,7 @@
             `(dired-warning ((,class (:foreground ,bright-orange))))
 
 ;;;;; ediff
-            `(ediff-current-diff-A ((,class(:background ,xgrey1 :foreground ,red))))
+            `(ediff-current-diff-A ((,class(:background ,xgray1 :foreground ,red))))
             `(ediff-current-diff-Ancestor ((,class(:background ,black :foreground ,cyan))))
             `(ediff-current-diff-B ((,class(:foreground ,green))))
             `(ediff-current-diff-C ((,class(:background ,blue :foreground ,blue))))
@@ -622,7 +614,7 @@
             `(org-scheduled-today ((,class (:foreground ,yellow :height ,(if srcery-theme-org-height 1.2 1.0)))))
             `(org-sexp-date ((,class (:foreground ,bright-white))))
             `(org-special-keyword ((,class (:foreground ,yellow))))
-            `(org-table ((,class (:foreground ,bright-white :background ,xgrey1))))
+            `(org-table ((,class (:foreground ,bright-white :background ,xgray1))))
             `(org-time-grid ((,class (:foreground ,bright-green))))
             `(org-todo ((,class (:foreground ,yellow :weight bold))))
             `(org-verbatim ((,class (:foreground ,bright-orange))))
@@ -639,12 +631,12 @@
             `(popup-enu-selection-face ((,class (:background ,bright-blue :foreground ,bright-white))))
             `(popup-menu-mouse-face ((,class (:inherit highlight))))
             `(popup-isearch-match ((,class (:inherit match))))
-            `(popup-scroll-bar-foreground-face ((,class (:background ,xgrey4))))
+            `(popup-scroll-bar-foreground-face ((,class (:background ,xgray4))))
             `(popup-scroll-bar-background-face ((,class (:background ,bright-black))))
 
 ;;;;; powerline
             `(powerline-active0 ((,class (:foreground ,bright-white))))
-            `(powerline-active1 ((,class (:background ,xgrey2 :foreground ,bright-white))))
+            `(powerline-active1 ((,class (:background ,xgray2 :foreground ,bright-white))))
             `(powerline-active2 ((,class (:foreground ,bright-white))))
             `(powerline-inactive1 ((,class (:background ,bright-black :foreground ,white))))
             `(powerline-inactive2 ((,class (:background ,bright-black :foreground ,white))))
@@ -665,14 +657,14 @@
 
 ;;;;; shm
             `(shm-current-face ((,class (:background ,green, :foreground ,black))))
-            `(shm-quarantine-face ((,class (:background ,xgrey1))))
+            `(shm-quarantine-face ((,class (:background ,xgray1))))
 
 ;;;;; show-paren
             `(show-paren-match ((,class (:foreground ,magenta :weight bold))))
             `(show-paren-mismatch ((,class (:background ,red :foreground ,bright-white))))
 
 ;;;;; paren-face
-            `(parenthesis ((,class (:foreground ,xgrey3))))
+            `(parenthesis ((,class (:foreground ,xgray3))))
 
 ;;;;; smartparens
             `(sp-pair-overlay-face ((,class (:background ,magenta :foreground nil))))
@@ -687,13 +679,13 @@
             `(spaceline-flycheck-error  ((,class (:foreground ,red))))
             `(spaceline-flycheck-info   ((,class (:foreground ,bright-white))))
             `(spaceline-flycheck-warning((,class (:foreground ,bright-orange))))
-            `(spaceline-evil-normal   ((,class (:background ,xgrey4 :foreground ,bright-white))))
+            `(spaceline-evil-normal   ((,class (:background ,xgray4 :foreground ,bright-white))))
             `(spaceline-evil-insert   ((,class (:background ,bright-white :foreground ,black))))
             `(spaceline-evil-replace  ((,class (:background ,bright-red :foreground ,bright-white))))
             `(spaceline-evil-visual   ((,class (:background ,cyan :foreground ,black))))
             `(spaceline-evil-motion   ((,class (:background ,bright-magenta :foreground ,black))))
             `(spaceline-evil-emacs    ((,class (:background ,red :foreground ,bright-white))))
-            `(spacemacs-normal-face   ((,class (:background ,xgrey4 :foreground ,bright-white))))
+            `(spacemacs-normal-face   ((,class (:background ,xgray4 :foreground ,bright-white))))
             `(spacemacs-insert-face   ((,class (:background ,bright-white :foreground ,black))))
             `(spacemacs-replace-face  ((,class (:background ,bright-red :foreground ,bright-white))))
             `(spacemacs-visual-face   ((,class (:background ,cyan :foreground ,black))))
@@ -751,7 +743,7 @@
             `(whitespace-indentation ((,class (:background nil :foreground ,bright-orange))))
             `(whitespace-line ((,class (:background nil :foreground ,green))))
             `(whitespace-newline ((,class (:background nil :foreground ,green))))
-            `(whitespace-space ((,class (:background nil :foreground ,xgrey4))))
+            `(whitespace-space ((,class (:background nil :foreground ,xgray4))))
             `(whitespace-space-after-tab ((,class (:background nil :foreground ,yellow))))
             `(whitespace-space-before-tab ((,class (:background nil :foreground ,yellow))))
             `(whitespace-tab ((,class (:background nil))))
