@@ -1,5 +1,5 @@
-;;; srcery-theme.el --- Colorscheme that focus ease of use,
-;;; and clearly defined contrasting colors with a slightly earthy tone.
+;;; srcery-theme.el --- Colorscheme that focus ease of use, and clearly defined
+;;; contrasting colors with a slightly earthy tone.
 
 ;; Original source:
 ;; URL: <https://github.com/nashamri/spacemacs-theme>
@@ -28,7 +28,7 @@
 
 ;;; Commentary:
 
-;; This is a color theme for spacemacs <https://github.com/syl20bnr/spacemacs>.
+;; This is a color theme designed for spacemacs <https://github.com/syl20bnr/spacemacs>.
 ;; Should work well in a 256 color terminal.
 
 ;;; Code:
