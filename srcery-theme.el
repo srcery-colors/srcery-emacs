@@ -776,12 +776,18 @@
             `(undo-tree-visualizer-current-face ((,class :foreground ,red)))
             `(undo-tree-visualizer-default-face ((,class :foreground ,bright-white)))
             `(undo-tree-visualizer-register-face ((,class :foreground ,green)))
-            `(undo-tree-visualizer-unmodified-face ((,class :foreground ,blue))))
+            `(undo-tree-visualizer-unmodified-face ((,class :foreground ,blue)))
+
+            `(persp-face-lighter-buffer-not-in-persp ((,class :background ,red :foreground ,bright-white)))
+            `(pulse-highlight-face ((,class :background ,green :foreground ,black)))
+            `(pulse-highlight-start-face ((,class :background ,bright-green :foreground ,black)))
+            )
 
            (custom-theme-set-variables
             theme-name
-            `(ansi-color-names-vector [,black ,red ,green ,yellow ,blue ,magenta ,cyan ,bright-white])
-            `(hl-paren-colors '(,bright-white ,xgrey12 ,xgrey11, xgrey10)))))
+            `(ansi-color-names-vector [,black ,red ,green ,yellow ,blue ,magenta ,cyan ,white])
+            `(hl-paren-colors '(,bright-white ,xgrey8 ,white ,xgrey11))
+            )))
 
 
 ;;;###autoload
