@@ -85,7 +85,7 @@
             (bright-cyan    (if (true-color-p) "#53FDE9" "brightcyan"))
             (bright-white   (if (true-color-p) "#FCE8C3" "brightwhite"))
 
-            ;; X colors
+            ;; xterm colors
             (orange         (if (true-color-p) "#D75F00" "color-166"))
             (bright-orange  (if (true-color-p) "#FF8700" "color-208"))
             (hard-black     (if (true-color-p) "#121212" "color-233"))
