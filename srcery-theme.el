@@ -197,6 +197,17 @@
             `(company-tooltip-search ((,class (:inherit match))))
             `(company-tooltip-selection ((,class (:foreground ,magenta))))
 
+;;;;; racer
+            `(racer-tooltip ((,class (:foreground ,bright-white :background ,xgrey1))))
+            `(racer-help-heading-face ((,class (:foreground ,bright-white :weight bold))))
+
+;;;;; rust
+
+            `(rust-builtin-formatting-macro-face ((,class (:foreground ,blue))))
+            `(rust-question-mark-face ((,class (:foreground ,blue :weight bold))))
+            `(rust-string-interpolation-face ((,class (:foreground ,bright-green :italic t))))
+            `(rust-unsafe-face ((,class (:foreground ,bright-orange))))
+
 ;;;;; diff
             `(diff-added             ((,class :background nil :foreground ,green)))
             `(diff-changed           ((,class :background nil :foreground ,red)))
