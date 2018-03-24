@@ -790,7 +790,7 @@
            (custom-theme-set-variables
             theme-name
             `(ansi-color-names-vector [,black ,red ,green ,yellow ,blue ,magenta ,cyan ,white])
-            `(hl-paren-colors '(,bright-white ,xgrey8 ,white ,xgrey11))
+            ;; `(hl-paren-colors '(,bright-white ,green ,blue ,white))
             )))
 
 
