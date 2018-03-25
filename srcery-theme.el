@@ -137,6 +137,7 @@
             `(tooltip ((,class (:background ,bright-blue :foreground ,bright-white :bold nil :italic nil :underline nil))))
             `(vertical-border ((,class (:foreground ,magenta))))
             `(warning ((,class (:foreground ,bright-orange))))
+            `(tool-bar ((,class (:foreground ,bright-white))))
 
 ;;;;; ahs
             `(ahs-face ((,class (:background ,magenta))))
