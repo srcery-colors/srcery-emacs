@@ -669,12 +669,13 @@
 ;;;;; smartparens
             `(sp-pair-overlay-face ((,class (:background ,magenta :foreground nil))))
             `(sp-show-pair-match-face ((,class (:foreground ,magenta :weight bold))))
+            `(sp-wrap-overlay-closing-pair ((,class (:background ,magenta :foreground, bright-yellow))))
 
 ;;;;; evil-snipe
             `(evil-snipe-first-match-face ((,class (:inverse-video t))))
             `(evil-snipe-matches-face ((,class (:inverse-video t))))
 
-;;;;; spaceline
+;;;;; spaceline / spacemacs
             `(spaceline-python-venv ((,class (:foreground ,green))))
             `(spaceline-flycheck-error  ((,class (:foreground ,red))))
             `(spaceline-flycheck-info   ((,class (:foreground ,bright-white))))
