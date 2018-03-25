@@ -671,8 +671,8 @@
             `(sp-show-pair-match-face ((,class (:foreground ,magenta :weight bold))))
 
 ;;;;; evil-snipe
-            `(evil-snipe-first-match-face ((,class (:foreground ,bright-white :background ,magenta))))
-            `(evil-snipe-matches-face ((,class (:background ,magenta :foreground ,bright-white))))
+            `(evil-snipe-first-match-face ((,class (:inverse-video t))))
+            `(evil-snipe-matches-face ((,class (:inverse-video t))))
 
 ;;;;; spaceline
             `(spaceline-python-venv ((,class (:foreground ,green))))
