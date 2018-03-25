@@ -692,10 +692,10 @@
             `(spacemacs-visual-face   ((,class (:background ,cyan :foreground ,black))))
             `(spacemacs-motion-face   ((,class (:background ,magenta :foreground ,bright-white))))
             `(spacemacs-emacs-face    ((,class (:background ,red :foreground ,bright-white))))
-
-;;;;; spacemacs-specific
+            `(spacemacs-helm-navigation-ms-face ((,class (:foreground ,bright-white))))
             `(spacemacs-transient-state-title-face ((,class (:background nil :foreground ,green :box nil :weight bold))))
-
+            `(spacemacs-transient-state-title-face ((,class (:background nil :foreground ,green :box nil :weight bold))))
+            ;; spacemacs-ido-navigation-ts-face
 ;;;;; swiper
             `(swiper-line-face ((,class (:background ,magenta :weight bold))))
             `(swiper-match-face-1 ((,class (:weight bold))))
