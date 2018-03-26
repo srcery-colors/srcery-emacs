@@ -787,6 +787,7 @@
             `(undo-tree-visualizer-default-face ((,class :foreground ,bright-white)))
             `(undo-tree-visualizer-register-face ((,class :foreground ,green)))
             `(undo-tree-visualizer-unmodified-face ((,class :foreground ,blue)))
+            `(undo-tree-visualizer-active-branch-face ((,class :foreground ,bright-magenta)))
 
             `(persp-face-lighter-buffer-not-in-persp ((,class :background ,red :foreground ,bright-white)))
             `(pulse-highlight-face ((,class :background ,green :foreground ,black)))
