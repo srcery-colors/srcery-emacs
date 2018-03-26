@@ -92,7 +92,8 @@
             (xgray1         (if (true-color-p) "#262626" "color-235"))
             (xgray2         (if (true-color-p) "#303030" "color-236"))
             (xgray3         (if (true-color-p) "#3A3A3A" "color-237"))
-            (xgray4         (if (true-color-p) "#444444" "color-238")))
+            (xgray4         (if (true-color-p) "#444444" "color-238"))
+            (xgray5         (if (true-color-p) "#4E4E4E" "color-239")))
 
            custom-colors-override
 
@@ -665,7 +666,7 @@
             `(show-paren-mismatch ((,class (:background ,red :foreground ,bright-white))))
 
 ;;;;; paren-face
-            `(parenthesis ((,class (:foreground ,xgray3))))
+            `(parenthesis ((,class (:foreground ,xgray5))))
 
 ;;;;; smartparens
             `(sp-pair-overlay-face ((,class (:background ,magenta :foreground nil))))
