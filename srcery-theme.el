@@ -707,6 +707,7 @@
             `(spacemacs-iedit-face ((,class (:background ,bright-orange :foreground ,black))))
             `(spacemacs-iedit-insert-face ((,class (:background ,bright-orange :foreground ,black))))
             `(spaceline-read-only ((,class (:background ,xgray1 :foreground ,orange))))
+            `(spacemacs-micro-state-binding-face ((,class (:foreground ,yellow :weight bold))))
             ;; spacemacs-ido-navigation-ts-face
 ;;;;; swiper
             `(swiper-line-face ((,class (:background ,magenta :weight bold))))
