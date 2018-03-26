@@ -550,16 +550,6 @@
             `(markdown-header-face-5 ((,class (:bold nil :foreground ,blue))))
             `(markdown-header-face-6 ((,class (:bold nil :foreground ,cyan))))
 
-;;;;; mode-line
-            `(mode-line           ((,class (:foreground ,white :background ,bright-black))))
-            `(mode-line-inactive  ((,class (:foreground ,white :background ,bright-black))))
-            `(mode-line-buffer-id ((,class (:foreground ,yellow))))
-            `(mode-line-highlight ((,class (:background ,bright-black :box (:color ,magenta :line-width 1)))))
-            `(mode-line-buffer-id-inactive ((,class (:foreground ,bright-white))))
-            `(magit-mode-line-process ((,class (:foreground ,blue))))
-            ;; `(mode-line-emphasis ((,class (:weight bold :foreground ,yellow))))
-
-
 ;;;;; mu4e
             `(mu4e-cited-1-face ((,class (:foreground ,bright-white))))
             `(mu4e-cited-7-face ((,class (:foreground ,bright-white))))
@@ -636,12 +626,35 @@
             `(popup-scroll-bar-foreground-face ((,class (:background ,xgray4))))
             `(popup-scroll-bar-background-face ((,class (:background ,bright-black))))
 
-;;;;; powerline
-            `(powerline-active0 ((,class (:foreground ,bright-white))))
-            `(powerline-active1 ((,class (:background ,xgray2 :foreground ,bright-white))))
-            `(powerline-active2 ((,class (:foreground ,bright-white))))
+;;;;; mode-line
+            `(powerline-active0   ((,class (:foreground ,bright-white))))
+            `(powerline-active1   ((,class (:background ,xgray2 :foreground ,bright-white))))
+            `(powerline-active2   ((,class (:foreground ,bright-white))))
             `(powerline-inactive1 ((,class (:background ,bright-black :foreground ,white))))
             `(powerline-inactive2 ((,class (:background ,bright-black :foreground ,white))))
+
+            `(mode-line                    ((,class (:foreground ,white :background ,bright-black))))
+            `(mode-line-inactive           ((,class (:foreground ,white :background ,bright-black))))
+            `(mode-line-buffer-id          ((,class (:foreground ,yellow))))
+            `(mode-line-highlight          ((,class (:background ,bright-black :box (:color ,magenta :line-width 1)))))
+            `(mode-line-buffer-id-inactive ((,class (:foreground ,bright-white))))
+            `(magit-mode-line-process      ((,class (:foreground ,blue))))
+            ;; `(mode-line-emphasis           ((,class (:weight bold :foreground ,yellow))))
+
+            `(spaceline-python-venv      ((,class (:foreground ,green))))
+            `(spaceline-flycheck-error   ((,class (:foreground ,red))))
+            `(spaceline-flycheck-info    ((,class (:foreground ,bright-white))))
+            `(spaceline-flycheck-warning ((,class (:foreground ,bright-orange))))
+            `(spaceline-evil-normal      ((,class (:background ,xgray4 :foreground ,bright-white))))
+            `(spaceline-evil-insert      ((,class (:background ,bright-white :foreground ,black))))
+            `(spaceline-evil-replace     ((,class (:background ,bright-red :foreground ,bright-white))))
+            `(spaceline-evil-visual      ((,class (:background ,cyan :foreground ,black))))
+            `(spaceline-evil-motion      ((,class (:background ,bright-magenta :foreground ,black))))
+            `(spaceline-evil-emacs       ((,class (:background ,orange :foreground ,bright-white))))
+            `(spaceline-unmodified       ((,class (:foreground ,bright-white))))
+            `(spaceline-modified         ((,class (:background ,bright-orange :foreground ,black))))
+            `(spaceline-read-only        ((,class (:background ,xgray1 :foreground ,orange))))
+            `(spaceline-highlight-face   ((,class (:background ,yellow :foreground ,black))))
 
 ;;;;; rainbow-delimiters
             `(rainbow-delimiters-depth-1-face ((,class :foreground ,bright-white)))
@@ -677,26 +690,13 @@
             `(evil-snipe-first-match-face ((,class (:inverse-video t))))
             `(evil-snipe-matches-face ((,class (:inverse-video t))))
 
-;;;;; spaceline / spacemacs
-            `(spaceline-python-venv ((,class (:foreground ,green))))
-            `(spaceline-flycheck-error  ((,class (:foreground ,red))))
-            `(spaceline-flycheck-info   ((,class (:foreground ,bright-white))))
-            `(spaceline-flycheck-warning((,class (:foreground ,bright-orange))))
-            `(spaceline-evil-normal   ((,class (:background ,xgray4 :foreground ,bright-white))))
-            `(spaceline-evil-insert   ((,class (:background ,bright-white :foreground ,black))))
-            `(spaceline-evil-replace  ((,class (:background ,bright-red :foreground ,bright-white))))
-            `(spaceline-evil-visual   ((,class (:background ,cyan :foreground ,black))))
-            `(spaceline-evil-motion   ((,class (:background ,bright-magenta :foreground ,black))))
-            `(spaceline-evil-emacs    ((,class (:background ,orange :foreground ,bright-white))))
-            `(spaceline-unmodified ((,class (:foreground ,bright-white))))
-            `(spaceline-modified ((,class (:background ,bright-orange :foreground ,black))))
+;;;;; spacemacs
             `(spacemacs-normal-face   ((,class (:background ,xgray4 :foreground ,bright-white))))
             `(spacemacs-insert-face   ((,class (:background ,bright-white :foreground ,black))))
             `(spacemacs-replace-face  ((,class (:background ,bright-red :foreground ,bright-white))))
             `(spacemacs-visual-face   ((,class (:background ,bright-cyan :foreground ,black))))
             `(spacemacs-motion-face   ((,class (:background ,magenta :foreground ,bright-white))))
             `(spacemacs-emacs-face    ((,class (:background ,orange :foreground ,bright-white))))
-            `(spaceline-highlight-face    ((,class (:background ,yellow :foreground ,black))))
             `(spacemacs-hybrid-face ((,class (:background ,bright-blue :foreground ,bright-black))))
             `(spacemacs-lisp-face ((,class (:background ,green :foreground ,black))))
             `(spacemacs-evilified-face ((,class (:background ,bright-yellow :foreground ,black))))
@@ -706,7 +706,6 @@
             `(spacemacs-ido-navigation-ts-face ((,class (:foreground ,yellow))))
             `(spacemacs-iedit-face ((,class (:background ,bright-orange :foreground ,black))))
             `(spacemacs-iedit-insert-face ((,class (:background ,bright-orange :foreground ,black))))
-            `(spaceline-read-only ((,class (:background ,xgray1 :foreground ,orange))))
             `(spacemacs-micro-state-binding-face ((,class (:foreground ,yellow :weight bold))))
             ;; spacemacs-ido-navigation-ts-face
 ;;;;; swiper
