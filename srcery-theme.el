@@ -662,7 +662,7 @@
             `(shm-quarantine-face ((,class (:background ,xgray1))))
 
 ;;;;; show-paren
-            `(show-paren-match ((,class (:foreground ,magenta :weight bold))))
+            `(show-paren-match ((,class (:foreground ,bright-magenta :weight bold))))
             `(show-paren-mismatch ((,class (:background ,red :foreground ,bright-white))))
 
 ;;;;; paren-face
@@ -670,7 +670,7 @@
 
 ;;;;; smartparens
             `(sp-pair-overlay-face ((,class (:background ,magenta :foreground nil))))
-            `(sp-show-pair-match-face ((,class (:foreground ,magenta :weight bold))))
+            `(sp-show-pair-match-face ((,class (:foreground ,bright-magenta :weight bold))))
             `(sp-wrap-overlay-closing-pair ((,class (:background ,magenta :foreground, bright-yellow))))
 
 ;;;;; evil-snipe
