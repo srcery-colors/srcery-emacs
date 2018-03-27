@@ -687,8 +687,8 @@
             `(sp-wrap-overlay-closing-pair ((,class (:background ,magenta :foreground, bright-yellow))))
 
 ;;;;; evil-snipe
-            `(evil-snipe-first-match-face ((,class (:inverse-video t))))
-            `(evil-snipe-matches-face     ((,class (:inverse-video t))))
+            `(evil-snipe-first-match-face ((,class (:foreground ,magenta :weight bold))))
+            `(evil-snipe-matches-face     ((,class (:foreground ,magenta :weight bold))))
 
 ;;;;; spacemacs
             `(spacemacs-normal-face                ((,class (:background ,xgray4 :foreground ,bright-white))))
