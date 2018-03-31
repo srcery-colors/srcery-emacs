@@ -627,8 +627,7 @@
             `(popup-scroll-bar-background-face ((,class (:background ,bright-black))))
 
 ;;;;; mode-line
-            `(powerline-active0   ((,class (:foreground ,bright-white))))
-            `(powerline-active1   ((,class (:background ,xgray2 :foreground ,bright-white))))
+            `(powerline-active1   ((,class (:background ,xgray3 :foreground ,bright-white))))
             `(powerline-active2   ((,class (:foreground ,bright-white))))
             `(powerline-inactive1 ((,class (:background ,bright-black :foreground ,white))))
             `(powerline-inactive2 ((,class (:background ,bright-black :foreground ,white))))
