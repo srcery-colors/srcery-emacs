@@ -1,0 +1,6 @@
+* TODO MC
+mc/cursor-bar-face
+mc/cursor-face
+mc/region-face
+
+* TODO Fix spaceline colors
