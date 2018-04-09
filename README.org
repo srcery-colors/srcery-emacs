@@ -41,9 +41,16 @@ contrasting colors with a slightly earthy tone.
 
     Make sure your ~$TERM~ supports 256 colors.
 ** Installation
-   TODO
+
 ** Screenshots
-   TODO
+*** Lisp
+    [[file:assets/lisp.png]]
+*** Python / JavaScript
+    [[file:assets/py-js.png]]
+*** Rust / Magit
+    [[file:assets/rs-magit.png]]
+*** Org / C
+    [[file:assets/org-c.png]]
 ** Customization
    Srcery has a couple of options that can be tweaked via ~M-x customize~:
 *** srcery-theme-org-height
