@@ -1,15 +1,15 @@
-;;; srcery-theme.el --- Colorscheme that focus ease of use, and clearly defined
-;;; contrasting colors with a slightly earthy tone.
+;;; srcery-theme.el --- Colorscheme that focus ease of use, and clearly defined contrasting colors with a slightly earthy tone.
 
-;; Original source:
-;; URL: <https://github.com/nashamri/spacemacs-theme>
-;;
+;; Copyright (C) 2018 Daniel Berg
+
 ;; Author: Daniel Berg (Roosta)
 ;; URL <https://github.com/roosta/emacs-srcery>
-;;
+
 ;; Version: 0.1
 ;; Keywords: color, theme
 ;; Package-Requires: ((emacs "24"))
+
+;; Based on https://github.com/nashamri/spacemacs-theme
 
 ;; This program is free software: you can redistribute it and/or modify
 ;; it under the terms of the GNU General Public License as published by
@@ -28,11 +28,11 @@
 
 ;;; Commentary:
 
-;; This is a color theme designed for spacemacs <https://github.com/syl20bnr/spacemacs>.
+;; Port of vim-srcery, a dark color theme. <https://github.com/roosta/emacs-srcery>
 ;; Should work well in a 256 color terminal.
 
 ;;; Code:
-;; https://www.gnu.org/software/emacs/manual/html_node/elisp/Defining-Faces.html
+
 (defmacro dyn-let (varlist fn setfaces setvars)
   (list 'let (append varlist (funcall fn)) setfaces setvars))
 
