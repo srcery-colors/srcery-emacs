@@ -5,7 +5,7 @@
 ;; Author: Daniel Berg (Roosta)
 ;; URL <https://github.com/roosta/emacs-srcery>
 
-;; Version: 0.1
+;; Version: 0.1.0
 ;; Keywords: color, theme
 ;; Package-Requires: ((emacs "24"))
 
