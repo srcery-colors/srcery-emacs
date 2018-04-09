@@ -13,7 +13,6 @@ contrasting colors with a slightly earthy tone.
     To use Srcery in the terminal you need to change your terminal emulator’s
     so-called “ASCII” colors to the ones in the table below.
 
-    |                |    |         |               |
     | TERMCOL        | NR | HEX     | RGB           |
     |----------------+----+---------+---------------|
     | black          |  0 | #1C1B19 | 28,  27,  25  |
@@ -40,7 +39,7 @@ contrasting colors with a slightly earthy tone.
     Since most terminals have these defined it pads out the color selection
     nicely without over complicating things.
 
-    Make sure your ~$TERM~ supports 256 colors,
+    Make sure your ~$TERM~ supports 256 colors.
 ** Installation
    TODO
 ** Screenshots
@@ -59,6 +58,15 @@ contrasting colors with a slightly earthy tone.
                               '((black . "#121212")
                                 (green . "#00AFAF"))))
     #+END_SRC
+*** srcery-theme-invert-matches
+    This toggles whether to inverse-video search matches. It defaults to nil.
+
+    Reasoning behind this is that if search results are inverted, the color
+    information is preserved. Downside is that it sometimes makes navigation a
+    bit tricky, when the cursor color matches the search match. Inverting cursor
+    is an option here and the theme tries to set it to inverse when this
+    variable is true.
+
 ** Supported modes
    - company
    - ein

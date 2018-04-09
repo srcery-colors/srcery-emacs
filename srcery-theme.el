@@ -56,6 +56,11 @@
   :type 'alist
   :group 'srcery-theme)
 
+(defcustom srcery-theme-invert-matches nil
+  "Specify a list of custom colors"
+  :type 'boolean
+  :group 'srcery-theme)
+
 (defun true-color-p ()
   (or
    (display-graphic-p)
@@ -101,7 +106,9 @@
             theme-name
 
 ;;;;; basics
-            `(cursor                       ((,class (:background ,bright-white :foreground ,black))))
+            `(cursor                       ((,class ,(if srcery-theme-invert-matches
+                                                        `(:inverse-video t)
+                                                        `(:background ,bright-white :foreground ,black)))))
             `(custom-button                ((,class :background ,black :foreground ,bright-white :box (:line-width 2 :style released-button))))
             `(default                      ((,class (:background ,black :foreground ,bright-white))))
             `(default-italic               ((,class (:italic t))))
@@ -123,13 +130,21 @@
             `(font-lock-warning-face       ((,class (:foreground ,bright-orange :background ,black))))
             `(fringe                       ((,class (:foreground ,bright-white))))
             `(header-line                  ((,class (:background ,black))))
-            `(highlight                    ((,class (:inverse-video t))))
+            `(highlight                    ((,class ,(if srcery-theme-invert-matches
+                                                         `(:inverse-video t)
+                                                       `(:background ,magenta :foreground ,bright-white)))))
             `(hl-line                      ((,class (:background ,bright-black))))
-            `(isearch                      ((,class (:inverse-video t))))
-            `(lazy-highlight               ((,class (:inverse-video t))))
+            `(isearch                      ((,class ,(if srcery-theme-invert-matches
+                                                         `(:inverse-video t)
+                                                       `(:background ,magenta :foreground ,bright-white)))))
+            `(lazy-highlight               ((,class ,(if srcery-theme-invert-matches
+                                                         `(:inverse-video t)
+                                                       `(:background ,magenta :foreground ,bright-white)))))
             `(link                         ((,class (:inherit font-lock-comment-face :underline t))))
             `(link-visited                 ((,class (:inherit font-lock-comment-face :underline t))))
-            `(match                        ((,class (:inverse-video t))))
+            `(match                        ((,class ,(if srcery-theme-invert-matches
+                                                         `(:inverse-video t)
+                                                       `(:background ,magenta :foreground ,bright-white)))))
             `(minibuffer-prompt            ((,class (:weight bold :foreground ,yellow))))
             `(page-break-lines             ((,class (:foreground ,xgray3))))
             `(region                       ((,class (:inverse-video ,t))))
