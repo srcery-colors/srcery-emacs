@@ -684,6 +684,11 @@
             ;; `(rainbow-delimiters-unmatched-face  ((,class :foreground ,red :overline t :inhert bold)))
             ;; `(rainbow-delimiters-mismatched-face ((,class :foreground ,red :overline t :weight bold)))
 
+
+;;;;; sh
+            `(sh-heredoc ((,class (:foreground ,green :weight bold))))
+            `(sh-quoted-exec ((,class (:foreground ,yellow :weight bold))))
+
 ;;;;; shm
             `(shm-current-face    ((,class (:background ,green, :foreground ,black))))
             `(shm-quarantine-face ((,class (:background ,xgray1))))
