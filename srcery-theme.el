@@ -122,7 +122,7 @@
             `(font-lock-variable-name-face ((,class (:foreground ,bright-magenta))))
             `(font-lock-warning-face       ((,class (:foreground ,bright-orange :background ,black))))
             `(fringe                       ((,class (:foreground ,bright-white))))
-            `(header-line                  ((,class :background ,black)))
+            `(header-line                  ((,class (:background ,black))))
             `(highlight                    ((,class (:inverse-video t))))
             `(hl-line                      ((,class (:background ,bright-black))))
             `(isearch                      ((,class (:inverse-video t))))
