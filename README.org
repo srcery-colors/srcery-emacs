@@ -1,4 +1,4 @@
-[[file:assets/title.png]]
+[[file:img/title.png]]
 
 Port of [[https://github.com/roosta/vim-srcery][vim-srcery]], a colorscheme that focus on ease of use and clearly defined
 contrasting colors with a slightly earthy tone.
@@ -44,13 +44,13 @@ contrasting colors with a slightly earthy tone.
 
 ** Screenshots
 *** Lisp
-    [[file:assets/lisp.png]]
+    [[file:img/lisp.png]]
 *** Python / JavaScript
-    [[file:assets/py-js.png]]
+    [[file:img/py-js.png]]
 *** Rust / Magit
-    [[file:assets/rs-magit.png]]
+    [[file:img/rs-magit.png]]
 *** Org / C
-    [[file:assets/org-c.png]]
+    [[file:img/org-c.png]]
 ** Customization
    Srcery has a couple of options that can be tweaked via ~M-x customize~:
 *** srcery-theme-org-height
