@@ -1,15 +1,12 @@
-;;; srcery-theme.el --- Colorscheme that focus ease of use, and clearly defined contrasting colors with a slightly earthy tone.
-
+;;; srcery-theme.el --- Dark color theme.
 ;; Copyright (C) 2018 Daniel Berg
 
 ;; Author: Daniel Berg (Roosta)
-;; URL <https://github.com/roosta/emacs-srcery>
+;; URL: https://github.com/roosta/emacs-srcery
 
 ;; Version: 0.1.0
-;; Keywords: color, theme
+;; Keywords: faces
 ;; Package-Requires: ((emacs "24"))
-
-;; Based on https://github.com/nashamri/spacemacs-theme
 
 ;; This program is free software: you can redistribute it and/or modify
 ;; it under the terms of the GNU General Public License as published by
@@ -30,6 +27,7 @@
 
 ;; Port of vim-srcery, a dark color theme. <https://github.com/roosta/emacs-srcery>
 ;; Should work well in a 256 color terminal.
+;; The port is based on https://github.com/nashamri/spacemacs-theme
 
 ;;; Code:
 
@@ -52,12 +50,12 @@
   :group 'srcery-theme)
 
 (defcustom srcery-theme-custom-colors nil
-  "Specify a list of custom colors"
+  "Specify a list of custom colors."
   :type 'alist
   :group 'srcery-theme)
 
 (defcustom srcery-theme-invert-matches nil
-  "Specify a list of custom colors"
+  "Specify a list of custom colors."
   :type 'boolean
   :group 'srcery-theme)
 
@@ -832,3 +830,5 @@
 (create-srcery-theme 'srcery)
 
 (provide-theme 'srcery)
+
+;;; srcery-theme.el ends here
