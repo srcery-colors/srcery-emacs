@@ -32,8 +32,12 @@
 ;;; Code:
 
 (defmacro dyn-let (varlist fn setfaces setvars)
+  "Macro to bind color variables.
+Argument VARLIST list of color variables
+Argument FN Override function
+Argument SETFACES 'create-theme-set-faces' with bound colors
+Argument SETVARS ‘custom-theme-set-variables’ with bound colors"
   (list 'let (append varlist (funcall fn)) setfaces setvars))
-
 
 (defgroup srcery-theme nil
   "Srcery-theme options."
@@ -60,15 +64,20 @@
   :group 'srcery-theme)
 
 (defun true-color-p ()
+  "Check if in tty or gui."
   (or
    (display-graphic-p)
    (= (tty-display-color-cells) 16777216)))
 
 (defun custom-colors-override ()
+  "Allow overriding the 16 base colors."
   (mapcar (lambda (x) (list (car x) (cdr x)))
           srcery-theme-custom-colors))
 
 (defun create-srcery-theme (theme-name)
+  "Create srcery theme.
+Argument THEME-NAME Name of created theme, currently superfluous
+since we only create one theme"
   (dyn-let ((class '((class color) (min-colors 89)))
 
             (black          (if (true-color-p) "#1C1B19" "black"))
