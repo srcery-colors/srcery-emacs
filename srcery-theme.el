@@ -1,7 +1,7 @@
 ;;; srcery-theme.el --- Dark color theme.
 ;; Copyright (C) 2018 Daniel Berg
 
-;; Author: Daniel Berg (Roosta)
+;; Author: Daniel Berg
 ;; URL: https://github.com/roosta/emacs-srcery
 
 ;; Version: 0.1.0
