@@ -437,6 +437,7 @@
             `(ido-first-match         ((,class (:foreground ,green :weight bold))))
             `(ido-only-match          ((,class (:foreground ,yellow :weight bold))))
             `(ido-subdir              ((,class (:foreground ,red))))
+            `(ido-indicator           ((,class (:background ,red :foreground ,bright-white))))
             `(ido-vertical-match-face ((,class (:foreground ,green :underline nil))))
 
 ;;;;; info
@@ -807,6 +808,7 @@
             `(persp-face-lighter-buffer-not-in-persp  ((,class :background ,red :foreground ,bright-white)))
             `(pulse-highlight-face                    ((,class :background ,green :foreground ,black)))
             `(pulse-highlight-start-face              ((,class :background ,bright-green :foreground ,black)))
+            `(custom-invalid                          ((,class :background ,bright-red :foreground ,bright-white)))
             )
 
            (custom-theme-set-variables
