@@ -511,7 +511,6 @@ since we only create one theme"
             `(magit-branch-local                ((,class (:background ,black :foreground ,blue :weight bold))))
             `(magit-branch-remote               ((,class (:background ,black :foreground ,orange :weight bold))))
 
-            `(magit-diff-context-highlight      ((,class (:background ,bright-black :foreground ,bright-white))))
             `(magit-diff-file-header            ((,class (:foreground ,yellow))))
 
             `(magit-diff-file-heading           ((,class (:foreground ,bright-white :weight light))))
@@ -524,10 +523,10 @@ since we only create one theme"
 
             `(magit-diff-added                  ((,class (:foreground ,green :weight light))))
             `(magit-diff-removed                ((,class (:foreground ,red :weight light))))
-            `(magit-diff-context                ((,class (:foreground ,bright-white :weight light))))
+            `(magit-diff-context                ((,class (:foreground ,white :weight light))))
             `(magit-diff-added-highlight        ((,class (:foreground ,green :weight bold))))
             `(magit-diff-removed-highlight      ((,class (:foreground ,red :weight bold))))
-            `(magit-diff-context-highlight      ((,class (:foreground ,bright-white :weight bold))))
+            `(magit-diff-context-highlight      ((,class (:foreground ,white :weight bold))))
             `(magit-diff-base                   ((,class (:foreground ,white :weight light))))
             `(magit-diff-base-highlight         ((,class (:foreground ,white :weight bold))))
             `(magit-diff-lines-boundary         ((,class (:background ,white :foreground ,black))))
