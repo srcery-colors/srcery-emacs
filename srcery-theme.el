@@ -513,12 +513,12 @@ since we only create one theme"
 
             `(magit-diff-file-header            ((,class (:foreground ,yellow))))
 
-            `(magit-diff-file-heading           ((,class (:foreground ,bright-white :weight light))))
-            `(magit-diff-file-heading-highlight ((,class (:weight bold))))
-            `(magit-diff-file-heading-selection ((,class (:foreground ,bright-white :weight bold :background ,bright-black))))
+            `(magit-diff-file-heading           ((,class (:foreground ,blue :weight light))))
+            `(magit-diff-file-heading-highlight ((,class (:foreground ,blue :weight bold))))
+            `(magit-diff-file-heading-selection ((,class (:foreground ,blue :weight bold :background ,bright-black))))
 
-            `(magit-diff-hunk-heading           ((,class (:foreground ,bright-white :background ,bright-black :weight light))))
-            `(magit-diff-hunk-heading-highlight ((,class (:foreground ,bright-white :background ,bright-black :weight bold))))
+            `(magit-diff-hunk-heading           ((,class (:foreground ,yellow :weight light))))
+            `(magit-diff-hunk-heading-highlight ((,class (:foreground ,yellow :weight bold))))
             `(magit-diff-hunk-heading-selection ((,class (:foreground ,black :background ,white :weight bold))))
 
             `(magit-diff-added                  ((,class (:foreground ,green :weight light))))
