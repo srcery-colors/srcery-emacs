@@ -31,6 +31,11 @@
 
 ;;; Code:
 
+(unless (>= emacs-major-version 24)
+  (error "The monokai theme requires Emacs 24 or later!"))
+
+(deftheme srcery "Srcery color theme")
+
 (defmacro srcery-dyn-let (varlist fn setfaces setvars)
   "Macro to bind color variables.
 Argument VARLIST list of color variables
@@ -38,8 +43,6 @@ Argument FN Override function
 Argument SETFACES ‘create-theme-set-faces’ with bound colors
 Argument SETVARS ‘custom-theme-set-variables’ with bound colors"
   (list 'let (append varlist (funcall fn)) setfaces setvars))
-
-(deftheme srcery "Srcery theme")
 
 (defgroup srcery nil
   "Srcery options."
