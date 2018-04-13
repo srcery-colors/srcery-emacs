@@ -39,6 +39,8 @@ Argument SETFACES ‘create-theme-set-faces’ with bound colors
 Argument SETVARS ‘custom-theme-set-variables’ with bound colors"
   (list 'let (append varlist (funcall fn)) setfaces setvars))
 
+(deftheme srcery "Srcery theme")
+
 (defgroup srcery nil
   "Srcery options."
   :group 'faces)
@@ -829,14 +831,12 @@ Argument SETVARS ‘custom-theme-set-variables’ with bound colors"
   (add-to-list 'custom-theme-load-path
                (file-name-as-directory (file-name-directory load-file-name))))
 
-;; Local Variables:
-;; no-byte-compile: t
-;; End:
-
-(deftheme srcery "Srcery theme")
-
 (srcery-create-theme)
 
 (provide-theme 'srcery)
+
+;; Local Variables:
+;; no-byte-compile: t
+;; End:
 
 ;;; srcery-theme.el ends here
