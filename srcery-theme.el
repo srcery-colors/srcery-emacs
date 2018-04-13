@@ -53,7 +53,7 @@ Argument SETVARS ‘custom-theme-set-variables’ with bound colors"
   :type 'boolean
   :group 'srcery)
 
-(defcustom srcery-theme-custom-colors nil
+(defcustom srcery-custom-colors nil
   "Specify a list of custom colors."
   :type 'alist
   :group 'srcery)
@@ -69,10 +69,10 @@ Argument SETVARS ‘custom-theme-set-variables’ with bound colors"
    (display-graphic-p)
    (= (tty-display-color-cells) 16777216)))
 
-(defun custom-colors-override ()
+(defun srcery-custom-colors-override ()
   "Allow overriding the 16 base colors."
   (mapcar (lambda (x) (list (car x) (cdr x)))
-          srcery-theme-custom-colors))
+          srcery-custom-colors))
 
 (defun create-srcery-theme (theme-name)
   "Create srcery theme.
@@ -107,7 +107,7 @@ since we only create one theme"
             (xgray4         (if (true-color-p) "#444444" "color-238"))
             (xgray5         (if (true-color-p) "#4E4E4E" "color-239")))
 
-           custom-colors-override
+           srcery-custom-colors-override
 
            (custom-theme-set-faces
             theme-name
