@@ -40,7 +40,7 @@ Argument SETVARS ‘custom-theme-set-variables’ with bound colors"
   (list 'let (append varlist (funcall fn)) setfaces setvars))
 
 (defgroup srcery nil
-  "Srcery-theme options."
+  "Srcery options."
   :group 'faces)
 
 ;; (defcustom srcery-comment-bg nil
