@@ -818,7 +818,7 @@ Argument SETVARS ‘custom-theme-set-variables’ with bound colors"
             )
 
            (custom-theme-set-variables
-            theme-name
+            'srcery
             `(ansi-color-names-vector [,black ,red ,green ,yellow ,blue ,magenta ,cyan ,white])
             ;; `(hl-paren-colors '(,bright-white ,green ,blue ,white))
             )))
