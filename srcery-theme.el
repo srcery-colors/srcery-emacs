@@ -70,7 +70,7 @@ Argument SETVARS ‘custom-theme-set-variables’ with bound colors"
    (= (tty-display-color-cells) 16777216)))
 
 (defun srcery-custom-colors-override ()
-  "Allow overriding the 16 base colors."
+  "Overrides the 16 base colors with values from ‘srcery-custom-colors’."
   (mapcar (lambda (x) (list (car x) (cdr x)))
           srcery-custom-colors))
 
