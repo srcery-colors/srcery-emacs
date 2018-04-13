@@ -31,11 +31,11 @@
 
 ;;; Code:
 
-(defmacro dyn-let (varlist fn setfaces setvars)
+(defmacro srcery-dyn-let (varlist fn setfaces setvars)
   "Macro to bind color variables.
 Argument VARLIST list of color variables
 Argument FN Override function
-Argument SETFACES 'create-theme-set-faces' with bound colors
+Argument SETFACES ‘create-theme-set-faces’ with bound colors
 Argument SETVARS ‘custom-theme-set-variables’ with bound colors"
   (list 'let (append varlist (funcall fn)) setfaces setvars))
 
@@ -76,7 +76,7 @@ Argument SETVARS ‘custom-theme-set-variables’ with bound colors"
 
 (defun srcery-create-theme ()
   "Create srcery theme."
-  (dyn-let ((class '((class color) (min-colors 89)))
+  (srcery-dyn-let ((class '((class color) (min-colors 89)))
 
             (black          (if (true-color-p) "#1C1B19" "black"))
             (red            (if (true-color-p) "#EF2F27" "red"))
