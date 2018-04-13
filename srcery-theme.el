@@ -74,7 +74,7 @@ Argument SETVARS ‘custom-theme-set-variables’ with bound colors"
   (mapcar (lambda (x) (list (car x) (cdr x)))
           srcery-custom-colors))
 
-(defun create-srcery-theme ()
+(defun srcery-create-theme ()
   "Create srcery theme."
   (dyn-let ((class '((class color) (min-colors 89)))
 
@@ -835,7 +835,7 @@ Argument SETVARS ‘custom-theme-set-variables’ with bound colors"
 
 (deftheme srcery "Srcery theme")
 
-(create-srcery-theme)
+(srcery-create-theme)
 
 (provide-theme 'srcery)
 
