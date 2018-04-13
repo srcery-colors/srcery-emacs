@@ -41,7 +41,7 @@ contrasting colors with a slightly earthy tone.
 
     Make sure your ~$TERM~ supports 256 colors.
 ** Installation
-
+TODO
 ** Screenshots
 *** Lisp
     [[file:img/lisp.png]]
@@ -53,26 +53,29 @@ contrasting colors with a slightly earthy tone.
     [[file:img/org-c.png]]
 ** Customization
    Srcery has a couple of options that can be tweaked via ~M-x customize~:
-*** srcery-theme-org-height
+*** srcery-org-height
+    ~boolean~, default: ~t~
+
     This toggles the use of varying org headings heights.
-*** srcery-theme-custom-colors
+*** srcery-custom-colors
+    ~alist~, default ~nil~
+
     A list of colors to override. Srcery only has the 16 colors defined and
-    overriding them won't have any effect in the terminal but if you'd like to
-    change any of the colors this is how:
+    overriding them won't have any effect in the terminal, but if you'd like to
+    change any of the colors when using a graphical display this is how:
 
     #+BEGIN_SRC emacs-lisp
       (custom-set-variables '(srcery-theme-custom-colors
                               '((black . "#121212")
                                 (green . "#00AFAF"))))
     #+END_SRC
-*** srcery-theme-invert-matches
-    This toggles whether to inverse-video search matches. It defaults to nil.
+*** srcery-invert-matches
+    ~boolean~, default: ~nil~
 
-    Reasoning behind this is that if search results are inverted, the color
-    information is preserved. Downside is that it sometimes makes navigation a
-    bit tricky, when the cursor color matches the search match. Inverting cursor
-    is an option here and the theme tries to set it to inverse when this
-    variable is true.
+    Toggles whether to inverse-video search matches.
+
+    Make sure your cursor is inverted if this is enabled as otherwise it will
+    make the cursor difficult to spot if
 
 ** Supported modes
    - company
