@@ -58,7 +58,7 @@ Argument SETVARS ‘custom-theme-set-variables’ with bound colors"
   :type 'alist
   :group 'srcery)
 
-(defcustom srcery-theme-invert-matches nil
+(defcustom srcery-invert-matches nil
   "Specify a list of custom colors."
   :type 'boolean
   :group 'srcery)
@@ -113,7 +113,7 @@ since we only create one theme"
             theme-name
 
 ;;;;; basics
-            `(cursor                       ((,class ,(if srcery-theme-invert-matches
+            `(cursor                       ((,class ,(if srcery-invert-matches
                                                         `(:inverse-video t)
                                                         `(:background ,bright-white :foreground ,black)))))
             `(custom-button                ((,class :background ,black :foreground ,bright-white :box (:line-width 2 :style released-button))))
@@ -137,19 +137,19 @@ since we only create one theme"
             `(font-lock-warning-face       ((,class (:foreground ,bright-orange :background ,black))))
             `(fringe                       ((,class (:foreground ,bright-white))))
             `(header-line                  ((,class (:background ,black))))
-            `(highlight                    ((,class ,(if srcery-theme-invert-matches
+            `(highlight                    ((,class ,(if srcery-invert-matches
                                                          `(:inverse-video t)
                                                        `(:background ,magenta :foreground ,bright-white)))))
             `(hl-line                      ((,class (:background ,bright-black))))
-            `(isearch                      ((,class ,(if srcery-theme-invert-matches
+            `(isearch                      ((,class ,(if srcery-invert-matches
                                                          `(:inverse-video t)
                                                        `(:background ,magenta :foreground ,bright-white)))))
-            `(lazy-highlight               ((,class ,(if srcery-theme-invert-matches
+            `(lazy-highlight               ((,class ,(if srcery-invert-matches
                                                          `(:inverse-video t)
                                                        `(:background ,magenta :foreground ,bright-white)))))
             `(link                         ((,class (:inherit font-lock-comment-face :underline t))))
             `(link-visited                 ((,class (:inherit font-lock-comment-face :underline t))))
-            `(match                        ((,class ,(if srcery-theme-invert-matches
+            `(match                        ((,class ,(if srcery-invert-matches
                                                          `(:inverse-video t)
                                                        `(:background ,magenta :foreground ,bright-white)))))
             `(minibuffer-prompt            ((,class (:weight bold :foreground ,yellow))))
