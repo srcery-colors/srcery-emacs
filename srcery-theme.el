@@ -63,14 +63,14 @@ Argument SETVARS ‘custom-theme-set-variables’ with bound colors"
   :type 'boolean
   :group 'srcery)
 
-(defun true-color-p ()
+(defun srcery-true-color-p ()
   "Check if in tty or gui."
   (or
    (display-graphic-p)
    (= (tty-display-color-cells) 16777216)))
 
 (defun srcery-custom-colors-override ()
-  "Overrides the 16 base colors with values from ‘srcery-custom-colors’."
+  "Overrides base colors with values from ‘srcery-custom-colors’."
   (mapcar (lambda (x) (list (car x) (cdr x)))
           srcery-custom-colors))
 
@@ -78,32 +78,32 @@ Argument SETVARS ‘custom-theme-set-variables’ with bound colors"
   "Create srcery theme."
   (srcery-dyn-let ((class '((class color) (min-colors 89)))
 
-            (black          (if (true-color-p) "#1C1B19" "black"))
-            (red            (if (true-color-p) "#EF2F27" "red"))
-            (green          (if (true-color-p) "#519F50" "green"))
-            (yellow         (if (true-color-p) "#FBB829" "yellow"))
-            (blue           (if (true-color-p) "#2C78BF" "blue"))
-            (magenta        (if (true-color-p) "#E02C6D" "magenta"))
-            (cyan           (if (true-color-p) "#0AAEB3" "cyan"))
-            (white          (if (true-color-p) "#918175" "white"))
-            (bright-black   (if (true-color-p) "#2D2B28" "brightblack"))
-            (bright-red     (if (true-color-p) "#F75341" "brightred"))
-            (bright-green   (if (true-color-p) "#98BC37" "brightgreen"))
-            (bright-yellow  (if (true-color-p) "#FED06E" "brightyellow"))
-            (bright-blue    (if (true-color-p) "#68A8E4" "brightblue"))
-            (bright-magenta (if (true-color-p) "#FF5C8F" "brightmagenta"))
-            (bright-cyan    (if (true-color-p) "#53FDE9" "brightcyan"))
-            (bright-white   (if (true-color-p) "#FCE8C3" "brightwhite"))
+            (black          (if (srcery-true-color-p) "#1C1B19" "black"))
+            (red            (if (srcery-true-color-p) "#EF2F27" "red"))
+            (green          (if (srcery-true-color-p) "#519F50" "green"))
+            (yellow         (if (srcery-true-color-p) "#FBB829" "yellow"))
+            (blue           (if (srcery-true-color-p) "#2C78BF" "blue"))
+            (magenta        (if (srcery-true-color-p) "#E02C6D" "magenta"))
+            (cyan           (if (srcery-true-color-p) "#0AAEB3" "cyan"))
+            (white          (if (srcery-true-color-p) "#918175" "white"))
+            (bright-black   (if (srcery-true-color-p) "#2D2B28" "brightblack"))
+            (bright-red     (if (srcery-true-color-p) "#F75341" "brightred"))
+            (bright-green   (if (srcery-true-color-p) "#98BC37" "brightgreen"))
+            (bright-yellow  (if (srcery-true-color-p) "#FED06E" "brightyellow"))
+            (bright-blue    (if (srcery-true-color-p) "#68A8E4" "brightblue"))
+            (bright-magenta (if (srcery-true-color-p) "#FF5C8F" "brightmagenta"))
+            (bright-cyan    (if (srcery-true-color-p) "#53FDE9" "brightcyan"))
+            (bright-white   (if (srcery-true-color-p) "#FCE8C3" "brightwhite"))
 
             ;; xterm colors
-            (orange         (if (true-color-p) "#D75F00" "color-166"))
-            (bright-orange  (if (true-color-p) "#FF8700" "color-208"))
-            (hard-black     (if (true-color-p) "#121212" "color-233"))
-            (xgray1         (if (true-color-p) "#262626" "color-235"))
-            (xgray2         (if (true-color-p) "#303030" "color-236"))
-            (xgray3         (if (true-color-p) "#3A3A3A" "color-237"))
-            (xgray4         (if (true-color-p) "#444444" "color-238"))
-            (xgray5         (if (true-color-p) "#4E4E4E" "color-239")))
+            (orange         (if (srcery-true-color-p) "#D75F00" "color-166"))
+            (bright-orange  (if (srcery-true-color-p) "#FF8700" "color-208"))
+            (hard-black     (if (srcery-true-color-p) "#121212" "color-233"))
+            (xgray1         (if (srcery-true-color-p) "#262626" "color-235"))
+            (xgray2         (if (srcery-true-color-p) "#303030" "color-236"))
+            (xgray3         (if (srcery-true-color-p) "#3A3A3A" "color-237"))
+            (xgray4         (if (srcery-true-color-p) "#444444" "color-238"))
+            (xgray5         (if (srcery-true-color-p) "#4E4E4E" "color-239")))
 
            srcery-custom-colors-override
 
