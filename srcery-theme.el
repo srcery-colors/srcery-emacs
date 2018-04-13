@@ -43,12 +43,12 @@ Argument SETVARS ‘custom-theme-set-variables’ with bound colors"
   "Srcery-theme options."
   :group 'faces)
 
-;; (defcustom srcery-theme-comment-bg nil
+;; (defcustom srcery-comment-bg nil
 ;;   "Use a background for comment lines."
 ;;   :type 'boolean
 ;;   :group 'srcery)
 
-(defcustom srcery-theme-org-height t
+(defcustom srcery-org-height t
   "Use varying text heights for org headings."
   :type 'boolean
   :group 'srcery)
@@ -474,11 +474,11 @@ since we only create one theme"
             `(font-latex-italic-face              ((,class (:foreground ,red :italic t))))
             `(font-latex-match-reference-keywords ((,class (:foreground ,bright-magenta))))
             `(font-latex-match-variable-keywords  ((,class (:foreground ,blue))))
-            `(font-latex-sectioning-0-face        ((,class (:weight bold :foreground ,bright-green :height ,(if srcery-theme-org-height 1.3 1.0)))))
-            `(font-latex-sectioning-1-face        ((,class (:weight bold :foreground ,bright-yellow :height ,(if srcery-theme-org-height 1.3 1.0)))))
-            `(font-latex-sectioning-2-face        ((,class (:weight bold :foreground ,blue :height ,(if srcery-theme-org-height 1.3 1.0)))))
-            `(font-latex-sectioning-3-face        ((,class (:weight bold :foreground ,cyan :height ,(if srcery-theme-org-height 1.2 1.0)))))
-            `(font-latex-sectioning-4-face        ((,class (:bold nil :foreground ,bright-green :height ,(if srcery-theme-org-height 1.1 1.0)))))
+            `(font-latex-sectioning-0-face        ((,class (:weight bold :foreground ,bright-green :height ,(if srcery-org-height 1.3 1.0)))))
+            `(font-latex-sectioning-1-face        ((,class (:weight bold :foreground ,bright-yellow :height ,(if srcery-org-height 1.3 1.0)))))
+            `(font-latex-sectioning-2-face        ((,class (:weight bold :foreground ,blue :height ,(if srcery-org-height 1.3 1.0)))))
+            `(font-latex-sectioning-3-face        ((,class (:weight bold :foreground ,cyan :height ,(if srcery-org-height 1.2 1.0)))))
+            `(font-latex-sectioning-4-face        ((,class (:bold nil :foreground ,bright-green :height ,(if srcery-org-height 1.1 1.0)))))
             `(font-latex-sectioning-5-face        ((,class (:bold nil :foreground ,yellow))))
             `(font-latex-string-face              ((,class (:foreground ,bright-green))))
 
@@ -565,9 +565,9 @@ since we only create one theme"
             `(Man-underline  ((,class (:foreground ,green :underline t))))
 
 ;;;;; markdown
-            `(markdown-header-face-1 ((,class (:weight bold :foreground ,blue :height ,(if srcery-theme-org-height 1.3 1.0)))))
-            `(markdown-header-face-2 ((,class (:weight bold :foreground ,bright-cyan :height ,(if srcery-theme-org-height 1.2 1.0)))))
-            `(markdown-header-face-3 ((,class (:bold nil :foreground ,bright-green :height ,(if srcery-theme-org-height 1.1 1.0)))))
+            `(markdown-header-face-1 ((,class (:weight bold :foreground ,blue :height ,(if srcery-org-height 1.3 1.0)))))
+            `(markdown-header-face-2 ((,class (:weight bold :foreground ,bright-cyan :height ,(if srcery-org-height 1.2 1.0)))))
+            `(markdown-header-face-3 ((,class (:bold nil :foreground ,bright-green :height ,(if srcery-org-height 1.1 1.0)))))
             `(markdown-header-face-4 ((,class (:bold nil :foreground ,yellow))))
             `(markdown-header-face-5 ((,class (:bold nil :foreground ,blue))))
             `(markdown-header-face-6 ((,class (:bold nil :foreground ,cyan))))
@@ -588,10 +588,10 @@ since we only create one theme"
 
 ;;;;; org
             `(org-agenda-clocking         ((,class (:background ,magenta :foreground ,green))))
-            `(org-agenda-date             ((,class (:foreground ,blue :height ,(if srcery-theme-org-height 1.1 1.0)))))
-            `(org-agenda-date-today       ((,class (:foreground ,red :slant italic :weight bold :height ,(if srcery-theme-org-height 1.3 1.0)))))
+            `(org-agenda-date             ((,class (:foreground ,blue :height ,(if srcery-org-height 1.1 1.0)))))
+            `(org-agenda-date-today       ((,class (:foreground ,red :slant italic :weight bold :height ,(if srcery-org-height 1.3 1.0)))))
             `(org-agenda-date-weekend     ((,class (:weight bold :foreground ,blue))))
-            `(org-agenda-done             ((,class (:foreground ,green :height ,(if srcery-theme-org-height 1.2 1.0)))))
+            `(org-agenda-done             ((,class (:foreground ,green :height ,(if srcery-org-height 1.2 1.0)))))
             `(org-agenda-structure        ((,class (:weight bold :foreground ,green))))
             `(org-block                   ((,class (:foreground ,bright-white))))
             `(org-block-begin-line        ((,class (:background ,bright-black :foreground ,green))))
@@ -604,15 +604,15 @@ since we only create one theme"
             `(org-date-selected           ((,class (:background ,yellow :foreground ,black))))
             `(org-document-info-keyword   ((,class (:foreground ,white))))
             `(org-document-info           ((,class (:foreground ,bright-magenta))))
-            `(org-document-title          ((,class (:foreground ,yellow :weight bold :height ,(if srcery-theme-org-height 1.4 1.0)))))
+            `(org-document-title          ((,class (:foreground ,yellow :weight bold :height ,(if srcery-org-height 1.4 1.0)))))
             `(org-done                    ((,class (:foreground ,green :weight bold))))
             `(org-ellipsis                ((,class (:foreground ,red))))
             `(org-footnote                ((,class (:underline t :foreground ,bright-white))))
             `(org-hide                    ((,class (:foreground ,bright-white))))
             `(org-kbd                     ((,class (:inherit region :foreground ,bright-white :box (:line-width 1 :style released-button)))))
-            `(org-level-1                 ((,class (:weight bold :foreground ,blue :height ,(if srcery-theme-org-height 1.3 1.0)))))
-            `(org-level-2                 ((,class (:weight bold :foreground ,green :height ,(if srcery-theme-org-height 1.2 1.0)))))
-            `(org-level-3                 ((,class (:bold nil :foreground ,bright-blue :height ,(if srcery-theme-org-height 1.1 1.0)))))
+            `(org-level-1                 ((,class (:weight bold :foreground ,blue :height ,(if srcery-org-height 1.3 1.0)))))
+            `(org-level-2                 ((,class (:weight bold :foreground ,green :height ,(if srcery-org-height 1.2 1.0)))))
+            `(org-level-3                 ((,class (:bold nil :foreground ,bright-blue :height ,(if srcery-org-height 1.1 1.0)))))
             `(org-level-4                 ((,class (:bold nil :foreground ,bright-green))))
             `(org-level-5                 ((,class (:bold nil :foreground ,yellow))))
             `(org-level-6                 ((,class (:bold nil :foreground ,bright-magenta))))
@@ -625,7 +625,7 @@ since we only create one theme"
             `(org-priority                ((,class (:foreground ,bright-orange :weight bold))))
             `(org-quote                   ((,class (:inherit org-block :slant italic))))
             `(org-scheduled               ((,class (:foreground ,green))))
-            `(org-scheduled-today         ((,class (:foreground ,yellow :height ,(if srcery-theme-org-height 1.2 1.0)))))
+            `(org-scheduled-today         ((,class (:foreground ,yellow :height ,(if srcery-org-height 1.2 1.0)))))
             `(org-sexp-date               ((,class (:foreground ,bright-white))))
             `(org-special-keyword         ((,class (:foreground ,yellow))))
             `(org-table                   ((,class (:foreground ,bright-white :background ,xgray1))))
