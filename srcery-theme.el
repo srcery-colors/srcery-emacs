@@ -74,10 +74,8 @@ Argument SETVARS ‘custom-theme-set-variables’ with bound colors"
   (mapcar (lambda (x) (list (car x) (cdr x)))
           srcery-custom-colors))
 
-(defun create-srcery-theme (theme-name)
-  "Create srcery theme.
-Argument THEME-NAME Name of created theme, currently superfluous
-since we only create one theme"
+(defun create-srcery-theme ()
+  "Create srcery theme."
   (dyn-let ((class '((class color) (min-colors 89)))
 
             (black          (if (true-color-p) "#1C1B19" "black"))
@@ -110,7 +108,7 @@ since we only create one theme"
            srcery-custom-colors-override
 
            (custom-theme-set-faces
-            theme-name
+            'srcery
 
 ;;;;; basics
             `(cursor                       ((,class ,(if srcery-invert-matches
@@ -837,7 +835,7 @@ since we only create one theme"
 
 (deftheme srcery "Srcery theme")
 
-(create-srcery-theme 'srcery)
+(create-srcery-theme)
 
 (provide-theme 'srcery)
 
