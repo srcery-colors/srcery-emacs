@@ -59,7 +59,7 @@ Argument SETVARS ‘custom-theme-set-variables’ with bound colors"
   :group 'srcery)
 
 (defcustom srcery-invert-matches nil
-  "Specify a list of custom colors."
+  "Use inverse video for search matches."
   :type 'boolean
   :group 'srcery)
 
