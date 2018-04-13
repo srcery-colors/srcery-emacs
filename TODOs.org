@@ -4,3 +4,6 @@ mc/cursor-face
 mc/region-face
 
 * TODO Fix spaceline colors
+* TODO Update readme instructions for variables
+* DONE Fix magit-diff-context-highlight
+  CLOSED: [2018-04-11 Wed 20:49]
