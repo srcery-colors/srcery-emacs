@@ -39,29 +39,29 @@ Argument SETFACES 'create-theme-set-faces' with bound colors
 Argument SETVARS ‘custom-theme-set-variables’ with bound colors"
   (list 'let (append varlist (funcall fn)) setfaces setvars))
 
-(defgroup srcery-theme nil
+(defgroup srcery nil
   "Srcery-theme options."
   :group 'faces)
 
 ;; (defcustom srcery-theme-comment-bg nil
 ;;   "Use a background for comment lines."
 ;;   :type 'boolean
-;;   :group 'srcery-theme)
+;;   :group 'srcery)
 
 (defcustom srcery-theme-org-height t
   "Use varying text heights for org headings."
   :type 'boolean
-  :group 'srcery-theme)
+  :group 'srcery)
 
 (defcustom srcery-theme-custom-colors nil
   "Specify a list of custom colors."
   :type 'alist
-  :group 'srcery-theme)
+  :group 'srcery)
 
 (defcustom srcery-theme-invert-matches nil
   "Specify a list of custom colors."
   :type 'boolean
-  :group 'srcery-theme)
+  :group 'srcery)
 
 (defun true-color-p ()
   "Check if in tty or gui."
