@@ -214,9 +214,9 @@
      ((,srcery-class ,(if srcery-invert-matches
                           `(:inverse-video t)
                         `(:background ,srcery-magenta :foreground ,srcery-bright-white)))
-      (,srcery-class ,(if srcery-invert-matches
-                          `(:inverse-video t)
-                        `(:background ,srcery-256-magenta :foreground ,srcery-256-bright-white)))))
+      (,srcery-256-class ,(if srcery-invert-matches
+                              `(:inverse-video t)
+                            `(:background ,srcery-256-magenta :foreground ,srcery-256-bright-white)))))
 
    `(hl-line
      ((,srcery-class (:background ,srcery-bright-black))
@@ -226,16 +226,16 @@
      ((,srcery-class ,(if srcery-invert-matches
                           `(:inverse-video t)
                         `(:background ,srcery-magenta :foreground ,srcery-bright-white)))
-      (,srcery-class ,(if srcery-invert-matches
-                          `(:inverse-video t)
-                        `(:background ,srcery-256-magenta :foreground ,srcery-256-bright-white)))))
+      (,srcery-256-class ,(if srcery-invert-matches
+                              `(:inverse-video t)
+                            `(:background ,srcery-256-magenta :foreground ,srcery-256-bright-white)))))
    `(lazy-highlight
      ((,srcery-class ,(if srcery-invert-matches
                           `(:inverse-video t)
                         `(:background ,srcery-magenta :foreground ,srcery-bright-white)))
-      (,srcery-class ,(if srcery-invert-matches
-                          `(:inverse-video t)
-                        `(:background ,srcery-256-magenta :foreground ,srcery-256-bright-white)))))
+      (,srcery-256-class ,(if srcery-invert-matches
+                              `(:inverse-video t)
+                            `(:background ,srcery-256-magenta :foreground ,srcery-256-bright-white)))))
 
    `(link
      ((,srcery-class (:inherit font-lock-comment-face :underline t))
@@ -249,9 +249,9 @@
      ((,srcery-class ,(if srcery-invert-matches
                           `(:inverse-video t)
                         `(:background ,srcery-magenta :foreground ,srcery-bright-white)))
-      (,srcery-class ,(if srcery-invert-matches
-                          `(:inverse-video t)
-                        `(:background ,srcery-256-magenta :foreground ,srcery-256-bright-white)))))
+      (,srcery-256-class ,(if srcery-invert-matches
+                              `(:inverse-video t)
+                            `(:background ,srcery-256-magenta :foreground ,srcery-256-bright-white)))))
 
    `(minibuffer-prompt
      ((,srcery-class (:weight bold :foreground ,srcery-yellow))
@@ -473,7 +473,6 @@
    `(rust-unsafe-face
      ((,srcery-class (:foreground ,srcery-bright-orange))
       (,srcery-256-class (:foreground ,srcery-256-bright-orange))))
-
 
    ;; diff
    `(diff-added
