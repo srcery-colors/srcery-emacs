@@ -792,7 +792,7 @@
       (,srcery-class (:foreground ,srcery-bright-white :background ,srcery-bright-orange :weight bold :underline t))
       (,srcery-256-class (:foreground ,srcery-256-bright-white :background ,srcery-256-bright-orange :weight bold :underline t))))
 
-;;;;; jabber
+   ;; jabber
    `(jabber-activity-face
      ((,srcery-class (:weight bold :foreground ,srcery-red))
       (,srcery-256-class (:weight bold :foreground ,srcery-256-red))))
@@ -857,7 +857,7 @@
      ((,srcery-class (:foreground ,srcery-cyan))
       (,srcery-256-class (:foreground ,srcery-256-cyan))))
 
-;;;;; git
+   ;; git
    `(git-commit-summary
      ((,srcery-class (:foreground ,srcery-red))
       (,srcery-256-class (:foreground ,srcery-256-red))))
@@ -882,7 +882,7 @@
      ((,srcery-class (:foreground ,srcery-bright-white))
       (,srcery-256-class (:foreground ,srcery-256-bright-white))))
 
-;;;;; git-gutter-fr
+   ;; git-gutter-fr
    `(git-gutter-fr:added
      ((,srcery-class (:foreground ,srcery-green :weight bold))
       (,srcery-256-class (:foreground ,srcery-256-green :weight bold))))
@@ -927,23 +927,51 @@
      ((,srcery-class (:foreground ,srcery-bright-white))
       (,srcery-256-class (:foreground ,srcery-256-bright-white))))
 
-;;;;; git-timemachine
-   `(git-timemachine-minibuffer-detail-face ((,srcery-class (:foreground ,srcery-blue :weight bold :background ,srcery-blue))))
+   ;; git-timemachine
+   `(git-timemachine-minibuffer-detail-face
+     ((,srcery-class (:foreground ,srcery-blue :weight bold :background ,srcery-blue))
+      (,srcery-256-class (:foreground ,srcery-256-blue :weight bold :background ,srcery-256-blue))))
 
-;;;;; gnus
-   `(gnus-emphasis-highlight-words ((,srcery-class (:background ,srcery-green :foreground ,srcery-black))))
-   `(gnus-header-content           ((,srcery-class (:foreground ,srcery-red))))
-   `(gnus-header-from              ((,srcery-class (:foreground ,srcery-blue))))
-   `(gnus-header-name              ((,srcery-class (:foreground ,srcery-green))))
-   `(gnus-header-subject           ((,srcery-class (:foreground ,srcery-yellow :weight bold))))
-   `(gnus-summary-cancelled        ((,srcery-class (:background ,srcery-bright-orange :foreground ,srcery-black))))
 
-;;;;; guide-key
-   `(guide-key/highlight-command-face ((,srcery-class (:foreground ,srcery-bright-white))))
-   `(guide-key/key-face               ((,srcery-class (:foreground ,srcery-red))))
-   `(guide-key/prefix-command-face    ((,srcery-class (:foreground ,srcery-red :weight bold))))
+   ;; gnus
+   `(gnus-emphasis-highlight-words
+     ((,srcery-class (:background ,srcery-green :foreground ,srcery-black))
+      (,srcery-256-class (:background ,srcery-256-green :foreground ,srcery-256-black))))
 
-;;;;; helm
+   `(gnus-header-content
+     ((,srcery-class (:foreground ,srcery-red))
+      (,srcery-256-class (:foreground ,srcery-256-red))))
+
+   `(gnus-header-from
+     ((,srcery-class (:foreground ,srcery-blue))
+      (,srcery-256-class (:foreground ,srcery-256-blue))))
+
+   `(gnus-header-name
+     ((,srcery-class (:foreground ,srcery-green))
+      (,srcery-256-class (:foreground ,srcery-256-green))))
+
+   `(gnus-header-subject
+     ((,srcery-class (:foreground ,srcery-yellow :weight bold))
+      (,srcery-256-class (:foreground ,srcery-256-yellow :weight bold))))
+
+   `(gnus-summary-cancelled
+     ((,srcery-class (:background ,srcery-bright-orange :foreground ,srcery-black))
+      (,srcery-256-class (:background ,srcery-256-bright-orange :foreground ,srcery-256-black))))
+
+   ;; guide-key
+   `(guide-key/highlight-command-face
+     ((,srcery-class (:foreground ,srcery-bright-white))
+      (,srcery-256-class (:foreground ,srcery-256-bright-white))))
+
+   `(guide-key/key-face
+     ((,srcery-class (:foreground ,srcery-red))
+      (,srcery-256-class (:foreground ,srcery-256-red))))
+
+   `(guide-key/prefix-command-face
+     ((,srcery-class (:foreground ,srcery-red :weight bold))
+      (,srcery-256-class (:foreground ,srcery-256-red :weight bold))))
+
+   ;; helm
    `(helm-bookmark-directory          ((,srcery-class (:inherit helm-ff-directory))))
    `(helm-bookmark-file               ((,srcery-class (:foreground ,srcery-bright-white))))
    `(helm-bookmark-gnus               ((,srcery-class (:foreground ,srcery-green))))
