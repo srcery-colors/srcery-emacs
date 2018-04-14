@@ -1301,12 +1301,12 @@
    ;; linum-mode
    `(linum
      ((,srcery-class (:foreground ,srcery-white :background ,srcery-black))
-      (,srcery-class (:foreground ,srcery-white :background ,srcery-black))))
+      (,srcery-256-class (:foreground ,srcery-256-white :background ,srcery-256-black))))
 
    ;; linum-relative
    `(linum-relative-current-face
      ((,srcery-class (:foreground ,srcery-yellow))
-      (,srcery-class (:foreground ,srcery-yellow))))
+      (,srcery-256-class (:foreground ,srcery-256-yellow))))
 
    ;; magit
    `(magit-blame-culprit
