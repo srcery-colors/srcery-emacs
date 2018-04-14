@@ -327,23 +327,68 @@
 
 
    ;; cider
-   `(cider-enlightened                       ((,srcery-class (:background nil :box (:color ,srcery-yellow :line-width -1 :style nil) :foreground ,srcery-yellow))))
-   `(cider-enlightened-face                  ((,srcery-class (:background nil :box (:color ,srcery-white :line-width -1 :style nil) :foreground ,srcery-blue))))
-   `(cider-enlightened-local                 ((,srcery-class (:foreground ,srcery-bright-yellow))))
-   `(cider-instrumented-face                 ((,srcery-class (:background nil :box (:color ,srcery-red :line-width -1 :style nil) :foreground ,srcery-red))))
-   `(cider-result-overlay-face               ((,srcery-class (:background nil :box (:color ,srcery-blue :line-width -1 :style nil) :foreground ,srcery-blue))))
-   `(cider-test-error-face                   ((,srcery-class (:background ,srcery-bright-orange :foreground ,srcery-black))))
-   `(cider-test-failure-face                 ((,srcery-class (:background ,srcery-red :foreground ,srcery-bright-white))))
-   `(cider-test-success-face                 ((,srcery-class (:background ,srcery-green :foreground ,srcery-black))))
-   `(cider-traced-face                       ((,srcery-class :box (:color ,srcery-cyan :line-width -1 :style nil))))
-   `(cider-fringe-good-face                  ((,srcery-class :foreground ,srcery-green)))
-   `(cider-fragile-button-face               ((,srcery-class :foreground ,srcery-orange :box (:style released-button))))
-   `(cider-stacktrace-promoted-button-face   ((,srcery-class :foreground ,srcery-red :box (:style released-button))))
-   `(cider-stacktrace-suppressed-button-face ((,srcery-class :foreground ,srcery-white :box (:style pressed-button))))
-   `(cider-enlightened-local-face            ((,srcery-class :foreground ,srcery-yellow :weight bold)))
+   `(cider-enlightened
+     ((,srcery-class (:background nil :box (:color ,srcery-yellow :line-width -1 :style nil) :foreground ,srcery-yellow))
+      (,srcery-256-class (:background nil :box (:color ,srcery-256-yellow :line-width -1 :style nil) :foreground ,srcery-256-yellow))))
+
+   `(cider-enlightened-face
+     ((,srcery-class (:background nil :box (:color ,srcery-white :line-width -1 :style nil) :foreground ,srcery-blue))
+      (,srcery-256-class (:background nil :box (:color ,srcery-256-white :line-width -1 :style nil) :foreground ,srcery-256-blue))))
+
+   `(cider-enlightened-local
+     ((,srcery-class (:foreground ,srcery-bright-yellow))
+      (,srcery-256-class (:foreground ,srcery-256-bright-yellow))))
+
+   `(cider-instrumented-face
+     ((,srcery-class (:background nil :box (:color ,srcery-red :line-width -1 :style nil) :foreground ,srcery-red))
+      (,srcery-256-class (:background nil :box (:color ,srcery-256-red :line-width -1 :style nil) :foreground ,srcery-256-red))))
+
+   `(cider-result-overlay-face
+     ((,srcery-class (:background nil :box (:color ,srcery-blue :line-width -1 :style nil) :foreground ,srcery-blue))
+      (,srcery-256-class (:background nil :box (:color ,srcery-256-blue :line-width -1 :style nil) :foreground ,srcery-256-blue))))
+
+   `(cider-test-error-face
+     ((,srcery-class (:background ,srcery-bright-orange :foreground ,srcery-black))
+      (,srcery-256-class (:background ,srcery-256-bright-orange :foreground ,srcery-256-black))))
+
+   `(cider-test-failure-face
+     ((,srcery-class (:background ,srcery-red :foreground ,srcery-bright-white))
+      (,srcery-256-class (:background ,srcery-256-red :foreground ,srcery-256-bright-white))))
+
+   `(cider-test-success-face
+     ((,srcery-class (:background ,srcery-green :foreground ,srcery-black))
+      (,srcery-256-class (:background ,srcery-256-green :foreground ,srcery-256-black))))
+
+   `(cider-traced-face
+     ((,srcery-class :box (:color ,srcery-cyan :line-width -1 :style nil))
+      (,srcery-256-class :box (:color ,srcery-256-cyan :line-width -1 :style nil))))
+
+   `(cider-fringe-good-face
+     ((,srcery-class :foreground ,srcery-green)
+      (,srcery-256-class :foreground ,srcery-256-green)))
+
+   `(cider-fragile-button-face
+     ((,srcery-class :foreground ,srcery-orange :box (:style released-button))
+      (,srcery-256-class :foreground ,srcery-256-orange :box (:style released-button))))
+
+   `(cider-stacktrace-promoted-button-face
+     ((,srcery-class :foreground ,srcery-red :box (:style released-button))
+      (,srcery-256-class :foreground ,srcery-256-red :box (:style released-button))))
+
+   `(cider-stacktrace-suppressed-button-face
+     ((,srcery-class :foreground ,srcery-white :box (:style pressed-button))
+      (,srcery-256-class :foreground ,srcery-256-white :box (:style pressed-button))))
+
+   `(cider-enlightened-local-face
+     ((,srcery-class :foreground ,srcery-yellow :weight bold)
+      (,srcery-256-class :foreground ,srcery-256-yellow :weight bold)))
+
 
 ;;;;; clojure
-   `(clojure-keyword-face ((,srcery-class (:foreground ,srcery-blue))))
+   `(clojure-keyword-face
+     ((,srcery-class (:foreground ,srcery-blue))
+      (,srcery-256-class (:foreground ,srcery-256-blue))))
+
 
 ;;;;; company
    `(company-echo-common              ((,srcery-class (:background ,srcery-bright-white :foreground ,srcery-black))))
