@@ -1826,46 +1826,145 @@
       (,srcery-256-class (:foreground ,srcery-256-red))))
 
    ;; perspective
-   `(persp-selected-face ((,srcery-class (:weight bold :foreground ,srcery-yellow))))
+   `(persp-selected-face
+     ((,srcery-class (:weight bold :foreground ,srcery-yellow))
+      (,srcery-256-class (:weight bold :foreground ,srcery-256-yellow))))
 
    ;; popup
-   `(popup-face                       ((,srcery-class (:background ,srcery-bright-black :foreground ,srcery-bright-white))))
-   `(popup-tip-face                   ((,srcery-class (:background ,srcery-bright-blue :foreground ,srcery-bright-white :bold nil :italic nil :underline nil))))
-   `(popup-menu-face                  ((,srcery-class (:background ,srcery-bright-black :foreground ,srcery-bright-white))))
-   `(popup-enu-selection-face         ((,srcery-class (:background ,srcery-bright-blue :foreground ,srcery-bright-white))))
-   `(popup-menu-mouse-face            ((,srcery-class (:inherit highlight))))
-   `(popup-isearch-match              ((,srcery-class (:inherit match))))
-   `(popup-scroll-bar-foreground-face ((,srcery-class (:background ,srcery-gray4))))
-   `(popup-scroll-bar-background-face ((,srcery-class (:background ,srcery-bright-black))))
+   `(popup-face
+     ((,srcery-class (:background ,srcery-bright-black :foreground ,srcery-bright-white))
+      (,srcery-256-class (:background ,srcery-256-bright-black :foreground ,srcery-256-bright-white))))
+
+   `(popup-tip-face
+     ((,srcery-class (:background ,srcery-bright-blue :foreground ,srcery-bright-white :bold nil :italic nil :underline nil))
+      (,srcery-256-class (:background ,srcery-256-bright-blue :foreground ,srcery-256-bright-white :bold nil :italic nil :underline nil))))
+
+   `(popup-menu-face
+     ((,srcery-class (:background ,srcery-bright-black :foreground ,srcery-bright-white))
+      (,srcery-256-class (:background ,srcery-256-bright-black :foreground ,srcery-256-bright-white))))
+
+   `(popup-enu-selection-face
+     ((,srcery-class (:background ,srcery-bright-blue :foreground ,srcery-bright-white))
+      (,srcery-256-class (:background ,srcery-256-bright-blue :foreground ,srcery-256-bright-white))))
+
+   `(popup-menu-mouse-face
+     ((,srcery-class (:inherit highlight))
+      (,srcery-256-class (:inherit highlight))))
+
+   `(popup-isearch-match
+     ((,srcery-class (:inherit match))
+      (,srcery-256-class (:inherit match))))
+
+   `(popup-scroll-bar-foreground-face
+     ((,srcery-class (:background ,srcery-gray4))
+      (,srcery-256-class (:background ,srcery-256-gray4))))
+
+   `(popup-scroll-bar-background-face
+     ((,srcery-class (:background ,srcery-bright-black))
+      (,srcery-256-class (:background ,srcery-256-bright-black))))
+
 
    ;; mode-line
-   `(powerline-active1   ((,srcery-class (:background ,srcery-gray3 :foreground ,srcery-bright-white))))
-   `(powerline-active2   ((,srcery-class (:foreground ,srcery-bright-white))))
-   `(powerline-inactive1 ((,srcery-class (:background ,srcery-bright-black :foreground ,srcery-white))))
-   `(powerline-inactive2 ((,srcery-class (:background ,srcery-bright-black :foreground ,srcery-white))))
+   `(powerline-active1
+     ((,srcery-class (:background ,srcery-gray3 :foreground ,srcery-bright-white))
+      (,srcery-256-class (:background ,srcery-256-gray3 :foreground ,srcery-256-bright-white))))
 
-   `(mode-line                    ((,srcery-class (:foreground ,srcery-white :background ,srcery-bright-black))))
-   `(mode-line-inactive           ((,srcery-class (:foreground ,srcery-white :background ,srcery-bright-black))))
-   `(mode-line-buffer-id          ((,srcery-class (:foreground ,srcery-yellow))))
-   `(mode-line-highlight          ((,srcery-class (:background ,srcery-bright-black :box (:color ,srcery-magenta :line-width 1)))))
-   `(mode-line-buffer-id-inactive ((,srcery-class (:foreground ,srcery-bright-white))))
-   `(magit-mode-line-process      ((,srcery-class (:foreground ,srcery-blue))))
-   ;; `(mode-line-emphasis           ((,srcery-class (:weight bold :foreground ,srcery-yellow))))
+   `(powerline-active2
+     ((,srcery-class (:foreground ,srcery-bright-white))
+      (,srcery-256-class (:foreground ,srcery-256-bright-white))))
 
-   `(spaceline-python-venv      ((,srcery-class (:foreground ,srcery-green))))
-   `(spaceline-flycheck-error   ((,srcery-class (:foreground ,srcery-red))))
-   `(spaceline-flycheck-info    ((,srcery-class (:foreground ,srcery-bright-white))))
-   `(spaceline-flycheck-warning ((,srcery-class (:foreground ,srcery-bright-orange))))
-   `(spaceline-evil-normal      ((,srcery-class (:background ,srcery-gray4 :foreground ,srcery-bright-white))))
-   `(spaceline-evil-insert      ((,srcery-class (:background ,srcery-bright-white :foreground ,srcery-black))))
-   `(spaceline-evil-replace     ((,srcery-class (:background ,srcery-bright-red :foreground ,srcery-bright-white))))
-   `(spaceline-evil-visual      ((,srcery-class (:background ,srcery-cyan :foreground ,srcery-black))))
-   `(spaceline-evil-motion      ((,srcery-class (:background ,srcery-bright-magenta :foreground ,srcery-black))))
-   `(spaceline-evil-emacs       ((,srcery-class (:background ,srcery-orange :foreground ,srcery-bright-white))))
-   `(spaceline-unmodified       ((,srcery-class (:foreground ,srcery-bright-white))))
-   `(spaceline-modified         ((,srcery-class (:background ,srcery-bright-orange :foreground ,srcery-black))))
-   `(spaceline-read-only        ((,srcery-class (:background ,srcery-gray1 :foreground ,srcery-orange))))
-   `(spaceline-highlight-face   ((,srcery-class (:background ,srcery-yellow :foreground ,srcery-black))))
+   `(powerline-inactive1
+     ((,srcery-class (:background ,srcery-bright-black :foreground ,srcery-white))
+      (,srcery-256-class (:background ,srcery-256-bright-black :foreground ,srcery-256-white))))
+
+   `(powerline-inactive2
+     ((,srcery-class (:background ,srcery-bright-black :foreground ,srcery-white))
+      (,srcery-256-class (:background ,srcery-256-bright-black :foreground ,srcery-256-white))))
+
+   `(mode-line
+     ((,srcery-class (:foreground ,srcery-white :background ,srcery-bright-black))
+      (,srcery-256-class (:foreground ,srcery-256-white :background ,srcery-256-bright-black))))
+
+   `(mode-line-inactive
+     ((,srcery-class (:foreground ,srcery-white :background ,srcery-bright-black))
+      (,srcery-256-class (:foreground ,srcery-256-white :background ,srcery-256-bright-black))))
+
+   `(mode-line-buffer-id
+     ((,srcery-class (:foreground ,srcery-yellow))
+      (,srcery-256-class (:foreground ,srcery-256-yellow))))
+
+   `(mode-line-highlight
+     ((,srcery-class (:background ,srcery-bright-black :box (:color ,srcery-magenta :line-width 1)))
+      (,srcery-256-class (:background ,srcery-256-bright-black :box (:color ,srcery-256-magenta :line-width 1)))))
+
+   `(mode-line-buffer-id-inactive
+     ((,srcery-class (:foreground ,srcery-bright-white))
+      (,srcery-256-class (:foreground ,srcery-256-bright-white))))
+
+   `(magit-mode-line-process
+     ((,srcery-class (:foreground ,srcery-blue))
+      (,srcery-256-class (:foreground ,srcery-256-blue))))
+
+   ;; `(mode-line-emphasis
+   ;;   ((,srcery-class (:weight bold :foreground ,srcery-yellow))
+   ;;    (,srcery-256-class (:weight bold :foreground ,srcery-256-yellow))))
+
+   `(spaceline-python-venv
+     ((,srcery-class (:foreground ,srcery-green))
+      (,srcery-256-class (:foreground ,srcery-256-green))))
+
+   `(spaceline-flycheck-error
+     ((,srcery-class (:foreground ,srcery-red))
+      (,srcery-256-class (:foreground ,srcery-256-red))))
+
+   `(spaceline-flycheck-info
+     ((,srcery-class (:foreground ,srcery-bright-white))
+      (,srcery-256-class (:foreground ,srcery-256-bright-white))))
+
+   `(spaceline-flycheck-warning
+     ((,srcery-class (:foreground ,srcery-bright-orange))
+      (,srcery-256-class (:foreground ,srcery-256-bright-orange))))
+
+   `(spaceline-evil-normal
+     ((,srcery-class (:background ,srcery-gray4 :foreground ,srcery-bright-white))
+      (,srcery-256-class (:background ,srcery-256-gray4 :foreground ,srcery-256-bright-white))))
+
+   `(spaceline-evil-insert
+     ((,srcery-class (:background ,srcery-bright-white :foreground ,srcery-black))
+      (,srcery-256-class (:background ,srcery-256-bright-white :foreground ,srcery-256-black))))
+
+   `(spaceline-evil-replace
+     ((,srcery-class (:background ,srcery-bright-red :foreground ,srcery-bright-white))
+      (,srcery-256-class (:background ,srcery-256-bright-red :foreground ,srcery-256-bright-white))))
+
+   `(spaceline-evil-visual
+     ((,srcery-class (:background ,srcery-cyan :foreground ,srcery-black))
+      (,srcery-256-class (:background ,srcery-256-cyan :foreground ,srcery-256-black))))
+
+   `(spaceline-evil-motion
+     ((,srcery-class (:background ,srcery-bright-magenta :foreground ,srcery-black))
+      (,srcery-256-class (:background ,srcery-256-bright-magenta :foreground ,srcery-256-black))))
+
+   `(spaceline-evil-emacs
+     ((,srcery-class (:background ,srcery-orange :foreground ,srcery-bright-white))
+      (,srcery-256-class (:background ,srcery-256-orange :foreground ,srcery-256-bright-white))))
+
+   `(spaceline-unmodified
+     ((,srcery-class (:foreground ,srcery-bright-white))
+      (,srcery-256-class (:foreground ,srcery-256-bright-white))))
+
+   `(spaceline-modified
+     ((,srcery-class (:background ,srcery-bright-orange :foreground ,srcery-black))
+      (,srcery-256-class (:background ,srcery-256-bright-orange :foreground ,srcery-256-black))))
+
+   `(spaceline-read-only
+     ((,srcery-class (:background ,srcery-gray1 :foreground ,srcery-orange))
+      (,srcery-256-class (:background ,srcery-256-gray1 :foreground ,srcery-256-orange))))
+
+   `(spaceline-highlight-face
+     ((,srcery-class (:background ,srcery-yellow :foreground ,srcery-black))
+      (,srcery-256-class (:background ,srcery-256-yellow :foreground ,srcery-256-black))))
+
 
    ;; rainbow-delimiters
    `(rainbow-delimiters-depth-1-face    ((,srcery-class :foreground ,srcery-bright-white)))
