@@ -32,7 +32,7 @@
 ;;; Code:
 
 (unless (>= emacs-major-version 24)
-  (error "The monokai theme requires Emacs 24 or later!"))
+  (error "Srcery theme requires Emacs 24 or later!"))
 
 (deftheme srcery "Srcery color theme")
 
@@ -45,46 +45,132 @@
   :type 'boolean
   :group 'srcery)
 
-(defcustom srcery-custom-colors nil
-  "Specify a list of custom colors."
-  :type 'alist
-  :group 'srcery)
-
 (defcustom srcery-invert-matches nil
   "Use inverse video for search matches."
   :type 'boolean
   :group 'srcery)
 
+(defcustom srcery-black "#1C1B19"
+  "Palette - black"
+  :type 'string
+  :group 'srcery)
 
-;;;###autoload
+(defcustom srcery-red "#EF2F27"
+  "Palette - red"
+  :type 'string
+  :group 'srcery)
+
+(defcustom srcery-green "#519F50"
+  "Palette - green"
+  :type 'string
+  :group 'srcery)
+
+(defcustom srcery-yellow "#FBB829"
+  "Palette - yellow"
+  :type 'string
+  :group 'srcery)
+
+(defcustom srcery-blue "#2C78BF"
+  "Palette - blue"
+  :type 'string
+  :group 'srcery)
+
+(defcustom srcery-magenta "#E02C6D"
+  "Palette - magenta"
+  :type 'string
+  :group 'srcery)
+
+(defcustom srcery-cyan "#0AAEB3"
+  "Palette - cyan"
+  :type 'string
+  :group 'srcery)
+
+(defcustom srcery-white "#918175"
+  "Palette - white"
+  :type 'string
+  :group 'srcery)
+
+(defcustom srcery-bright-black "#2D2C29"
+  "Palette - bright black"
+  :type 'string
+  :group 'srcery)
+
+(defcustom srcery-bright-red "#F75341"
+  "Palette - bright red"
+  :type 'string
+  :group 'srcery)
+
+(defcustom srcery-bright-green "#98BC37"
+  "Palette - bright green"
+  :type 'string
+  :group 'srcery)
+
+(defcustom srcery-bright-yellow "#FED06E"
+  "Palette - bright yellow"
+  :type 'string
+  :group 'srcery)
+
+(defcustom srcery-bright-blue "#68A8E4"
+  "Palette - bright blue"
+  :type 'string
+  :group 'srcery)
+
+(defcustom srcery-bright-magenta "#FF5C8F"
+  "Palette - bright magenta"
+  :type 'string
+  :group 'srcery)
+
+(defcustom srcery-bright-cyan "#53FDE9"
+  "Palette - bright cyan"
+  :type 'string
+  :group 'srcery)
+
+(defcustom srcery-bright-white "#FCE8C3"
+  "Palette - bright white"
+  :type 'string
+  :group 'srcery)
+
+(defcustom srcery-orange "#D75F00"
+  "Palette xterm 166 - orange"
+  :type 'string
+  :group 'srcery)
+
+(defcustom srcery-bright-orange "#FF8700"
+  "Palette xterm 208 - bright orange"
+  :type 'string
+  :group 'srcery)
+
+(defcustom srcery-hard-black "#121212"
+  "Palette xterm 233 - hard black"
+  :type 'string
+  :group 'srcery)
+
+(defcustom srcery-gray-1 "#262626"
+  "Palette xterm 235 - gray 1"
+  :type 'string
+  :group 'srcery)
+
+(defcustom srcery-gray-2 "#303030"
+  "Palette xterm 236 - gray 2"
+  :type 'string
+  :group 'srcery)
+
+(defcustom srcery-gray-3 "#3A3A3A"
+  "Palette xterm 237 - gray 3"
+  :type 'string
+  :group 'srcery)
+
+(defcustom srcery-gray-4 "#444444"
+  "Palette xterm 238 - gray 4"
+  :type 'string
+  :group 'srcery)
+
+(defcustom srcery-gray-5 "#4E4E4E"
+  "Palette xterm 239 - gray 5"
+  :type 'string
+  :group 'srcery)
+
 (let* ((srcery-class '((class color) (min-colors 257)))
-
-       (srcery-black          "#1C1B19")
-       (srcery-red            "#EF2F27")
-       (srcery-green          "#519F50")
-       (srcery-yellow         "#FBB829")
-       (srcery-blue           "#2C78BF")
-       (srcery-magenta        "#E02C6D")
-       (srcery-cyan           "#0AAEB3")
-       (srcery-white          "#918175")
-       (srcery-bright-black   "#2D2B28")
-       (srcery-bright-red     "#F75341")
-       (srcery-bright-green   "#98BC37")
-       (srcery-bright-yellow  "#FED06E")
-       (srcery-bright-blue    "#68A8E4")
-       (srcery-bright-magenta "#FF5C8F")
-       (srcery-bright-cyan    "#53FDE9")
-       (srcery-bright-white   "#FCE8C3")
-
-       (srcery-orange         "#D75F00")
-       (srcery-bright-orange  "#FF8700")
-       (srcery-hard-black     "#121212")
-       (srcery-gray1          "#262626")
-       (srcery-gray2          "#303030")
-       (srcery-gray3          "#3A3A3A")
-       (srcery-gray4          "#444444")
-       (srcery-gray5          "#4E4E4E")
-
 
        (srcery-256-class '((class color) (min-colors 89)))
 
@@ -113,7 +199,6 @@
        (srcery-256-gray3          "color-237")
        (srcery-256-gray4          "color-238")
        (srcery-256-gray5          "color-239"))
-
 
   (custom-theme-set-faces
    'srcery
@@ -259,7 +344,7 @@
       (,srcery-256-class (:weight bold :foreground ,srcery-256-yellow))))
 
    `(page-break-lines
-     ((,srcery-class (:foreground ,srcery-gray3))
+     ((,srcery-class (:foreground ,srcery-gray-3))
       (,srcery-256-class (:foreground ,srcery-256-gray3))))
 
    `(region
@@ -267,7 +352,7 @@
       (,srcery-256-class (:inverse-video ,t))))
 
    `(secondary-selection
-     ((,srcery-class (:background ,srcery-gray2))
+     ((,srcery-class (:background ,srcery-gray-2))
       (,srcery-256-class (:background ,srcery-256-gray2))))
 
    `(success
@@ -398,11 +483,11 @@
       (,srcery-256-class (:background ,srcery-256-bright-white :foreground ,srcery-256-black))))
 
    `(company-preview
-     ((,srcery-class (:background ,srcery-gray1 :foreground ,srcery-bright-white))
+     ((,srcery-class (:background ,srcery-gray-1 :foreground ,srcery-bright-white))
       (,srcery-256-class (:background ,srcery-256-gray1 :foreground ,srcery-256-bright-white))))
 
    `(company-preview-common
-     ((,srcery-class (:background ,srcery-gray1 :foreground ,srcery-bright-white))
+     ((,srcery-class (:background ,srcery-gray-1 :foreground ,srcery-bright-white))
       (,srcery-256-class (:background ,srcery-256-gray1 :foreground ,srcery-256-bright-white))))
 
    `(company-preview-search
@@ -410,7 +495,7 @@
       (,srcery-256-class (:inherit match))))
 
    `(company-scrollbar-bg
-     ((,srcery-class (:background ,srcery-gray1))
+     ((,srcery-class (:background ,srcery-gray-1))
       (,srcery-256-class (:background ,srcery-256-gray1))))
 
    `(company-scrollbar-fg
@@ -422,7 +507,7 @@
       (,srcery-256-class (:inherit region))))
 
    `(company-tooltip
-     ((,srcery-class (:background ,srcery-gray1 :foreground ,srcery-white))
+     ((,srcery-class (:background ,srcery-gray-1 :foreground ,srcery-white))
       (,srcery-256-class (:background ,srcery-256-gray1 :foreground ,srcery-256-white))))
 
    `(company-tooltip-annotation
@@ -430,7 +515,7 @@
       (,srcery-256-class (:foreground ,srcery-256-red))))
 
    `(company-tooltip-common
-     ((,srcery-class (:background ,srcery-gray1 :foreground ,srcery-bright-white))
+     ((,srcery-class (:background ,srcery-gray-1 :foreground ,srcery-bright-white))
       (,srcery-256-class (:background ,srcery-256-gray1 :foreground ,srcery-256-bright-white))))
 
    `(company-tooltip-common-selection
@@ -451,7 +536,7 @@
 
    ;; racer
    `(racer-tooltip
-     ((,srcery-class (:foreground ,srcery-bright-white :background ,srcery-gray1))
+     ((,srcery-class (:foreground ,srcery-bright-white :background ,srcery-gray-1))
       (,srcery-256-class (:foreground ,srcery-256-bright-white :background ,srcery-256-gray1))))
 
    `(racer-help-heading-face
@@ -568,7 +653,7 @@
 
    ;; ediff
    `(ediff-current-diff-A
-     ((,srcery-class(:background ,srcery-gray1 :foreground ,srcery-red))
+     ((,srcery-class(:background ,srcery-gray-1 :foreground ,srcery-red))
       (,srcery-256-class(:background ,srcery-256-gray1 :foreground ,srcery-256-red))))
 
    `(ediff-current-diff-Ancestor
@@ -1803,7 +1888,7 @@
       (,srcery-256-class (:foreground ,srcery-256-yellow))))
 
    `(org-table
-     ((,srcery-class (:foreground ,srcery-bright-white :background ,srcery-gray1))
+     ((,srcery-class (:foreground ,srcery-bright-white :background ,srcery-gray-1))
       (,srcery-256-class (:foreground ,srcery-256-bright-white :background ,srcery-256-gray1))))
 
    `(org-time-grid
@@ -1857,7 +1942,7 @@
       (,srcery-256-class (:inherit match))))
 
    `(popup-scroll-bar-foreground-face
-     ((,srcery-class (:background ,srcery-gray4))
+     ((,srcery-class (:background ,srcery-gray-4))
       (,srcery-256-class (:background ,srcery-256-gray4))))
 
    `(popup-scroll-bar-background-face
@@ -1867,7 +1952,7 @@
 
    ;; mode-line
    `(powerline-active1
-     ((,srcery-class (:background ,srcery-gray3 :foreground ,srcery-bright-white))
+     ((,srcery-class (:background ,srcery-gray-3 :foreground ,srcery-bright-white))
       (,srcery-256-class (:background ,srcery-256-gray3 :foreground ,srcery-256-bright-white))))
 
    `(powerline-active2
@@ -1927,7 +2012,7 @@
       (,srcery-256-class (:foreground ,srcery-256-bright-orange))))
 
    `(spaceline-evil-normal
-     ((,srcery-class (:background ,srcery-gray4 :foreground ,srcery-bright-white))
+     ((,srcery-class (:background ,srcery-gray-4 :foreground ,srcery-bright-white))
       (,srcery-256-class (:background ,srcery-256-gray4 :foreground ,srcery-256-bright-white))))
 
    `(spaceline-evil-insert
@@ -1959,7 +2044,7 @@
       (,srcery-256-class (:background ,srcery-256-bright-orange :foreground ,srcery-256-black))))
 
    `(spaceline-read-only
-     ((,srcery-class (:background ,srcery-gray1 :foreground ,srcery-orange))
+     ((,srcery-class (:background ,srcery-gray-1 :foreground ,srcery-orange))
       (,srcery-256-class (:background ,srcery-256-gray1 :foreground ,srcery-256-orange))))
 
    `(spaceline-highlight-face
@@ -2032,7 +2117,7 @@
       (,srcery-256-class (:background ,srcery-256-green, :foreground ,srcery-256-black))))
 
    `(shm-quarantine-face
-     ((,srcery-class (:background ,srcery-gray1))
+     ((,srcery-class (:background ,srcery-gray-1))
       (,srcery-256-class (:background ,srcery-256-gray1))))
 
 
@@ -2048,7 +2133,7 @@
 
    ;; paren-face
    `(parenthesis
-     ((,srcery-class (:foreground ,srcery-gray5))
+     ((,srcery-class (:foreground ,srcery-gray-5))
       (,srcery-256-class (:foreground ,srcery-256-gray5))))
 
 
@@ -2078,7 +2163,7 @@
 
    ;; spacemacs
    `(spacemacs-normal-face
-     ((,srcery-class (:background ,srcery-gray4 :foreground ,srcery-bright-white))
+     ((,srcery-class (:background ,srcery-gray-4 :foreground ,srcery-bright-white))
       (,srcery-256-class (:background ,srcery-256-gray4 :foreground ,srcery-256-bright-white))))
 
    `(spacemacs-insert-face
@@ -2302,7 +2387,7 @@
       (,srcery-256-class (:background nil :foreground ,srcery-256-green))))
 
    `(whitespace-space
-     ((,srcery-class (:background nil :foreground ,srcery-gray4))
+     ((,srcery-class (:background nil :foreground ,srcery-gray-4))
       (,srcery-256-class (:background nil :foreground ,srcery-256-gray4))))
 
    `(whitespace-space-after-tab
@@ -2440,11 +2525,13 @@
    `(ansi-color-names-vector [,srcery-black ,srcery-red ,srcery-green ,srcery-yellow ,srcery-blue ,srcery-magenta ,srcery-cyan ,srcery-white])
    `(hl-paren-colors '(,srcery-bright-white ,srcery-green ,srcery-blue ,srcery-white))))
 
+;;;###autoload
 (when load-file-name
   (add-to-list 'custom-theme-load-path
                (file-name-as-directory (file-name-directory load-file-name))))
 
 (provide-theme 'srcery)
+
 (provide 'srcery-theme)
 
 ;; Local Variables:
