@@ -1556,31 +1556,85 @@
       (,srcery-256-class (:foreground ,srcery-256-bright-white))))
 
 ;;;;; man
-   `(Man-overstrike ((,srcery-class (:foreground ,srcery-blue :weight bold))))
-   `(Man-reverse    ((,srcery-class (:foreground ,srcery-magenta))))
-   `(Man-underline  ((,srcery-class (:foreground ,srcery-green :underline t))))
+   `(Man-overstrike
+     ((,srcery-class (:foreground ,srcery-blue :weight bold))
+      (,srcery-256-class (:foreground ,srcery-256-blue :weight bold))))
+
+   `(Man-reverse
+     ((,srcery-class (:foreground ,srcery-magenta))
+      (,srcery-256-class (:foreground ,srcery-256-magenta))))
+
+   `(Man-underline
+     ((,srcery-class (:foreground ,srcery-green :underline t))
+      (,srcery-256-class (:foreground ,srcery-256-green :underline t))))
+
 
 ;;;;; markdown
-   `(markdown-header-face-1 ((,srcery-class (:weight bold :foreground ,srcery-blue :height ,(if srcery-org-height 1.3 1.0)))))
-   `(markdown-header-face-2 ((,srcery-class (:weight bold :foreground ,srcery-bright-cyan :height ,(if srcery-org-height 1.2 1.0)))))
-   `(markdown-header-face-3 ((,srcery-class (:bold nil :foreground ,srcery-bright-green :height ,(if srcery-org-height 1.1 1.0)))))
-   `(markdown-header-face-4 ((,srcery-class (:bold nil :foreground ,srcery-yellow))))
-   `(markdown-header-face-5 ((,srcery-class (:bold nil :foreground ,srcery-blue))))
-   `(markdown-header-face-6 ((,srcery-class (:bold nil :foreground ,srcery-cyan))))
+   `(markdown-header-face-1
+     ((,srcery-class (:weight bold :foreground ,srcery-blue :height ,(if srcery-org-height 1.3 1.0)))
+      (,srcery-256-class (:weight bold :foreground ,srcery-256-blue :height ,(if srcery-256-org-height 1.3 1.0)))))
+
+   `(markdown-header-face-2
+     ((,srcery-class (:weight bold :foreground ,srcery-bright-cyan :height ,(if srcery-org-height 1.2 1.0)))
+      (,srcery-256-class (:weight bold :foreground ,srcery-256-bright-cyan :height ,(if srcery-256-org-height 1.2 1.0)))))
+
+   `(markdown-header-face-3
+     ((,srcery-class (:bold nil :foreground ,srcery-bright-green :height ,(if srcery-org-height 1.1 1.0)))
+      (,srcery-256-class (:bold nil :foreground ,srcery-256-bright-green :height ,(if srcery-256-org-height 1.1 1.0)))))
+
+   `(markdown-header-face-4
+     ((,srcery-class (:bold nil :foreground ,srcery-yellow))
+      (,srcery-256-class (:bold nil :foreground ,srcery-256-yellow))))
+
+   `(markdown-header-face-5
+     ((,srcery-class (:bold nil :foreground ,srcery-blue))
+      (,srcery-256-class (:bold nil :foreground ,srcery-256-blue))))
+
+   `(markdown-header-face-6
+     ((,srcery-class (:bold nil :foreground ,srcery-cyan))
+      (,srcery-256-class (:bold nil :foreground ,srcery-256-cyan))))
 
 ;;;;; mu4e
-   `(mu4e-cited-1-face         ((,srcery-class (:foreground ,srcery-bright-white))))
-   `(mu4e-cited-7-face         ((,srcery-class (:foreground ,srcery-bright-white))))
-   `(mu4e-header-marks-face    ((,srcery-class (:foreground ,srcery-green))))
-   `(mu4e-header-key-face      ((,srcery-class (:foreground ,srcery-cyan :weight bold))))
-   `(mu4e-view-url-number-face ((,srcery-class (:foreground ,srcery-green))))
-   `(mu4e-unread-face          ((,srcery-class (:foreground ,srcery-yellow :weight bold))))
+   `(mu4e-cited-1-face
+     ((,srcery-class (:foreground ,srcery-bright-white))
+      (,srcery-256-class (:foreground ,srcery-256-bright-white))))
+
+   `(mu4e-cited-7-face
+     ((,srcery-class (:foreground ,srcery-bright-white))
+      (,srcery-256-class (:foreground ,srcery-256-bright-white))))
+
+   `(mu4e-header-marks-face
+     ((,srcery-class (:foreground ,srcery-green))
+      (,srcery-256-class (:foreground ,srcery-256-green))))
+
+   `(mu4e-header-key-face
+     ((,srcery-class (:foreground ,srcery-cyan :weight bold))
+      (,srcery-256-class (:foreground ,srcery-256-cyan :weight bold))))
+
+   `(mu4e-view-url-number-face
+     ((,srcery-class (:foreground ,srcery-green))
+      (,srcery-256-class (:foreground ,srcery-256-green))))
+
+   `(mu4e-unread-face
+     ((,srcery-class (:foreground ,srcery-yellow :weight bold))
+      (,srcery-256-class (:foreground ,srcery-256-yellow :weight bold))))
 
 ;;;;; neotree
-   `(neo-dir-link-face   ((,srcery-class (:foreground ,srcery-red :weight bold))))
-   `(neo-expand-btn-face ((,srcery-class (:foreground ,srcery-bright-white))))
-   `(neo-file-link-face  ((,srcery-class (:foreground ,srcery-bright-white))))
-   `(neo-root-dir-face   ((,srcery-class (:foreground ,srcery-yellow :weight bold))))
+   `(neo-dir-link-face
+     ((,srcery-class (:foreground ,srcery-red :weight bold))
+      (,srcery-256-class (:foreground ,srcery-256-red :weight bold))))
+
+   `(neo-expand-btn-face
+     ((,srcery-class (:foreground ,srcery-bright-white))
+      (,srcery-256-class (:foreground ,srcery-256-bright-white))))
+
+   `(neo-file-link-face
+     ((,srcery-class (:foreground ,srcery-bright-white))
+      (,srcery-256-class (:foreground ,srcery-256-bright-white))))
+
+   `(neo-root-dir-face
+     ((,srcery-class (:foreground ,srcery-yellow :weight bold))
+      (,srcery-256-class (:foreground ,srcery-256-yellow :weight bold))))
 
 ;;;;; org
    `(org-agenda-clocking         ((,srcery-class (:background ,srcery-magenta :foreground ,srcery-green))))
