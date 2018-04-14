@@ -1187,44 +1187,125 @@
    `(ido-vertical-match-face ((,srcery-class (:foreground ,srcery-green :underline nil))
                               (,srcery-256-class (:foreground ,srcery-256-green :underline nil))))
 
-;;;;; info
-   `(info-header-xref    ((,srcery-class (:foreground ,srcery-yellow :underline t))))
-   `(info-menu           ((,srcery-class (:foreground ,srcery-green))))
-   `(info-node           ((,srcery-class (:foreground ,srcery-yellow :weight bold))))
-   `(info-quoted-name    ((,srcery-class (:foreground ,srcery-red))))
-   `(info-reference-item ((,srcery-class (:background nil :underline t :weight bold))))
-   `(info-string         ((,srcery-class (:foreground ,srcery-bright-green))))
-   `(info-title-1        ((,srcery-class (:height 1.4 :weight bold))))
-   `(info-title-2        ((,srcery-class (:height 1.3 :weight bold))))
-   `(info-title-3        ((,srcery-class (:height 1.3))))
-   `(info-title-4        ((,srcery-class (:height 1.2))))
+   ;; info
+   `(info-header-xref
+     ((,srcery-class (:foreground ,srcery-yellow :underline t))
+      (,srcery-256-class (:foreground ,srcery-256-yellow :underline t))))
 
-;;;;; ivy
-   `(ivy-current-match           ((,srcery-class (:background ,srcery-magenta :weight bold))))
-   `(ivy-minibuffer-match-face-1 ((,srcery-class (:weight bold))))
-   `(ivy-minibuffer-match-face-2 ((,srcery-class (:foreground ,srcery-blue :underline t))))
-   `(ivy-minibuffer-match-face-3 ((,srcery-class (:foreground ,srcery-yellow :underline t))))
-   `(ivy-minibuffer-match-face-4 ((,srcery-class (:foreground ,srcery-bright-green :underline t))))
-   `(ivy-remote                  ((,srcery-class (:foreground ,srcery-cyan))))
+   `(info-menu
+     ((,srcery-class (:foreground ,srcery-green))
+      (,srcery-256-class (:foreground ,srcery-256-green))))
 
-;;;;; latex
-   `(font-latex-bold-face                ((,srcery-class (:foreground ,srcery-green))))
-   `(font-latex-italic-face              ((,srcery-class (:foreground ,srcery-red :italic t))))
-   `(font-latex-match-reference-keywords ((,srcery-class (:foreground ,srcery-bright-magenta))))
-   `(font-latex-match-variable-keywords  ((,srcery-class (:foreground ,srcery-blue))))
-   `(font-latex-sectioning-0-face        ((,srcery-class (:weight bold :foreground ,srcery-bright-green :height ,(if srcery-org-height 1.3 1.0)))))
-   `(font-latex-sectioning-1-face        ((,srcery-class (:weight bold :foreground ,srcery-bright-yellow :height ,(if srcery-org-height 1.3 1.0)))))
-   `(font-latex-sectioning-2-face        ((,srcery-class (:weight bold :foreground ,srcery-blue :height ,(if srcery-org-height 1.3 1.0)))))
-   `(font-latex-sectioning-3-face        ((,srcery-class (:weight bold :foreground ,srcery-cyan :height ,(if srcery-org-height 1.2 1.0)))))
-   `(font-latex-sectioning-4-face        ((,srcery-class (:bold nil :foreground ,srcery-bright-green :height ,(if srcery-org-height 1.1 1.0)))))
-   `(font-latex-sectioning-5-face        ((,srcery-class (:bold nil :foreground ,srcery-yellow))))
-   `(font-latex-string-face              ((,srcery-class (:foreground ,srcery-bright-green))))
+   `(info-node
+     ((,srcery-class (:foreground ,srcery-yellow :weight bold))
+      (,srcery-256-class (:foreground ,srcery-256-yellow :weight bold))))
+
+   `(info-quoted-name
+     ((,srcery-class (:foreground ,srcery-red))
+      (,srcery-256-class (:foreground ,srcery-256-red))))
+
+   `(info-reference-item
+     ((,srcery-class (:background nil :underline t :weight bold))
+      (,srcery-256-class (:background nil :underline t :weight bold))))
+
+   `(info-string
+     ((,srcery-class (:foreground ,srcery-bright-green))
+      (,srcery-256-class (:foreground ,srcery-256-bright-green))))
+
+   `(info-title-1
+     ((,srcery-class (:height 1.4 :weight bold))
+      (,srcery-256-class (:height 1.4 :weight bold))))
+
+   `(info-title-2
+     ((,srcery-class (:height 1.3 :weight bold))
+      (,srcery-256-class (:height 1.3 :weight bold))))
+
+   `(info-title-3
+     ((,srcery-class (:height 1.3))
+      (,srcery-256-class (:height 1.3))))
+
+   `(info-title-4
+     ((,srcery-class (:height 1.2))
+      (,srcery-256-class (:height 1.2))))
+
+   ;; ivy
+   `(ivy-current-match
+     ((,srcery-class (:background ,srcery-magenta :weight bold))
+      (,srcery-256-class (:background ,srcery-256-magenta :weight bold))))
+
+   `(ivy-minibuffer-match-face-1
+     ((,srcery-class (:weight bold))
+      (,srcery-256-class (:weight bold))))
+
+   `(ivy-minibuffer-match-face-2
+     ((,srcery-class (:foreground ,srcery-blue :underline t))
+      (,srcery-256-class (:foreground ,srcery-256-blue :underline t))))
+
+   `(ivy-minibuffer-match-face-3
+     ((,srcery-class (:foreground ,srcery-yellow :underline t))
+      (,srcery-256-class (:foreground ,srcery-256-yellow :underline t))))
+
+   `(ivy-minibuffer-match-face-4
+     ((,srcery-class (:foreground ,srcery-bright-green :underline t))
+      (,srcery-256-class (:foreground ,srcery-256-bright-green :underline t))))
+
+   `(ivy-remote
+     ((,srcery-class (:foreground ,srcery-cyan))
+      (,srcery-256-class (:foreground ,srcery-256-cyan))))
+
+   ;; latex
+   `(font-latex-bold-face
+     ((,srcery-class (:foreground ,srcery-green))
+      (,srcery-256-class (:foreground ,srcery-256-green))))
+
+   `(font-latex-italic-face
+     ((,srcery-class (:foreground ,srcery-red :italic t))
+      (,srcery-256-class (:foreground ,srcery-256-red :italic t))))
+
+   `(font-latex-match-reference-keywords
+     ((,srcery-class (:foreground ,srcery-bright-magenta))
+      (,srcery-256-class (:foreground ,srcery-256-bright-magenta))))
+
+   `(font-latex-match-variable-keywords
+     ((,srcery-class (:foreground ,srcery-blue))
+      (,srcery-256-class (:foreground ,srcery-256-blue))))
+
+   `(font-latex-sectioning-0-face
+     ((,srcery-class (:weight bold :foreground ,srcery-bright-green :height ,(if srcery-org-height 1.3 1.0)))
+      (,srcery-256-class (:weight bold :foreground ,srcery-256-bright-green :height ,(if srcery-org-height 1.3 1.0)))))
+
+   `(font-latex-sectioning-1-face
+     ((,srcery-class (:weight bold :foreground ,srcery-bright-yellow :height ,(if srcery-org-height 1.3 1.0)))
+      (,srcery-256-class (:weight bold :foreground ,srcery-256-bright-yellow :height ,(if srcery-org-height 1.3 1.0)))))
+
+   `(font-latex-sectioning-2-face
+     ((,srcery-class (:weight bold :foreground ,srcery-blue :height ,(if srcery-org-height 1.3 1.0)))
+      (,srcery-256-class (:weight bold :foreground ,srcery-256-blue :height ,(if srcery-org-height 1.3 1.0)))))
+
+   `(font-latex-sectioning-3-face        ((,srcery-class (:weight bold :foreground ,srcery-cyan :height ,(if srcery-org-height 1.2 1.0)))
+                                          (,srcery-256-class (:weight bold :foreground ,srcery-256-cyan :height ,(if srcery-org-height 1.2 1.0)))))
+
+   `(font-latex-sectioning-4-face
+     ((,srcery-class (:bold nil :foreground ,srcery-bright-green :height ,(if srcery-org-height 1.1 1.0)))
+      (,srcery-class (:bold nil :foreground ,srcery-256-bright-green :height ,(if srcery-org-height 1.1 1.0)))))
+
+   `(font-latex-sectioning-5-face
+     ((,srcery-class (:bold nil :foreground ,srcery-yellow))
+      (,srcery-256-class (:bold nil :foreground ,srcery-256-yellow))))
+
+   `(font-latex-string-face
+     ((,srcery-class (:foreground ,srcery-bright-green))
+      (,srcery-256-class (:foreground ,srcery-256-bright-green))))
 
 ;;;;; linum-mode
-   `(linum ((,srcery-class (:foreground ,srcery-white :background ,srcery-black))))
+   `(linum
+     ((,srcery-class (:foreground ,srcery-white :background ,srcery-black))
+      (,srcery-class (:foreground ,srcery-white :background ,srcery-black))))
 
 ;;;;; linum-relative
-   `(linum-relative-current-face ((,srcery-class (:foreground ,srcery-yellow))))
+   `(linum-relative-current-face
+     ((,srcery-class (:foreground ,srcery-yellow))
+      (,srcery-class (:foreground ,srcery-yellow))))
 
 ;;;;; magit
    `(magit-blame-culprit               ((,srcery-class :foreground ,srcery-yellow)))
