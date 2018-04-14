@@ -2066,33 +2066,102 @@
 
 
    ;; evil-snipe
-   `(evil-snipe-first-match-face ((,srcery-class (:foreground ,srcery-magenta :weight bold))))
-   `(evil-snipe-matches-face     ((,srcery-class (:foreground ,srcery-magenta :weight bold))))
+   `(evil-snipe-first-match-face
+     ((,srcery-class (:foreground ,srcery-magenta :weight bold))
+      (,srcery-256-class (:foreground ,srcery-256-magenta :weight bold))))
+
+   `(evil-snipe-matches-face
+     ((,srcery-class (:foreground ,srcery-magenta :weight bold))
+      (,srcery-256-class (:foreground ,srcery-256-magenta :weight bold))))
+
 
    ;; spacemacs
-   `(spacemacs-normal-face                ((,srcery-class (:background ,srcery-gray4 :foreground ,srcery-bright-white))))
-   `(spacemacs-insert-face                ((,srcery-class (:background ,srcery-bright-white :foreground ,srcery-black))))
-   `(spacemacs-replace-face               ((,srcery-class (:background ,srcery-bright-red :foreground ,srcery-bright-white))))
-   `(spacemacs-visual-face                ((,srcery-class (:background ,srcery-bright-cyan :foreground ,srcery-black))))
-   `(spacemacs-motion-face                ((,srcery-class (:background ,srcery-magenta :foreground ,srcery-bright-white))))
-   `(spacemacs-emacs-face                 ((,srcery-class (:background ,srcery-orange :foreground ,srcery-bright-white))))
-   `(spacemacs-hybrid-face                ((,srcery-class (:background ,srcery-bright-blue :foreground ,srcery-bright-black))))
-   `(spacemacs-lisp-face                  ((,srcery-class (:background ,srcery-green :foreground ,srcery-black))))
-   `(spacemacs-evilified-face             ((,srcery-class (:background ,srcery-bright-yellow :foreground ,srcery-black))))
-   `(spacemacs-helm-navigation-ms-face    ((,srcery-class (:foreground ,srcery-bright-white))))
-   `(spacemacs-transient-state-title-face ((,srcery-class (:background nil :foreground ,srcery-green :box nil :weight bold))))
-   `(spacemacs-transient-state-title-face ((,srcery-class (:background nil :foreground ,srcery-green :box nil :weight bold))))
-   `(spacemacs-ido-navigation-ts-face     ((,srcery-class (:foreground ,srcery-yellow))))
-   `(spacemacs-iedit-face                 ((,srcery-class (:background ,srcery-bright-orange :foreground ,srcery-black))))
-   `(spacemacs-iedit-insert-face          ((,srcery-class (:background ,srcery-bright-orange :foreground ,srcery-black))))
-   `(spacemacs-micro-state-binding-face   ((,srcery-class (:foreground ,srcery-yellow :weight bold))))
+   `(spacemacs-normal-face
+     ((,srcery-class (:background ,srcery-gray4 :foreground ,srcery-bright-white))
+      (,srcery-256-class (:background ,srcery-256-gray4 :foreground ,srcery-256-bright-white))))
+
+   `(spacemacs-insert-face
+     ((,srcery-class (:background ,srcery-bright-white :foreground ,srcery-black))
+      (,srcery-256-class (:background ,srcery-256-bright-white :foreground ,srcery-256-black))))
+
+   `(spacemacs-replace-face
+     ((,srcery-class (:background ,srcery-bright-red :foreground ,srcery-bright-white))
+      (,srcery-256-class (:background ,srcery-256-bright-red :foreground ,srcery-256-bright-white))))
+
+   `(spacemacs-visual-face
+     ((,srcery-class (:background ,srcery-bright-cyan :foreground ,srcery-black))
+      (,srcery-256-class (:background ,srcery-256-bright-cyan :foreground ,srcery-256-black))))
+
+   `(spacemacs-motion-face
+     ((,srcery-class (:background ,srcery-magenta :foreground ,srcery-bright-white))
+      (,srcery-256-class (:background ,srcery-256-magenta :foreground ,srcery-256-bright-white))))
+
+   `(spacemacs-emacs-face
+     ((,srcery-class (:background ,srcery-orange :foreground ,srcery-bright-white))
+      (,srcery-256-class (:background ,srcery-256-orange :foreground ,srcery-256-bright-white))))
+
+   `(spacemacs-hybrid-face
+     ((,srcery-class (:background ,srcery-bright-blue :foreground ,srcery-bright-black))
+      (,srcery-256-class (:background ,srcery-256-bright-blue :foreground ,srcery-256-bright-black))))
+
+   `(spacemacs-lisp-face
+     ((,srcery-class (:background ,srcery-green :foreground ,srcery-black))
+      (,srcery-256-class (:background ,srcery-256-green :foreground ,srcery-256-black))))
+
+   `(spacemacs-evilified-face
+     ((,srcery-class (:background ,srcery-bright-yellow :foreground ,srcery-black))
+      (,srcery-256-class (:background ,srcery-256-bright-yellow :foreground ,srcery-256-black))))
+
+   `(spacemacs-helm-navigation-ms-face
+     ((,srcery-class (:foreground ,srcery-bright-white))
+      (,srcery-256-class (:foreground ,srcery-256-bright-white))))
+
+   `(spacemacs-transient-state-title-face
+     ((,srcery-class (:background nil :foreground ,srcery-green :box nil :weight bold))
+      (,srcery-256-class (:background nil :foreground ,srcery-256-green :box nil :weight bold))))
+
+   `(spacemacs-transient-state-title-face
+     ((,srcery-class (:background nil :foreground ,srcery-green :box nil :weight bold))
+      (,srcery-256-class (:background nil :foreground ,srcery-256-green :box nil :weight bold))))
+
+   `(spacemacs-ido-navigation-ts-face
+     ((,srcery-class (:foreground ,srcery-yellow))
+      (,srcery-256-class (:foreground ,srcery-256-yellow))))
+
+   `(spacemacs-iedit-face
+     ((,srcery-class (:background ,srcery-bright-orange :foreground ,srcery-black))
+      (,srcery-256-class (:background ,srcery-256-bright-orange :foreground ,srcery-256-black))))
+
+   `(spacemacs-iedit-insert-face
+     ((,srcery-class (:background ,srcery-bright-orange :foreground ,srcery-black))
+      (,srcery-256-class (:background ,srcery-256-bright-orange :foreground ,srcery-256-black))))
+
+   `(spacemacs-micro-state-binding-face
+     ((,srcery-class (:foreground ,srcery-yellow :weight bold))
+      (,srcery-256-class (:foreground ,srcery-256-yellow :weight bold))))
+
    ;; spacemacs-ido-navigation-ts-face
    ;; swiper
-   `(swiper-line-face    ((,srcery-class (:background ,srcery-magenta :weight bold))))
-   `(swiper-match-face-1 ((,srcery-class (:weight bold))))
-   `(swiper-match-face-2 ((,srcery-class (:foreground ,srcery-blue :underline t))))
-   `(swiper-match-face-3 ((,srcery-class (:foreground ,srcery-yellow :underline t))))
-   `(swiper-match-face-4 ((,srcery-class (:foreground ,srcery-bright-green :underline t))))
+   `(swiper-line-face
+     ((,srcery-class (:background ,srcery-magenta :weight bold))
+      (,srcery-256-class (:background ,srcery-256-magenta :weight bold))))
+
+   `(swiper-match-face-1
+     ((,srcery-class (:weight bold))
+      (,srcery-256-class (:weight bold))))
+
+   `(swiper-match-face-2
+     ((,srcery-class (:foreground ,srcery-blue :underline t))
+      (,srcery-256-class (:foreground ,srcery-256-blue :underline t))))
+
+   `(swiper-match-face-3
+     ((,srcery-class (:foreground ,srcery-yellow :underline t))
+      (,srcery-256-class (:foreground ,srcery-256-yellow :underline t))))
+
+   `(swiper-match-face-4
+     ((,srcery-class (:foreground ,srcery-bright-green :underline t))
+      (,srcery-256-class (:foreground ,srcery-256-bright-green :underline t))))
+
 
    ;; term
    `(term               ((,srcery-class (:foreground ,srcery-bright-white :background ,srcery-black))))
