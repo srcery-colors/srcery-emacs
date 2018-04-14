@@ -384,13 +384,13 @@
       (,srcery-256-class :foreground ,srcery-256-yellow :weight bold)))
 
 
-;;;;; clojure
+   ;; clojure
    `(clojure-keyword-face
      ((,srcery-class (:foreground ,srcery-blue))
       (,srcery-256-class (:foreground ,srcery-256-blue))))
 
 
-;;;;; company
+   ;; company
    `(company-echo-common
      ((,srcery-class (:background ,srcery-bright-white :foreground ,srcery-black))
       (,srcery-256-class (:background ,srcery-256-bright-white :foreground ,srcery-256-black))))
@@ -447,7 +447,7 @@
      ((,srcery-class (:foreground ,srcery-magenta))
       (,srcery-256-class (:foreground ,srcery-256-magenta))))
 
-;;;;; racer
+   ;; racer
    `(racer-tooltip
      ((,srcery-class (:foreground ,srcery-bright-white :background ,srcery-gray1))
       (,srcery-256-class (:foreground ,srcery-256-bright-white :background ,srcery-256-gray1))))
@@ -456,8 +456,7 @@
      ((,srcery-class (:foreground ,srcery-bright-white :weight bold))
       (,srcery-256-class (:foreground ,srcery-256-bright-white :weight bold))))
 
-;;;;; rust
-
+   ;; rust
    `(rust-builtin-formatting-macro-face
      ((,srcery-class (:foreground ,srcery-blue))
       (,srcery-256-class (:foreground ,srcery-256-blue))))
@@ -475,7 +474,7 @@
       (,srcery-256-class (:foreground ,srcery-256-bright-orange))))
 
 
-;;;;; diff
+   ;; diff
    `(diff-added
      ((,srcery-class :background nil :foreground ,srcery-green)
       (,srcery-256-class :background nil :foreground ,srcery-256-green)))
@@ -516,7 +515,7 @@
      ((,srcery-class :background nil :foreground ,srcery-red)
       (,srcery-256-class :background nil :foreground ,srcery-256-red)))
 
-;;;;; diff-hl
+   ;; diff-hl
    `(diff-hl-change
      ((,srcery-class :foreground ,srcery-blue)
       (,srcery-256-class :foreground ,srcery-256-blue)))
@@ -529,7 +528,7 @@
      ((,srcery-class :foreground ,srcery-green)
       (,srcery-256-class :foreground ,srcery-256-green)))
 
-;;;;; dired
+   ;; dired
    `(dired-directory
      ((,srcery-class (:foreground ,srcery-blue :background ,srcery-black))
       (,srcery-256-class (:foreground ,srcery-256-blue :background ,srcery-256-black))))
@@ -566,37 +565,107 @@
      ((,srcery-class (:foreground ,srcery-bright-orange))
       (,srcery-256-class (:foreground ,srcery-256-bright-orange))))
 
-;;;;; ediff
-   `(ediff-current-diff-A        ((,srcery-class(:background ,srcery-gray1 :foreground ,srcery-red))))
-   `(ediff-current-diff-Ancestor ((,srcery-class(:background ,srcery-black :foreground ,srcery-cyan))))
-   `(ediff-current-diff-B        ((,srcery-class(:foreground ,srcery-green))))
-   `(ediff-current-diff-C        ((,srcery-class(:background ,srcery-blue :foreground ,srcery-blue))))
-   `(ediff-even-diff-A           ((,srcery-class(:background ,srcery-bright-black))))
-   `(ediff-even-diff-Ancestor    ((,srcery-class(:background ,srcery-bright-black))))
-   `(ediff-even-diff-B           ((,srcery-class(:background ,srcery-bright-black))))
-   `(ediff-even-diff-C           ((,srcery-class(:background ,srcery-bright-black))))
-   `(ediff-fine-diff-A           ((,srcery-class(:background nil :weight bold))))
-   `(ediff-fine-diff-Ancestor    ((,srcery-class(:background nil :weight bold))))
-   `(ediff-fine-diff-B           ((,srcery-class(:background nil :weight bold))))
-   `(ediff-fine-diff-C           ((,srcery-class(:background nil :weight bold))))
-   `(ediff-odd-diff-A            ((,srcery-class(:background ,srcery-black))))
-   `(ediff-odd-diff-Ancestor     ((,srcery-class(:background ,srcery-black))))
-   `(ediff-odd-diff-B            ((,srcery-class(:background ,srcery-black))))
-   `(ediff-odd-diff-C            ((,srcery-class(:background ,srcery-black))))
+   ;; ediff
+   `(ediff-current-diff-A
+     ((,srcery-class(:background ,srcery-gray1 :foreground ,srcery-red))
+      (,srcery-256-class(:background ,srcery-256-gray1 :foreground ,srcery-256-red))))
+
+   `(ediff-current-diff-Ancestor
+     ((,srcery-class(:background ,srcery-black :foreground ,srcery-cyan))
+      (,srcery-256-class(:background ,srcery-256-black :foreground ,srcery-256-cyan))))
+
+   `(ediff-current-diff-B
+     ((,srcery-class(:foreground ,srcery-green))
+      (,srcery-256-class(:foreground ,srcery-256-green))))
+
+   `(ediff-current-diff-C
+     ((,srcery-class(:background ,srcery-blue :foreground ,srcery-blue))
+      (,srcery-256-class(:background ,srcery-256-blue :foreground ,srcery-256-blue))))
+
+   `(ediff-even-diff-A
+     ((,srcery-class(:background ,srcery-bright-black))
+      (,srcery-256-class(:background ,srcery-256-bright-black))))
+
+   `(ediff-even-diff-Ancestor
+     ((,srcery-class(:background ,srcery-bright-black))
+      (,srcery-256-class(:background ,srcery-256-bright-black))))
+
+   `(ediff-even-diff-B
+     ((,srcery-class(:background ,srcery-bright-black))
+      (,srcery-256-class(:background ,srcery-256-bright-black))))
+
+   `(ediff-even-diff-C
+     ((,srcery-class(:background ,srcery-bright-black))
+      (,srcery-256-class(:background ,srcery-256-bright-black))))
+
+   `(ediff-fine-diff-A
+     ((,srcery-class(:background nil :weight bold))
+      (,srcery-256-class(:background nil :weight bold))))
+
+   `(ediff-fine-diff-Ancestor
+     ((,srcery-class(:background nil :weight bold))
+      (,srcery-256-class(:background nil :weight bold))))
+
+   `(ediff-fine-diff-B
+     ((,srcery-class(:background nil :weight bold))
+      (,srcery-256-class(:background nil :weight bold))))
+
+   `(ediff-fine-diff-C
+     ((,srcery-class(:background nil :weight bold))
+      (,srcery-256-class(:background nil :weight bold))))
+
+   `(ediff-odd-diff-A
+     ((,srcery-class(:background ,srcery-black))
+      (,srcery-256-class(:background ,srcery-256-black))))
+
+   `(ediff-odd-diff-Ancestor
+     ((,srcery-class(:background ,srcery-black))
+      (,srcery-256-class(:background ,srcery-256-black))))
+
+   `(ediff-odd-diff-B
+     ((,srcery-class(:background ,srcery-black))
+      (,srcery-256-class(:background ,srcery-256-black))))
+
+   `(ediff-odd-diff-C
+     ((,srcery-class(:background ,srcery-black))
+      (,srcery-256-class(:background ,srcery-256-black))))
+
 
 ;;;;; ein
-   `(ein:cell-input-area           ((,srcery-class (:background ,srcery-bright-black))))
-   `(ein:cell-input-prompt         ((,srcery-class (:foreground ,srcery-green))))
-   `(ein:cell-output-prompt        ((,srcery-class (:foreground ,srcery-red))))
-   `(ein:notification-tab-normal   ((,srcery-class (:foreground ,srcery-red))))
-   `(ein:notification-tab-selected ((,srcery-class (:foreground ,srcery-green :weight bold))))
+   `(ein:cell-input-area
+     ((,srcery-class (:background ,srcery-bright-black))
+      (,srcery-256-class (:background ,srcery-256-bright-black))))
+
+   `(ein:cell-input-prompt
+     ((,srcery-class (:foreground ,srcery-green))
+      (,srcery-256-class (:foreground ,srcery-256-green))))
+
+   `(ein:cell-output-prompt
+     ((,srcery-class (:foreground ,srcery-red))
+      (,srcery-256-class (:foreground ,srcery-256-red))))
+
+   `(ein:notification-tab-normal
+     ((,srcery-class (:foreground ,srcery-red))
+      (,srcery-256-class (:foreground ,srcery-256-red))))
+
+   `(ein:notification-tab-selected
+     ((,srcery-class (:foreground ,srcery-green :weight bold))
+      (,srcery-256-class (:foreground ,srcery-256-green :weight bold))))
 
 ;;;;; eldoc
-   `(eldoc-highlight-function-argument ((,srcery-class (:foreground ,srcery-yellow :weight bold))))
+   `(eldoc-highlight-function-argument
+     ((,srcery-class (:foreground ,srcery-yellow :weight bold))
+      (,srcery-256-class (:foreground ,srcery-256-yellow :weight bold))))
+
 
 ;;;;; enh-ruby
-   `(enh-ruby-string-delimiter-face ((,srcery-class (:foreground ,srcery-bright-green))))
-   `(enh-ruby-op-face               ((,srcery-class (:background ,srcery-black :foreground ,srcery-bright-white))))
+   `(enh-ruby-string-delimiter-face
+     ((,srcery-class (:foreground ,srcery-bright-green))
+      (,srcery-256-class (:foreground ,srcery-256-bright-green))))
+
+   `(enh-ruby-op-face
+     ((,srcery-class (:background ,srcery-black :foreground ,srcery-bright-white))
+      (,srcery-256-class (:background ,srcery-256-black :foreground ,srcery-256-bright-white))))
 
 ;;;;; erc
    `(erc-input-face        ((,srcery-class (:foreground ,srcery-yellow))))
