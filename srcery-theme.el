@@ -212,12 +212,11 @@
    `(highlight
      ((,srcery-class ,(if srcery-invert-matches
                           `(:inverse-video t)
-
                         `(:background ,srcery-magenta :foreground ,srcery-bright-white)))
       (,srcery-class ,(if srcery-invert-matches
                           `(:inverse-video t)
-
                         `(:background ,srcery-256-magenta :foreground ,srcery-256-bright-white)))))
+
    `(hl-line
      ((,srcery-class (:background ,srcery-bright-black))
       (,srcery-256-class (:background ,srcery-256-bright-black))))
@@ -225,7 +224,6 @@
    `(isearch
      ((,srcery-class ,(if srcery-invert-matches
                           `(:inverse-video t)
-
                         `(:background ,srcery-magenta :foreground ,srcery-bright-white)))
       (,srcery-class ,(if srcery-invert-matches
                           `(:inverse-video t)
@@ -233,11 +231,9 @@
    `(lazy-highlight
      ((,srcery-class ,(if srcery-invert-matches
                           `(:inverse-video t)
-
                         `(:background ,srcery-magenta :foreground ,srcery-bright-white)))
       (,srcery-class ,(if srcery-invert-matches
                           `(:inverse-video t)
-
                         `(:background ,srcery-256-magenta :foreground ,srcery-256-bright-white)))))
 
    `(link
@@ -293,23 +289,44 @@
       (,srcery-256-class (:foreground ,srcery-256-bright-white))))
 
 
-;;;;; ahs
-   `(ahs-face                     ((,srcery-class (:background ,srcery-magenta))))
-   `(ahs-plugin-whole-buffer-face ((,srcery-class (:background ,srcery-yellow :foreground ,srcery-black))))
+   ;; ahs
+   `(ahs-face
+     ((,srcery-class (:background ,srcery-magenta))
+      (,srcery-256-class (:background ,srcery-256-magenta))))
 
-;;;;; anzu-mode
-   `(anzu-mode-line ((,srcery-class (:foreground ,srcery-yellow :weight bold))))
+   `(ahs-plugin-whole-buffer-face
+     ((,srcery-class (:background ,srcery-yellow :foreground ,srcery-black))
+      (,srcery-256-class (:background ,srcery-256-yellow :foreground ,srcery-256-black))))
 
-;;;;; auto-complete
-   `(ac-completion-face ((,srcery-class (:background ,srcery-bright-black :foreground ,srcery-bright-white))))
+   ;; anzu-mode
+   `(anzu-mode-line
+     ((,srcery-class (:foreground ,srcery-yellow :weight bold))
+      (,srcery-256-class (:foreground ,srcery-256-yellow :weight bold))))
 
-;;;;; avy
-   `(avy-lead-face   ((,srcery-class (:background ,srcery-bright-black :foreground ,srcery-bright-magenta))))
-   `(avy-lead-face-0 ((,srcery-class (:background ,srcery-bright-black :foreground ,srcery-bright-yellow))))
-   `(avy-lead-face-1 ((,srcery-class (:background ,srcery-bright-black :foreground ,srcery-bright-green))))
-   `(avy-lead-face-2 ((,srcery-class (:background ,srcery-bright-black :foreground ,srcery-bright-blue))))
+   ;; auto-complete
+   `(ac-completion-face
+     ((,srcery-class (:background ,srcery-bright-black :foreground ,srcery-bright-white))
+      (,srcery-256-class (:background ,srcery-256-bright-black :foreground ,srcery-256-bright-white))))
 
-;;;;; cider
+   ;; avy
+   `(avy-lead-face
+     ((,srcery-class (:background ,srcery-bright-black :foreground ,srcery-bright-magenta))
+      (,srcery-256-class (:background ,srcery-256-bright-black :foreground ,srcery-256-bright-magenta))))
+
+   `(avy-lead-face-0
+     ((,srcery-class (:background ,srcery-bright-black :foreground ,srcery-bright-yellow))
+      (,srcery-256-class (:background ,srcery-256-bright-black :foreground ,srcery-256-bright-yellow))))
+
+   `(avy-lead-face-1
+     ((,srcery-class (:background ,srcery-bright-black :foreground ,srcery-bright-green))
+      (,srcery-256-class (:background ,srcery-256-bright-black :foreground ,srcery-256-bright-green))))
+
+   `(avy-lead-face-2
+     ((,srcery-class (:background ,srcery-bright-black :foreground ,srcery-bright-blue))
+      (,srcery-256-class (:background ,srcery-256-bright-black :foreground ,srcery-256-bright-blue))))
+
+
+   ;; cider
    `(cider-enlightened                       ((,srcery-class (:background nil :box (:color ,srcery-yellow :line-width -1 :style nil) :foreground ,srcery-yellow))))
    `(cider-enlightened-face                  ((,srcery-class (:background nil :box (:color ,srcery-white :line-width -1 :style nil) :foreground ,srcery-blue))))
    `(cider-enlightened-local                 ((,srcery-class (:foreground ,srcery-bright-yellow))))
