@@ -41,7 +41,7 @@ contrasting colors with a slightly earthy tone.
 
     Make sure your ~$TERM~ supports 256 colors.
 ** Installation
-TODO
+   TODO
 ** Screenshots
 *** Lisp
     [[file:img/lisp.png]]
@@ -57,18 +57,6 @@ TODO
     ~boolean~, default: ~t~
 
     This toggles the use of varying org headings heights.
-*** srcery-custom-colors
-    ~alist~, default ~nil~
-
-    A list of colors to override. Srcery only has the 16 colors defined and
-    overriding them won't have any effect in the terminal, but if you'd like to
-    change any of the colors when using a graphical display this is how:
-
-    #+BEGIN_SRC emacs-lisp
-      (custom-set-variables '(srcery-theme-custom-colors
-                              '((black . "#121212")
-                                (green . "#00AFAF"))))
-    #+END_SRC
 *** srcery-invert-matches
     ~boolean~, default: ~nil~
 
@@ -76,6 +64,16 @@ TODO
 
     Make sure your cursor is inverted if this is enabled as otherwise it will
     make the cursor difficult to spot if
+
+*** Custom colors
+    Its possible to override the base srcery colors.
+
+    Possible colors are:
+    srcery-black, srcery-red, srcery-green, srcery-yellow, srcery-blue, srcery-magenta, srcery-cyan, srcery-white
+    srcery-bright-black, srcery-bright-red, srcery-bright-green, srcery-bright-yellow, srcery-bright-blue, srcery-bright-magenta, srcery-bright-cyan, srcery-bright-white
+    srcery-orange, srcery-bright-orange, srcery-hard-black, srcery-gray-1, srcery-gray-2, srcery-gray-3, srcery-gray-4, srcery-gray-5.
+
+    Bear in mind that changing these will not work in termninal. Set your term colors to whatever you wish to override.
 
 ** Supported modes
    - company
@@ -104,4 +102,6 @@ TODO
     Modes are still a work in progress.
 ** Attribution
    I'm new to elisp, so I used the [[https://github.com/nashamri/spacemacs-theme][spacemacs-theme]] as a base for emacs-srcery.
-   Huge thanks to everyone involved with that theme, and [[https://github.com/syl20bnr/spacemacs][Spacemacs]] itself.
+   Huge thanks to everyone involved with that theme, and [[https://github.com/syl20bnr/spacemacs][Spacemacs]] itself. I
+   also used [[monokai-emacs][Monokai Emacs]] as a blueprint for handling 256 colors properly. Big
+   thanks to maintainers of that theme.
