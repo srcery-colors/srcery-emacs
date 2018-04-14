@@ -25,9 +25,21 @@
 
 ;;; Commentary:
 
-;; Port of vim-srcery, a dark color theme. <https://github.com/roosta/emacs-srcery>
-;; Should work well in a 256 color terminal.
-;; The port is based on https://github.com/nashamri/spacemacs-theme
+;; Port of vim-srcery: https://github.com/roosta/vim-srcery , a dark color theme
+;; with with focus on clearly defined contrastig colors and relative ease of
+;; use. Srcery should play well with a 256 color terminal, provided the terminal
+;; colors are set to srcery colors. See here for sample terminal configs:
+;; https://github.com/roosta/vim-srcery/tree/master/term_colors
+
+;;; Credits
+
+;; Nasser Alshammari
+;; https://github.com/nashamri/spacemacs-theme
+;; I used this theme as a base for how to make an Emacs color theme
+
+;; Kelvin Smith
+;; https://github.com/oneKelvinSmith/monokai-emacs
+;; Used as a reference for 256 color handling
 
 ;;; Code:
 
@@ -51,122 +63,122 @@
   :group 'srcery)
 
 (defcustom srcery-black "#1C1B19"
-  "Palette - black"
+  "Palette - black."
   :type 'string
   :group 'srcery)
 
 (defcustom srcery-red "#EF2F27"
-  "Palette - red"
+  "Palette - red."
   :type 'string
   :group 'srcery)
 
 (defcustom srcery-green "#519F50"
-  "Palette - green"
+  "Palette - green."
   :type 'string
   :group 'srcery)
 
 (defcustom srcery-yellow "#FBB829"
-  "Palette - yellow"
+  "Palette - yellow."
   :type 'string
   :group 'srcery)
 
 (defcustom srcery-blue "#2C78BF"
-  "Palette - blue"
+  "Palette - blue."
   :type 'string
   :group 'srcery)
 
 (defcustom srcery-magenta "#E02C6D"
-  "Palette - magenta"
+  "Palette - magenta."
   :type 'string
   :group 'srcery)
 
 (defcustom srcery-cyan "#0AAEB3"
-  "Palette - cyan"
+  "Palette - cyan."
   :type 'string
   :group 'srcery)
 
 (defcustom srcery-white "#918175"
-  "Palette - white"
+  "Palette - white."
   :type 'string
   :group 'srcery)
 
 (defcustom srcery-bright-black "#2D2C29"
-  "Palette - bright black"
+  "Palette - bright black."
   :type 'string
   :group 'srcery)
 
 (defcustom srcery-bright-red "#F75341"
-  "Palette - bright red"
+  "Palette - bright red."
   :type 'string
   :group 'srcery)
 
 (defcustom srcery-bright-green "#98BC37"
-  "Palette - bright green"
+  "Palette - bright green."
   :type 'string
   :group 'srcery)
 
 (defcustom srcery-bright-yellow "#FED06E"
-  "Palette - bright yellow"
+  "Palette - bright yellow."
   :type 'string
   :group 'srcery)
 
 (defcustom srcery-bright-blue "#68A8E4"
-  "Palette - bright blue"
+  "Palette - bright blue."
   :type 'string
   :group 'srcery)
 
 (defcustom srcery-bright-magenta "#FF5C8F"
-  "Palette - bright magenta"
+  "Palette - bright magenta."
   :type 'string
   :group 'srcery)
 
 (defcustom srcery-bright-cyan "#53FDE9"
-  "Palette - bright cyan"
+  "Palette - bright cyan."
   :type 'string
   :group 'srcery)
 
 (defcustom srcery-bright-white "#FCE8C3"
-  "Palette - bright white"
+  "Palette - bright white."
   :type 'string
   :group 'srcery)
 
 (defcustom srcery-orange "#D75F00"
-  "Palette xterm 166 - orange"
+  "Palette xterm 166 - orange."
   :type 'string
   :group 'srcery)
 
 (defcustom srcery-bright-orange "#FF8700"
-  "Palette xterm 208 - bright orange"
+  "Palette xterm 208 - bright orange."
   :type 'string
   :group 'srcery)
 
 (defcustom srcery-hard-black "#121212"
-  "Palette xterm 233 - hard black"
+  "Palette xterm 233 - hard black."
   :type 'string
   :group 'srcery)
 
 (defcustom srcery-gray-1 "#262626"
-  "Palette xterm 235 - gray 1"
+  "Palette xterm 235 - gray 1."
   :type 'string
   :group 'srcery)
 
 (defcustom srcery-gray-2 "#303030"
-  "Palette xterm 236 - gray 2"
+  "Palette xterm 236 - gray 2."
   :type 'string
   :group 'srcery)
 
 (defcustom srcery-gray-3 "#3A3A3A"
-  "Palette xterm 237 - gray 3"
+  "Palette xterm 237 - gray 3."
   :type 'string
   :group 'srcery)
 
 (defcustom srcery-gray-4 "#444444"
-  "Palette xterm 238 - gray 4"
+  "Palette xterm 238 - gray 4."
   :type 'string
   :group 'srcery)
 
 (defcustom srcery-gray-5 "#4E4E4E"
-  "Palette xterm 239 - gray 5"
+  "Palette xterm 239 - gray 5."
   :type 'string
   :group 'srcery)
 
