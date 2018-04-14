@@ -1967,18 +1967,53 @@
 
 
    ;; rainbow-delimiters
-   `(rainbow-delimiters-depth-1-face    ((,srcery-class :foreground ,srcery-bright-white)))
-   `(rainbow-delimiters-depth-2-face    ((,srcery-class :foreground ,srcery-bright-blue)))
-   `(rainbow-delimiters-depth-3-face    ((,srcery-class :foreground ,srcery-bright-white)))
-   `(rainbow-delimiters-depth-4-face    ((,srcery-class :foreground ,srcery-bright-cyan)))
-   `(rainbow-delimiters-depth-5-face    ((,srcery-class :foreground ,srcery-bright-green)))
-   `(rainbow-delimiters-depth-6-face    ((,srcery-class :foreground ,srcery-blue)))
-   `(rainbow-delimiters-depth-7-face    ((,srcery-class :foreground ,srcery-green)))
-   `(rainbow-delimiters-depth-8-face    ((,srcery-class :foreground ,srcery-yellow)))
-   `(rainbow-delimiters-unmatched-face  ((,srcery-class :foreground ,srcery-red)))
-   `(rainbow-delimiters-mismatched-face ((,srcery-class :foreground ,srcery-bright-red)))
-   ;; `(rainbow-delimiters-unmatched-face  ((,srcery-class :foreground ,srcery-red :overline t :inhert bold)))
-   ;; `(rainbow-delimiters-mismatched-face ((,srcery-class :foreground ,srcery-red :overline t :weight bold)))
+   `(rainbow-delimiters-depth-1-face
+     ((,srcery-class :foreground ,srcery-bright-white)
+      (,srcery-256-class :foreground ,srcery-256-bright-white)))
+
+   `(rainbow-delimiters-depth-2-face
+     ((,srcery-class :foreground ,srcery-bright-blue)
+      (,srcery-256-class :foreground ,srcery-256-bright-blue)))
+
+   `(rainbow-delimiters-depth-3-face
+     ((,srcery-class :foreground ,srcery-bright-white)
+      (,srcery-256-class :foreground ,srcery-256-bright-white)))
+
+   `(rainbow-delimiters-depth-4-face
+     ((,srcery-class :foreground ,srcery-bright-cyan)
+      (,srcery-256-class :foreground ,srcery-256-bright-cyan)))
+
+   `(rainbow-delimiters-depth-5-face
+     ((,srcery-class :foreground ,srcery-bright-green)
+      (,srcery-256-class :foreground ,srcery-256-bright-green)))
+
+   `(rainbow-delimiters-depth-6-face
+     ((,srcery-class :foreground ,srcery-blue)
+      (,srcery-256-class :foreground ,srcery-256-blue)))
+
+   `(rainbow-delimiters-depth-7-face
+     ((,srcery-class :foreground ,srcery-green)
+      (,srcery-256-class :foreground ,srcery-256-green)))
+
+   `(rainbow-delimiters-depth-8-face
+     ((,srcery-class :foreground ,srcery-yellow)
+      (,srcery-256-class :foreground ,srcery-256-yellow)))
+
+   `(rainbow-delimiters-unmatched-face
+     ((,srcery-class :foreground ,srcery-red)
+      (,srcery-256-class :foreground ,srcery-256-red)))
+
+   `(rainbow-delimiters-mismatched-face
+     ((,srcery-class :foreground ,srcery-bright-red)
+      (,srcery-256-class :foreground ,srcery-256-bright-red)))
+
+   ;; `(rainbow-delimiters-unmatched-face
+   ;;   ((,srcery-class :foreground ,srcery-red :overline t :inhert bold)
+   ;;    (,srcery-256-class :foreground ,srcery-256-red :overline t :inhert bold)))
+
+   ;; `(rainbow-delimiters-mismatched-face
+   ;;   ((,srcery-class :foreground ,srcery-red :overline t :weight bold)
+   ;;    (,srcery-256-class :foreground ,srcery-256-red :overline t :weight bold)))
 
 
    ;; sh
