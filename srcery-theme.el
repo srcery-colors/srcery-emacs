@@ -448,32 +448,87 @@
       (,srcery-256-class (:foreground ,srcery-256-magenta))))
 
 ;;;;; racer
-   `(racer-tooltip           ((,srcery-class (:foreground ,srcery-bright-white :background ,srcery-gray1))))
-   `(racer-help-heading-face ((,srcery-class (:foreground ,srcery-bright-white :weight bold))))
+   `(racer-tooltip
+     ((,srcery-class (:foreground ,srcery-bright-white :background ,srcery-gray1))
+      (,srcery-256-class (:foreground ,srcery-256-bright-white :background ,srcery-256-gray1))))
+
+   `(racer-help-heading-face
+     ((,srcery-class (:foreground ,srcery-bright-white :weight bold))
+      (,srcery-256-class (:foreground ,srcery-256-bright-white :weight bold))))
 
 ;;;;; rust
 
-   `(rust-builtin-formatting-macro-face ((,srcery-class (:foreground ,srcery-blue))))
-   `(rust-question-mark-face            ((,srcery-class (:foreground ,srcery-blue :weight bold))))
-   `(rust-string-interpolation-face     ((,srcery-class (:foreground ,srcery-bright-green :italic t))))
-   `(rust-unsafe-face                   ((,srcery-class (:foreground ,srcery-bright-orange))))
+   `(rust-builtin-formatting-macro-face
+     ((,srcery-class (:foreground ,srcery-blue))
+      (,srcery-256-class (:foreground ,srcery-256-blue))))
+
+   `(rust-question-mark-face
+     ((,srcery-class (:foreground ,srcery-blue :weight bold))
+      (,srcery-256-class (:foreground ,srcery-256-blue :weight bold))))
+
+   `(rust-string-interpolation-face
+     ((,srcery-class (:foreground ,srcery-bright-green :italic t))
+      (,srcery-256-class (:foreground ,srcery-256-bright-green :italic t))))
+
+   `(rust-unsafe-face
+     ((,srcery-class (:foreground ,srcery-bright-orange))
+      (,srcery-256-class (:foreground ,srcery-256-bright-orange))))
+
 
 ;;;;; diff
-   `(diff-added             ((,srcery-class :background nil :foreground ,srcery-green)))
-   `(diff-changed           ((,srcery-class :background nil :foreground ,srcery-red)))
-   `(diff-header            ((,srcery-class :background ,srcery-bright-black :foreground ,srcery-yellow)))
-   `(diff-indicator-added   ((,srcery-class :background nil :foreground ,srcery-green)))
-   `(diff-indicator-changed ((,srcery-class :background nil :foreground ,srcery-red)))
-   `(diff-indicator-removed ((,srcery-class :background nil :foreground ,srcery-red)))
-   `(diff-refine-added      ((,srcery-class :background ,srcery-green :foreground ,srcery-black)))
-   `(diff-refine-changed    ((,srcery-class :background ,srcery-blue :foreground ,srcery-bright-white)))
-   `(diff-refine-removed    ((,srcery-class :background ,srcery-red :foreground ,srcery-bright-white)))
-   `(diff-removed           ((,srcery-class :background nil :foreground ,srcery-red)))
+   `(diff-added
+     ((,srcery-class :background nil :foreground ,srcery-green)
+      (,srcery-256-class :background nil :foreground ,srcery-256-green)))
+
+   `(diff-changed
+     ((,srcery-class :background nil :foreground ,srcery-red)
+      (,srcery-256-class :background nil :foreground ,srcery-256-red)))
+
+   `(diff-header
+     ((,srcery-class :background ,srcery-bright-black :foreground ,srcery-yellow)
+      (,srcery-256-class :background ,srcery-256-bright-black :foreground ,srcery-256-yellow)))
+
+   `(diff-indicator-added
+     ((,srcery-class :background nil :foreground ,srcery-green)
+      (,srcery-256-class :background nil :foreground ,srcery-256-green)))
+
+   `(diff-indicator-changed
+     ((,srcery-class :background nil :foreground ,srcery-red)
+      (,srcery-256-class :background nil :foreground ,srcery-256-red)))
+
+   `(diff-indicator-removed
+     ((,srcery-class :background nil :foreground ,srcery-red)
+      (,srcery-256-class :background nil :foreground ,srcery-256-red)))
+
+   `(diff-refine-added
+     ((,srcery-class :background ,srcery-green :foreground ,srcery-black)
+      (,srcery-256-class :background ,srcery-256-green :foreground ,srcery-256-black)))
+
+   `(diff-refine-changed
+     ((,srcery-class :background ,srcery-blue :foreground ,srcery-bright-white)
+      (,srcery-256-class :background ,srcery-256-blue :foreground ,srcery-256-bright-white)))
+
+   `(diff-refine-removed
+     ((,srcery-class :background ,srcery-red :foreground ,srcery-bright-white)
+      (,srcery-256-class :background ,srcery-256-red :foreground ,srcery-256-bright-white)))
+
+   `(diff-removed
+     ((,srcery-class :background nil :foreground ,srcery-red)
+      (,srcery-256-class :background nil :foreground ,srcery-256-red)))
+
 
 ;;;;; diff-hl
-   `(diff-hl-change ((,srcery-class :foreground ,srcery-blue)))
-   `(diff-hl-delete ((,srcery-class :foreground ,srcery-red)))
-   `(diff-hl-insert ((,srcery-class :foreground ,srcery-green)))
+   `(diff-hl-change
+     ((,srcery-class :foreground ,srcery-blue)
+      (,srcery-256-class :foreground ,srcery-256-blue)))
+
+   `(diff-hl-delete
+     ((,srcery-class :foreground ,srcery-red)
+      (,srcery-256-class :foreground ,srcery-256-red)))
+
+   `(diff-hl-insert
+     ((,srcery-class :foreground ,srcery-green)
+      (,srcery-256-class :foreground ,srcery-256-green)))
 
 ;;;;; dired
    `(dired-directory  ((,srcery-class (:foreground ,srcery-blue :background ,srcery-black))))
