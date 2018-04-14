@@ -56,6 +56,7 @@
   :group 'srcery)
 
 
+;;;###autoload
 (let* ((srcery-class '((class color) (min-colors 257)))
 
        (srcery-black          "#1C1B19")
@@ -1183,8 +1184,9 @@
      ((,srcery-class (:background ,srcery-red :foreground ,srcery-bright-white))
       (,srcery-256-class (:background ,srcery-256-red :foreground ,srcery-256-bright-white))))
 
-   `(ido-vertical-match-face ((,srcery-class (:foreground ,srcery-green :underline nil))
-                              (,srcery-256-class (:foreground ,srcery-256-green :underline nil))))
+   `(ido-vertical-match-face
+     ((,srcery-class (:foreground ,srcery-green :underline nil))
+      (,srcery-256-class (:foreground ,srcery-256-green :underline nil))))
 
    ;; info
    `(info-header-xref
@@ -2283,51 +2285,161 @@
 
 
    ;; whitespace-mode
-   `(whitespace-empty            ((,srcery-class (:background nil :foreground ,srcery-yellow))))
-   `(whitespace-indentation      ((,srcery-class (:background nil :foreground ,srcery-bright-orange))))
-   `(whitespace-line             ((,srcery-class (:background nil :foreground ,srcery-green))))
-   `(whitespace-newline          ((,srcery-class (:background nil :foreground ,srcery-green))))
-   `(whitespace-space            ((,srcery-class (:background nil :foreground ,srcery-gray4))))
-   `(whitespace-space-after-tab  ((,srcery-class (:background nil :foreground ,srcery-yellow))))
-   `(whitespace-space-before-tab ((,srcery-class (:background nil :foreground ,srcery-yellow))))
-   `(whitespace-tab              ((,srcery-class (:background nil))))
-   `(whitespace-trailing         ((,srcery-class (:background ,srcery-red :foreground ,srcery-bright-orange))))
+   `(whitespace-empty
+     ((,srcery-class (:background nil :foreground ,srcery-yellow))
+      (,srcery-256-class (:background nil :foreground ,srcery-256-yellow))))
+
+   `(whitespace-indentation
+     ((,srcery-class (:background nil :foreground ,srcery-bright-orange))
+      (,srcery-256-class (:background nil :foreground ,srcery-256-bright-orange))))
+
+   `(whitespace-line
+     ((,srcery-class (:background nil :foreground ,srcery-green))
+      (,srcery-256-class (:background nil :foreground ,srcery-256-green))))
+
+   `(whitespace-newline
+     ((,srcery-class (:background nil :foreground ,srcery-green))
+      (,srcery-256-class (:background nil :foreground ,srcery-256-green))))
+
+   `(whitespace-space
+     ((,srcery-class (:background nil :foreground ,srcery-gray4))
+      (,srcery-256-class (:background nil :foreground ,srcery-256-gray4))))
+
+   `(whitespace-space-after-tab
+     ((,srcery-class (:background nil :foreground ,srcery-yellow))
+      (,srcery-256-class (:background nil :foreground ,srcery-256-yellow))))
+
+   `(whitespace-space-before-tab
+     ((,srcery-class (:background nil :foreground ,srcery-yellow))
+      (,srcery-256-class (:background nil :foreground ,srcery-256-yellow))))
+
+   `(whitespace-tab
+     ((,srcery-class (:background nil))
+      (,srcery-256-class (:background nil))))
+
+   `(whitespace-trailing
+     ((,srcery-class (:background ,srcery-red :foreground ,srcery-bright-orange))
+      (,srcery-256-class (:background ,srcery-256-red :foreground ,srcery-256-bright-orange))))
+
 
    ;; other, need more work
-   `(ac-completion-face                      ((,srcery-class (:underline t :foreground ,srcery-red))))
-   `(ffap                                    ((,srcery-class (:foreground ,srcery-bright-white))))
-   `(flx-highlight-face                      ((,srcery-class (:foreground ,srcery-green :underline nil))))
-   `(icompletep-determined                   ((,srcery-class :foreground ,srcery-red)))
-   `(js2-external-variable                   ((,srcery-class (:foreground ,srcery-green))))
-   `(js2-function-param                      ((,srcery-class (:foreground ,srcery-bright-magenta))))
-   `(js2-jsdoc-html-tag-delimiter            ((,srcery-class (:foreground ,srcery-bright-green))))
-   `(js2-jsdoc-html-tag-name                 ((,srcery-class (:foreground ,srcery-red))))
-   `(js2-jsdoc-value                         ((,srcery-class (:foreground ,srcery-bright-green))))
-   `(js2-private-function-call               ((,srcery-class (:foreground ,srcery-bright-magenta))))
-   `(js2-private-member                      ((,srcery-class (:foreground ,srcery-bright-white))))
-   `(js3-error-face                          ((,srcery-class (:underline ,srcery-bright-orange))))
-   `(js3-external-variable-face              ((,srcery-class (:foreground ,srcery-blue))))
-   `(js3-function-param-face                 ((,srcery-class (:foreground ,srcery-red))))
-   `(js3-instance-member-face                ((,srcery-class (:foreground ,srcery-bright-magenta))))
-   `(js3-jsdoc-tag-face                      ((,srcery-class (:foreground ,srcery-red))))
-   `(js3-warning-face                        ((,srcery-class (:underline ,srcery-red))))
-   `(slime-repl-inputed-output-face          ((,srcery-class (:foreground ,srcery-green))))
-   `(trailing-whitespace                     ((,srcery-class :foreground nil :background ,srcery-red)))
-   `(undo-tree-visualizer-current-face       ((,srcery-class :foreground ,srcery-red)))
-   `(undo-tree-visualizer-default-face       ((,srcery-class :foreground ,srcery-bright-white)))
-   `(undo-tree-visualizer-register-face      ((,srcery-class :foreground ,srcery-green)))
-   `(undo-tree-visualizer-unmodified-face    ((,srcery-class :foreground ,srcery-blue)))
-   `(undo-tree-visualizer-active-branch-face ((,srcery-class :foreground ,srcery-bright-magenta)))
-   `(persp-face-lighter-buffer-not-in-persp  ((,srcery-class :background ,srcery-red :foreground ,srcery-bright-white)))
-   `(pulse-highlight-face                    ((,srcery-class :background ,srcery-green :foreground ,srcery-black)))
-   `(pulse-highlight-start-face              ((,srcery-class :background ,srcery-bright-green :foreground ,srcery-black)))
-   `(custom-invalid                          ((,srcery-class :background ,srcery-bright-red :foreground ,srcery-bright-white)))
-   )
+   `(ac-completion-face
+     ((,srcery-class (:underline t :foreground ,srcery-red))
+      (,srcery-256-class (:underline t :foreground ,srcery-256-red))))
+
+   `(ffap
+     ((,srcery-class (:foreground ,srcery-bright-white))
+      (,srcery-256-class (:foreground ,srcery-256-bright-white))))
+
+   `(flx-highlight-face
+     ((,srcery-class (:foreground ,srcery-green :underline nil))
+      (,srcery-256-class (:foreground ,srcery-256-green :underline nil))))
+
+   `(icompletep-determined
+     ((,srcery-class :foreground ,srcery-red)
+      (,srcery-256-class :foreground ,srcery-256-red)))
+
+   `(js2-external-variable
+     ((,srcery-class (:foreground ,srcery-green))
+      (,srcery-256-class (:foreground ,srcery-256-green))))
+
+   `(js2-function-param
+     ((,srcery-class (:foreground ,srcery-bright-magenta))
+      (,srcery-256-class (:foreground ,srcery-256-bright-magenta))))
+
+   `(js2-jsdoc-html-tag-delimiter
+     ((,srcery-class (:foreground ,srcery-bright-green))
+      (,srcery-256-class (:foreground ,srcery-256-bright-green))))
+
+   `(js2-jsdoc-html-tag-name
+     ((,srcery-class (:foreground ,srcery-red))
+      (,srcery-256-class (:foreground ,srcery-256-red))))
+
+   `(js2-jsdoc-value
+     ((,srcery-class (:foreground ,srcery-bright-green))
+      (,srcery-256-class (:foreground ,srcery-256-bright-green))))
+
+   `(js2-private-function-call
+     ((,srcery-class (:foreground ,srcery-bright-magenta))
+      (,srcery-256-class (:foreground ,srcery-256-bright-magenta))))
+
+   `(js2-private-member
+     ((,srcery-class (:foreground ,srcery-bright-white))
+      (,srcery-256-class (:foreground ,srcery-256-bright-white))))
+
+   `(js3-error-face
+     ((,srcery-class (:underline ,srcery-bright-orange))
+      (,srcery-256-class (:underline ,srcery-256-bright-orange))))
+
+   `(js3-external-variable-face
+     ((,srcery-class (:foreground ,srcery-blue))
+      (,srcery-256-class (:foreground ,srcery-256-blue))))
+
+   `(js3-function-param-face
+     ((,srcery-class (:foreground ,srcery-red))
+      (,srcery-256-class (:foreground ,srcery-256-red))))
+
+   `(js3-instance-member-face
+     ((,srcery-class (:foreground ,srcery-bright-magenta))
+      (,srcery-256-class (:foreground ,srcery-256-bright-magenta))))
+
+   `(js3-jsdoc-tag-face
+     ((,srcery-class (:foreground ,srcery-red))
+      (,srcery-256-class (:foreground ,srcery-256-red))))
+
+   `(js3-warning-face
+     ((,srcery-class (:underline ,srcery-red))
+      (,srcery-256-class (:underline ,srcery-256-red))))
+
+   `(slime-repl-inputed-output-face
+     ((,srcery-class (:foreground ,srcery-green))
+      (,srcery-256-class (:foreground ,srcery-256-green))))
+
+   `(trailing-whitespace
+     ((,srcery-class :foreground nil :background ,srcery-red)
+      (,srcery-256-class :foreground nil :background ,srcery-256-red)))
+
+   `(undo-tree-visualizer-current-face
+     ((,srcery-class :foreground ,srcery-red)
+      (,srcery-256-class :foreground ,srcery-256-red)))
+
+   `(undo-tree-visualizer-default-face
+     ((,srcery-class :foreground ,srcery-bright-white)
+      (,srcery-256-class :foreground ,srcery-256-bright-white)))
+
+   `(undo-tree-visualizer-register-face
+     ((,srcery-class :foreground ,srcery-green)
+      (,srcery-256-class :foreground ,srcery-256-green)))
+
+   `(undo-tree-visualizer-unmodified-face
+     ((,srcery-class :foreground ,srcery-blue)
+      (,srcery-256-class :foreground ,srcery-256-blue)))
+
+   `(undo-tree-visualizer-active-branch-face
+     ((,srcery-class :foreground ,srcery-bright-magenta)
+      (,srcery-256-class :foreground ,srcery-256-bright-magenta)))
+
+   `(persp-face-lighter-buffer-not-in-persp
+     ((,srcery-class :background ,srcery-red :foreground ,srcery-bright-white)
+      (,srcery-256-class :background ,srcery-256-red :foreground ,srcery-256-bright-white)))
+
+   `(pulse-highlight-face
+     ((,srcery-class :background ,srcery-green :foreground ,srcery-black)
+      (,srcery-256-class :background ,srcery-256-green :foreground ,srcery-256-black)))
+
+   `(pulse-highlight-start-face
+     ((,srcery-class :background ,srcery-bright-green :foreground ,srcery-black)
+      (,srcery-256-class :background ,srcery-256-bright-green :foreground ,srcery-256-black)))
+
+   `(custom-invalid
+     ((,srcery-class :background ,srcery-bright-red :foreground ,srcery-bright-white)
+      (,srcery-256-class :background ,srcery-256-bright-red :foreground ,srcery-256-bright-white))))
+
   (custom-theme-set-variables
    'srcery
    `(ansi-color-names-vector [,srcery-black ,srcery-red ,srcery-green ,srcery-yellow ,srcery-blue ,srcery-magenta ,srcery-cyan ,srcery-white])
    `(hl-paren-colors '(,srcery-bright-white ,srcery-green ,srcery-blue ,srcery-white))))
-;;;###autoload
+
 (when load-file-name
   (add-to-list 'custom-theme-load-path
                (file-name-as-directory (file-name-directory load-file-name))))
