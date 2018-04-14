@@ -1569,18 +1569,18 @@
       (,srcery-256-class (:foreground ,srcery-256-green :underline t))))
 
 
-;;;;; markdown
+   ;; markdown
    `(markdown-header-face-1
      ((,srcery-class (:weight bold :foreground ,srcery-blue :height ,(if srcery-org-height 1.3 1.0)))
-      (,srcery-256-class (:weight bold :foreground ,srcery-256-blue :height ,(if srcery-256-org-height 1.3 1.0)))))
+      (,srcery-256-class (:weight bold :foreground ,srcery-256-blue :height ,(if srcery-org-height 1.3 1.0)))))
 
    `(markdown-header-face-2
      ((,srcery-class (:weight bold :foreground ,srcery-bright-cyan :height ,(if srcery-org-height 1.2 1.0)))
-      (,srcery-256-class (:weight bold :foreground ,srcery-256-bright-cyan :height ,(if srcery-256-org-height 1.2 1.0)))))
+      (,srcery-256-class (:weight bold :foreground ,srcery-256-bright-cyan :height ,(if srcery-org-height 1.2 1.0)))))
 
    `(markdown-header-face-3
      ((,srcery-class (:bold nil :foreground ,srcery-bright-green :height ,(if srcery-org-height 1.1 1.0)))
-      (,srcery-256-class (:bold nil :foreground ,srcery-256-bright-green :height ,(if srcery-256-org-height 1.1 1.0)))))
+      (,srcery-256-class (:bold nil :foreground ,srcery-256-bright-green :height ,(if srcery-org-height 1.1 1.0)))))
 
    `(markdown-header-face-4
      ((,srcery-class (:bold nil :foreground ,srcery-yellow))
