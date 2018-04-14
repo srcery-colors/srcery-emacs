@@ -631,7 +631,7 @@
       (,srcery-256-class(:background ,srcery-256-black))))
 
 
-;;;;; ein
+   ;; ein
    `(ein:cell-input-area
      ((,srcery-class (:background ,srcery-bright-black))
       (,srcery-256-class (:background ,srcery-256-bright-black))))
@@ -652,13 +652,13 @@
      ((,srcery-class (:foreground ,srcery-green :weight bold))
       (,srcery-256-class (:foreground ,srcery-256-green :weight bold))))
 
-;;;;; eldoc
+   ;;eldoc
    `(eldoc-highlight-function-argument
      ((,srcery-class (:foreground ,srcery-yellow :weight bold))
       (,srcery-256-class (:foreground ,srcery-256-yellow :weight bold))))
 
 
-;;;;; enh-ruby
+   ;; enh-ruby
    `(enh-ruby-string-delimiter-face
      ((,srcery-class (:foreground ,srcery-bright-green))
       (,srcery-256-class (:foreground ,srcery-256-bright-green))))
@@ -667,33 +667,91 @@
      ((,srcery-class (:background ,srcery-black :foreground ,srcery-bright-white))
       (,srcery-256-class (:background ,srcery-256-black :foreground ,srcery-256-bright-white))))
 
-;;;;; erc
-   `(erc-input-face        ((,srcery-class (:foreground ,srcery-yellow))))
-   `(erc-my-nick-face      ((,srcery-class (:foreground ,srcery-red))))
-   `(erc-nick-default-face ((,srcery-class (:foreground ,srcery-red))))
-   `(erc-nick-prefix-face  ((,srcery-class (:foreground ,srcery-yellow))))
-   `(erc-notice-face       ((,srcery-class (:foreground ,srcery-bright-green))))
-   `(erc-prompt-face       ((,srcery-class (:foreground ,srcery-yellow :weight bold))))
-   `(erc-timestamp-face    ((,srcery-class (:foreground ,srcery-red))))
+   ;; erc
+   `(erc-input-face
+     ((,srcery-class (:foreground ,srcery-yellow))
+      (,srcery-256-class (:foreground ,srcery-256-yellow))))
 
-;;;;; eshell
-   `(eshell-ls-archive    ((,srcery-class (:foreground ,srcery-red :weight bold))))
-   `(eshell-ls-backup     ((,srcery-class (:inherit font-lock-comment-face))))
-   `(eshell-ls-clutter    ((,srcery-class (:inherit font-lock-comment-face))))
-   `(eshell-ls-directory  ((,srcery-class (:foreground ,srcery-blue))))
-   `(eshell-ls-executable ((,srcery-class (:foreground ,srcery-orange :weight bold))))
-   `(eshell-ls-missing    ((,srcery-class (:inherit font-lock-warning-face))))
-   `(eshell-ls-product    ((,srcery-class (:inherit font-lock-doc-face))))
-   `(eshell-ls-special    ((,srcery-class (:foreground ,srcery-magenta :weight bold))))
-   `(eshell-ls-symlink    ((,srcery-class (:foreground ,srcery-cyan :weight bold))))
-   `(eshell-ls-unreadable ((,srcery-class (:foreground ,srcery-bright-white))))
-   `(eshell-prompt        ((,srcery-class (:foreground ,srcery-magenta :weight bold))))
+   `(erc-my-nick-face
+     ((,srcery-class (:foreground ,srcery-red))
+      (,srcery-256-class (:foreground ,srcery-256-red))))
 
-;;;;; evil
-   `(evil-ex-substitute-matches ((,srcery-class (:background ,srcery-red :foreground ,srcery-bright-white))))
-   `(evil-ex-substitute-replacement ((,srcery-class (:background ,srcery-bright-green :foreground ,srcery-black))))
+   `(erc-nick-default-face
+     ((,srcery-class (:foreground ,srcery-red))
+      (,srcery-256-class (:foreground ,srcery-256-red))))
 
-;;;;; flycheck
+   `(erc-nick-prefix-face
+     ((,srcery-class (:foreground ,srcery-yellow))
+      (,srcery-256-class (:foreground ,srcery-256-yellow))))
+
+   `(erc-notice-face
+     ((,srcery-class (:foreground ,srcery-bright-green))
+      (,srcery-256-class (:foreground ,srcery-256-bright-green))))
+
+   `(erc-prompt-face
+     ((,srcery-class (:foreground ,srcery-yellow :weight bold))
+      (,srcery-256-class (:foreground ,srcery-256-yellow :weight bold))))
+
+   `(erc-timestamp-face
+     ((,srcery-class (:foreground ,srcery-red))
+      (,srcery-256-class (:foreground ,srcery-256-red))))
+
+
+   ;; eshell
+   `(eshell-ls-archive
+     ((,srcery-class (:foreground ,srcery-red :weight bold))
+      (,srcery-256-class (:foreground ,srcery-256-red :weight bold))))
+
+   `(eshell-ls-backup
+     ((,srcery-class (:inherit font-lock-comment-face))
+      (,srcery-256-class (:inherit font-lock-comment-face))))
+
+   `(eshell-ls-clutter
+     ((,srcery-class (:inherit font-lock-comment-face))
+      (,srcery-256-class (:inherit font-lock-comment-face))))
+
+   `(eshell-ls-directory
+     ((,srcery-class (:foreground ,srcery-blue))
+      (,srcery-256-class (:foreground ,srcery-256-blue))))
+
+   `(eshell-ls-executable
+     ((,srcery-class (:foreground ,srcery-orange :weight bold))
+      (,srcery-256-class (:foreground ,srcery-256-orange :weight bold))))
+
+   `(eshell-ls-missing
+     ((,srcery-class (:inherit font-lock-warning-face))
+      (,srcery-256-class (:inherit font-lock-warning-face))))
+
+   `(eshell-ls-product
+     ((,srcery-class (:inherit font-lock-doc-face))
+      (,srcery-256-class (:inherit font-lock-doc-face))))
+
+   `(eshell-ls-special
+     ((,srcery-class (:foreground ,srcery-magenta :weight bold))
+      (,srcery-256-class (:foreground ,srcery-256-magenta :weight bold))))
+
+   `(eshell-ls-symlink
+     ((,srcery-class (:foreground ,srcery-cyan :weight bold))
+      (,srcery-256-class (:foreground ,srcery-256-cyan :weight bold))))
+
+   `(eshell-ls-unreadable
+     ((,srcery-class (:foreground ,srcery-bright-white))
+      (,srcery-256-class (:foreground ,srcery-256-bright-white))))
+
+   `(eshell-prompt
+     ((,srcery-class (:foreground ,srcery-magenta :weight bold))
+      (,srcery-256-class (:foreground ,srcery-256-magenta :weight bold))))
+
+   ;; evil
+   `(evil-ex-substitute-matches
+     ((,srcery-class (:background ,srcery-red :foreground ,srcery-bright-white))
+      (,srcery-256-class (:background ,srcery-256-red :foreground ,srcery-256-bright-white))))
+
+   `(evil-ex-substitute-replacement
+     ((,srcery-class (:background ,srcery-bright-green :foreground ,srcery-black))
+      (,srcery-256-class (:background ,srcery-256-bright-green :foreground ,srcery-256-black))))
+
+   ;; flycheck
    `(flycheck-error
      ((,(append '((supports :underline (:style line))) srcery-class)
        (:underline (:style line :color ,srcery-red)))
