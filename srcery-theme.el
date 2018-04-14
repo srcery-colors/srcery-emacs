@@ -516,7 +516,6 @@
      ((,srcery-class :background nil :foreground ,srcery-red)
       (,srcery-256-class :background nil :foreground ,srcery-256-red)))
 
-
 ;;;;; diff-hl
    `(diff-hl-change
      ((,srcery-class :foreground ,srcery-blue)
@@ -531,15 +530,41 @@
       (,srcery-256-class :foreground ,srcery-256-green)))
 
 ;;;;; dired
-   `(dired-directory  ((,srcery-class (:foreground ,srcery-blue :background ,srcery-black))))
-   `(dired-flagged    ((,srcery-class (:foreground ,srcery-red))))
-   `(dired-header     ((,srcery-class (:foreground ,srcery-green :weight bold))))
-   `(dired-ignored    ((,srcery-class (:inherit shadow))))
-   `(dired-mark       ((,srcery-class (:foreground ,srcery-green :weight bold))))
-   `(dired-marked     ((,srcery-class (:foreground ,srcery-magenta :weight bold))))
-   `(dired-perm-write ((,srcery-class (:foreground ,srcery-bright-white :underline t))))
-   `(dired-symlink    ((,srcery-class (:foreground ,srcery-cyan :background ,srcery-black :weight bold))))
-   `(dired-warning    ((,srcery-class (:foreground ,srcery-bright-orange))))
+   `(dired-directory
+     ((,srcery-class (:foreground ,srcery-blue :background ,srcery-black))
+      (,srcery-256-class (:foreground ,srcery-256-blue :background ,srcery-256-black))))
+
+   `(dired-flagged
+     ((,srcery-class (:foreground ,srcery-red))
+      (,srcery-256-class (:foreground ,srcery-256-red))))
+
+   `(dired-header
+     ((,srcery-class (:foreground ,srcery-green :weight bold))
+      (,srcery-256-class (:foreground ,srcery-256-green :weight bold))))
+
+   `(dired-ignored
+     ((,srcery-class (:inherit shadow))
+      (,srcery-256-class (:inherit shadow))))
+
+   `(dired-mark
+     ((,srcery-class (:foreground ,srcery-green :weight bold))
+      (,srcery-256-class (:foreground ,srcery-256-green :weight bold))))
+
+   `(dired-marked
+     ((,srcery-class (:foreground ,srcery-magenta :weight bold))
+      (,srcery-256-class (:foreground ,srcery-256-magenta :weight bold))))
+
+   `(dired-perm-write
+     ((,srcery-class (:foreground ,srcery-bright-white :underline t))
+      (,srcery-256-class (:foreground ,srcery-256-bright-white :underline t))))
+
+   `(dired-symlink
+     ((,srcery-class (:foreground ,srcery-cyan :background ,srcery-black :weight bold))
+      (,srcery-256-class (:foreground ,srcery-256-cyan :background ,srcery-256-black :weight bold))))
+
+   `(dired-warning
+     ((,srcery-class (:foreground ,srcery-bright-orange))
+      (,srcery-256-class (:foreground ,srcery-256-bright-orange))))
 
 ;;;;; ediff
    `(ediff-current-diff-A        ((,srcery-class(:background ,srcery-gray1 :foreground ,srcery-red))))
