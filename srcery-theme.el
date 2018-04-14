@@ -55,6 +55,7 @@
   :type 'boolean
   :group 'srcery)
 
+
 (let* ((srcery-class '((class color) (min-colors 257)))
 
        (srcery-black          "#1C1B19")
@@ -116,54 +117,181 @@
    'srcery
 
    ;; basics
-   `(cursor                       ((,srcery-class ,(if srcery-invert-matches
-                                                `(:inverse-video t)
-                                              `(:background ,srcery-bright-white :foreground ,srcery-black)))))
-   `(custom-button                ((,srcery-class :background ,srcery-black :foreground ,srcery-bright-white :box (:line-width 2 :style released-button))))
-   `(default                      ((,srcery-class (:background ,srcery-black :foreground ,srcery-bright-white))))
-   `(default-italic               ((,srcery-class (:italic t))))
-   `(error                        ((,srcery-class (:foreground ,srcery-red :weight bold))))
-   `(eval-sexp-fu-flash           ((,srcery-class (:background ,srcery-green))))
-   `(eval-sexp-fu-flash-error     ((,srcery-class (:background ,srcery-red))))
-   `(font-lock-builtin-face       ((,srcery-class (:foreground ,srcery-blue))))
-   `(font-lock-comment-face       ((,srcery-class (:foreground ,srcery-white :italic t))))
-   `(font-lock-constant-face      ((,srcery-class (:foreground ,srcery-bright-magenta))))
-   `(font-lock-reference-face     ((,srcery-class (:foreground ,srcery-bright-blue))))
-   `(font-lock-doc-face           ((,srcery-class (:foreground ,srcery-green))))
-   `(font-lock-function-name-face ((,srcery-class (:foreground ,srcery-yellow))))
-   `(font-lock-keyword-face       ((,srcery-class (:foreground ,srcery-red))))
-   `(font-lock-negation-char-face ((,srcery-class (:foreground ,srcery-bright-magenta))))
-   `(font-lock-preprocessor-face  ((,srcery-class (:foreground ,srcery-yellow))))
-   `(font-lock-string-face        ((,srcery-class (:foreground ,srcery-bright-green))))
-   `(font-lock-type-face          ((,srcery-class (:foreground ,srcery-bright-blue))))
-   `(font-lock-variable-name-face ((,srcery-class (:foreground ,srcery-bright-magenta))))
-   `(font-lock-warning-face       ((,srcery-class (:foreground ,srcery-bright-orange :background ,srcery-black))))
-   `(fringe                       ((,srcery-class (:foreground ,srcery-bright-white))))
-   `(header-line                  ((,srcery-class (:background ,srcery-black))))
-   `(highlight                    ((,srcery-class ,(if srcery-invert-matches
-                                                `(:inverse-video t)
-                                              `(:background ,srcery-magenta :foreground ,srcery-bright-white)))))
-   `(hl-line                      ((,srcery-class (:background ,srcery-bright-black))))
-   `(isearch                      ((,srcery-class ,(if srcery-invert-matches
-                                                `(:inverse-video t)
-                                              `(:background ,srcery-magenta :foreground ,srcery-bright-white)))))
-   `(lazy-highlight               ((,srcery-class ,(if srcery-invert-matches
-                                                `(:inverse-video t)
-                                              `(:background ,srcery-magenta :foreground ,srcery-bright-white)))))
-   `(link                         ((,srcery-class (:inherit font-lock-comment-face :underline t))))
-   `(link-visited                 ((,srcery-class (:inherit font-lock-comment-face :underline t))))
-   `(match                        ((,srcery-class ,(if srcery-invert-matches
-                                                `(:inverse-video t)
-                                              `(:background ,srcery-magenta :foreground ,srcery-bright-white)))))
-   `(minibuffer-prompt            ((,srcery-class (:weight bold :foreground ,srcery-yellow))))
-   `(page-break-lines             ((,srcery-class (:foreground ,srcery-gray3))))
-   `(region                       ((,srcery-class (:inverse-video ,t))))
-   `(secondary-selection          ((,srcery-class (:background ,srcery-gray2))))
-   `(success                      ((,srcery-class (:foreground ,srcery-green))))
-   `(tooltip                      ((,srcery-class (:background ,srcery-bright-blue :foreground ,srcery-bright-white :bold nil :italic nil :underline nil))))
-   `(vertical-border              ((,srcery-class (:foreground ,srcery-magenta))))
-   `(warning                      ((,srcery-class (:foreground ,srcery-bright-orange))))
-   `(tool-bar                     ((,srcery-class (:foreground ,srcery-bright-white))))
+   `(cursor
+     ((,srcery-class ,(if srcery-invert-matches
+                          `(:inverse-video t)
+                        `(:background ,srcery-bright-white :foreground ,srcery-black)))
+      (,srcery-256-class ,(if srcery-invert-matches
+                              `(:inverse-video t)
+                            `(:background ,srcery-256-bright-white :foreground ,srcery-256-black)))))
+
+   `(custom-button
+     ((,srcery-class :background ,srcery-black :foreground ,srcery-bright-white :box (:line-width 2 :style released-button))
+      (,srcery-256-class :background ,srcery-256-black :foreground ,srcery-256-bright-white :box (:line-width 2 :style released-button))))
+
+   `(default
+      ((,srcery-class (:background ,srcery-black :foreground ,srcery-bright-white))
+       (,srcery-256-class (:background ,srcery-256-black :foreground ,srcery-256-bright-white))))
+
+   `(default-italic
+      ((,srcery-class (:italic t))
+       (,srcery-256-class (:italic t))))
+
+   `(error
+     ((,srcery-class (:foreground ,srcery-red :weight bold))
+      (,srcery-256-class (:foreground ,srcery-256-red :weight bold))))
+
+   `(eval-sexp-fu-flash
+     ((,srcery-class (:background ,srcery-green))
+      (,srcery-256-class (:background ,srcery-256-green))))
+
+   `(eval-sexp-fu-flash-error
+     ((,srcery-class (:background ,srcery-red))
+      (,srcery-256-class (:background ,srcery-256-red))))
+
+   `(font-lock-builtin-face
+     ((,srcery-class (:foreground ,srcery-blue))
+      (,srcery-256-class (:foreground ,srcery-256-blue))))
+
+   `(font-lock-comment-face
+     ((,srcery-class (:foreground ,srcery-white :italic t))
+      (,srcery-256-class (:foreground ,srcery-256-white :italic t))))
+
+   `(font-lock-constant-face
+     ((,srcery-class (:foreground ,srcery-bright-magenta))
+      (,srcery-256-class (:foreground ,srcery-256-bright-magenta))))
+
+   `(font-lock-reference-face
+     ((,srcery-class (:foreground ,srcery-bright-blue))
+      (,srcery-256-class (:foreground ,srcery-256-bright-blue))))
+
+   `(font-lock-doc-face
+     ((,srcery-class (:foreground ,srcery-green))
+      (,srcery-256-class (:foreground ,srcery-256-green))))
+
+   `(font-lock-function-name-face
+     ((,srcery-class (:foreground ,srcery-yellow))
+      (,srcery-256-class (:foreground ,srcery-256-yellow))))
+
+   `(font-lock-keyword-face
+     ((,srcery-class (:foreground ,srcery-red))
+      (,srcery-256-class (:foreground ,srcery-256-red))))
+
+   `(font-lock-negation-char-face
+     ((,srcery-class (:foreground ,srcery-bright-magenta))
+      (,srcery-256-class (:foreground ,srcery-256-bright-magenta))))
+
+   `(font-lock-preprocessor-face
+     ((,srcery-class (:foreground ,srcery-yellow))
+      (,srcery-256-class (:foreground ,srcery-256-yellow))))
+
+   `(font-lock-string-face
+     ((,srcery-class (:foreground ,srcery-bright-green))
+      (,srcery-256-class (:foreground ,srcery-256-bright-green))))
+
+   `(font-lock-type-face
+     ((,srcery-class (:foreground ,srcery-bright-blue))
+      (,srcery-256-class (:foreground ,srcery-256-bright-blue))))
+
+   `(font-lock-variable-name-face
+     ((,srcery-class (:foreground ,srcery-bright-magenta))
+      (,srcery-256-class (:foreground ,srcery-256-bright-magenta))))
+
+   `(font-lock-warning-face
+     ((,srcery-class (:foreground ,srcery-bright-orange :background ,srcery-black))
+      (,srcery-256-class (:foreground ,srcery-256-bright-orange :background ,srcery-256-black))))
+
+   `(fringe
+     ((,srcery-class (:foreground ,srcery-bright-white))
+      (,srcery-256-class (:foreground ,srcery-256-bright-white))))
+
+   `(header-line
+     ((,srcery-class (:background ,srcery-black))
+      (,srcery-256-class (:background ,srcery-256-black))))
+
+   `(highlight
+     ((,srcery-class ,(if srcery-invert-matches
+                          `(:inverse-video t)
+
+                        `(:background ,srcery-magenta :foreground ,srcery-bright-white)))
+      (,srcery-class ,(if srcery-invert-matches
+                          `(:inverse-video t)
+
+                        `(:background ,srcery-256-magenta :foreground ,srcery-256-bright-white)))))
+   `(hl-line
+     ((,srcery-class (:background ,srcery-bright-black))
+      (,srcery-256-class (:background ,srcery-256-bright-black))))
+
+   `(isearch
+     ((,srcery-class ,(if srcery-invert-matches
+                          `(:inverse-video t)
+
+                        `(:background ,srcery-magenta :foreground ,srcery-bright-white)))
+      (,srcery-class ,(if srcery-invert-matches
+                          `(:inverse-video t)
+                        `(:background ,srcery-256-magenta :foreground ,srcery-256-bright-white)))))
+   `(lazy-highlight
+     ((,srcery-class ,(if srcery-invert-matches
+                          `(:inverse-video t)
+
+                        `(:background ,srcery-magenta :foreground ,srcery-bright-white)))
+      (,srcery-class ,(if srcery-invert-matches
+                          `(:inverse-video t)
+
+                        `(:background ,srcery-256-magenta :foreground ,srcery-256-bright-white)))))
+
+   `(link
+     ((,srcery-class (:inherit font-lock-comment-face :underline t))
+      (,srcery-256-class (:inherit font-lock-comment-face :underline t))))
+
+   `(link-visited
+     ((,srcery-class (:inherit font-lock-comment-face :underline t))
+      (,srcery-256-class (:inherit font-lock-comment-face :underline t))))
+
+   `(match
+     ((,srcery-class ,(if srcery-invert-matches
+                          `(:inverse-video t)
+                        `(:background ,srcery-magenta :foreground ,srcery-bright-white)))
+      (,srcery-class ,(if srcery-invert-matches
+                          `(:inverse-video t)
+                        `(:background ,srcery-256-magenta :foreground ,srcery-256-bright-white)))))
+
+   `(minibuffer-prompt
+     ((,srcery-class (:weight bold :foreground ,srcery-yellow))
+      (,srcery-256-class (:weight bold :foreground ,srcery-256-yellow))))
+
+   `(page-break-lines
+     ((,srcery-class (:foreground ,srcery-gray3))
+      (,srcery-256-class (:foreground ,srcery-256-gray3))))
+
+   `(region
+     ((,srcery-class (:inverse-video ,t))
+      (,srcery-256-class (:inverse-video ,t))))
+
+   `(secondary-selection
+     ((,srcery-class (:background ,srcery-gray2))
+      (,srcery-256-class (:background ,srcery-256-gray2))))
+
+   `(success
+     ((,srcery-class (:foreground ,srcery-green))
+      (,srcery-256-class (:foreground ,srcery-256-green))))
+
+   `(tooltip
+     ((,srcery-class (:background ,srcery-bright-blue :foreground ,srcery-bright-white :bold nil :italic nil :underline nil))
+      (,srcery-256-class (:background ,srcery-256-bright-blue :foreground ,srcery-256-bright-white :bold nil :italic nil :underline nil))))
+
+   `(vertical-border
+     ((,srcery-class (:foreground ,srcery-magenta))
+      (,srcery-256-class (:foreground ,srcery-256-magenta))))
+
+   `(warning
+     ((,srcery-class (:foreground ,srcery-bright-orange))
+      (,srcery-256-class (:foreground ,srcery-256-bright-orange))))
+
+   `(tool-bar
+     ((,srcery-class (:foreground ,srcery-bright-white))
+      (,srcery-256-class (:foreground ,srcery-256-bright-white))))
+
 
 ;;;;; ahs
    `(ahs-face                     ((,srcery-class (:background ,srcery-magenta))))
@@ -826,7 +954,6 @@
    'srcery
    `(ansi-color-names-vector [,srcery-black ,srcery-red ,srcery-green ,srcery-yellow ,srcery-blue ,srcery-magenta ,srcery-cyan ,srcery-white])
    `(hl-paren-colors '(,srcery-bright-white ,srcery-green ,srcery-blue ,srcery-white))))
-
 ;;;###autoload
 (when load-file-name
   (add-to-list 'custom-theme-load-path
