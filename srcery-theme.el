@@ -2017,24 +2017,53 @@
 
 
    ;; sh
-   `(sh-heredoc ((,srcery-class (:foreground ,srcery-green :weight bold))))
-   `(sh-quoted-exec ((,srcery-class (:foreground ,srcery-yellow :weight bold))))
+   `(sh-heredoc
+     ((,srcery-class (:foreground ,srcery-green :weight bold))
+      (,srcery-256-class (:foreground ,srcery-256-green :weight bold))))
+
+   `(sh-quoted-exec
+     ((,srcery-class (:foreground ,srcery-yellow :weight bold))
+      (,srcery-256-class (:foreground ,srcery-256-yellow :weight bold))))
 
    ;; shm
-   `(shm-current-face    ((,srcery-class (:background ,srcery-green, :foreground ,srcery-black))))
-   `(shm-quarantine-face ((,srcery-class (:background ,srcery-gray1))))
+   `(shm-current-face
+     ((,srcery-class (:background ,srcery-green, :foreground ,srcery-black))
+      (,srcery-256-class (:background ,srcery-256-green, :foreground ,srcery-256-black))))
+
+   `(shm-quarantine-face
+     ((,srcery-class (:background ,srcery-gray1))
+      (,srcery-256-class (:background ,srcery-256-gray1))))
+
 
    ;; show-paren
-   `(show-paren-match    ((,srcery-class (:foreground ,srcery-bright-magenta :weight bold))))
-   `(show-paren-mismatch ((,srcery-class (:background ,srcery-red :foreground ,srcery-bright-white))))
+   `(show-paren-match
+     ((,srcery-class (:foreground ,srcery-bright-magenta :weight bold))
+      (,srcery-256-class (:foreground ,srcery-256-bright-magenta :weight bold))))
+
+   `(show-paren-mismatch
+     ((,srcery-class (:background ,srcery-red :foreground ,srcery-bright-white))
+      (,srcery-256-class (:background ,srcery-256-red :foreground ,srcery-256-bright-white))))
+
 
    ;; paren-face
-   `(parenthesis ((,srcery-class (:foreground ,srcery-gray5))))
+   `(parenthesis
+     ((,srcery-class (:foreground ,srcery-gray5))
+      (,srcery-256-class (:foreground ,srcery-256-gray5))))
+
 
    ;; smartparens
-   `(sp-pair-overlay-face         ((,srcery-class (:background ,srcery-magenta :foreground nil))))
-   `(sp-show-pair-match-face      ((,srcery-class (:foreground ,srcery-bright-magenta :weight bold))))
-   `(sp-wrap-overlay-closing-pair ((,srcery-class (:background ,srcery-magenta :foreground, srcery-bright-yellow))))
+   `(sp-pair-overlay-face
+     ((,srcery-class (:background ,srcery-magenta :foreground nil))
+      (,srcery-256-class (:background ,srcery-256-magenta :foreground nil))))
+
+   `(sp-show-pair-match-face
+     ((,srcery-class (:foreground ,srcery-bright-magenta :weight bold))
+      (,srcery-256-class (:foreground ,srcery-256-bright-magenta :weight bold))))
+
+   `(sp-wrap-overlay-closing-pair
+     ((,srcery-class (:background ,srcery-magenta :foreground, srcery-bright-yellow))
+      (,srcery-256-class (:background ,srcery-256-magenta :foreground, srcery-256-bright-yellow))))
+
 
    ;; evil-snipe
    `(evil-snipe-first-match-face ((,srcery-class (:foreground ,srcery-magenta :weight bold))))
