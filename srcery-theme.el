@@ -2532,8 +2532,6 @@
 
 (provide-theme 'srcery)
 
-(provide 'srcery-theme)
-
 ;; Local Variables:
 ;; no-byte-compile: t
 ;; End:
