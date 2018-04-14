@@ -391,20 +391,61 @@
 
 
 ;;;;; company
-   `(company-echo-common              ((,srcery-class (:background ,srcery-bright-white :foreground ,srcery-black))))
-   `(company-preview                  ((,srcery-class (:background ,srcery-gray1 :foreground ,srcery-bright-white))))
-   `(company-preview-common           ((,srcery-class (:background ,srcery-gray1 :foreground ,srcery-bright-white))))
-   `(company-preview-search           ((,srcery-class (:inherit match))))
-   `(company-scrollbar-bg             ((,srcery-class (:background ,srcery-gray1))))
-   `(company-scrollbar-fg             ((,srcery-class (:background ,srcery-white))))
-   `(company-template-field           ((,srcery-class (:inherit region))))
-   `(company-tooltip                  ((,srcery-class (:background ,srcery-gray1 :foreground ,srcery-white))))
-   `(company-tooltip-annotation       ((,srcery-class (:foreground ,srcery-red))))
-   `(company-tooltip-common           ((,srcery-class (:background ,srcery-gray1 :foreground ,srcery-bright-white))))
-   `(company-tooltip-common-selection ((,srcery-class (:foreground ,srcery-bright-magenta))))
-   `(company-tooltip-mouse            ((,srcery-class (:inherit highlight))))
-   `(company-tooltip-search           ((,srcery-class (:inherit match))))
-   `(company-tooltip-selection        ((,srcery-class (:foreground ,srcery-magenta))))
+   `(company-echo-common
+     ((,srcery-class (:background ,srcery-bright-white :foreground ,srcery-black))
+      (,srcery-256-class (:background ,srcery-256-bright-white :foreground ,srcery-256-black))))
+
+   `(company-preview
+     ((,srcery-class (:background ,srcery-gray1 :foreground ,srcery-bright-white))
+      (,srcery-256-class (:background ,srcery-256-gray1 :foreground ,srcery-256-bright-white))))
+
+   `(company-preview-common
+     ((,srcery-class (:background ,srcery-gray1 :foreground ,srcery-bright-white))
+      (,srcery-256-class (:background ,srcery-256-gray1 :foreground ,srcery-256-bright-white))))
+
+   `(company-preview-search
+     ((,srcery-class (:inherit match))
+      (,srcery-256-class (:inherit match))))
+
+   `(company-scrollbar-bg
+     ((,srcery-class (:background ,srcery-gray1))
+      (,srcery-256-class (:background ,srcery-256-gray1))))
+
+   `(company-scrollbar-fg
+     ((,srcery-class (:background ,srcery-white))
+      (,srcery-256-class (:background ,srcery-256-white))))
+
+   `(company-template-field
+     ((,srcery-class (:inherit region))
+      (,srcery-256-class (:inherit region))))
+
+   `(company-tooltip
+     ((,srcery-class (:background ,srcery-gray1 :foreground ,srcery-white))
+      (,srcery-256-class (:background ,srcery-256-gray1 :foreground ,srcery-256-white))))
+
+   `(company-tooltip-annotation
+     ((,srcery-class (:foreground ,srcery-red))
+      (,srcery-256-class (:foreground ,srcery-256-red))))
+
+   `(company-tooltip-common
+     ((,srcery-class (:background ,srcery-gray1 :foreground ,srcery-bright-white))
+      (,srcery-256-class (:background ,srcery-256-gray1 :foreground ,srcery-256-bright-white))))
+
+   `(company-tooltip-common-selection
+     ((,srcery-class (:foreground ,srcery-bright-magenta))
+      (,srcery-256-class (:foreground ,srcery-256-bright-magenta))))
+
+   `(company-tooltip-mouse
+     ((,srcery-class (:inherit highlight))
+      (,srcery-256-class (:inherit highlight))))
+
+   `(company-tooltip-search
+     ((,srcery-class (:inherit match))
+      (,srcery-256-class (:inherit match))))
+
+   `(company-tooltip-selection
+     ((,srcery-class (:foreground ,srcery-magenta))
+      (,srcery-256-class (:foreground ,srcery-256-magenta))))
 
 ;;;;; racer
    `(racer-tooltip           ((,srcery-class (:foreground ,srcery-bright-white :background ,srcery-gray1))))
