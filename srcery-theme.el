@@ -2164,40 +2164,124 @@
 
 
    ;; term
-   `(term               ((,srcery-class (:foreground ,srcery-bright-white :background ,srcery-black))))
-   `(term-color-black   ((,srcery-class (:foreground ,srcery-black))))
-   `(term-color-blue    ((,srcery-class (:foreground ,srcery-blue))))
-   `(term-color-cyan    ((,srcery-class (:foreground ,srcery-cyan))))
-   `(term-color-green   ((,srcery-class (:foreground ,srcery-green))))
-   `(term-color-magenta ((,srcery-class (:foreground ,srcery-magenta))))
-   `(term-color-red     ((,srcery-class (:foreground ,srcery-red))))
-   `(term-color-white   ((,srcery-class (:foreground ,srcery-white))))
-   `(term-color-yellow  ((,srcery-class (:foreground ,srcery-yellow))))
+   `(term
+     ((,srcery-class (:foreground ,srcery-bright-white :background ,srcery-black))
+      (,srcery-256-class (:foreground ,srcery-256-bright-white :background ,srcery-256-black))))
+
+   `(term-color-black
+     ((,srcery-class (:foreground ,srcery-black))
+      (,srcery-256-class (:foreground ,srcery-256-black))))
+
+   `(term-color-blue
+     ((,srcery-class (:foreground ,srcery-blue))
+      (,srcery-256-class (:foreground ,srcery-256-blue))))
+
+   `(term-color-cyan
+     ((,srcery-class (:foreground ,srcery-cyan))
+      (,srcery-256-class (:foreground ,srcery-256-cyan))))
+
+   `(term-color-green
+     ((,srcery-class (:foreground ,srcery-green))
+      (,srcery-256-class (:foreground ,srcery-256-green))))
+
+   `(term-color-magenta
+     ((,srcery-class (:foreground ,srcery-magenta))
+      (,srcery-256-class (:foreground ,srcery-256-magenta))))
+
+   `(term-color-red
+     ((,srcery-class (:foreground ,srcery-red))
+      (,srcery-256-class (:foreground ,srcery-256-red))))
+
+   `(term-color-white
+     ((,srcery-class (:foreground ,srcery-white))
+      (,srcery-256-class (:foreground ,srcery-256-white))))
+
+   `(term-color-yellow
+     ((,srcery-class (:foreground ,srcery-yellow))
+      (,srcery-256-class (:foreground ,srcery-256-yellow))))
+
 
    ;; web-mode
-   `(web-mode-builtin-face         ((,srcery-class (:inherit ,font-lock-builtin-face))))
-   `(web-mode-comment-face         ((,srcery-class (:inherit ,font-lock-comment-face))))
-   `(web-mode-constant-face        ((,srcery-class (:inherit ,font-lock-constant-face))))
-   `(web-mode-doctype-face         ((,srcery-class (:inherit ,font-lock-comment-face))))
-   `(web-mode-function-name-face   ((,srcery-class (:inherit ,font-lock-function-name-face))))
-   `(web-mode-html-attr-name-face  ((,srcery-class (:foreground ,srcery-yellow))))
-   `(web-mode-html-attr-value-face ((,srcery-class (:foreground ,srcery-red))))
-   `(web-mode-html-tag-face        ((,srcery-class (:foreground ,srcery-red))))
-   `(web-mode-keyword-face         ((,srcery-class (:foreground ,srcery-red))))
-   `(web-mode-string-face          ((,srcery-class (:foreground ,srcery-bright-green))))
-   `(web-mode-symbol-face          ((,srcery-class (:foreground ,srcery-bright-blue))))
-   `(web-mode-type-face            ((,srcery-class (:inherit ,font-lock-type-face))))
-   `(web-mode-warning-face         ((,srcery-class (:inherit ,font-lock-warning-face))))
+   `(web-mode-builtin-face
+     ((,srcery-class (:inherit ,font-lock-builtin-face))
+      (,srcery-256-class (:inherit ,font-lock-builtin-face))))
+
+   `(web-mode-comment-face
+     ((,srcery-class (:inherit ,font-lock-comment-face))
+      (,srcery-256-class (:inherit ,font-lock-comment-face))))
+
+   `(web-mode-constant-face
+     ((,srcery-class (:inherit ,font-lock-constant-face))
+      (,srcery-256-class (:inherit ,font-lock-constant-face))))
+
+   `(web-mode-doctype-face
+     ((,srcery-class (:inherit ,font-lock-comment-face))
+      (,srcery-256-class (:inherit ,font-lock-comment-face))))
+
+   `(web-mode-function-name-face
+     ((,srcery-class (:inherit ,font-lock-function-name-face))
+      (,srcery-256-class (:inherit ,font-lock-function-name-face))))
+
+   `(web-mode-html-attr-name-face
+     ((,srcery-class (:foreground ,srcery-yellow))
+      (,srcery-256-class (:foreground ,srcery-256-yellow))))
+
+   `(web-mode-html-attr-value-face
+     ((,srcery-class (:foreground ,srcery-red))
+      (,srcery-256-class (:foreground ,srcery-256-red))))
+
+   `(web-mode-html-tag-face
+     ((,srcery-class (:foreground ,srcery-red))
+      (,srcery-256-class (:foreground ,srcery-256-red))))
+
+   `(web-mode-keyword-face
+     ((,srcery-class (:foreground ,srcery-red))
+      (,srcery-256-class (:foreground ,srcery-256-red))))
+
+   `(web-mode-string-face
+     ((,srcery-class (:foreground ,srcery-bright-green))
+      (,srcery-256-class (:foreground ,srcery-256-bright-green))))
+
+   `(web-mode-symbol-face
+     ((,srcery-class (:foreground ,srcery-bright-blue))
+      (,srcery-256-class (:foreground ,srcery-256-bright-blue))))
+
+   `(web-mode-type-face
+     ((,srcery-class (:inherit ,font-lock-type-face))
+      (,srcery-256-class (:inherit ,font-lock-type-face))))
+
+   `(web-mode-warning-face
+     ((,srcery-class (:inherit ,font-lock-warning-face))
+      (,srcery-256-class (:inherit ,font-lock-warning-face))))
+
 
    ;; which-key
-   `(which-key-command-description-face ((,srcery-class (:foreground ,srcery-bright-white))))
-   `(which-key-group-description-face   ((,srcery-class (:foreground ,srcery-red))))
-   `(which-key-key-face                 ((,srcery-class (:foreground ,srcery-yellow :weight bold))))
-   `(which-key-separator-face           ((,srcery-class (:background nil :foreground ,srcery-bright-green))))
-   `(which-key-special-key-face         ((,srcery-class (:background ,srcery-yellow :foreground ,srcery-black))))
+   `(which-key-command-description-face
+     ((,srcery-class (:foreground ,srcery-bright-white))
+      (,srcery-256-class (:foreground ,srcery-256-bright-white))))
+
+   `(which-key-group-description-face
+     ((,srcery-class (:foreground ,srcery-red))
+      (,srcery-256-class (:foreground ,srcery-256-red))))
+
+   `(which-key-key-face
+     ((,srcery-class (:foreground ,srcery-yellow :weight bold))
+      (,srcery-256-class (:foreground ,srcery-256-yellow :weight bold))))
+
+   `(which-key-separator-face
+     ((,srcery-class (:background nil :foreground ,srcery-bright-green))
+      (,srcery-256-class (:background nil :foreground ,srcery-256-bright-green))))
+
+   `(which-key-special-key-face
+     ((,srcery-class (:background ,srcery-yellow :foreground ,srcery-black))
+      (,srcery-256-class (:background ,srcery-256-yellow :foreground ,srcery-256-black))))
+
 
    ;; which-function-mode
-   `(which-func ((,srcery-class (:foreground ,srcery-yellow))))
+   `(which-func
+     ((,srcery-class (:foreground ,srcery-yellow))
+      (,srcery-256-class (:foreground ,srcery-256-yellow))))
+
 
    ;; whitespace-mode
    `(whitespace-empty            ((,srcery-class (:background nil :foreground ,srcery-yellow))))
