@@ -1555,7 +1555,7 @@
      ((,srcery-class (:foreground ,srcery-bright-white))
       (,srcery-256-class (:foreground ,srcery-256-bright-white))))
 
-;;;;; man
+   ;; man
    `(Man-overstrike
      ((,srcery-class (:foreground ,srcery-blue :weight bold))
       (,srcery-256-class (:foreground ,srcery-256-blue :weight bold))))
@@ -1594,7 +1594,7 @@
      ((,srcery-class (:bold nil :foreground ,srcery-cyan))
       (,srcery-256-class (:bold nil :foreground ,srcery-256-cyan))))
 
-;;;;; mu4e
+   ;; mu4e
    `(mu4e-cited-1-face
      ((,srcery-class (:foreground ,srcery-bright-white))
       (,srcery-256-class (:foreground ,srcery-256-bright-white))))
@@ -1619,7 +1619,7 @@
      ((,srcery-class (:foreground ,srcery-yellow :weight bold))
       (,srcery-256-class (:foreground ,srcery-256-yellow :weight bold))))
 
-;;;;; neotree
+   ;; neotree
    `(neo-dir-link-face
      ((,srcery-class (:foreground ,srcery-red :weight bold))
       (,srcery-256-class (:foreground ,srcery-256-red :weight bold))))
@@ -1636,59 +1636,199 @@
      ((,srcery-class (:foreground ,srcery-yellow :weight bold))
       (,srcery-256-class (:foreground ,srcery-256-yellow :weight bold))))
 
-;;;;; org
-   `(org-agenda-clocking         ((,srcery-class (:background ,srcery-magenta :foreground ,srcery-green))))
-   `(org-agenda-date             ((,srcery-class (:foreground ,srcery-blue :height ,(if srcery-org-height 1.1 1.0)))))
-   `(org-agenda-date-today       ((,srcery-class (:foreground ,srcery-red :slant italic :weight bold :height ,(if srcery-org-height 1.3 1.0)))))
-   `(org-agenda-date-weekend     ((,srcery-class (:weight bold :foreground ,srcery-blue))))
-   `(org-agenda-done             ((,srcery-class (:foreground ,srcery-green :height ,(if srcery-org-height 1.2 1.0)))))
-   `(org-agenda-structure        ((,srcery-class (:weight bold :foreground ,srcery-green))))
-   `(org-block                   ((,srcery-class (:foreground ,srcery-bright-white))))
-   `(org-block-begin-line        ((,srcery-class (:background ,srcery-bright-black :foreground ,srcery-green))))
-   `(org-block-end-line          ((,srcery-class (:background ,srcery-bright-black :foreground ,srcery-green))))
-   `(org-clock-overlay           ((,srcery-class (:foreground ,srcery-green))))
-   `(org-code                    ((,srcery-class (:foreground ,srcery-cyan))))
-   `(org-column                  ((,srcery-class (:background ,srcery-magenta))))
-   `(org-column-title            ((,srcery-class (:background ,srcery-magenta))))
-   `(org-date                    ((,srcery-class (:underline t :foreground ,srcery-blue))))
-   `(org-date-selected           ((,srcery-class (:background ,srcery-yellow :foreground ,srcery-black))))
-   `(org-document-info-keyword   ((,srcery-class (:foreground ,srcery-white))))
-   `(org-document-info           ((,srcery-class (:foreground ,srcery-bright-magenta))))
-   `(org-document-title          ((,srcery-class (:foreground ,srcery-yellow :weight bold :height ,(if srcery-org-height 1.4 1.0)))))
-   `(org-done                    ((,srcery-class (:foreground ,srcery-green :weight bold))))
-   `(org-ellipsis                ((,srcery-class (:foreground ,srcery-red))))
-   `(org-footnote                ((,srcery-class (:underline t :foreground ,srcery-bright-white))))
-   `(org-hide                    ((,srcery-class (:foreground ,srcery-bright-white))))
-   `(org-kbd                     ((,srcery-class (:inherit region :foreground ,srcery-bright-white :box (:line-width 1 :style released-button)))))
-   `(org-level-1                 ((,srcery-class (:weight bold :foreground ,srcery-blue :height ,(if srcery-org-height 1.3 1.0)))))
-   `(org-level-2                 ((,srcery-class (:weight bold :foreground ,srcery-green :height ,(if srcery-org-height 1.2 1.0)))))
-   `(org-level-3                 ((,srcery-class (:bold nil :foreground ,srcery-bright-blue :height ,(if srcery-org-height 1.1 1.0)))))
-   `(org-level-4                 ((,srcery-class (:bold nil :foreground ,srcery-bright-green))))
-   `(org-level-5                 ((,srcery-class (:bold nil :foreground ,srcery-yellow))))
-   `(org-level-6                 ((,srcery-class (:bold nil :foreground ,srcery-bright-magenta))))
-   `(org-level-7                 ((,srcery-class (:bold nil :foreground ,srcery-yellow))))
-   `(org-level-8                 ((,srcery-class (:bold nil :foreground ,srcery-cyan))))
-   `(org-link                    ((,srcery-class (:foreground ,srcery-white :underline t))))
-   `(org-meta-line               ((,srcery-class (:foreground ,srcery-white))))
-   `(org-mode-line-clock-overrun ((,srcery-class (:foreground ,srcery-red))))
-   `(org-mode-line-clock         ((,srcery-class (:foreground ,srcery-bright-green))))
-   `(org-priority                ((,srcery-class (:foreground ,srcery-bright-orange :weight bold))))
-   `(org-quote                   ((,srcery-class (:inherit org-block :slant italic))))
-   `(org-scheduled               ((,srcery-class (:foreground ,srcery-green))))
-   `(org-scheduled-today         ((,srcery-class (:foreground ,srcery-yellow :height ,(if srcery-org-height 1.2 1.0)))))
-   `(org-sexp-date               ((,srcery-class (:foreground ,srcery-bright-white))))
-   `(org-special-keyword         ((,srcery-class (:foreground ,srcery-yellow))))
-   `(org-table                   ((,srcery-class (:foreground ,srcery-bright-white :background ,srcery-gray1))))
-   `(org-time-grid               ((,srcery-class (:foreground ,srcery-bright-green))))
-   `(org-todo                    ((,srcery-class (:foreground ,srcery-yellow :weight bold))))
-   `(org-verbatim                ((,srcery-class (:foreground ,srcery-bright-orange))))
-   `(org-verse                   ((,srcery-class (:inherit org-block :slant italic))))
-   `(org-warning                 ((,srcery-class (:foreground ,srcery-red))))
+   ;; org
+   `(org-agenda-clocking
+     ((,srcery-class (:background ,srcery-magenta :foreground ,srcery-green))
+      (,srcery-256-class (:background ,srcery-256-magenta :foreground ,srcery-256-green))))
 
-;;;;; perspective
+   `(org-agenda-date
+     ((,srcery-class (:foreground ,srcery-blue :height ,(if srcery-org-height 1.1 1.0)))
+      (,srcery-256-class (:foreground ,srcery-256-blue :height ,(if srcery-org-height 1.1 1.0)))))
+
+   `(org-agenda-date-today
+     ((,srcery-class (:foreground ,srcery-red :slant italic :weight bold :height ,(if srcery-org-height 1.3 1.0)))
+      (,srcery-256-class (:foreground ,srcery-256-red :slant italic :weight bold :height ,(if srcery-org-height 1.3 1.0)))))
+
+   `(org-agenda-date-weekend
+     ((,srcery-class (:weight bold :foreground ,srcery-blue))
+      (,srcery-256-class (:weight bold :foreground ,srcery-256-blue))))
+
+   `(org-agenda-done
+     ((,srcery-class (:foreground ,srcery-green :height ,(if srcery-org-height 1.2 1.0)))
+      (,srcery-256-class (:foreground ,srcery-256-green :height ,(if srcery-org-height 1.2 1.0)))))
+
+   `(org-agenda-structure
+     ((,srcery-class (:weight bold :foreground ,srcery-green))
+      (,srcery-256-class (:weight bold :foreground ,srcery-256-green))))
+
+   `(org-block
+     ((,srcery-class (:foreground ,srcery-bright-white))
+      (,srcery-256-class (:foreground ,srcery-256-bright-white))))
+
+   `(org-block-begin-line
+     ((,srcery-class (:background ,srcery-bright-black :foreground ,srcery-green))
+      (,srcery-256-class (:background ,srcery-256-bright-black :foreground ,srcery-256-green))))
+
+   `(org-block-end-line
+     ((,srcery-class (:background ,srcery-bright-black :foreground ,srcery-green))
+      (,srcery-256-class (:background ,srcery-256-bright-black :foreground ,srcery-256-green))))
+
+   `(org-clock-overlay
+     ((,srcery-class (:foreground ,srcery-green))
+      (,srcery-256-class (:foreground ,srcery-256-green))))
+
+   `(org-code
+     ((,srcery-class (:foreground ,srcery-cyan))
+      (,srcery-256-class (:foreground ,srcery-256-cyan))))
+
+   `(org-column
+     ((,srcery-class (:background ,srcery-magenta))
+      (,srcery-256-class (:background ,srcery-256-magenta))))
+
+   `(org-column-title
+     ((,srcery-class (:background ,srcery-magenta))
+      (,srcery-256-class (:background ,srcery-256-magenta))))
+
+   `(org-date
+     ((,srcery-class (:underline t :foreground ,srcery-blue))
+      (,srcery-256-class (:underline t :foreground ,srcery-256-blue))))
+
+   `(org-date-selected
+     ((,srcery-class (:background ,srcery-yellow :foreground ,srcery-black))
+      (,srcery-256-class (:background ,srcery-256-yellow :foreground ,srcery-256-black))))
+
+   `(org-document-info-keyword
+     ((,srcery-class (:foreground ,srcery-white))
+      (,srcery-256-class (:foreground ,srcery-256-white))))
+
+   `(org-document-info
+     ((,srcery-class (:foreground ,srcery-bright-magenta))
+      (,srcery-256-class (:foreground ,srcery-256-bright-magenta))))
+
+   `(org-document-title
+     ((,srcery-class (:foreground ,srcery-yellow :weight bold :height ,(if srcery-org-height 1.4 1.0)))
+      (,srcery-256-class (:foreground ,srcery-256-yellow :weight bold :height ,(if srcery-org-height 1.4 1.0)))))
+
+   `(org-done
+     ((,srcery-class (:foreground ,srcery-green :weight bold))
+      (,srcery-256-class (:foreground ,srcery-256-green :weight bold))))
+
+   `(org-ellipsis
+     ((,srcery-class (:foreground ,srcery-red))
+      (,srcery-256-class (:foreground ,srcery-256-red))))
+
+   `(org-footnote
+     ((,srcery-class (:underline t :foreground ,srcery-bright-white))
+      (,srcery-256-class (:underline t :foreground ,srcery-256-bright-white))))
+
+   `(org-hide
+     ((,srcery-class (:foreground ,srcery-bright-white))
+      (,srcery-256-class (:foreground ,srcery-256-bright-white))))
+
+   `(org-kbd
+     ((,srcery-class (:inherit region :foreground ,srcery-bright-white :box (:line-width 1 :style released-button)))
+      (,srcery-256-class (:inherit region :foreground ,srcery-256-bright-white :box (:line-width 1 :style released-button)))))
+
+   `(org-level-1
+     ((,srcery-class (:weight bold :foreground ,srcery-blue :height ,(if srcery-org-height 1.3 1.0)))
+      (,srcery-256-class (:weight bold :foreground ,srcery-256-blue :height ,(if srcery-org-height 1.3 1.0)))))
+
+   `(org-level-2
+     ((,srcery-class (:weight bold :foreground ,srcery-green :height ,(if srcery-org-height 1.2 1.0)))
+      (,srcery-256-class (:weight bold :foreground ,srcery-256-green :height ,(if srcery-org-height 1.2 1.0)))))
+
+   `(org-level-3
+     ((,srcery-class (:bold nil :foreground ,srcery-bright-blue :height ,(if srcery-org-height 1.1 1.0)))
+      (,srcery-256-class (:bold nil :foreground ,srcery-256-bright-blue :height ,(if srcery-org-height 1.1 1.0)))))
+
+   `(org-level-4
+     ((,srcery-class (:bold nil :foreground ,srcery-bright-green))
+      (,srcery-256-class (:bold nil :foreground ,srcery-256-bright-green))))
+
+   `(org-level-5
+     ((,srcery-class (:bold nil :foreground ,srcery-yellow))
+      (,srcery-256-class (:bold nil :foreground ,srcery-256-yellow))))
+
+   `(org-level-6
+     ((,srcery-class (:bold nil :foreground ,srcery-bright-magenta))
+      (,srcery-256-class (:bold nil :foreground ,srcery-256-bright-magenta))))
+
+   `(org-level-7
+     ((,srcery-class (:bold nil :foreground ,srcery-yellow))
+      (,srcery-256-class (:bold nil :foreground ,srcery-256-yellow))))
+
+   `(org-level-8
+     ((,srcery-class (:bold nil :foreground ,srcery-cyan))
+      (,srcery-256-class (:bold nil :foreground ,srcery-256-cyan))))
+
+   `(org-link
+     ((,srcery-class (:foreground ,srcery-white :underline t))
+      (,srcery-256-class (:foreground ,srcery-256-white :underline t))))
+
+   `(org-meta-line
+     ((,srcery-class (:foreground ,srcery-white))
+      (,srcery-256-class (:foreground ,srcery-256-white))))
+
+   `(org-mode-line-clock-overrun
+     ((,srcery-class (:foreground ,srcery-red))
+      (,srcery-256-class (:foreground ,srcery-256-red))))
+
+   `(org-mode-line-clock
+     ((,srcery-class (:foreground ,srcery-bright-green))
+      (,srcery-256-class (:foreground ,srcery-256-bright-green))))
+
+   `(org-priority
+     ((,srcery-class (:foreground ,srcery-bright-orange :weight bold))
+      (,srcery-256-class (:foreground ,srcery-256-bright-orange :weight bold))))
+
+   `(org-quote
+     ((,srcery-class (:inherit org-block :slant italic))
+      (,srcery-256-class (:inherit org-block :slant italic))))
+
+   `(org-scheduled
+     ((,srcery-class (:foreground ,srcery-green))
+      (,srcery-256-class (:foreground ,srcery-256-green))))
+
+   `(org-scheduled-today
+     ((,srcery-class (:foreground ,srcery-yellow :height ,(if srcery-org-height 1.2 1.0)))
+      (,srcery-256-class (:foreground ,srcery-256-yellow :height ,(if srcery-org-height 1.2 1.0)))))
+
+   `(org-sexp-date
+     ((,srcery-class (:foreground ,srcery-bright-white))
+      (,srcery-256-class (:foreground ,srcery-256-bright-white))))
+
+   `(org-special-keyword
+     ((,srcery-class (:foreground ,srcery-yellow))
+      (,srcery-256-class (:foreground ,srcery-256-yellow))))
+
+   `(org-table
+     ((,srcery-class (:foreground ,srcery-bright-white :background ,srcery-gray1))
+      (,srcery-256-class (:foreground ,srcery-256-bright-white :background ,srcery-256-gray1))))
+
+   `(org-time-grid
+     ((,srcery-class (:foreground ,srcery-bright-green))
+      (,srcery-256-class (:foreground ,srcery-256-bright-green))))
+
+   `(org-todo
+     ((,srcery-class (:foreground ,srcery-yellow :weight bold))
+      (,srcery-256-class (:foreground ,srcery-256-yellow :weight bold))))
+
+   `(org-verbatim
+     ((,srcery-class (:foreground ,srcery-bright-orange))
+      (,srcery-256-class (:foreground ,srcery-256-bright-orange))))
+
+   `(org-verse
+     ((,srcery-class (:inherit org-block :slant italic))
+      (,srcery-256-class (:inherit org-block :slant italic))))
+
+   `(org-warning
+     ((,srcery-class (:foreground ,srcery-red))
+      (,srcery-256-class (:foreground ,srcery-256-red))))
+
+   ;; perspective
    `(persp-selected-face ((,srcery-class (:weight bold :foreground ,srcery-yellow))))
 
-;;;;; popup
+   ;; popup
    `(popup-face                       ((,srcery-class (:background ,srcery-bright-black :foreground ,srcery-bright-white))))
    `(popup-tip-face                   ((,srcery-class (:background ,srcery-bright-blue :foreground ,srcery-bright-white :bold nil :italic nil :underline nil))))
    `(popup-menu-face                  ((,srcery-class (:background ,srcery-bright-black :foreground ,srcery-bright-white))))
@@ -1698,7 +1838,7 @@
    `(popup-scroll-bar-foreground-face ((,srcery-class (:background ,srcery-gray4))))
    `(popup-scroll-bar-background-face ((,srcery-class (:background ,srcery-bright-black))))
 
-;;;;; mode-line
+   ;; mode-line
    `(powerline-active1   ((,srcery-class (:background ,srcery-gray3 :foreground ,srcery-bright-white))))
    `(powerline-active2   ((,srcery-class (:foreground ,srcery-bright-white))))
    `(powerline-inactive1 ((,srcery-class (:background ,srcery-bright-black :foreground ,srcery-white))))
@@ -1727,7 +1867,7 @@
    `(spaceline-read-only        ((,srcery-class (:background ,srcery-gray1 :foreground ,srcery-orange))))
    `(spaceline-highlight-face   ((,srcery-class (:background ,srcery-yellow :foreground ,srcery-black))))
 
-;;;;; rainbow-delimiters
+   ;; rainbow-delimiters
    `(rainbow-delimiters-depth-1-face    ((,srcery-class :foreground ,srcery-bright-white)))
    `(rainbow-delimiters-depth-2-face    ((,srcery-class :foreground ,srcery-bright-blue)))
    `(rainbow-delimiters-depth-3-face    ((,srcery-class :foreground ,srcery-bright-white)))
@@ -1742,31 +1882,31 @@
    ;; `(rainbow-delimiters-mismatched-face ((,srcery-class :foreground ,srcery-red :overline t :weight bold)))
 
 
-;;;;; sh
+   ;; sh
    `(sh-heredoc ((,srcery-class (:foreground ,srcery-green :weight bold))))
    `(sh-quoted-exec ((,srcery-class (:foreground ,srcery-yellow :weight bold))))
 
-;;;;; shm
+   ;; shm
    `(shm-current-face    ((,srcery-class (:background ,srcery-green, :foreground ,srcery-black))))
    `(shm-quarantine-face ((,srcery-class (:background ,srcery-gray1))))
 
-;;;;; show-paren
+   ;; show-paren
    `(show-paren-match    ((,srcery-class (:foreground ,srcery-bright-magenta :weight bold))))
    `(show-paren-mismatch ((,srcery-class (:background ,srcery-red :foreground ,srcery-bright-white))))
 
-;;;;; paren-face
+   ;; paren-face
    `(parenthesis ((,srcery-class (:foreground ,srcery-gray5))))
 
-;;;;; smartparens
+   ;; smartparens
    `(sp-pair-overlay-face         ((,srcery-class (:background ,srcery-magenta :foreground nil))))
    `(sp-show-pair-match-face      ((,srcery-class (:foreground ,srcery-bright-magenta :weight bold))))
    `(sp-wrap-overlay-closing-pair ((,srcery-class (:background ,srcery-magenta :foreground, srcery-bright-yellow))))
 
-;;;;; evil-snipe
+   ;; evil-snipe
    `(evil-snipe-first-match-face ((,srcery-class (:foreground ,srcery-magenta :weight bold))))
    `(evil-snipe-matches-face     ((,srcery-class (:foreground ,srcery-magenta :weight bold))))
 
-;;;;; spacemacs
+   ;; spacemacs
    `(spacemacs-normal-face                ((,srcery-class (:background ,srcery-gray4 :foreground ,srcery-bright-white))))
    `(spacemacs-insert-face                ((,srcery-class (:background ,srcery-bright-white :foreground ,srcery-black))))
    `(spacemacs-replace-face               ((,srcery-class (:background ,srcery-bright-red :foreground ,srcery-bright-white))))
@@ -1784,14 +1924,14 @@
    `(spacemacs-iedit-insert-face          ((,srcery-class (:background ,srcery-bright-orange :foreground ,srcery-black))))
    `(spacemacs-micro-state-binding-face   ((,srcery-class (:foreground ,srcery-yellow :weight bold))))
    ;; spacemacs-ido-navigation-ts-face
-;;;;; swiper
+   ;; swiper
    `(swiper-line-face    ((,srcery-class (:background ,srcery-magenta :weight bold))))
    `(swiper-match-face-1 ((,srcery-class (:weight bold))))
    `(swiper-match-face-2 ((,srcery-class (:foreground ,srcery-blue :underline t))))
    `(swiper-match-face-3 ((,srcery-class (:foreground ,srcery-yellow :underline t))))
    `(swiper-match-face-4 ((,srcery-class (:foreground ,srcery-bright-green :underline t))))
 
-;;;;; term
+   ;; term
    `(term               ((,srcery-class (:foreground ,srcery-bright-white :background ,srcery-black))))
    `(term-color-black   ((,srcery-class (:foreground ,srcery-black))))
    `(term-color-blue    ((,srcery-class (:foreground ,srcery-blue))))
@@ -1802,7 +1942,7 @@
    `(term-color-white   ((,srcery-class (:foreground ,srcery-white))))
    `(term-color-yellow  ((,srcery-class (:foreground ,srcery-yellow))))
 
-;;;;; web-mode
+   ;; web-mode
    `(web-mode-builtin-face         ((,srcery-class (:inherit ,font-lock-builtin-face))))
    `(web-mode-comment-face         ((,srcery-class (:inherit ,font-lock-comment-face))))
    `(web-mode-constant-face        ((,srcery-class (:inherit ,font-lock-constant-face))))
@@ -1817,17 +1957,17 @@
    `(web-mode-type-face            ((,srcery-class (:inherit ,font-lock-type-face))))
    `(web-mode-warning-face         ((,srcery-class (:inherit ,font-lock-warning-face))))
 
-;;;;; which-key
+   ;; which-key
    `(which-key-command-description-face ((,srcery-class (:foreground ,srcery-bright-white))))
    `(which-key-group-description-face   ((,srcery-class (:foreground ,srcery-red))))
    `(which-key-key-face                 ((,srcery-class (:foreground ,srcery-yellow :weight bold))))
    `(which-key-separator-face           ((,srcery-class (:background nil :foreground ,srcery-bright-green))))
    `(which-key-special-key-face         ((,srcery-class (:background ,srcery-yellow :foreground ,srcery-black))))
 
-;;;;; which-function-mode
+   ;; which-function-mode
    `(which-func ((,srcery-class (:foreground ,srcery-yellow))))
 
-;;;;; whitespace-mode
+   ;; whitespace-mode
    `(whitespace-empty            ((,srcery-class (:background nil :foreground ,srcery-yellow))))
    `(whitespace-indentation      ((,srcery-class (:background nil :foreground ,srcery-bright-orange))))
    `(whitespace-line             ((,srcery-class (:background nil :foreground ,srcery-green))))
@@ -1838,7 +1978,7 @@
    `(whitespace-tab              ((,srcery-class (:background nil))))
    `(whitespace-trailing         ((,srcery-class (:background ,srcery-red :foreground ,srcery-bright-orange))))
 
-;;;;; other, need more work
+   ;; other, need more work
    `(ac-completion-face                      ((,srcery-class (:underline t :foreground ,srcery-red))))
    `(ffap                                    ((,srcery-class (:foreground ,srcery-bright-white))))
    `(flx-highlight-face                      ((,srcery-class (:foreground ,srcery-green :underline nil))))
