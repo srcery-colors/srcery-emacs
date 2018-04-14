@@ -793,43 +793,139 @@
       (,srcery-256-class (:foreground ,srcery-256-bright-white :background ,srcery-256-bright-orange :weight bold :underline t))))
 
 ;;;;; jabber
-   `(jabber-activity-face          ((,srcery-class (:weight bold :foreground ,srcery-red))))
-   `(jabber-activity-personal-face ((,srcery-class (:weight bold :foreground ,srcery-blue))))
-   `(jabber-chat-error             ((,srcery-class (:weight bold :foreground ,srcery-red))))
-   `(jabber-chat-prompt-foreign    ((,srcery-class (:weight bold :foreground ,srcery-red))))
-   `(jabber-chat-prompt-local      ((,srcery-class (:weight bold :foreground ,srcery-blue))))
-   `(jabber-chat-prompt-system     ((,srcery-class (:weight bold :foreground ,srcery-green))))
-   `(jabber-chat-text-foreign      ((,srcery-class (:foreground ,srcery-bright-white))))
-   `(jabber-chat-text-local        ((,srcery-class (:foreground ,srcery-bright-white))))
-   `(jabber-rare-time-face         ((,srcery-class (:foreground ,srcery-green))))
-   `(jabber-roster-user-away       ((,srcery-class (:foreground ,srcery-yellow))))
-   `(jabber-roster-user-chatty     ((,srcery-class (:weight bold :foreground ,srcery-green))))
-   `(jabber-roster-user-dnd        ((,srcery-class (:foreground ,srcery-red))))
-   `(jabber-roster-user-error      ((,srcery-class (:foreground ,srcery-red))))
-   `(jabber-roster-user-offline    ((,srcery-class (:foreground ,srcery-bright-white))))
-   `(jabber-roster-user-online     ((,srcery-class (:weight bold :foreground ,srcery-green))))
-   `(jabber-roster-user-xa         ((,srcery-class (:foreground ,srcery-cyan))))
-;;;;; git
-   `(git-commit-summary              ((,srcery-class (:foreground ,srcery-red))))
-   `(git-commit-nonempty-second-line ((,srcery-class (:foreground ,srcery-yellow))))
-   `(diff-file-header                ((,srcery-class (:foreground ,srcery-bright-white))))
-   `(diff-hunk-header                ((,srcery-class (:foreground ,srcery-yellow))))
-   `(diff-function                   ((,srcery-class (:foreground ,srcery-yellow))))
-   `(diff-header                     ((,srcery-class (:foreground ,srcery-bright-white))))
+   `(jabber-activity-face
+     ((,srcery-class (:weight bold :foreground ,srcery-red))
+      (,srcery-256-class (:weight bold :foreground ,srcery-256-red))))
 
+   `(jabber-activity-personal-face
+     ((,srcery-class (:weight bold :foreground ,srcery-blue))
+      (,srcery-256-class (:weight bold :foreground ,srcery-256-blue))))
+
+   `(jabber-chat-error
+     ((,srcery-class (:weight bold :foreground ,srcery-red))
+      (,srcery-256-class (:weight bold :foreground ,srcery-256-red))))
+
+   `(jabber-chat-prompt-foreign
+     ((,srcery-class (:weight bold :foreground ,srcery-red))
+      (,srcery-256-class (:weight bold :foreground ,srcery-256-red))))
+
+   `(jabber-chat-prompt-local
+     ((,srcery-class (:weight bold :foreground ,srcery-blue))
+      (,srcery-256-class (:weight bold :foreground ,srcery-256-blue))))
+
+   `(jabber-chat-prompt-system
+     ((,srcery-class (:weight bold :foreground ,srcery-green))
+      (,srcery-256-class (:weight bold :foreground ,srcery-256-green))))
+
+   `(jabber-chat-text-foreign
+     ((,srcery-class (:foreground ,srcery-bright-white))
+      (,srcery-256-class (:foreground ,srcery-256-bright-white))))
+
+   `(jabber-chat-text-local
+     ((,srcery-class (:foreground ,srcery-bright-white))
+      (,srcery-256-class (:foreground ,srcery-256-bright-white))))
+
+   `(jabber-rare-time-face
+     ((,srcery-class (:foreground ,srcery-green))
+      (,srcery-256-class (:foreground ,srcery-256-green))))
+
+   `(jabber-roster-user-away
+     ((,srcery-class (:foreground ,srcery-yellow))
+      (,srcery-256-class (:foreground ,srcery-256-yellow))))
+
+   `(jabber-roster-user-chatty
+     ((,srcery-class (:weight bold :foreground ,srcery-green))
+      (,srcery-256-class (:weight bold :foreground ,srcery-256-green))))
+
+   `(jabber-roster-user-dnd
+     ((,srcery-class (:foreground ,srcery-red))
+      (,srcery-256-class (:foreground ,srcery-256-red))))
+
+   `(jabber-roster-user-error
+     ((,srcery-class (:foreground ,srcery-red))
+      (,srcery-256-class (:foreground ,srcery-256-red))))
+
+   `(jabber-roster-user-offline
+     ((,srcery-class (:foreground ,srcery-bright-white))
+      (,srcery-256-class (:foreground ,srcery-256-bright-white))))
+
+   `(jabber-roster-user-online
+     ((,srcery-class (:weight bold :foreground ,srcery-green))
+      (,srcery-256-class (:weight bold :foreground ,srcery-256-green))))
+
+   `(jabber-roster-user-xa
+     ((,srcery-class (:foreground ,srcery-cyan))
+      (,srcery-256-class (:foreground ,srcery-256-cyan))))
+
+;;;;; git
+   `(git-commit-summary
+     ((,srcery-class (:foreground ,srcery-red))
+      (,srcery-256-class (:foreground ,srcery-256-red))))
+
+   `(git-commit-nonempty-second-line
+     ((,srcery-class (:foreground ,srcery-yellow))
+      (,srcery-256-class (:foreground ,srcery-256-yellow))))
+
+   `(diff-file-header
+     ((,srcery-class (:foreground ,srcery-bright-white))
+      (,srcery-256-class (:foreground ,srcery-256-bright-white))))
+
+   `(diff-hunk-header
+     ((,srcery-class (:foreground ,srcery-yellow))
+      (,srcery-256-class (:foreground ,srcery-256-yellow))))
+
+   `(diff-function
+     ((,srcery-class (:foreground ,srcery-yellow))
+      (,srcery-256-class (:foreground ,srcery-256-yellow))))
+
+   `(diff-header
+     ((,srcery-class (:foreground ,srcery-bright-white))
+      (,srcery-256-class (:foreground ,srcery-256-bright-white))))
 
 ;;;;; git-gutter-fr
-   `(git-gutter-fr:added    ((,srcery-class (:foreground ,srcery-green :weight bold))))
-   `(git-gutter-fr:deleted  ((,srcery-class (:foreground ,srcery-red :weight bold))))
-   `(git-gutter-fr:modified ((,srcery-class (:foreground ,srcery-blue :weight bold))))
-   `(git-gutter+-added      ((,srcery-class (:foreground ,srcery-green))))
-   `(git-gutter+-deleted    ((,srcery-class (:foreground ,srcery-red))))
-   `(git-gutter+-separator  ((,srcery-class (:foreground ,srcery-cyan))))
-   `(git-gutter+-modified   ((,srcery-class (:foreground ,srcery-magenta))))
-   `(git-gutter+-unchanged  ((,srcery-class (:foreground ,srcery-bright-white))))
-   `(git-gutter:added       ((,srcery-class (:foreground ,srcery-green))))
-   `(git-gutter:modified    ((,srcery-class (:foreground ,srcery-magenta))))
-   `(git-gutter:unchanged   ((,srcery-class (:foreground ,srcery-bright-white))))
+   `(git-gutter-fr:added
+     ((,srcery-class (:foreground ,srcery-green :weight bold))
+      (,srcery-256-class (:foreground ,srcery-256-green :weight bold))))
+
+   `(git-gutter-fr:deleted
+     ((,srcery-class (:foreground ,srcery-red :weight bold))
+      (,srcery-256-class (:foreground ,srcery-256-red :weight bold))))
+
+   `(git-gutter-fr:modified
+     ((,srcery-class (:foreground ,srcery-blue :weight bold))
+      (,srcery-256-class (:foreground ,srcery-256-blue :weight bold))))
+
+   `(git-gutter+-added
+     ((,srcery-class (:foreground ,srcery-green))
+      (,srcery-256-class (:foreground ,srcery-256-green))))
+
+   `(git-gutter+-deleted
+     ((,srcery-class (:foreground ,srcery-red))
+      (,srcery-256-class (:foreground ,srcery-256-red))))
+
+   `(git-gutter+-separator
+     ((,srcery-class (:foreground ,srcery-cyan))
+      (,srcery-256-class (:foreground ,srcery-256-cyan))))
+
+   `(git-gutter+-modified
+     ((,srcery-class (:foreground ,srcery-magenta))
+      (,srcery-256-class (:foreground ,srcery-256-magenta))))
+
+   `(git-gutter+-unchanged
+     ((,srcery-class (:foreground ,srcery-bright-white))
+      (,srcery-256-class (:foreground ,srcery-256-bright-white))))
+
+   `(git-gutter:added
+     ((,srcery-class (:foreground ,srcery-green))
+      (,srcery-256-class (:foreground ,srcery-256-green))))
+
+   `(git-gutter:modified
+     ((,srcery-class (:foreground ,srcery-magenta))
+      (,srcery-256-class (:foreground ,srcery-256-magenta))))
+
+   `(git-gutter:unchanged
+     ((,srcery-class (:foreground ,srcery-bright-white))
+      (,srcery-256-class (:foreground ,srcery-256-bright-white))))
 
 ;;;;; git-timemachine
    `(git-timemachine-minibuffer-detail-face ((,srcery-class (:foreground ,srcery-blue :weight bold :background ,srcery-blue))))
