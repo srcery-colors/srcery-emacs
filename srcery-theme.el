@@ -113,6 +113,7 @@
        (srcery-256-gray4          "color-238")
        (srcery-256-gray5          "color-239"))
 
+
   (custom-theme-set-faces
    'srcery
 
@@ -972,49 +973,171 @@
       (,srcery-256-class (:foreground ,srcery-256-red :weight bold))))
 
    ;; helm
-   `(helm-bookmark-directory          ((,srcery-class (:inherit helm-ff-directory))))
-   `(helm-bookmark-file               ((,srcery-class (:foreground ,srcery-bright-white))))
-   `(helm-bookmark-gnus               ((,srcery-class (:foreground ,srcery-green))))
-   `(helm-bookmark-info               ((,srcery-class (:foreground ,srcery-green))))
-   `(helm-bookmark-man                ((,srcery-class (:foreground ,srcery-green))))
-   `(helm-bookmark-w3m                ((,srcery-class (:foreground ,srcery-green))))
-   `(helm-buffer-directory            ((,srcery-class (:foreground ,srcery-blue))))
-   `(helm-buffer-file                 ((,srcery-class (:foreground ,srcery-bright-white :background ,srcery-black))))
-   `(helm-buffer-not-saved            ((,srcery-class (:foreground ,srcery-green :background ,srcery-black))))
-   `(helm-buffer-process              ((,srcery-class (:foreground ,srcery-red :background ,srcery-black))))
-   `(helm-buffer-saved-out            ((,srcery-class (:foreground ,srcery-bright-white :background ,srcery-black))))
-   `(helm-buffer-size                 ((,srcery-class (:foreground ,srcery-bright-white :background ,srcery-black))))
-   `(helm-candidate-number            ((,srcery-class (:background ,srcery-black :foreground ,srcery-red :weight bold))))
-   `(helm-ff-directory                ((,srcery-class (:foreground ,srcery-blue))))
-   `(helm-ff-dotted-directory         ((,srcery-class (:foreground ,srcery-blue))))
-   `(helm-ff-dotted-symlink-directory ((,srcery-class (:foreground ,srcery-cyan))))
-   `(helm-ff-executable               ((,srcery-class (:foreground ,srcery-green :background ,srcery-black :weight normal))))
-   `(helm-ff-file                     ((,srcery-class (:foreground ,srcery-bright-white :background ,srcery-black :weight normal))))
-   `(helm-ff-invalid-symlink          ((,srcery-class (:foreground ,srcery-red :background ,srcery-black :weight bold))))
-   `(helm-ff-prefix                   ((,srcery-class (:foreground ,srcery-black :background ,srcery-red :weight normal))))
-   `(helm-ff-symlink                  ((,srcery-class (:foreground ,srcery-cyan :background ,srcery-black :weight bold))))
-   `(helm-grep-cmd-line               ((,srcery-class (:foreground ,srcery-bright-white :background ,srcery-black))))
-   `(helm-grep-file                   ((,srcery-class (:foreground ,srcery-bright-white :background ,srcery-black))))
-   `(helm-grep-finish                 ((,srcery-class (:foreground ,srcery-bright-white :background ,srcery-black))))
-   `(helm-grep-lineno                 ((,srcery-class (:foreground ,srcery-bright-blue :background ,srcery-black :weight bold))))
-   `(helm-grep-match                  ((,srcery-class (:foreground nil :background nil :inherit helm-match))))
-   `(helm-header                      ((,srcery-class (:foreground ,srcery-bright-white :background ,srcery-black :underline nil :box nil))))
-   `(helm-header-line-left-margin     ((,srcery-class (:foreground ,srcery-red :background ,nil))))
-   `(helm-match                       ((,srcery-class (:foreground ,srcery-magenta))))
-   `(helm-match-item                  ((,srcery-class (:foreground ,srcery-magenta))))
-   `(helm-moccur-buffer               ((,srcery-class (:foreground ,srcery-blue :background ,srcery-black))))
-   `(helm-selection                   ((,srcery-class (:background ,srcery-bright-black :weight bold))))
-   `(helm-selection-line              ((,srcery-class (:background ,srcery-bright-black :weight bold))))
-   `(helm-separator                   ((,srcery-class (:foreground ,srcery-green :background ,srcery-black))))
-   `(helm-source-header               ((,srcery-class (:background ,srcery-black :foreground ,srcery-green :underline t))))
-   `(helm-time-zone-current           ((,srcery-class (:foreground ,srcery-red :background ,srcery-black))))
-   `(helm-time-zone-home              ((,srcery-class (:foreground ,srcery-green :background ,srcery-black))))
-   `(helm-visible-mark                ((,srcery-class (:foreground ,srcery-red :background ,srcery-black))))
+   `(helm-bookmark-directory
+     ((,srcery-class (:inherit helm-ff-directory))
+      (,srcery-256-class (:inherit helm-ff-directory))))
+
+   `(helm-bookmark-file
+     ((,srcery-class (:foreground ,srcery-bright-white))
+      (,srcery-256-class (:foreground ,srcery-256-bright-white))))
+
+   `(helm-bookmark-gnus
+     ((,srcery-class (:foreground ,srcery-green))
+      (,srcery-256-class (:foreground ,srcery-256-green))))
+
+   `(helm-bookmark-info
+     ((,srcery-class (:foreground ,srcery-green))
+      (,srcery-256-class (:foreground ,srcery-256-green))))
+
+   `(helm-bookmark-man
+     ((,srcery-class (:foreground ,srcery-green))
+      (,srcery-256-class (:foreground ,srcery-256-green))))
+
+   `(helm-bookmark-w3m
+     ((,srcery-class (:foreground ,srcery-green))
+      (,srcery-256-class (:foreground ,srcery-256-green))))
+
+   `(helm-buffer-directory
+     ((,srcery-class (:foreground ,srcery-blue))
+      (,srcery-256-class (:foreground ,srcery-256-blue))))
+
+   `(helm-buffer-file
+     ((,srcery-class (:foreground ,srcery-bright-white :background ,srcery-black))
+      (,srcery-256-class (:foreground ,srcery-256-bright-white :background ,srcery-256-black))))
+
+   `(helm-buffer-not-saved
+     ((,srcery-class (:foreground ,srcery-green :background ,srcery-black))
+      (,srcery-256-class (:foreground ,srcery-256-green :background ,srcery-256-black))))
+
+   `(helm-buffer-process
+     ((,srcery-class (:foreground ,srcery-red :background ,srcery-black))
+      (,srcery-256-class (:foreground ,srcery-256-red :background ,srcery-256-black))))
+
+   `(helm-buffer-saved-out
+     ((,srcery-class (:foreground ,srcery-bright-white :background ,srcery-black))
+      (,srcery-256-class (:foreground ,srcery-256-bright-white :background ,srcery-256-black))))
+
+   `(helm-buffer-size
+     ((,srcery-class (:foreground ,srcery-bright-white :background ,srcery-black))
+      (,srcery-256-class (:foreground ,srcery-256-bright-white :background ,srcery-256-black))))
+
+   `(helm-candidate-number
+     ((,srcery-class (:background ,srcery-black :foreground ,srcery-red :weight bold))
+      (,srcery-256-class (:background ,srcery-256-black :foreground ,srcery-256-red :weight bold))))
+
+   `(helm-ff-directory
+     ((,srcery-class (:foreground ,srcery-blue))
+      (,srcery-256-class (:foreground ,srcery-256-blue))))
+
+   `(helm-ff-dotted-directory
+     ((,srcery-class (:foreground ,srcery-blue))
+      (,srcery-256-class (:foreground ,srcery-256-blue))))
+
+   `(helm-ff-dotted-symlink-directory
+     ((,srcery-class (:foreground ,srcery-cyan))
+      (,srcery-256-class (:foreground ,srcery-256-cyan))))
+
+   `(helm-ff-executable
+     ((,srcery-class (:foreground ,srcery-green :background ,srcery-black :weight normal))
+      (,srcery-256-class (:foreground ,srcery-256-green :background ,srcery-256-black :weight normal))))
+
+   `(helm-ff-file
+     ((,srcery-class (:foreground ,srcery-bright-white :background ,srcery-black :weight normal))
+      (,srcery-256-class (:foreground ,srcery-256-bright-white :background ,srcery-256-black :weight normal))))
+
+   `(helm-ff-invalid-symlink
+     ((,srcery-class (:foreground ,srcery-red :background ,srcery-black :weight bold))
+      (,srcery-256-class (:foreground ,srcery-256-red :background ,srcery-256-black :weight bold))))
+
+   `(helm-ff-prefix
+     ((,srcery-class (:foreground ,srcery-black :background ,srcery-red :weight normal))
+      (,srcery-256-class (:foreground ,srcery-256-black :background ,srcery-256-red :weight normal))))
+
+   `(helm-ff-symlink
+     ((,srcery-class (:foreground ,srcery-cyan :background ,srcery-black :weight bold))
+      (,srcery-256-class (:foreground ,srcery-256-cyan :background ,srcery-256-black :weight bold))))
+
+   `(helm-grep-cmd-line
+     ((,srcery-class (:foreground ,srcery-bright-white :background ,srcery-black))
+      (,srcery-256-class (:foreground ,srcery-256-bright-white :background ,srcery-256-black))))
+
+   `(helm-grep-file
+     ((,srcery-class (:foreground ,srcery-bright-white :background ,srcery-black))
+      (,srcery-256-class (:foreground ,srcery-256-bright-white :background ,srcery-256-black))))
+
+   `(helm-grep-finish
+     ((,srcery-class (:foreground ,srcery-bright-white :background ,srcery-black))
+      (,srcery-256-class (:foreground ,srcery-256-bright-white :background ,srcery-256-black))))
+
+   `(helm-grep-lineno
+     ((,srcery-class (:foreground ,srcery-bright-blue :background ,srcery-black :weight bold))
+      (,srcery-256-class (:foreground ,srcery-256-bright-blue :background ,srcery-256-black :weight bold))))
+
+   `(helm-grep-match
+     ((,srcery-class (:foreground nil :background nil :inherit helm-match))
+      (,srcery-256-class (:foreground nil :background nil :inherit helm-match))))
+
+   `(helm-header
+     ((,srcery-class (:foreground ,srcery-bright-white :background ,srcery-black :underline nil :box nil))
+      (,srcery-256-class (:foreground ,srcery-256-bright-white :background ,srcery-256-black :underline nil :box nil))))
+
+   `(helm-header-line-left-margin
+     ((,srcery-class (:foreground ,srcery-red :background ,nil))
+      (,srcery-256-class (:foreground ,srcery-256-red :background ,nil))))
+
+   `(helm-match
+     ((,srcery-class (:foreground ,srcery-magenta))
+      (,srcery-256-class (:foreground ,srcery-256-magenta))))
+
+   `(helm-match-item
+     ((,srcery-class (:foreground ,srcery-magenta))
+      (,srcery-256-class (:foreground ,srcery-256-magenta))))
+
+   `(helm-moccur-buffer
+     ((,srcery-class (:foreground ,srcery-blue :background ,srcery-black))
+      (,srcery-256-class (:foreground ,srcery-256-blue :background ,srcery-256-black))))
+
+   `(helm-selection
+     ((,srcery-class (:background ,srcery-bright-black :weight bold))
+      (,srcery-256-class (:background ,srcery-256-bright-black :weight bold))))
+
+   `(helm-selection-line
+     ((,srcery-class (:background ,srcery-bright-black :weight bold))
+      (,srcery-256-class (:background ,srcery-256-bright-black :weight bold))))
+
+   `(helm-separator
+     ((,srcery-class (:foreground ,srcery-green :background ,srcery-black))
+      (,srcery-256-class (:foreground ,srcery-256-green :background ,srcery-256-black))))
+
+   `(helm-source-header
+     ((,srcery-class (:background ,srcery-black :foreground ,srcery-green :underline t))
+      (,srcery-256-class (:background ,srcery-256-black :foreground ,srcery-256-green :underline t))))
+
+   `(helm-time-zone-current
+     ((,srcery-class (:foreground ,srcery-red :background ,srcery-black))
+      (,srcery-256-class (:foreground ,srcery-256-red :background ,srcery-256-black))))
+
+   `(helm-time-zone-home
+     ((,srcery-class (:foreground ,srcery-green :background ,srcery-black))
+      (,srcery-256-class (:foreground ,srcery-256-green :background ,srcery-256-black))))
+
+   `(helm-visible-mark
+     ((,srcery-class (:foreground ,srcery-red :background ,srcery-black))
+      (,srcery-256-class (:foreground ,srcery-256-red :background ,srcery-256-black))))
+
 
 ;;;;; helm-swoop
-   `(helm-swoop-target-line-block-face ((,srcery-class (:foreground ,srcery-yellow :background ,srcery-black))))
-   `(helm-swoop-target-line-face       ((,srcery-class (:background ,srcery-bright-black :weight bold))))
-   `(helm-swoop-target-word-face       ((,srcery-class (:foreground ,srcery-magenta :weight bold))))
+   `(helm-swoop-target-line-block-face
+     ((,srcery-class (:foreground ,srcery-yellow :background ,srcery-black))
+      (,srcery-256-class (:foreground ,srcery-256-yellow :background ,srcery-256-black))))
+
+   `(helm-swoop-target-line-face
+     ((,srcery-class (:background ,srcery-bright-black :weight bold))
+      (,srcery-256-class (:background ,srcery-256-bright-black :weight bold))))
+
+   `(helm-swoop-target-word-face
+     ((,srcery-class (:foreground ,srcery-magenta :weight bold))
+      (,srcery-256-class (:foreground ,srcery-256-magenta :weight bold))))
 
 ;;;;; highlights
    `(hi-yellow ((,srcery-class (:foreground ,srcery-yellow))))
@@ -1406,7 +1529,6 @@
    `(pulse-highlight-start-face              ((,srcery-class :background ,srcery-bright-green :foreground ,srcery-black)))
    `(custom-invalid                          ((,srcery-class :background ,srcery-bright-red :foreground ,srcery-bright-white)))
    )
-
   (custom-theme-set-variables
    'srcery
    `(ansi-color-names-vector [,srcery-black ,srcery-red ,srcery-green ,srcery-yellow ,srcery-blue ,srcery-magenta ,srcery-cyan ,srcery-white])
