@@ -754,20 +754,43 @@
    ;; flycheck
    `(flycheck-error
      ((,(append '((supports :underline (:style line))) srcery-class)
-       (:underline (:style line :color ,srcery-red)))
-      (,srcery-class (:foreground ,srcery-bright-white :background ,srcery-red :weight bold :underline t))))
-   `(flycheck-error-list-checker-name ((,srcery-class (:foreground ,srcery-red))))
-   `(flycheck-fringe-error ((,srcery-class (:foreground ,srcery-red :weight bold))))
-   `(flycheck-fringe-info ((,srcery-class (:foreground ,srcery-red :weight bold))))
-   `(flycheck-fringe-warning ((,srcery-class (:foreground ,srcery-bright-orange :weight bold))))
+       (:underline (:style line :color ,srcery-red))
+       (,(append '((supports :underline (:style line))) srcery-256-class)
+        (:underline (:style line :color ,srcery-256-red))))
+      (,srcery-class (:foreground ,srcery-bright-white :background ,srcery-red :weight bold :underline t))
+      (,srcery-256-class (:foreground ,srcery-256-bright-white :background ,srcery-256-red :weight bold :underline t))))
+
+   `(flycheck-error-list-checker-name
+     ((,srcery-class (:foreground ,srcery-red))
+      (,srcery-256-class (:foreground ,srcery-256-red))))
+
+   `(flycheck-fringe-error
+     ((,srcery-class (:foreground ,srcery-red :weight bold))
+      (,srcery-256-class (:foreground ,srcery-256-red :weight bold))))
+
+   `(flycheck-fringe-info
+     ((,srcery-class (:foreground ,srcery-red :weight bold))
+      (,srcery-256-class (:foreground ,srcery-256-red :weight bold))))
+
+   `(flycheck-fringe-warning
+     ((,srcery-class (:foreground ,srcery-bright-orange :weight bold))
+      (,srcery-256-class (:foreground ,srcery-256-bright-orange :weight bold))))
+
    `(flycheck-info
      ((,(append '((supports :underline (:style line))) srcery-class)
-       (:underline (:style line :color ,srcery-red)))
-      (,srcery-class (:foreground ,srcery-bright-white :background ,srcery-red :weight bold :underline t))))
+       (:underline (:style line :color ,srcery-red))
+       (,(append '((supports :underline (:style line))) srcery-256-class)
+        (:underline (:style line :color ,srcery-256-red))))
+      (,srcery-class (:foreground ,srcery-bright-white :background ,srcery-red :weight bold :underline t))
+      (,srcery-256-class (:foreground ,srcery-256-bright-white :background ,srcery-256-red :weight bold :underline t))))
+
    `(flycheck-warning
      ((,(append '((supports :underline (:style line))) srcery-class)
        (:underline (:style line :color ,srcery-bright-orange)))
-      (,srcery-class (:foreground ,srcery-bright-white :background ,srcery-bright-orange :weight bold :underline t))))
+      (,(append '((supports :underline (:style line))) srcery-256-class)
+       (:underline (:style line :color ,srcery-256-bright-orange)))
+      (,srcery-class (:foreground ,srcery-bright-white :background ,srcery-bright-orange :weight bold :underline t))
+      (,srcery-256-class (:foreground ,srcery-256-bright-white :background ,srcery-256-bright-orange :weight bold :underline t))))
 
 ;;;;; jabber
    `(jabber-activity-face          ((,srcery-class (:weight bold :foreground ,srcery-red))))
