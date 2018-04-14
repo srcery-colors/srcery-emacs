@@ -1309,75 +1309,251 @@
       (,srcery-class (:foreground ,srcery-yellow))))
 
    ;; magit
-   `(magit-blame-culprit               ((,srcery-class :foreground ,srcery-yellow)))
-   `(magit-blame-header                ((,srcery-class :foreground ,srcery-green)))
-   `(magit-blame-sha1                  ((,srcery-class :foreground ,srcery-yellow)))
-   `(magit-blame-subject               ((,srcery-class :foreground ,srcery-yellow)))
-   `(magit-blame-time                  ((,srcery-class :foreground ,srcery-green)))
-   `(magit-blame-name                  ((,srcery-class :foreground ,srcery-yellow)))
-   `(magit-blame-heading               ((,srcery-class :foreground ,srcery-green)))
-   `(magit-blame-hash                  ((,srcery-class :foreground ,srcery-yellow)))
-   `(magit-blame-summary               ((,srcery-class :foreground ,srcery-yellow)))
-   `(magit-blame-date                  ((,srcery-class :foreground ,srcery-green)))
-   `(magit-log-date                    ((,srcery-class :foreground ,srcery-bright-white)))
-   `(magit-log-graph                   ((,srcery-class :foreground ,srcery-bright-white)))
-   `(magit-reflog-amend                ((,srcery-class :foreground ,srcery-magenta)))
-   `(magit-reflog-other                ((,srcery-class :foreground ,srcery-cyan)))
-   `(magit-reflog-rebase               ((,srcery-class :foreground ,srcery-magenta)))
-   `(magit-reflog-remote               ((,srcery-class :foreground ,srcery-cyan)))
-   `(magit-reflog-reset                ((,srcery-class :foreground ,srcery-red)))
-   `(magit-branch                      ((,srcery-class (:foreground ,srcery-bright-magenta :weight bold))))
-   `(magit-branch-current              ((,srcery-class (:background ,srcery-black :foreground ,srcery-blue :weight bold :box t))))
-   `(magit-branch-local                ((,srcery-class (:background ,srcery-black :foreground ,srcery-blue :weight bold))))
-   `(magit-branch-remote               ((,srcery-class (:background ,srcery-black :foreground ,srcery-orange :weight bold))))
+   `(magit-blame-culprit
+     ((,srcery-class :foreground ,srcery-yellow)
+      (,srcery-256-class :foreground ,srcery-256-yellow)))
 
-   `(magit-diff-file-header            ((,srcery-class (:foreground ,srcery-yellow))))
+   `(magit-blame-header
+     ((,srcery-class :foreground ,srcery-green)
+      (,srcery-256-class :foreground ,srcery-256-green)))
 
-   `(magit-diff-file-heading           ((,srcery-class (:foreground ,srcery-blue :weight light))))
-   `(magit-diff-file-heading-highlight ((,srcery-class (:foreground ,srcery-blue :weight bold))))
-   `(magit-diff-file-heading-selection ((,srcery-class (:foreground ,srcery-blue :weight bold :background ,srcery-bright-black))))
+   `(magit-blame-sha1
+     ((,srcery-class :foreground ,srcery-yellow)
+      (,srcery-256-class :foreground ,srcery-256-yellow)))
 
-   `(magit-diff-hunk-heading           ((,srcery-class (:foreground ,srcery-yellow :weight light))))
-   `(magit-diff-hunk-heading-highlight ((,srcery-class (:foreground ,srcery-yellow :weight bold))))
-   `(magit-diff-hunk-heading-selection ((,srcery-class (:foreground ,srcery-black :background ,srcery-white :weight bold))))
+   `(magit-blame-subject
+     ((,srcery-class :foreground ,srcery-yellow)
+      (,srcery-256-class :foreground ,srcery-256-yellow)))
 
-   `(magit-diff-added                  ((,srcery-class (:foreground ,srcery-green :weight light))))
-   `(magit-diff-removed                ((,srcery-class (:foreground ,srcery-red :weight light))))
-   `(magit-diff-context                ((,srcery-class (:foreground ,srcery-white :weight light))))
-   `(magit-diff-added-highlight        ((,srcery-class (:foreground ,srcery-green :weight bold))))
-   `(magit-diff-removed-highlight      ((,srcery-class (:foreground ,srcery-red :weight bold))))
-   `(magit-diff-context-highlight      ((,srcery-class (:foreground ,srcery-white :weight bold))))
-   `(magit-diff-base                   ((,srcery-class (:foreground ,srcery-white :weight light))))
-   `(magit-diff-base-highlight         ((,srcery-class (:foreground ,srcery-white :weight bold))))
-   `(magit-diff-lines-boundary         ((,srcery-class (:background ,srcery-white :foreground ,srcery-black))))
-   `(magit-diff-lines-heading          ((,srcery-class (:background ,srcery-white :foreground ,srcery-black))))
+   `(magit-blame-time
+     ((,srcery-class :foreground ,srcery-green)
+      (,srcery-256-class :foreground ,srcery-256-green)))
 
-   `(magit-hash                        ((,srcery-class (:foreground ,srcery-yellow))))
-   `(magit-item-highlight              ((,srcery-class :background ,srcery-bright-black)))
-   `(magit-log-author                  ((,srcery-class (:foreground ,srcery-yellow))))
-   `(magit-log-head-label-head         ((,srcery-class (:background ,srcery-yellow :foreground ,srcery-black :weight bold))))
-   `(magit-log-head-label-local        ((,srcery-class (:background ,srcery-red :foreground ,srcery-black :weight bold))))
-   `(magit-log-head-label-remote       ((,srcery-class (:background ,srcery-green :foreground ,srcery-black :weight bold))))
-   `(magit-log-head-label-tags         ((,srcery-class (:background ,srcery-magenta :foreground ,srcery-black :weight bold))))
-   `(magit-log-head-label-wip          ((,srcery-class (:background ,srcery-cyan :foreground ,srcery-black :weight bold))))
-   `(magit-log-sha1                    ((,srcery-class (:foreground ,srcery-bright-green))))
-   `(magit-process-ng                  ((,srcery-class (:foreground ,srcery-bright-orange :weight bold))))
-   `(magit-process-ok                  ((,srcery-class (:foreground ,srcery-yellow :weight bold))))
+   `(magit-blame-name
+     ((,srcery-class :foreground ,srcery-yellow)
+      (,srcery-256-class :foreground ,srcery-256-yellow)))
 
-   `(magit-section-heading             ((,srcery-class (:foreground ,srcery-red))))
-   `(magit-section-highlight           ((,srcery-class (:weight bold))))
-   `(section-heading-selection         ((,srcery-class (:foreground ,srcery-red :weight bold))))
-   `(magit-section-title               ((,srcery-class (:background ,srcery-black :foreground ,srcery-red :weight bold))))
+   `(magit-blame-heading
+     ((,srcery-class :foreground ,srcery-green)
+      (,srcery-256-class :foreground ,srcery-256-green)))
 
-   `(magit-cherry-equivalent           ((,srcery-class (:foreground ,srcery-magenta))))
-   `(magit-cherry-unmatched            ((,srcery-class (:foreground ,srcery-cyan))))
+   `(magit-blame-hash
+     ((,srcery-class :foreground ,srcery-yellow)
+      (,srcery-256-class :foreground ,srcery-256-yellow)))
 
-   `(magit-reflog-checkout             ((,srcery-class (:foreground ,srcery-blue))))
-   `(magit-reflog-cherry-pick          ((,srcery-class (:foreground ,srcery-bright-green))))
-   `(magit-bisect-bad                  ((,srcery-class (:foreground ,srcery-red))))
-   `(magit-bisect-good                 ((,srcery-class (:foreground ,srcery-green))))
-   `(magit-bisect-skip                 ((,srcery-class (:foreground ,srcery-bright-white))))
-   `(magit-diff-conflict-heading       ((,srcery-class (:foreground ,srcery-bright-white))))
+   `(magit-blame-summary
+     ((,srcery-class :foreground ,srcery-yellow)
+      (,srcery-256-class :foreground ,srcery-256-yellow)))
+
+   `(magit-blame-date
+     ((,srcery-class :foreground ,srcery-green)
+      (,srcery-256-class :foreground ,srcery-256-green)))
+
+   `(magit-log-date
+     ((,srcery-class :foreground ,srcery-bright-white)
+      (,srcery-256-class :foreground ,srcery-256-bright-white)))
+
+   `(magit-log-graph
+     ((,srcery-class :foreground ,srcery-bright-white)
+      (,srcery-256-class :foreground ,srcery-256-bright-white)))
+
+   `(magit-reflog-amend
+     ((,srcery-class :foreground ,srcery-magenta)
+      (,srcery-256-class :foreground ,srcery-256-magenta)))
+
+   `(magit-reflog-other
+     ((,srcery-class :foreground ,srcery-cyan)
+      (,srcery-256-class :foreground ,srcery-256-cyan)))
+
+   `(magit-reflog-rebase
+     ((,srcery-class :foreground ,srcery-magenta)
+      (,srcery-256-class :foreground ,srcery-256-magenta)))
+
+   `(magit-reflog-remote
+     ((,srcery-class :foreground ,srcery-cyan)
+      (,srcery-256-class :foreground ,srcery-256-cyan)))
+
+   `(magit-reflog-reset
+     ((,srcery-class :foreground ,srcery-red)
+      (,srcery-256-class :foreground ,srcery-256-red)))
+
+   `(magit-branch
+     ((,srcery-class (:foreground ,srcery-bright-magenta :weight bold))
+      (,srcery-256-class (:foreground ,srcery-256-bright-magenta :weight bold))))
+
+   `(magit-branch-current
+     ((,srcery-class (:background ,srcery-black :foreground ,srcery-blue :weight bold :box t))
+      (,srcery-256-class (:background ,srcery-256-black :foreground ,srcery-256-blue :weight bold :box t))))
+
+   `(magit-branch-local
+     ((,srcery-class (:background ,srcery-black :foreground ,srcery-blue :weight bold))
+      (,srcery-256-class (:background ,srcery-256-black :foreground ,srcery-256-blue :weight bold))))
+
+   `(magit-branch-remote
+     ((,srcery-class (:background ,srcery-black :foreground ,srcery-orange :weight bold))
+      (,srcery-256-class (:background ,srcery-256-black :foreground ,srcery-256-orange :weight bold))))
+
+   `(magit-diff-file-header
+     ((,srcery-class (:foreground ,srcery-yellow))
+      (,srcery-256-class (:foreground ,srcery-256-yellow))))
+
+   `(magit-diff-file-heading
+     ((,srcery-class (:foreground ,srcery-blue :weight light))
+      (,srcery-256-class (:foreground ,srcery-256-blue :weight light))))
+
+   `(magit-diff-file-heading-highlight
+     ((,srcery-class (:foreground ,srcery-blue :weight bold))
+      (,srcery-256-class (:foreground ,srcery-256-blue :weight bold))))
+
+   `(magit-diff-file-heading-selection
+     ((,srcery-class (:foreground ,srcery-blue :weight bold :background ,srcery-bright-black))
+      (,srcery-256-class (:foreground ,srcery-256-blue :weight bold :background ,srcery-256-bright-black))))
+
+
+   `(magit-diff-hunk-heading
+     ((,srcery-class (:foreground ,srcery-yellow :weight light))
+      (,srcery-256-class (:foreground ,srcery-256-yellow :weight light))))
+
+   `(magit-diff-hunk-heading-highlight
+     ((,srcery-class (:foreground ,srcery-yellow :weight bold))
+      (,srcery-256-class (:foreground ,srcery-256-yellow :weight bold))))
+
+   `(magit-diff-hunk-heading-selection
+     ((,srcery-class (:foreground ,srcery-black :background ,srcery-white :weight bold))
+      (,srcery-256-class (:foreground ,srcery-256-black :background ,srcery-256-white :weight bold))))
+
+
+   `(magit-diff-added
+     ((,srcery-class (:foreground ,srcery-green :weight light))
+      (,srcery-256-class (:foreground ,srcery-256-green :weight light))))
+
+   `(magit-diff-removed
+     ((,srcery-class (:foreground ,srcery-red :weight light))
+      (,srcery-256-class (:foreground ,srcery-256-red :weight light))))
+
+   `(magit-diff-context
+     ((,srcery-class (:foreground ,srcery-white :weight light))
+      (,srcery-256-class (:foreground ,srcery-256-white :weight light))))
+
+   `(magit-diff-added-highlight
+     ((,srcery-class (:foreground ,srcery-green :weight bold))
+      (,srcery-256-class (:foreground ,srcery-256-green :weight bold))))
+
+   `(magit-diff-removed-highlight
+     ((,srcery-class (:foreground ,srcery-red :weight bold))
+      (,srcery-256-class (:foreground ,srcery-256-red :weight bold))))
+
+   `(magit-diff-context-highlight
+     ((,srcery-class (:foreground ,srcery-white :weight bold))
+      (,srcery-256-class (:foreground ,srcery-256-white :weight bold))))
+
+   `(magit-diff-base
+     ((,srcery-class (:foreground ,srcery-white :weight light))
+      (,srcery-256-class (:foreground ,srcery-256-white :weight light))))
+
+   `(magit-diff-base-highlight
+     ((,srcery-class (:foreground ,srcery-white :weight bold))
+      (,srcery-256-class (:foreground ,srcery-256-white :weight bold))))
+
+   `(magit-diff-lines-boundary
+     ((,srcery-class (:background ,srcery-white :foreground ,srcery-black))
+      (,srcery-256-class (:background ,srcery-256-white :foreground ,srcery-256-black))))
+
+   `(magit-diff-lines-heading
+     ((,srcery-class (:background ,srcery-white :foreground ,srcery-black))
+      (,srcery-256-class (:background ,srcery-256-white :foreground ,srcery-256-black))))
+
+   `(magit-hash
+     ((,srcery-class (:foreground ,srcery-yellow))
+      (,srcery-256-class (:foreground ,srcery-256-yellow))))
+
+   `(magit-item-highlight
+     ((,srcery-class :background ,srcery-bright-black)
+      (,srcery-256-class :background ,srcery-256-bright-black)))
+
+   `(magit-log-author
+     ((,srcery-class (:foreground ,srcery-yellow))
+      (,srcery-256-class (:foreground ,srcery-256-yellow))))
+
+   `(magit-log-head-label-head
+     ((,srcery-class (:background ,srcery-yellow :foreground ,srcery-black :weight bold))
+      (,srcery-256-class (:background ,srcery-256-yellow :foreground ,srcery-256-black :weight bold))))
+
+   `(magit-log-head-label-local
+     ((,srcery-class (:background ,srcery-red :foreground ,srcery-black :weight bold))
+      (,srcery-256-class (:background ,srcery-256-red :foreground ,srcery-256-black :weight bold))))
+
+   `(magit-log-head-label-remote
+     ((,srcery-class (:background ,srcery-green :foreground ,srcery-black :weight bold))
+      (,srcery-256-class (:background ,srcery-256-green :foreground ,srcery-256-black :weight bold))))
+
+   `(magit-log-head-label-tags
+     ((,srcery-class (:background ,srcery-magenta :foreground ,srcery-black :weight bold))
+      (,srcery-256-class (:background ,srcery-256-magenta :foreground ,srcery-256-black :weight bold))))
+
+   `(magit-log-head-label-wip
+     ((,srcery-class (:background ,srcery-cyan :foreground ,srcery-black :weight bold))
+      (,srcery-256-class (:background ,srcery-256-cyan :foreground ,srcery-256-black :weight bold))))
+
+   `(magit-log-sha1
+     ((,srcery-class (:foreground ,srcery-bright-green))
+      (,srcery-256-class (:foreground ,srcery-256-bright-green))))
+
+   `(magit-process-ng
+     ((,srcery-class (:foreground ,srcery-bright-orange :weight bold))
+      (,srcery-256-class (:foreground ,srcery-256-bright-orange :weight bold))))
+
+   `(magit-process-ok
+     ((,srcery-class (:foreground ,srcery-yellow :weight bold))
+      (,srcery-256-class (:foreground ,srcery-256-yellow :weight bold))))
+
+   `(magit-section-heading
+     ((,srcery-class (:foreground ,srcery-red))
+      (,srcery-256-class (:foreground ,srcery-256-red))))
+
+   `(magit-section-highlight
+     ((,srcery-class (:weight bold))
+      (,srcery-256-class (:weight bold))))
+
+   `(section-heading-selection
+     ((,srcery-class (:foreground ,srcery-red :weight bold))
+      (,srcery-256-class (:foreground ,srcery-256-red :weight bold))))
+
+   `(magit-section-title
+     ((,srcery-class (:background ,srcery-black :foreground ,srcery-red :weight bold))
+      (,srcery-256-class (:background ,srcery-256-black :foreground ,srcery-256-red :weight bold))))
+
+   `(magit-cherry-equivalent
+     ((,srcery-class (:foreground ,srcery-magenta))
+      (,srcery-256-class (:foreground ,srcery-256-magenta))))
+
+   `(magit-cherry-unmatched
+     ((,srcery-class (:foreground ,srcery-cyan))
+      (,srcery-256-class (:foreground ,srcery-256-cyan))))
+
+   `(magit-reflog-checkout
+     ((,srcery-class (:foreground ,srcery-blue))
+      (,srcery-256-class (:foreground ,srcery-256-blue))))
+
+   `(magit-reflog-cherry-pick
+     ((,srcery-class (:foreground ,srcery-bright-green))
+      (,srcery-256-class (:foreground ,srcery-256-bright-green))))
+
+   `(magit-bisect-bad
+     ((,srcery-class (:foreground ,srcery-red))
+      (,srcery-256-class (:foreground ,srcery-256-red))))
+
+   `(magit-bisect-good
+     ((,srcery-class (:foreground ,srcery-green))
+      (,srcery-256-class (:foreground ,srcery-256-green))))
+
+   `(magit-bisect-skip
+     ((,srcery-class (:foreground ,srcery-bright-white))
+      (,srcery-256-class (:foreground ,srcery-256-bright-white))))
+
+   `(magit-diff-conflict-heading
+     ((,srcery-class (:foreground ,srcery-bright-white))
+      (,srcery-256-class (:foreground ,srcery-256-bright-white))))
 
 ;;;;; man
    `(Man-overstrike ((,srcery-class (:foreground ,srcery-blue :weight bold))))
