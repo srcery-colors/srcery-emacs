@@ -1282,8 +1282,9 @@
      ((,srcery-class (:weight bold :foreground ,srcery-blue :height ,(if srcery-org-height 1.3 1.0)))
       (,srcery-256-class (:weight bold :foreground ,srcery-256-blue :height ,(if srcery-org-height 1.3 1.0)))))
 
-   `(font-latex-sectioning-3-face        ((,srcery-class (:weight bold :foreground ,srcery-cyan :height ,(if srcery-org-height 1.2 1.0)))
-                                          (,srcery-256-class (:weight bold :foreground ,srcery-256-cyan :height ,(if srcery-org-height 1.2 1.0)))))
+   `(font-latex-sectioning-3-face
+     ((,srcery-class (:weight bold :foreground ,srcery-cyan :height ,(if srcery-org-height 1.2 1.0)))
+      (,srcery-256-class (:weight bold :foreground ,srcery-256-cyan :height ,(if srcery-org-height 1.2 1.0)))))
 
    `(font-latex-sectioning-4-face
      ((,srcery-class (:bold nil :foreground ,srcery-bright-green :height ,(if srcery-org-height 1.1 1.0)))
@@ -1297,17 +1298,17 @@
      ((,srcery-class (:foreground ,srcery-bright-green))
       (,srcery-256-class (:foreground ,srcery-256-bright-green))))
 
-;;;;; linum-mode
+   ;; linum-mode
    `(linum
      ((,srcery-class (:foreground ,srcery-white :background ,srcery-black))
       (,srcery-class (:foreground ,srcery-white :background ,srcery-black))))
 
-;;;;; linum-relative
+   ;; linum-relative
    `(linum-relative-current-face
      ((,srcery-class (:foreground ,srcery-yellow))
       (,srcery-class (:foreground ,srcery-yellow))))
 
-;;;;; magit
+   ;; magit
    `(magit-blame-culprit               ((,srcery-class :foreground ,srcery-yellow)))
    `(magit-blame-header                ((,srcery-class :foreground ,srcery-green)))
    `(magit-blame-sha1                  ((,srcery-class :foreground ,srcery-yellow)))
