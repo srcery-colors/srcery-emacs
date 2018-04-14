@@ -1126,7 +1126,7 @@
       (,srcery-256-class (:foreground ,srcery-256-red :background ,srcery-256-black))))
 
 
-;;;;; helm-swoop
+   ;; helm-swoop
    `(helm-swoop-target-line-block-face
      ((,srcery-class (:foreground ,srcery-yellow :background ,srcery-black))
       (,srcery-256-class (:foreground ,srcery-256-yellow :background ,srcery-256-black))))
@@ -1139,26 +1139,53 @@
      ((,srcery-class (:foreground ,srcery-magenta :weight bold))
       (,srcery-256-class (:foreground ,srcery-256-magenta :weight bold))))
 
-;;;;; highlights
-   `(hi-yellow ((,srcery-class (:foreground ,srcery-yellow))))
-   `(hi-green  ((,srcery-class (:foreground ,srcery-green))))
+   ;; highlights
+   `(hi-yellow
+     ((,srcery-class (:foreground ,srcery-yellow))
+      (,srcery-256-class (:foreground ,srcery-256-yellow))))
 
-;;;;; highlight-indentation
-   `(highlight-indentation-face ((,srcery-class (:background ,srcery-white))))
+   `(hi-green
+     ((,srcery-class (:foreground ,srcery-green))
+      (,srcery-256-class (:foreground ,srcery-256-green))))
 
-;;;;; highlight-symbol
-   `(highlight-symbol-face ((,srcery-class (:background ,srcery-bright-black))))
+   ;; highlight-indentation
+   `(highlight-indentation-face
+     ((,srcery-class (:background ,srcery-white))
+      (,srcery-256-class (:background ,srcery-256-white))))
 
-;;;;; hydra
-   `(hydra-face-blue ((,srcery-class (:foreground ,srcery-blue))))
-   `(hydra-face-red  ((,srcery-class (:foreground ,srcery-red))))
+   ;; highlight-symbol
+   `(highlight-symbol-face
+     ((,srcery-class (:background ,srcery-bright-black))
+      (,srcery-256-class (:background ,srcery-256-bright-black))))
 
-;;;;; ido
-   `(ido-first-match         ((,srcery-class (:foreground ,srcery-green :weight bold))))
-   `(ido-only-match          ((,srcery-class (:foreground ,srcery-yellow :weight bold))))
-   `(ido-subdir              ((,srcery-class (:foreground ,srcery-red))))
-   `(ido-indicator           ((,srcery-class (:background ,srcery-red :foreground ,srcery-bright-white))))
-   `(ido-vertical-match-face ((,srcery-class (:foreground ,srcery-green :underline nil))))
+   ;; hydra
+   `(hydra-face-blue
+     ((,srcery-class (:foreground ,srcery-blue))
+      (,srcery-256-class (:foreground ,srcery-256-blue))))
+
+   `(hydra-face-red
+     ((,srcery-class (:foreground ,srcery-red))
+      (,srcery-256-class (:foreground ,srcery-256-red))))
+
+   ;; ido
+   `(ido-first-match
+     ((,srcery-class (:foreground ,srcery-green :weight bold))
+      (,srcery-256-class (:foreground ,srcery-256-green :weight bold))))
+
+   `(ido-only-match
+     ((,srcery-class (:foreground ,srcery-yellow :weight bold))
+      (,srcery-256-class (:foreground ,srcery-256-yellow :weight bold))))
+
+   `(ido-subdir
+     ((,srcery-class (:foreground ,srcery-red))
+      (,srcery-256-class (:foreground ,srcery-256-red))))
+
+   `(ido-indicator
+     ((,srcery-class (:background ,srcery-red :foreground ,srcery-bright-white))
+      (,srcery-256-class (:background ,srcery-256-red :foreground ,srcery-256-bright-white))))
+
+   `(ido-vertical-match-face ((,srcery-class (:foreground ,srcery-green :underline nil))
+                              (,srcery-256-class (:foreground ,srcery-256-green :underline nil))))
 
 ;;;;; info
    `(info-header-xref    ((,srcery-class (:foreground ,srcery-yellow :underline t))))
