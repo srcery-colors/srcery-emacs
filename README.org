@@ -6,8 +6,7 @@ contrasting colors with a slightly earthy tone.
 ** Requirements
    Emacs 24 or above
 *** GUI
-   Should work out of the box. I recommend [[https://github.com/tarsius/paren-face][paren-face]] and
-   [[https://github.com/tsdh/highlight-parentheses.el][highlight-parentheses.el]] if you enjoy lisp at all.
+   Should work out of the box.
 *** Terminal
 
     To use Srcery in the terminal you need to change your terminal emulator’s
@@ -121,7 +120,7 @@ contrasting colors with a slightly earthy tone.
    - spaceline
    - and others, more coming
 
-    Modes are still a work in progress.
+    I recommend [[https://github.com/tarsius/paren-face][paren-face]] and [[https://github.com/tsdh/highlight-parentheses.el][highlight-parentheses.el]] for lisp
 ** Attribution
    I'm new to elisp, so I used the [[https://github.com/nashamri/spacemacs-theme][spacemacs-theme]] as a base for emacs-srcery.
    Huge thanks to everyone involved with that theme, and [[https://github.com/syl20bnr/spacemacs][Spacemacs]] itself. I
