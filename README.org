@@ -39,9 +39,31 @@ contrasting colors with a slightly earthy tone.
     Since most terminals have these defined it pads out the color selection
     nicely without over complicating things.
 
-    Make sure your ~$TERM~ supports 256 colors.
+    Make sure your ~$TERM supports 256 colors.
 ** Installation
-   TODO
+*** Package.el
+    Srcery is available from [[https://melpa.org/][MELPA]
+    #+BEGIN_SRC elisp
+    M-x package-install RET srcery-theme
+    #+END_SRC
+    Then load it with
+    #+BEGIN_SRC elisp
+    M-x load-theme srcery
+    #+END_SRC
+    Or add this to your init file:
+    #+BEGIN_SRC elisp
+    (load-theme 'srcery t)
+    #+END_SRC
+*** Spacemacs
+    Either install using ~package-install~ or add ~srcery-theme~ to
+    ~dotspacemacs-additional-packages~, then add ~srcery~ to ~dotspacemacs-themes~
+    #+BEGIN_SRC elisp
+      (setq-default
+       dotspacemacs-additional-packages
+       '(srcery-theme)
+       dotspacemacs-themes
+       '(srcery))
+    #+END_SRC
 ** Screenshots
 *** Lisp
     [[file:img/lisp.png]]
