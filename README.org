@@ -38,7 +38,7 @@ contrasting colors with a slightly earthy tone.
     Since most terminals have these defined it pads out the color selection
     nicely without over complicating things.
 
-    Make sure your ~$TERM supports 256 colors.
+    Make sure your ~$TERM~ supports 256 colors.
 ** Installation
 *** Package.el
     Srcery is available from [[https://melpa.org/][MELPA]]
