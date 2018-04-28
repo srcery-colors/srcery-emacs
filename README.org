@@ -1,7 +1,6 @@
 [[file:img/title.png]]
 
-Port of [[https://github.com/roosta/vim-srcery][vim-srcery]], a colorscheme that focus on ease of use and clearly defined
-contrasting colors with a slightly earthy tone.
+Colorscheme with clearly defined contrasting colors and a slightly earthy tone.
 
 ** Requirements
    Emacs 24 or above
