@@ -8,3 +8,5 @@ mc/region-face
   CLOSED: [2018-04-11 Wed 20:49]
 * TODO Update term flycheck errors
 * TODO Update lisp screen
+* [[https://github.com/sabof/org-bullets/issues/16][Leading asterisks have wrong background color in terminal Emacs · Issue #16 · sabof/org-bullets]]
+* TODO Fix foreground nil
