@@ -849,6 +849,14 @@
      ((,srcery-class (:background ,srcery-bright-green :foreground ,srcery-black))
       (,srcery-256-class (:background ,srcery-256-bright-green :foreground ,srcery-256-black))))
 
+   `(evil-search-highlight-persist-highlight-face
+     ((,srcery-class ,(if srcery-invert-matches
+                          `(:inverse-video t)
+                        `(:background ,srcery-magenta :foreground ,srcery-bright-white)))
+      (,srcery-256-class ,(if srcery-invert-matches
+                              `(:inverse-video t)
+                            `(:background ,srcery-256-magenta :foreground ,srcery-256-bright-white)))))
+
    ;; flycheck
    `(flycheck-error
      ((,(append '((supports :underline (:style line))) srcery-class)
