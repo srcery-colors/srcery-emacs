@@ -2429,12 +2429,12 @@
       (,srcery-256-class (:foreground ,srcery-256-yellow))))
 
    `(web-mode-html-attr-value-face
-     ((,srcery-class (:foreground ,srcery-red))
-      (,srcery-256-class (:foreground ,srcery-256-red))))
+     ((,srcery-class (:foreground ,srcery-bright-green))
+      (,srcery-256-class (:foreground ,srcery-256-bright-green))))
 
    `(web-mode-html-tag-face
-     ((,srcery-class (:foreground ,srcery-red))
-      (,srcery-256-class (:foreground ,srcery-256-red))))
+     ((,srcery-class (:foreground ,srcery-blue))
+      (,srcery-256-class (:foreground ,srcery-256-blue))))
 
    `(web-mode-keyword-face
      ((,srcery-class (:foreground ,srcery-red))
