@@ -663,6 +663,102 @@
      ((,srcery-class (:foreground ,srcery-bright-orange))
       (,srcery-256-class (:foreground ,srcery-256-bright-orange))))
 
+   `(diredp-date-time
+     ((,srcery-class (:foreground ,srcery-blue))
+      (,srcery-256-class (:foreground ,srcery-256-blue))))
+
+   `(diredp-number
+     ((,srcery-class (:foreground ,srcery-bright-green))
+      (,srcery-256-class (:foreground ,srcery-256-bright-green))))
+
+   `(diredp-file-name
+     ((,srcery-class (:foreground ,srcery-bright-white))
+      (,srcery-256-class (:foreground ,srcery-256-bright-white))))
+
+   `(diredp-file-suffix
+     ((,srcery-class (:foreground ,srcery-bright-blue))
+      (,srcery-256-class (:foreground ,srcery-256-bright-blue))))
+
+   `(diredp-dir-heading
+     ((,srcery-class (:foreground ,srcery-bright-white :underline t))
+      (,srcery-256-class (:foreground ,srcery-256-bright-white :underline t))))
+
+   `(diredp-dir-heading
+     ((,srcery-class (:foreground ,srcery-bright-white :underline t))
+      (,srcery-256-class (:foreground ,srcery-256-bright-white :underline t))))
+
+   `(diredp-dir-priv
+     ((,srcery-class (:foreground ,srcery-bright-white))
+      (,srcery-256-class (:foreground ,srcery-256-bright-white))))
+
+   `(diredp-read-priv
+     ((,srcery-class (:foreground ,srcery-bright-yellow))
+      (,srcery-256-class (:foreground ,srcery-256-bright-yellow))))
+
+   `(diredp-write-priv
+     ((,srcery-class (:foreground ,srcery-bright-red))
+      (,srcery-256-class (:foreground ,srcery-256-bright-red))))
+
+   `(diredp-write-priv
+     ((,srcery-class (:foreground ,srcery-bright-red))
+      (,srcery-256-class (:foreground ,srcery-256-bright-red))))
+
+   `(diredp-dir-name
+     ((,srcery-class (:foreground ,srcery-bright-white))
+      (,srcery-256-class (:foreground ,srcery-256-bright-white))))
+
+   `(diredp-exec-priv
+     ((,srcery-class (:foreground ,srcery-bright-green))
+      (,srcery-256-class (:foreground ,srcery-256-bright-green))))
+
+   `(diredp-symlink
+     ((,srcery-class (:foreground ,srcery-bright-cyan))
+      (,srcery-256-class (:foreground ,srcery-256-bright-cyan))))
+
+   `(diredp-tagged-autofile-name
+     ((,srcery-class (:foreground ,srcery-bright-white :background ,srcery-magenta))
+      (,srcery-256-class (:foreground ,srcery-256-bright-white :background ,srcery-256-magenta))))
+
+   `(diredp-no-priv
+     ((,srcery-class (:foreground ,srcery-white))
+      (,srcery-256-class (:foreground ,srcery-256-white))))
+
+   `(diredp-flag-mark
+     ((,srcery-class (:background ,srcery-green :foreground ,srcery-black))
+      (,srcery-256-class (:background ,srcery-256-green :foreground ,srcery-256-black))))
+
+   `(diredp-flag-mark-line
+     ((,srcery-class (:background ,srcery-green :foreground ,srcery-black))
+      (,srcery-256-class (:background ,srcery-256-green :foreground ,srcery-256-black))))
+
+   `(diredp-autofile-name
+     ((,srcery-class (:background ,srcery-blue :foreground ,srcery-bright-white))
+      (,srcery-256-class (:background ,srcery-256-blue :foreground ,srcery-256-bright-white))))
+
+   `(diredp-deletion
+     ((,srcery-class (:background ,srcery-red :foreground ,srcery-bright-white))
+      (,srcery-256-class (:background ,srcery-256-red :foreground ,srcery-256-bright-white))))
+
+   `(diredp-ignored-file-name
+     ((,srcery-class (:foreground ,srcery-white))
+      (,srcery-256-class (:foreground ,srcery-256-white))))
+
+   `(diredp-link-priv
+     ((,srcery-class (:foreground ,srcery-blue))
+      (,srcery-256-class (:foreground ,srcery-256-blue))))
+
+   `(diredp-mode-line-marked
+     ((,srcery-class (:foreground ,srcery-magenta))
+      (,srcery-256-class (:foreground ,srcery-256-magenta))))
+
+   `(diredp-other-priv
+     ((,srcery-class (:foreground ,srcery-bright-white))
+      (,srcery-256-class (:foreground ,srcery-256-bright-white))))
+
+   `(diredp-rare-priv
+     ((,srcery-class (:foreground ,srcery-bright-white))
+      (,srcery-256-class (:foreground ,srcery-256-bright-white))))
+
    ;; ediff
    `(ediff-current-diff-A
      ((,srcery-class(:background ,srcery-gray-1 :foreground ,srcery-red))
