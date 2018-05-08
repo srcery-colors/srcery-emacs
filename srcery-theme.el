@@ -2457,6 +2457,14 @@
      ((,srcery-class (:inherit ,font-lock-warning-face))
       (,srcery-256-class (:inherit ,font-lock-warning-face))))
 
+   ;; XML
+   `(nxml-element-local-name
+     ((,srcery-class (:foreground ,srcery-blue))
+      (,srcery-256-class (:foreground ,srcery-256-blue))))
+
+   `(nxml-attribute-local-name
+     ((,srcery-class (:foreground ,srcery-yellow))
+      (,srcery-256-class (:foreground ,srcery-256-yellow))))
 
    ;; which-key
    `(which-key-command-description-face
