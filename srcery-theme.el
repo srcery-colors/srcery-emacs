@@ -322,11 +322,12 @@
 
    `(isearch
      ((,srcery-class ,(if srcery-invert-matches
-                          `(:inverse-video t)
-                        `(:background ,srcery-magenta :foreground ,srcery-bright-white)))
+                          `(:inverse-video t :underline t :weight bold)
+                        `(:underline t :background ,srcery-magenta :foreground ,srcery-bright-white :weight bold)))
       (,srcery-256-class ,(if srcery-invert-matches
-                              `(:inverse-video t)
-                            `(:background ,srcery-256-magenta :foreground ,srcery-256-bright-white)))))
+                              `(:inverse-video t :underline t :weight bold)
+                            `(:underline t :background ,srcery-256-magenta :foreground ,srcery-256-bright-white :weight bold)))))
+
    `(lazy-highlight
      ((,srcery-class ,(if srcery-invert-matches
                           `(:inverse-video t)
