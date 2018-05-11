@@ -10,3 +10,4 @@ mc/region-face
 * TODO Update lisp screen
 * [[https://github.com/sabof/org-bullets/issues/16][Leading asterisks have wrong background color in terminal Emacs · Issue #16 · sabof/org-bullets]]
 * TODO Fix foreground nil
+* TODO Fix Foreground color on spaceline in GUI
