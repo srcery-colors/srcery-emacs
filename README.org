@@ -112,7 +112,6 @@ Colorscheme with clearly defined contrasting colors and a slightly earthy tone.
    - cider
    - dired
    - flycheck
-   - git-gutter
    - ivy
    - latex
    - powerline
