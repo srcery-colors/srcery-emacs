@@ -492,12 +492,18 @@
      ((,srcery-class :foreground ,srcery-yellow :weight bold)
       (,srcery-256-class :foreground ,srcery-256-yellow :weight bold)))
 
+   `(cider-deprecated-face
+     ((,srcery-class :background ,srcery-bright-yellow :foreground ,srcery-black)
+      (,srcery-256-class :background ,srcery-256-bright-yellow :foreground ,srcery-256-black)))
+
+   `(cider-debug-code-overlay-face
+     ((,srcery-class :background ,srcery-bright-blue :foreground ,srcery-black)
+      (,srcery-256-class :background ,srcery-256-bright-blue :foreground ,srcery-256-black)))
 
    ;; clojure
    `(clojure-keyword-face
      ((,srcery-class (:foreground ,srcery-blue))
       (,srcery-256-class (:foreground ,srcery-256-blue))))
-
 
    ;; company
    `(company-echo-common
