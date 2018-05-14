@@ -403,6 +403,10 @@
      ((,srcery-class (:background ,srcery-yellow :foreground ,srcery-black))
       (,srcery-256-class (:background ,srcery-256-yellow :foreground ,srcery-256-black))))
 
+   `(ahs-edit-mode-face
+     ((,srcery-class (:background ,srcery-bright-red :foreground ,srcery-bright-white))
+      (,srcery-256-class (:background ,srcery-256-bright-red :foreground ,srcery-256-bright-white))))
+
    ;; anzu-mode
    `(anzu-mode-line
      ((,srcery-class (:foreground ,srcery-yellow :weight bold))
