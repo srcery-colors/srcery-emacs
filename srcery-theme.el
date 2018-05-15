@@ -1523,6 +1523,11 @@
      ((,srcery-class (:foreground ,srcery-yellow))
       (,srcery-256-class (:foreground ,srcery-256-yellow))))
 
+   ;; Git
+   `(diff-context
+     ((,srcery-class :foreground ,srcery-bright-white)
+      (,srcery-256-class :foreground ,srcery-256-bright-white)))
+
    ;; magit
    `(magit-blame-culprit
      ((,srcery-class :foreground ,srcery-yellow)
@@ -1937,8 +1942,8 @@
       (,srcery-256-class (:underline t :foreground ,srcery-256-bright-white))))
 
    `(org-hide
-     ((,srcery-class (:foreground ,srcery-bright-white))
-      (,srcery-256-class (:foreground ,srcery-256-bright-white))))
+     ((,srcery-class (:foreground ,srcery-black :background ,srcery-black))
+      (,srcery-256-class (:foreground ,srcery-256-black :background ,srcery-256-black))))
 
    `(org-kbd
      ((,srcery-class (:inherit region :foreground ,srcery-bright-white :box (:line-width 1 :style released-button)))
