@@ -1886,12 +1886,12 @@
       (,srcery-256-class (:foreground ,srcery-256-bright-white))))
 
    `(org-block-begin-line
-     ((,srcery-class (:background ,srcery-bright-black :foreground ,srcery-green))
-      (,srcery-256-class (:background ,srcery-256-bright-black :foreground ,srcery-256-green))))
+     ((,srcery-class (:foreground ,srcery-green))
+      (,srcery-256-class (:foreground ,srcery-256-green))))
 
    `(org-block-end-line
-     ((,srcery-class (:background ,srcery-bright-black :foreground ,srcery-green))
-      (,srcery-256-class (:background ,srcery-256-bright-black :foreground ,srcery-256-green))))
+     ((,srcery-class (:foreground ,srcery-green))
+      (,srcery-256-class (:foreground ,srcery-256-green))))
 
    `(org-clock-overlay
      ((,srcery-class (:foreground ,srcery-green))
