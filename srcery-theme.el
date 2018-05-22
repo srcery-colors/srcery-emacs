@@ -1775,6 +1775,35 @@
      ((,srcery-class (:foreground ,srcery-bright-white))
       (,srcery-256-class (:foreground ,srcery-256-bright-white))))
 
+   ;; smerge
+   `(smerge-base
+     ((,srcery-class (:foreground ,srcery-bright-white))
+      (,srcery-256-class (:foreground ,srcery-256-bright-white))))
+
+   `(smerge-markers
+     ((,srcery-class (:foreground ,srcery-yellow))
+      (,srcery-256-class (:foreground ,srcery-256-yellow))))
+
+   `(smerge-mine
+     ((,srcery-class (:foreground nil))
+      (,srcery-256-class (:foreground ,nil))))
+
+   `(smerge-other
+     ((,srcery-class (:background ,srcery-bright-black))
+      (,srcery-256-class (:background ,srcery-256-bright-black))))
+
+   `(smerge-refined-added
+     ((,srcery-class (:foreground ,srcery-green))
+      (,srcery-256-class (:foreground ,srcery-256-green))))
+
+   `(smerge-refined-changed
+     ((,srcery-class (:foreground ,srcery-blue))
+      (,srcery-256-class (:foreground ,srcery-256-blue))))
+
+   `(smerge-refined-removed
+     ((,srcery-class (:foreground ,srcery-red))
+      (,srcery-256-class (:foreground ,srcery-256-red))))
+
    ;; man
    `(Man-overstrike
      ((,srcery-class (:foreground ,srcery-blue :weight bold))

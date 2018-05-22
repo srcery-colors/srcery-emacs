@@ -12,3 +12,4 @@ mc/region-face
 * TODO Fix foreground nil
 * TODO Fix Foreground color on spaceline in GUI
 * TODO Fix git gutter
+* TODO Fix smerge
