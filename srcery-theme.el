@@ -2772,6 +2772,18 @@
    `(holiday
      ((,srcery-class :background ,srcery-bright-magenta :foreground ,srcery-bright-white)
       (,srcery-256-class :background ,srcery-256-bright-magenta :foreground ,srcery-256-bright-white)))
+
+   `(whitespace-trailing
+     ((,srcery-class :background ,srcery-red :foreground ,srcery-bright-white)
+      (,srcery-256-class :background ,srcery-256-red :foreground ,srcery-256-bright-white)))
+
+   `(whitespace-big-indent
+     ((,srcery-class :background ,srcery-bright-red :foreground ,srcery-bright-white)
+      (,srcery-256-class :background ,srcery-256-bright-red :foreground ,srcery-256-bright-white)))
+
+   `(whitespace-hspace
+     ((,srcery-class :background ,srcery-bright-blue :foreground ,srcery-bright-white)
+      (,srcery-256-class :background ,srcery-256-bright-blue :foreground ,srcery-256-bright-white)))
    )
 
   (custom-theme-set-variables
