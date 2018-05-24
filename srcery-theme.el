@@ -2635,14 +2635,22 @@
      ((,srcery-class (:foreground ,srcery-black :background ,srcery-blue))
       (,srcery-256-class (:foreground ,srcery-256-black :background ,srcery-256-blue))))
 
-   ;; hlt-regexp-level-1
-   ;; hlt-regexp-level-2
-   ;; hlt-regexp-level-3
-   ;; hlt-regexp-level-4
-   ;; hlt-regexp-level-5
-   ;; hlt-regexp-level-6
-   ;; hlt-regexp-level-7
-   ;; hlt-regexp-level-8
+   ;; reb
+   `(reb-match-0
+     ((,srcery-class (:foreground ,srcery-black :background ,srcery-bright-blue))
+      (,srcery-256-class (:foreground ,srcery-256-black :background ,srcery-256-bright-blue))))
+
+   `(reb-match-1
+     ((,srcery-class (:foreground ,srcery-black :background ,srcery-bright-cyan))
+      (,srcery-256-class (:foreground ,srcery-256-black :background ,srcery-256-bright-cyan))))
+
+   `(reb-match-2
+     ((,srcery-class (:foreground ,srcery-black :background ,srcery-green))
+      (,srcery-256-class (:foreground ,srcery-256-black :background ,srcery-256-green))))
+
+   `(reb-match-3
+     ((,srcery-class (:foreground ,srcery-black :background ,srcery-yellow))
+      (,srcery-256-class (:foreground ,srcery-256-black :background ,srcery-256-yellow))))
 
    ;; other, need more work
    `(ac-completion-face
