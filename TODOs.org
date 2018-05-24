@@ -11,5 +11,6 @@ mc/region-face
 * [[https://github.com/sabof/org-bullets/issues/16][Leading asterisks have wrong background color in terminal Emacs · Issue #16 · sabof/org-bullets]]
 * TODO Fix foreground nil
 * TODO Fix Foreground color on spaceline in GUI
-* TODO Fix git gutter
-* TODO Fix smerge
+* DONE Fix smerge
+  CLOSED: [2018-05-23 Wed 23:49]
+* TODO Fix previous search when /, before typing 
