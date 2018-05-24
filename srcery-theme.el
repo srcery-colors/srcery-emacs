@@ -2585,6 +2585,19 @@
       (,srcery-256-class (:background ,srcery-256-red :foreground ,srcery-256-bright-orange))))
 
 
+   ;; ctbl
+   `(ctbl:face-cell-select
+     ((,srcery-class (:foreground ,srcery-black :background ,srcery-bright-magenta))
+      (,srcery-256-class (:foreground ,srcery-256-black :background ,srcery-256-bright-magenta))))
+
+   `(ctbl:face-continue-bar
+     ((,srcery-class (:foreground ,srcery-black :background ,srcery-bright-yellow))
+      (,srcery-256-class (:foreground ,srcery-256-black :background ,srcery-256-bright-yellow))))
+
+   `(ctbl:face-row-select
+     ((,srcery-class (:foreground ,srcery-black :background ,srcery-bright-blue))
+      (,srcery-256-class (:foreground ,srcery-256-black :background ,srcery-256-bright-blue))))
+
    ;; other, need more work
    `(ac-completion-face
      ((,srcery-class (:underline t :foreground ,srcery-red))
