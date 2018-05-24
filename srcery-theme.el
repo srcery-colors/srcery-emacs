@@ -2598,10 +2598,60 @@
      ((,srcery-class (:foreground ,srcery-black :background ,srcery-bright-blue))
       (,srcery-256-class (:foreground ,srcery-256-black :background ,srcery-256-bright-blue))))
 
+   ;; hlt
+   `(hlt-property-highlight
+     ((,srcery-class (:foreground ,srcery-black :background ,srcery-yellow))
+      (,srcery-256-class (:foreground ,srcery-256-black :background ,srcery-256-yellow))))
+
+   `(hlt-regexp-level-1
+     ((,srcery-class (:foreground ,srcery-black :background ,srcery-bright-magenta))
+      (,srcery-256-class (:foreground ,srcery-256-black :background ,srcery-256-bright-magenta))))
+
+   `(hlt-regexp-level-2
+     ((,srcery-class (:foreground ,srcery-black :background ,srcery-bright-green))
+      (,srcery-256-class (:foreground ,srcery-256-black :background ,srcery-256-bright-green))))
+
+   `(hlt-regexp-level-3
+     ((,srcery-class (:foreground ,srcery-black :background ,srcery-magenta))
+      (,srcery-256-class (:foreground ,srcery-256-black :background ,srcery-256-magenta))))
+
+   `(hlt-regexp-level-4
+     ((,srcery-class (:foreground ,srcery-black :background ,srcery-bright-yellow))
+      (,srcery-256-class (:foreground ,srcery-256-black :background ,srcery-256-bright-yellow))))
+
+   `(hlt-regexp-level-5
+     ((,srcery-class (:foreground ,srcery-black :background ,srcery-green))
+      (,srcery-256-class (:foreground ,srcery-256-black :background ,srcery-256-green))))
+
+   `(hlt-regexp-level-6
+     ((,srcery-class (:foreground ,srcery-black :background ,srcery-bright-blue))
+      (,srcery-256-class (:foreground ,srcery-256-black :background ,srcery-256-bright-blue))))
+
+   `(hlt-regexp-level-7
+     ((,srcery-class (:foreground ,srcery-black :background ,srcery-cyan))
+      (,srcery-256-class (:foreground ,srcery-256-black :background ,srcery-256-cyan))))
+
+   `(hlt-regexp-level-8
+     ((,srcery-class (:foreground ,srcery-black :background ,srcery-blue))
+      (,srcery-256-class (:foreground ,srcery-256-black :background ,srcery-256-blue))))
+
+   ;; hlt-regexp-level-1
+   ;; hlt-regexp-level-2
+   ;; hlt-regexp-level-3
+   ;; hlt-regexp-level-4
+   ;; hlt-regexp-level-5
+   ;; hlt-regexp-level-6
+   ;; hlt-regexp-level-7
+   ;; hlt-regexp-level-8
+
    ;; other, need more work
    `(ac-completion-face
      ((,srcery-class (:underline t :foreground ,srcery-red))
       (,srcery-256-class (:underline t :foreground ,srcery-256-red))))
+
+   `(epc:face-title
+     ((,srcery-class :foreground ,srcery-blue :weight bold)
+      (,srcery-256-class :foreground ,srcery-256-blue :weight bold)))
 
    `(ffap
      ((,srcery-class (:foreground ,srcery-bright-white))
