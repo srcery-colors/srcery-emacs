@@ -2767,7 +2767,12 @@
 
    `(custom-invalid
      ((,srcery-class :background ,srcery-bright-red :foreground ,srcery-bright-white)
-      (,srcery-256-class :background ,srcery-256-bright-red :foreground ,srcery-256-bright-white))))
+      (,srcery-256-class :background ,srcery-256-bright-red :foreground ,srcery-256-bright-white)))
+
+   `(holiday
+     ((,srcery-class :background ,srcery-bright-magenta :foreground ,srcery-bright-white)
+      (,srcery-256-class :background ,srcery-256-bright-magenta :foreground ,srcery-256-bright-white)))
+   )
 
   (custom-theme-set-variables
    'srcery
