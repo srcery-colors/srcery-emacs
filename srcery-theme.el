@@ -503,6 +503,10 @@
      ((,srcery-class :background ,srcery-bright-blue :foreground ,srcery-black)
       (,srcery-256-class :background ,srcery-256-bright-blue :foreground ,srcery-256-black)))
 
+   `(cider-docview-table-border-face
+     ((,srcery-class :foreground ,srcery-white)
+      (,srcery-256-class :foreground ,srcery-256-white)))
+
    ;; clojure
    `(clojure-keyword-face
      ((,srcery-class (:foreground ,srcery-blue))
