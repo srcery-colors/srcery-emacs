@@ -1520,13 +1520,20 @@
      ((,srcery-class (:foreground ,srcery-bright-green))
       (,srcery-256-class (:foreground ,srcery-256-bright-green))))
 
-   ;; linum-mode
+   ;; Line numbers
    `(linum
      ((,srcery-class (:foreground ,srcery-white :background ,srcery-black))
       (,srcery-256-class (:foreground ,srcery-256-white :background ,(if srcery-transparent-background nil srcery-256-black)))))
 
-   ;; linum-relative
    `(linum-relative-current-face
+     ((,srcery-class (:foreground ,srcery-yellow))
+      (,srcery-256-class (:foreground ,srcery-256-yellow))))
+
+   `(line-number
+     ((,srcery-class (:foreground ,srcery-white :background ,srcery-black))
+      (,srcery-256-class (:foreground ,srcery-256-white :background ,(if srcery-transparent-background nil srcery-256-black)))))
+
+   `(line-number-current-line
      ((,srcery-class (:foreground ,srcery-yellow))
       (,srcery-256-class (:foreground ,srcery-256-yellow))))
 
