@@ -1869,6 +1869,18 @@
      ((,srcery-class (:bold nil :foreground ,srcery-cyan))
       (,srcery-256-class (:bold nil :foreground ,srcery-256-cyan))))
 
+   `(markdown-html-tag-delimiter-face
+     ((,srcery-class (:bold nil :foreground ,srcery-gray-5))
+      (,srcery-256-class (:bold nil :foreground ,srcery-256-gray5))))
+
+   `(markdown-list-face
+     ((,srcery-class (:bold nil :foreground ,srcery-gray-5))
+      (,srcery-256-class (:bold nil :foreground ,srcery-256-gray5))))
+
+   `(markdown-markup-face
+     ((,srcery-class (:bold nil :foreground ,srcery-gray-5))
+      (,srcery-256-class (:bold nil :foreground ,srcery-256-gray5))))
+
    ;; mu4e
    `(mu4e-cited-1-face
      ((,srcery-class (:foreground ,srcery-bright-white))
