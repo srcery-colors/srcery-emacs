@@ -2521,6 +2521,10 @@
      ((,srcery-class (:foreground ,srcery-blue))
       (,srcery-256-class (:foreground ,srcery-256-blue))))
 
+   `(web-mode-html-tag-bracket-face
+     ((,srcery-class (:foreground ,srcery-gray-5))
+      (,srcery-256-class (:foreground ,srcery-256-gray5))))
+
    `(web-mode-keyword-face
      ((,srcery-class (:foreground ,srcery-red))
       (,srcery-256-class (:foreground ,srcery-256-red))))
