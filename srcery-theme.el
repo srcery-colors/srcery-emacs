@@ -2745,6 +2745,10 @@
      ((,srcery-class (:foreground ,srcery-bright-white))
       (,srcery-256-class (:foreground ,srcery-256-bright-white))))
 
+   `(js2-object-property
+     ((,srcery-class (:foreground ,srcery-blue))
+      (,srcery-256-class (:foreground ,srcery-256-blue))))
+
    `(js3-error-face
      ((,srcery-class (:underline ,srcery-bright-orange))
       (,srcery-256-class (:underline ,srcery-256-bright-orange))))
