@@ -2017,36 +2017,36 @@
       (,srcery-256-class (:inherit region :foreground ,srcery-256-bright-white :box (:line-width 1 :style released-button)))))
 
    `(org-level-1
-     ((,srcery-class (:weight bold :foreground ,srcery-blue :height ,(if srcery-org-height 1.3 1.0)))
-      (,srcery-256-class (:weight bold :foreground ,srcery-256-blue :height ,(if srcery-org-height 1.3 1.0)))))
+     ((,srcery-class (:weight bold :foreground ,srcery-bright-blue :height ,(if srcery-org-height 1.3 1.0)))
+      (,srcery-256-class (:weight bold :foreground ,srcery-256-bright-blue :height ,(if srcery-org-height 1.3 1.0)))))
 
    `(org-level-2
      ((,srcery-class (:weight bold :foreground ,srcery-green :height ,(if srcery-org-height 1.2 1.0)))
       (,srcery-256-class (:weight bold :foreground ,srcery-256-green :height ,(if srcery-org-height 1.2 1.0)))))
 
    `(org-level-3
-     ((,srcery-class (:bold nil :foreground ,srcery-bright-blue :height ,(if srcery-org-height 1.1 1.0)))
-      (,srcery-256-class (:bold nil :foreground ,srcery-256-bright-blue :height ,(if srcery-org-height 1.1 1.0)))))
+     ((,srcery-class (:bold nil :foreground ,srcery-yellow :height ,(if srcery-org-height 1.1 1.0)))
+      (,srcery-256-class (:bold nil :foreground ,srcery-256-yellow :height ,(if srcery-org-height 1.1 1.0)))))
 
    `(org-level-4
-     ((,srcery-class (:bold nil :foreground ,srcery-bright-green))
-      (,srcery-256-class (:bold nil :foreground ,srcery-256-bright-green))))
+     ((,srcery-class (:bold nil :foreground ,srcery-blue))
+      (,srcery-256-class (:bold nil :foreground ,srcery-256-blue))))
 
    `(org-level-5
-     ((,srcery-class (:bold nil :foreground ,srcery-yellow))
-      (,srcery-256-class (:bold nil :foreground ,srcery-256-yellow))))
-
-   `(org-level-6
-     ((,srcery-class (:bold nil :foreground ,srcery-bright-magenta))
-      (,srcery-256-class (:bold nil :foreground ,srcery-256-bright-magenta))))
-
-   `(org-level-7
-     ((,srcery-class (:bold nil :foreground ,srcery-yellow))
-      (,srcery-256-class (:bold nil :foreground ,srcery-256-yellow))))
-
-   `(org-level-8
      ((,srcery-class (:bold nil :foreground ,srcery-cyan))
       (,srcery-256-class (:bold nil :foreground ,srcery-256-cyan))))
+
+   `(org-level-6
+     ((,srcery-class (:bold nil :foreground ,srcery-green))
+      (,srcery-256-class (:bold nil :foreground ,srcery-256-green))))
+
+   `(org-level-7
+     ((,srcery-class (:bold nil :foreground ,srcery-bright-orange))
+      (,srcery-256-class (:bold nil :foreground ,srcery-256-orange))))
+
+   `(org-level-8
+     ((,srcery-class (:bold nil :foreground ,srcery-bright-magenta))
+      (,srcery-256-class (:bold nil :foreground ,srcery-256-bright-magenta))))
 
    `(org-link
      ((,srcery-class (:foreground ,srcery-white :underline t))
