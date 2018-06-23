@@ -2,7 +2,8 @@
 mc/cursor-bar-face
 mc/cursor-face
 mc/region-face
-* TODO Fix spaceline separator colors
+* DONE Fix spaceline separator colors
+  CLOSED: [2018-06-23 Sat 15:19]
 * TODO Fix spaceline leftmost state indicator font is sometimes dark
 * TODO Update readme instructions for variables
 * DONE Fix magit-diff-context-highlight
@@ -14,4 +15,4 @@ mc/region-face
 * TODO Fix Foreground color on spaceline in GUI
 * DONE Fix smerge
   CLOSED: [2018-05-23 Wed 23:49]
-* TODO Fix previous search when /, before typing 
+* TODO Fix previous search when /, before typing
