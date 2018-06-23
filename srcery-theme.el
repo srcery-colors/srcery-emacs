@@ -2157,8 +2157,8 @@
       (,srcery-256-class (:background ,srcery-256-gray3 :foreground ,srcery-256-bright-white))))
 
    `(powerline-active2
-     ((,srcery-class (:foreground ,srcery-bright-white))
-      (,srcery-256-class (:foreground ,srcery-256-bright-white))))
+     ((,srcery-class (:foreground ,srcery-bright-white :background ,srcery-bright-black))
+      (,srcery-256-class (:foreground ,srcery-256-bright-white :background ,srcery-256-bright-black))))
 
    `(powerline-inactive1
      ((,srcery-class (:background ,srcery-bright-black :foreground ,srcery-white))
