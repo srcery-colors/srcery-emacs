@@ -3,19 +3,9 @@
 mc/cursor-bar-face
 mc/cursor-face
 mc/region-face
-* DONE Fix spaceline separator colors
-  CLOSED: [2018-06-23 Sat 15:19]
-* DONE Fix spaceline leftmost state indicator font is sometimes dark
-  CLOSED: [2018-06-23 Sat 21:38]
 * TODO Update readme instructions for variables
-* DONE Fix magit-diff-context-highlight
-  CLOSED: [2018-04-11 Wed 20:49]
 * TODO Update term flycheck errors
 * [[https://github.com/sabof/org-bullets/issues/16][Leading asterisks have wrong background color in terminal Emacs · Issue #16 · sabof/org-bullets]]
-* CANCELLED Fix foreground nil
-  CLOSED: [2018-06-23 Sat 21:34]
-* DONE Fix Foreground color on spaceline in GUI
-  CLOSED: [2018-06-23 Sat 21:38]
-* DONE Fix smerge
-  CLOSED: [2018-05-23 Wed 23:49]
+  I made a custom [[https://github.com/roosta/org-bullets][fork of org-bullets]] that respects ~org-hide~ face, only solution
+  so far at least until org-bullets maintainer accepts this [[https://github.com/sabof/org-bullets/pull/19][open pull request]]
 * TODO Fix previous search when /, before typing

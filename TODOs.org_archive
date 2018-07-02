@@ -15,3 +15,57 @@ Archived entries from file /home/roosta/src/emacs-srcery/TODOs.org
   :ARCHIVE_CATEGORY: TODOs
   :ARCHIVE_TODO: TODO
   :END:
+
+* DONE Fix spaceline separator colors
+  CLOSED: [2018-06-23 Sat 15:19]
+  :PROPERTIES:
+  :ARCHIVE_TIME: 2018-07-02 Mon 20:27
+  :ARCHIVE_FILE: ~/src/srcery-emacs/TODOs.org
+  :ARCHIVE_CATEGORY: TODOs
+  :ARCHIVE_TODO: DONE
+  :END:
+
+* DONE Fix spaceline separator colors
+  CLOSED: [2018-06-23 Sat 15:19]
+  :PROPERTIES:
+  :ARCHIVE_TIME: 2018-07-02 Mon 20:27
+  :ARCHIVE_FILE: ~/src/srcery-emacs/TODOs.org
+  :ARCHIVE_CATEGORY: TODOs
+  :ARCHIVE_TODO: DONE
+  :END:
+
+* DONE Fix magit-diff-context-highlight
+  CLOSED: [2018-04-11 Wed 20:49]
+  :PROPERTIES:
+  :ARCHIVE_TIME: 2018-07-02 Mon 20:27
+  :ARCHIVE_FILE: ~/src/srcery-emacs/TODOs.org
+  :ARCHIVE_CATEGORY: TODOs
+  :ARCHIVE_TODO: DONE
+  :END:
+
+* DONE Fix magit-diff-context-highlight
+  CLOSED: [2018-04-11 Wed 20:49]
+  :PROPERTIES:
+  :ARCHIVE_TIME: 2018-07-02 Mon 20:27
+  :ARCHIVE_FILE: ~/src/srcery-emacs/TODOs.org
+  :ARCHIVE_CATEGORY: TODOs
+  :ARCHIVE_TODO: CANCELLED
+  :END:
+
+* DONE Fix Foreground color on spaceline in GUI
+  CLOSED: [2018-06-23 Sat 21:38]
+  :PROPERTIES:
+  :ARCHIVE_TIME: 2018-07-02 Mon 20:27
+  :ARCHIVE_FILE: ~/src/srcery-emacs/TODOs.org
+  :ARCHIVE_CATEGORY: TODOs
+  :ARCHIVE_TODO: DONE
+  :END:
+
+* DONE Fix smerge
+  CLOSED: [2018-05-23 Wed 23:49]
+  :PROPERTIES:
+  :ARCHIVE_TIME: 2018-07-02 Mon 20:27
+  :ARCHIVE_FILE: ~/src/srcery-emacs/TODOs.org
+  :ARCHIVE_CATEGORY: TODOs
+  :ARCHIVE_TODO: DONE
+  :END:
