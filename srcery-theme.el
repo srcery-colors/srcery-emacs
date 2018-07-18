@@ -316,10 +316,10 @@
    `(highlight
      ((,srcery-class ,(if srcery-invert-matches
                           `(:inverse-video t)
-                        `(:background ,srcery-magenta :foreground ,srcery-bright-white)))
+                        `(:background ,srcery-bright-black :weight bold)))
       (,srcery-256-class ,(if srcery-invert-matches
                               `(:inverse-video t)
-                            `(:background ,srcery-256-magenta :foreground ,srcery-256-bright-white)))))
+                            `(:background ,srcery-256-bright-black :weight bold)))))
 
    `(hl-line
      ((,srcery-class (:background ,srcery-bright-black))
@@ -328,10 +328,10 @@
    `(isearch
      ((,srcery-class ,(if srcery-invert-matches
                           `(:inverse-video t :underline t :weight bold)
-                        `(:underline t :background ,srcery-magenta :foreground ,srcery-bright-white :weight bold)))
+                        `(:underline t :background ,srcery-bright-black :weight bold)))
       (,srcery-256-class ,(if srcery-invert-matches
                               `(:inverse-video t :underline t :weight bold)
-                            `(:underline t :background ,srcery-256-magenta :foreground ,srcery-256-bright-white :weight bold)))))
+                            `(:underline t :background ,srcery-256-bright-black :weight bold)))))
    `(isearch-fail
     ((,srcery-class (:foreground ,srcery-black :background ,srcery-bright-red))
      (,srcery-256-class (:foreground ,srcery-256-black :background ,srcery-256-bright-red))))
@@ -339,10 +339,10 @@
    `(lazy-highlight
      ((,srcery-class ,(if srcery-invert-matches
                           `(:inverse-video t)
-                        `(:background ,srcery-magenta :foreground ,srcery-bright-white)))
+                        `(:background ,srcery-bright-black :weight bold)))
       (,srcery-256-class ,(if srcery-invert-matches
                               `(:inverse-video t)
-                            `(:background ,srcery-256-magenta :foreground ,srcery-256-bright-white)))))
+                            `(:background ,srcery-256-bright-black :weight bold)))))
 
    `(link
      ((,srcery-class (:inherit font-lock-comment-face :underline t))
@@ -355,10 +355,10 @@
    `(match
      ((,srcery-class ,(if srcery-invert-matches
                           `(:inverse-video t)
-                        `(:background ,srcery-magenta :foreground ,srcery-bright-white)))
+                        `(:background ,srcery-bright-black :weight bold)))
       (,srcery-256-class ,(if srcery-invert-matches
                               `(:inverse-video t)
-                            `(:background ,srcery-256-magenta :foreground ,srcery-256-bright-white)))))
+                            `(:background ,srcery-256-bright-black :weight bold)))))
 
    `(minibuffer-prompt
      ((,srcery-class (:weight bold :foreground ,srcery-yellow))
@@ -971,10 +971,10 @@
    `(evil-search-highlight-persist-highlight-face
      ((,srcery-class ,(if srcery-invert-matches
                           `(:inverse-video t)
-                        `(:background ,srcery-magenta :foreground ,srcery-bright-white)))
+                        `(:background ,srcery-bright-black :weight bold)))
       (,srcery-256-class ,(if srcery-invert-matches
                               `(:inverse-video t)
-                            `(:background ,srcery-256-magenta :foreground ,srcery-256-bright-white)))))
+                            `(:background ,srcery-256-bright-black :weight bold)))))
 
    `(flycheck-error
      ((,srcery-class (:foreground ,srcery-red :underline t))
