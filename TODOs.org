@@ -9,3 +9,5 @@ mc/region-face
   I made a custom [[https://github.com/roosta/org-bullets][fork of org-bullets]] that respects ~org-hide~ face, only solution
   so far at least until org-bullets maintainer accepts this [[https://github.com/sabof/org-bullets/pull/19][open pull request]]
 * TODO Fix previous search when /, before typing
+* TODO Add CI using package lint
+* TODO Think of some way to sort smerge-upper/lower

@@ -1830,6 +1830,14 @@
      ((,srcery-class (:foreground ,srcery-red))
       (,srcery-256-class (:foreground ,srcery-256-red))))
 
+   `(smerge-upper
+     ((,srcery-class (:foreground ,srcery-red))
+      (,srcery-256-class (:foreground ,srcery-256-red))))
+
+   `(smerge-lower
+     ((,srcery-class (:foreground ,srcery-green))
+      (,srcery-256-class (:foreground ,srcery-256-green))))
+
    ;; man
    `(Man-overstrike
      ((,srcery-class (:foreground ,srcery-blue :weight bold))
