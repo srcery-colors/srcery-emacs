@@ -1,4 +1,5 @@
 [[file:img/title.png]]
+[[https://melpa.org/#/srcery-theme][file:https://melpa.org/packages/srcery-theme-badge.svg]]
 
 Colorscheme with clearly defined contrasting colors and a slightly earthy tone.
 
