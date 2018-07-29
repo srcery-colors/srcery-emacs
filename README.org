@@ -84,8 +84,11 @@ Colorscheme with clearly defined contrasting colors and a slightly earthy tone.
     Toggles whether to inverse-video search matches.
 
     Make sure your cursor is inverted if this is enabled as otherwise it will
-    make the cursor difficult to spot if
+    make the cursor difficult to spot.
+*** srcery-invert-region
+    ~boolean~, default: ~t~
 
+    Toggle inverse video for region
 *** Custom colors
     Its possible to override the base srcery colors.
 
