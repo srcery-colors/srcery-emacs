@@ -3,7 +3,6 @@
 mc/cursor-bar-face
 mc/cursor-face
 mc/region-face
-* TODO Update readme instructions for variables
 * TODO Update term flycheck errors
 * [[https://github.com/sabof/org-bullets/issues/16][Leading asterisks have wrong background color in terminal Emacs · Issue #16 · sabof/org-bullets]]
   I made a custom [[https://github.com/roosta/org-bullets][fork of org-bullets]] that respects ~org-hide~ face, only solution

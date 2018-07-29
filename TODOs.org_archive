@@ -69,3 +69,12 @@ Archived entries from file /home/roosta/src/emacs-srcery/TODOs.org
   :ARCHIVE_CATEGORY: TODOs
   :ARCHIVE_TODO: DONE
   :END:
+
+* DONE Update readme instructions for variables
+  CLOSED: [2018-07-29 Sun 16:53]
+  :PROPERTIES:
+  :ARCHIVE_TIME: 2018-07-29 Sun 16:53
+  :ARCHIVE_FILE: ~/src/srcery-emacs/TODOs.org
+  :ARCHIVE_CATEGORY: TODOs
+  :ARCHIVE_TODO: DONE
+  :END:
