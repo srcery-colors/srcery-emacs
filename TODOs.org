@@ -11,3 +11,4 @@ mc/region-face
 * TODO Fix previous search when /, before typing
 * TODO Add CI using package lint
 * TODO Think of some way to sort smerge-upper/lower
+* TODO Fix modeline foreground color being dark in GUI sometimes
