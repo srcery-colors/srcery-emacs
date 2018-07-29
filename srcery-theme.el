@@ -369,8 +369,8 @@
       (,srcery-256-class (:foreground ,srcery-256-gray3))))
 
    `(region
-     ((,srcery-class (:inverse-video ,t))
-      (,srcery-256-class (:inverse-video ,t))))
+     ((,srcery-class (:inverse-video t))
+      (,srcery-256-class (:inverse-video t))))
 
    `(secondary-selection
      ((,srcery-class (:background ,srcery-gray-2))
