@@ -2,7 +2,7 @@
 ;; Copyright (C) 2018 Daniel Berg
 
 ;; Author: Daniel Berg
-;; URL: https://github.com/roosta/emacs-srcery
+;; URL: https://github.com/srcery-colors/srcery-emacs
 
 ;; Version: 0.1.0
 ;; Keywords: faces
@@ -25,11 +25,11 @@
 
 ;;; Commentary:
 
-;; Port of vim-srcery: https://github.com/roosta/vim-srcery , a dark color theme
+;; Port of vim-srcery: https://github.com/srcery-colors/srcery-vim , a dark color theme
 ;; with with focus on clearly defined contrastig colors and relative ease of
 ;; use. Srcery should play well with a 256 color terminal, provided the terminal
 ;; colors are set to srcery colors. See here for sample terminal configs:
-;; https://github.com/roosta/vim-srcery/tree/master/term_colors
+;; https://github.com/srcery-colors/srcery-terminal
 
 ;;; Credits
 
