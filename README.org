@@ -136,8 +136,8 @@ Colorscheme with clearly defined contrasting colors and a slightly earthy tone.
     [[https://github.com/sabof/org-bullets][org-bullets]] the leading asterisks are colored white, which does nothing to
     hide them. The problem is that org-bullets sets the ~:forground~ color to the
     default background color, but when this is ~nil~ this issue arise. I've made a
-    [[%5B%5Bhttps://github.com/roosta/org-bullets/commit/807364e09ba987e838df553962df6241008190a7%5D%5BUse org-hide face for leading stars %C2%B7 roosta/org-bullets@807364e%5D%5D][fork]] that uses the ~org-hide~ face, fixing this issue. There is also a [[https://github.com/sabof/org-bullets/pull/19][pull
-    request]] that addresses this.
+    [[%5B%5Bhttps://github.com/roosta/org-bullets/commit/807364e09ba987e838df553962df6241008190a7%5D%5BUse org-hide face for leading stars %C2%B7 roosta/org-bullets@807364e%5D%5D][fork]] that uses the ~org-hide~ face, fixing this issue. There is also an open
+    [[https://github.com/sabof/org-bullets/pull/19][pull request]] that addresses this.
 
 ** Attribution
    I'm new to elisp, so I used the [[https://github.com/nashamri/spacemacs-theme][spacemacs-theme]] as a base for emacs-srcery.
