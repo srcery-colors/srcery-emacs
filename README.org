@@ -89,6 +89,13 @@ Colorscheme with clearly defined contrasting colors and a slightly earthy tone.
     ~boolean~, default: ~t~
 
     Toggle inverse video for region
+*** srcery-transparent-background
+    ~boolean~, default ~nil~
+
+    Sets the base background color to nil, and relies on underlying terminal
+    background color. This only works in the terminal, and the idea behind it is
+    that you can use for example ~tmux~ to control the background color.
+
 *** Custom colors
     Its possible to override the base srcery colors.
 
@@ -123,6 +130,8 @@ Colorscheme with clearly defined contrasting colors and a slightly earthy tone.
    - and others, more coming
 
     I recommend [[https://github.com/tarsius/paren-face][paren-face]] and [[https://github.com/tsdh/highlight-parentheses.el][highlight-parentheses.el]] for lisp
+** Troubleshooting
+*** org-bullets and
 ** Attribution
    I'm new to elisp, so I used the [[https://github.com/nashamri/spacemacs-theme][spacemacs-theme]] as a base for emacs-srcery.
    Huge thanks to everyone involved with that theme, and [[https://github.com/syl20bnr/spacemacs][Spacemacs]] itself. I
