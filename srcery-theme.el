@@ -312,10 +312,10 @@
    `(highlight
      ((,srcery-class ,(if srcery-invert-matches
                           `(:inverse-video t)
-                        `(:background ,srcery-bright-black :weight bold)))
+                        `(:background ,srcery-gray-4 :weight bold)))
       (,srcery-256-class ,(if srcery-invert-matches
                               `(:inverse-video t)
-                            `(:background ,srcery-256-bright-black :weight bold)))))
+                            `(:background ,srcery-256-gray4 :weight bold)))))
 
    `(hl-line
      ((,srcery-class (:background ,srcery-bright-black))
@@ -324,10 +324,10 @@
    `(isearch
      ((,srcery-class ,(if srcery-invert-matches
                           `(:inverse-video t :underline t :weight bold)
-                        `(:underline t :background ,srcery-bright-black :weight bold)))
+                        `(:underline t :background ,srcery-gray-4 :weight bold)))
       (,srcery-256-class ,(if srcery-invert-matches
                               `(:inverse-video t :underline t :weight bold)
-                            `(:underline t :background ,srcery-256-bright-black :weight bold)))))
+                            `(:underline t :background ,srcery-256-gray4 :weight bold)))))
    `(isearch-fail
     ((,srcery-class (:foreground ,srcery-red))
      (,srcery-256-class (:foreground ,srcery-256-red))))
@@ -335,10 +335,10 @@
    `(lazy-highlight
      ((,srcery-class ,(if srcery-invert-matches
                           `(:inverse-video t)
-                        `(:background ,srcery-bright-black :weight bold)))
+                        `(:background ,srcery-gray-4 :weight bold)))
       (,srcery-256-class ,(if srcery-invert-matches
                               `(:inverse-video t)
-                            `(:background ,srcery-256-bright-black :weight bold)))))
+                            `(:background ,srcery-256-gray4 :weight bold)))))
 
    `(link
      ((,srcery-class (:inherit font-lock-comment-face :underline t))
@@ -351,10 +351,10 @@
    `(match
      ((,srcery-class ,(if srcery-invert-matches
                           `(:inverse-video t)
-                        `(:background ,srcery-bright-black :weight bold)))
+                        `(:background ,srcery-gray-4 :weight bold)))
       (,srcery-256-class ,(if srcery-invert-matches
                               `(:inverse-video t)
-                            `(:background ,srcery-256-bright-black :weight bold)))))
+                            `(:background ,srcery-256-gray4 :weight bold)))))
 
    `(minibuffer-prompt
      ((,srcery-class (:weight bold :foreground ,srcery-yellow))
@@ -967,10 +967,10 @@
    `(evil-search-highlight-persist-highlight-face
      ((,srcery-class ,(if srcery-invert-matches
                           `(:inverse-video t)
-                        `(:background ,srcery-bright-black :weight bold)))
+                        `(:background ,srcery-gray-4 :weight bold)))
       (,srcery-256-class ,(if srcery-invert-matches
                               `(:inverse-video t)
-                            `(:background ,srcery-256-bright-black :weight bold)))))
+                            `(:background ,srcery-256-gray4 :weight bold)))))
 
    `(flycheck-error
      ((,srcery-class (:foreground ,srcery-red :underline t))
