@@ -222,12 +222,8 @@
 
    ;; basics
    `(cursor
-     ((,srcery-class ,(if srcery-invert-matches
-                          `(:inverse-video t)
-                        `(:background ,srcery-bright-white :foreground ,srcery-black)))
-      (,srcery-256-class ,(if srcery-invert-matches
-                              `(:inverse-video t)
-                            `(:background ,srcery-256-bright-white :foreground ,srcery-256-black)))))
+     ((,srcery-class (:background ,srcery-bright-white :foreground ,srcery-black :inverse-video t))
+      (,srcery-256-class (:background ,srcery-256-bright-white :foreground ,srcery-256-black :inverse-video t))))
 
    `(custom-button
      ((,srcery-class (:background ,srcery-black :foreground ,srcery-bright-white :box (:line-width 2 :style released-button)))
