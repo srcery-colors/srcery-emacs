@@ -230,8 +230,8 @@
                             `(:background ,srcery-256-bright-white :foreground ,srcery-256-black)))))
 
    `(custom-button
-     ((,srcery-class :background ,srcery-black :foreground ,srcery-bright-white :box (:line-width 2 :style released-button))
-      (,srcery-256-class :background ,(if srcery-transparent-background nil srcery-256-black) :foreground ,srcery-256-bright-white :box (:line-width 2 :style released-button))))
+     ((,srcery-class (:background ,srcery-black :foreground ,srcery-bright-white :box (:line-width 2 :style released-button)))
+      (,srcery-256-class (:background ,(if srcery-transparent-background nil srcery-256-black) :foreground ,srcery-256-bright-white :box (:line-width 2 :style released-button)))))
 
    `(default
       ((,srcery-class (:background ,srcery-black :foreground ,srcery-bright-white))
