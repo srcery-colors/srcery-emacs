@@ -329,8 +329,8 @@
                               `(:inverse-video t :underline t :weight bold)
                             `(:underline t :background ,srcery-256-bright-black :weight bold)))))
    `(isearch-fail
-    ((,srcery-class (:foreground ,srcery-black :background ,srcery-bright-red))
-     (,srcery-256-class (:foreground ,srcery-256-black :background ,srcery-256-bright-red))))
+    ((,srcery-class (:foreground ,srcery-red))
+     (,srcery-256-class (:foreground ,srcery-256-red))))
 
    `(lazy-highlight
      ((,srcery-class ,(if srcery-invert-matches
