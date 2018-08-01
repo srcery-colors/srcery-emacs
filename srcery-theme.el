@@ -1089,6 +1089,10 @@
      ((,srcery-class (:foreground ,srcery-red))
       (,srcery-256-class (:foreground ,srcery-256-red))))
 
+   `(git-commit-note
+     ((,srcery-class (:foreground ,srcery-bright-white))
+      (,srcery-256-class (:foreground ,srcery-256-bright-white))))
+
    `(git-commit-nonempty-second-line
      ((,srcery-class (:foreground ,srcery-yellow))
       (,srcery-256-class (:foreground ,srcery-256-yellow))))
@@ -1544,8 +1548,8 @@
 
    ;; Git
    `(diff-context
-     ((,srcery-class :foreground ,srcery-bright-white)
-      (,srcery-256-class :foreground ,srcery-256-bright-white)))
+     ((,srcery-class :foreground ,srcery-white)
+      (,srcery-256-class :foreground ,srcery-256-white)))
 
    ;; magit
    `(magit-blame-culprit
