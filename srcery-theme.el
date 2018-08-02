@@ -2849,6 +2849,31 @@
    `(whitespace-hspace
      ((,srcery-class :background ,srcery-bright-blue :foreground ,srcery-bright-white)
       (,srcery-256-class :background ,srcery-256-bright-blue :foreground ,srcery-256-bright-white)))
+
+   ;; Slack
+   `(lui-button-face
+     ((,srcery-class :foreground ,srcery-blue)
+      (,srcery-256-class :foreground ,srcery-256-blue)))
+
+   `(lui-highlight-face
+     ((,srcery-class :foreground ,srcery-magenta)
+      (,srcery-256-class :foreground ,srcery-256-magenta)))
+
+   `(lui-time-stamp-face
+     ((,srcery-class :foreground ,srcery-white)
+      (,srcery-256-class :foreground ,srcery-256-white)))
+
+   `(slack-profile-image-face
+     ((,srcery-class :background ,srcery-bright-white :foreground ,srcery-black)
+      (,srcery-256-class :background ,srcery-256-bright-white :foreground ,srcery-256-black)))
+
+   `(slack-preview-face
+     ((,srcery-class :foreground ,srcery-cyan)
+      (,srcery-256-class :foreground ,srcery-256-cyan)))
+
+   `(slack-message-output-header
+     ((,srcery-class :foreground ,srcery-yellow :weight bold)
+      (,srcery-256-class :foreground ,srcery-256-yellow :weight bold)))
    )
 
   (custom-theme-set-variables
