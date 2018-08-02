@@ -2026,8 +2026,8 @@
       (,srcery-256-class (:underline t :foreground ,srcery-256-bright-white))))
 
    `(org-hide
-     ((,srcery-class (:foreground ,srcery-black :background ,srcery-black))
-      (,srcery-256-class (:foreground ,srcery-256-black :background ,srcery-256-black))))
+     ((,srcery-class (:foreground ,srcery-bright-black :background ,srcery-black))
+      (,srcery-256-class (:foreground ,srcery-256-bright-black :background ,srcery-256-black))))
 
    `(org-kbd
      ((,srcery-class (:inherit region :foreground ,srcery-bright-white :box (:line-width 1 :style released-button)))
