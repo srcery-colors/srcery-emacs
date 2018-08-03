@@ -1798,6 +1798,10 @@
      ((,srcery-class (:foreground ,srcery-bright-white))
       (,srcery-256-class (:foreground ,srcery-256-bright-white))))
 
+   `(magit-dimmed
+     ((,srcery-class (:foreground ,srcery-white))
+      (,srcery-256-class (:foreground ,srcery-256-white))))
+
    `(magithub-ci-no-status
      ((,srcery-class (:foreground ,srcery-gray-5))
       (,srcery-256-class (:foreground ,srcery-256-gray5))))
