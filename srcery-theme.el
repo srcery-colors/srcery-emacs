@@ -2330,8 +2330,8 @@
       (,srcery-256-class (:foreground ,srcery-256-green :weight bold))))
 
    `(sh-quoted-exec
-     ((,srcery-class (:foreground ,srcery-yellow :weight bold))
-      (,srcery-256-class (:foreground ,srcery-256-yellow :weight bold))))
+     ((,srcery-class (:foreground ,srcery-orange))
+      (,srcery-256-class (:foreground ,srcery-256-orange))))
 
    ;; shm
    `(shm-current-face
