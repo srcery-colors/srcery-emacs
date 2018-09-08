@@ -33,7 +33,7 @@ Colorscheme with clearly defined contrasting colors and a slightly earthy tone.
     | bright-cyan    | 14 | #53FDE9 | 83, 253, 233  |
     | bright-White   | 15 | #FCE8C3 | 252, 232, 195 |
 
-    See [[https://github.com/roosta/contrib-srcery/tree/master/terminal][Srcery contrib]] for a list of terminal configs.
+    See [[https://github.com/srcery-colors/srcery-terminal][srcery-terminal repository]] for a list of terminal configs.
 
     In addition to the table above Srcery uses a few unmodified xterm colors.
     Since most terminals have these defined it pads out the color selection
