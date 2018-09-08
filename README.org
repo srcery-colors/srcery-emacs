@@ -132,6 +132,9 @@ Colorscheme with clearly defined contrasting colors and a slightly earthy tone.
 
     I recommend [[https://github.com/tarsius/paren-face][paren-face]] and [[https://github.com/tsdh/highlight-parentheses.el][highlight-parentheses.el]] for lisp
 ** Troubleshooting
+*** Work in progress
+    This theme is a work in progress, if you see something that is off or
+    doesn't work please open an [[https://github.com/srcery-colors/srcery-emacs/issues/new][issue]] so it can be fixed.
 *** org-bullets and transparent background
     When setting the variable ~srcery-transparent-background~ and you are using
     [[https://github.com/sabof/org-bullets][org-bullets]] the leading asterisks are colored white, which does nothing to
