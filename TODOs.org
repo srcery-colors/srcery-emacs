@@ -12,3 +12,4 @@ mc/region-face
 * TODO Think of some way to sort smerge-upper/lower
 * TODO Fix modeline foreground color being dark in GUI sometimes
 * TODO Symbol highlight transient state
+* TODO Fix spacemacs doc source blocks having white background
