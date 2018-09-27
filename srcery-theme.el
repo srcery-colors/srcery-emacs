@@ -1366,8 +1366,8 @@
       (,srcery-256-class (:background ,srcery-256-bright-black :weight bold))))
 
    `(helm-swoop-target-word-face
-     ((,srcery-class (:foreground ,srcery-magenta :weight bold))
-      (,srcery-256-class (:foreground ,srcery-256-magenta :weight bold))))
+     ((,srcery-class (:foreground ,srcery-magenta :underline t))
+      (,srcery-256-class (:foreground ,srcery-256-magenta :underline t))))
 
    ;; highlights
    `(hi-yellow
