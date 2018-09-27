@@ -1461,8 +1461,8 @@
 
    ;; ivy
    `(ivy-current-match
-     ((,srcery-class (:background ,srcery-magenta :weight bold))
-      (,srcery-256-class (:background ,srcery-256-magenta :weight bold))))
+     ((,srcery-class (:background ,srcery-bright-black :weight bold))
+      (,srcery-256-class (:background ,srcery-256-bright-black :weight bold))))
 
    `(ivy-minibuffer-match-face-1
      ((,srcery-class (:weight bold))
