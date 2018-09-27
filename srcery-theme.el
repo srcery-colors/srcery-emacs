@@ -2954,6 +2954,28 @@
    `(widget-documentation
      ((,srcery-class :foreground ,srcery-green)
       (,srcery-256-class :foreground ,srcery-256-green)))
+
+   ;; Misc
+   `(epa-string
+     ((,srcery-class :foreground ,srcery-blue)
+      (,srcery-256-class :foreground ,srcery-256-blue)))
+
+   `(imenu-list-entry-face-0
+     ((,srcery-class :foreground ,srcery-magenta)
+      (,srcery-256-class :foreground ,srcery-256-magenta)))
+
+   `(imenu-list-entry-face-1
+     ((,srcery-class :foreground ,srcery-green)
+      (,srcery-256-class :foreground ,srcery-256-green)))
+
+   `(imenu-list-entry-face-2
+     ((,srcery-class :foreground ,srcery-blue)
+      (,srcery-256-class :foreground ,srcery-256-blue)))
+
+   `(imenu-list-entry-face-3
+     ((,srcery-class :foreground ,srcery-blue)
+      (,srcery-256-class :foreground ,srcery-256-blue)))
+
    )
 
   (custom-theme-set-variables
