@@ -2451,16 +2451,16 @@
    ;; spacemacs-ido-navigation-ts-face
    ;; swiper
    `(swiper-line-face
-     ((,srcery-class (:background ,srcery-magenta :weight bold))
-      (,srcery-256-class (:background ,srcery-256-magenta :weight bold))))
+     ((,srcery-class (:background ,srcery-bright-black :weight bold))
+      (,srcery-256-class (:background ,srcery-bright-black :weight bold))))
 
    `(swiper-match-face-1
      ((,srcery-class (:weight bold))
       (,srcery-256-class (:weight bold))))
 
    `(swiper-match-face-2
-     ((,srcery-class (:foreground ,srcery-blue :underline t))
-      (,srcery-256-class (:foreground ,srcery-256-blue :underline t))))
+     ((,srcery-class (:foreground ,srcery-magenta :underline t))
+      (,srcery-256-class (:foreground ,srcery-256-magenta :underline t))))
 
    `(swiper-match-face-3
      ((,srcery-class (:foreground ,srcery-yellow :underline t))
