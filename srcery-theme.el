@@ -2878,6 +2878,82 @@
    `(slack-message-output-header
      ((,srcery-class :foreground ,srcery-yellow :weight bold)
       (,srcery-256-class :foreground ,srcery-256-yellow :weight bold)))
+
+   ;; Message
+   `(message-header-cc
+     ((,srcery-class :foreground ,srcery-blue)
+      (,srcery-256-class :foreground ,srcery-256-blue)))
+
+   `(message-header-newsgroups
+     ((,srcery-class :foreground ,srcery-blue)
+      (,srcery-256-class :foreground ,srcery-256-blue)))
+
+   `(message-header-subject
+     ((,srcery-class :foreground ,srcery-blue)
+      (,srcery-256-class :foreground ,srcery-256-blue)))
+
+   `(message-header-to
+     ((,srcery-class :foreground ,srcery-blue)
+      (,srcery-256-class :foreground ,srcery-256-blue)))
+
+   ;; Alert
+   `(alert-low-face
+     ((,srcery-class :foreground ,srcery-blue :weight bold)
+      (,srcery-256-class :foreground ,srcery-256-blue :weight bold)))
+
+   `(alert-moderate-face
+     ((,srcery-class :foreground ,srcery-yellow :weight bold)
+      (,srcery-256-class :foreground ,srcery-256-yellow :weight bold)))
+
+   ;; Custom
+   `(custom-comment-tag
+     ((,srcery-class :foreground ,srcery-blue)
+      (,srcery-256-class :foreground ,srcery-256-blue)))
+
+   `(custom-face-tag
+     ((,srcery-class :foreground ,srcery-blue :weight bold)
+      (,srcery-256-class :foreground ,srcery-256-blue :weight bold)))
+
+   `(custom-group-tag
+     ((,srcery-class :foreground ,srcery-blue)
+      (,srcery-256-class :foreground ,srcery-256-blue)))
+
+   `(custom-state
+     ((,srcery-class :foreground ,srcery-green)
+      (,srcery-256-class :foreground ,srcery-256-green)))
+
+   `(custom-set
+     ((,srcery-class :background ,srcery-bright-blue :foreground ,srcery-black)
+      (,srcery-256-class :background ,srcery-256-bright-blue :foreground ,srcery-256-black)))
+
+   `(custom-modified
+     ((,srcery-class :background ,srcery-blue :foreground ,srcery-bright-white)
+      (,srcery-256-class :background ,srcery-256-blue :foreground ,srcery-256-bright-white)))
+
+   `(custom-themed
+     ((,srcery-class :background ,srcery-blue :foreground ,srcery-black)
+      (,srcery-256-class :background ,srcery-256-blue :foreground ,srcery-256-black)))
+
+   `(custom-variable-tag
+     ((,srcery-class :foreground ,srcery-blue)
+      (,srcery-256-class :foreground ,srcery-256-blue)))
+
+   `(custom-changed
+     ((,srcery-class :background ,srcery-blue :foreground ,srcery-black)
+      (,srcery-256-class :background ,srcery-256-blue :foreground ,srcery-256-black)))
+
+   `(custom-comment
+     ((,srcery-class :background ,srcery-white :foreground ,srcery-black)
+      (,srcery-256-class :background ,srcery-256-white :foreground ,srcery-256-black)))
+
+   ;; widget
+   `(widget-field
+     ((,srcery-class :background ,srcery-gray-2 :foreground ,srcery-bright-white)
+      (,srcery-256-class :background ,srcery-256-gray2 :foreground ,srcery-256-bright-white)))
+
+   `(widget-documentation
+     ((,srcery-class :foreground ,srcery-green)
+      (,srcery-256-class :foreground ,srcery-256-green)))
    )
 
   (custom-theme-set-variables
