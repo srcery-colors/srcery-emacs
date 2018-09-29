@@ -2428,10 +2428,6 @@
      ((,srcery-class (:background nil :foreground ,srcery-green :box nil :weight bold))
       (,srcery-256-class (:background nil :foreground ,srcery-256-green :box nil :weight bold))))
 
-   `(spacemacs-transient-state-title-face
-     ((,srcery-class (:background nil :foreground ,srcery-green :box nil :weight bold))
-      (,srcery-256-class (:background nil :foreground ,srcery-256-green :box nil :weight bold))))
-
    `(spacemacs-ido-navigation-ts-face
      ((,srcery-class (:foreground ,srcery-yellow))
       (,srcery-256-class (:foreground ,srcery-256-yellow))))
