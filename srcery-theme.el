@@ -2409,8 +2409,8 @@
       (,srcery-256-class (:background ,srcery-256-orange :foreground ,srcery-256-bright-white))))
 
    `(spacemacs-hybrid-face
-     ((,srcery-class (:background ,srcery-bright-blue :foreground ,srcery-bright-black))
-      (,srcery-256-class (:background ,srcery-256-bright-blue :foreground ,srcery-256-bright-black))))
+     ((,srcery-class (:background ,srcery-bright-orange :foreground ,srcery-black))
+      (,srcery-256-class (:background ,srcery-256-bright-orange :foreground ,srcery-256-black))))
 
    `(spacemacs-lisp-face
      ((,srcery-class (:background ,srcery-green :foreground ,srcery-black))
