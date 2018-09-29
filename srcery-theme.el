@@ -2433,12 +2433,12 @@
       (,srcery-256-class (:foreground ,srcery-256-yellow))))
 
    `(spacemacs-iedit-face
-     ((,srcery-class (:background ,srcery-bright-orange :foreground ,srcery-black))
-      (,srcery-256-class (:background ,srcery-256-bright-orange :foreground ,srcery-256-black))))
+     ((,srcery-class (:background ,srcery-blue :foreground ,srcery-bright-white))
+      (,srcery-256-class (:background ,srcery-256-blue :foreground ,srcery-256-bright-white))))
 
    `(spacemacs-iedit-insert-face
-     ((,srcery-class (:background ,srcery-bright-orange :foreground ,srcery-black))
-      (,srcery-256-class (:background ,srcery-256-bright-orange :foreground ,srcery-256-black))))
+     ((,srcery-class (:background ,srcery-bright-blue :foreground ,srcery-black))
+      (,srcery-256-class (:background ,srcery-256-bright-blue :foreground ,srcery-256-black))))
 
    `(spacemacs-micro-state-binding-face
      ((,srcery-class (:foreground ,srcery-yellow :weight bold))
