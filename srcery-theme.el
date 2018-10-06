@@ -2151,9 +2151,9 @@
      ((,srcery-class (:background ,srcery-bright-black :foreground ,srcery-bright-white))
       (,srcery-256-class (:background ,srcery-256-bright-black :foreground ,srcery-256-bright-white))))
 
-   `(popup-enu-selection-face
-     ((,srcery-class (:background ,srcery-bright-blue :foreground ,srcery-bright-white))
-      (,srcery-256-class (:background ,srcery-256-bright-blue :foreground ,srcery-256-bright-white))))
+   `(popup-menu-selection-face
+     ((,srcery-class (:background ,srcery-bright-blue :foreground ,srcery-black))
+      (,srcery-256-class (:background ,srcery-256-bright-blue :foreground ,srcery-256-black))))
 
    `(popup-menu-mouse-face
      ((,srcery-class (:inherit highlight))
