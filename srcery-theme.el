@@ -2144,8 +2144,8 @@
       (,srcery-256-class (:background ,srcery-256-bright-black :foreground ,srcery-256-bright-white))))
 
    `(popup-tip-face
-     ((,srcery-class (:background ,srcery-bright-blue :foreground ,srcery-bright-white :bold nil :italic nil :underline nil))
-      (,srcery-256-class (:background ,srcery-256-bright-blue :foreground ,srcery-256-bright-white :bold nil :italic nil :underline nil))))
+     ((,srcery-class (:background ,srcery-bright-blue :foreground ,srcery-black))
+      (,srcery-256-class (:background ,srcery-256-bright-blue :foreground ,srcery-256-black))))
 
    `(popup-menu-face
      ((,srcery-class (:background ,srcery-bright-black :foreground ,srcery-bright-white))
