@@ -192,6 +192,26 @@
   :type 'string
   :group 'srcery)
 
+(defcustom srcery-dark-red "#5f0000"
+  "Palette xterm 52"
+  :type 'string
+  :group 'srcery)
+
+(defcustom srcery-dark-green "#005f00"
+  "Palette xterm 22"
+  :type 'string
+  :group 'srcery)
+
+(defcustom srcery-dark-cyan "#005f5f"
+  "Palette xterm 23"
+  :type 'string
+  :group 'srcery)
+
+(defcustom srcery-dark-blue "#00005f"
+  "Palette xterm 17"
+  :type 'string
+  :group 'srcery)
+
 (let* ((srcery-class '((class color) (min-colors 257)))
 
        (srcery-256-class '((class color) (min-colors 89)))
@@ -220,7 +240,12 @@
        (srcery-256-gray2          "color-236")
        (srcery-256-gray3          "color-237")
        (srcery-256-gray4          "color-238")
-       (srcery-256-gray5          "color-239"))
+       (srcery-256-gray5          "color-239")
+
+       (srcery-256-dark-red       "color-52")
+       (srcery-256-dark-green     "color-22")
+       (srcery-256-dark-cyan      "color-23")
+       (srcery-256-dark-blue      "color-17"))
 
   (custom-theme-set-faces
    'srcery
@@ -789,69 +814,68 @@
 
    ;; ediff
    `(ediff-current-diff-A
-     ((,srcery-class(:background ,srcery-gray-1 :foreground ,srcery-red))
-      (,srcery-256-class(:background ,srcery-256-gray1 :foreground ,srcery-256-red))))
+     ((,srcery-class(:background ,srcery-dark-red))
+      (,srcery-256-class(:background ,srcery-256-dark-red))))
 
    `(ediff-current-diff-Ancestor
-     ((,srcery-class(:background ,srcery-black :foreground ,srcery-cyan))
-      (,srcery-256-class(:background ,(if srcery-transparent-background nil srcery-256-black) :foreground ,srcery-256-cyan))))
+     ((,srcery-class(:background ,srcery-dark-cyan))
+      (,srcery-256-class(:background ,srcery-256-dark-cyan))))
 
    `(ediff-current-diff-B
-     ((,srcery-class(:foreground ,srcery-green))
-      (,srcery-256-class(:foreground ,srcery-256-green))))
+     ((,srcery-class(:background ,srcery-dark-green))
+      (,srcery-256-class(:background ,srcery-256-dark-green))))
 
    `(ediff-current-diff-C
-     ((,srcery-class(:background ,srcery-blue :foreground ,srcery-blue))
-      (,srcery-256-class(:background ,srcery-256-blue :foreground ,srcery-256-blue))))
+     ((,srcery-class(:background ,srcery-dark-blue))
+      (,srcery-256-class(:background ,srcery-256-dark-blue))))
 
    `(ediff-even-diff-A
-     ((,srcery-class(:background ,srcery-bright-black))
-      (,srcery-256-class(:background ,srcery-256-bright-black))))
+     ((,srcery-class(:background ,srcery-gray-1))
+      (,srcery-256-class(:background ,srcery-256-gray1))))
 
    `(ediff-even-diff-Ancestor
-     ((,srcery-class(:background ,srcery-bright-black))
-      (,srcery-256-class(:background ,srcery-256-bright-black))))
+     ((,srcery-class(:background ,srcery-gray-1))
+      (,srcery-256-class(:background ,srcery-256-gray1))))
 
    `(ediff-even-diff-B
-     ((,srcery-class(:background ,srcery-bright-black))
-      (,srcery-256-class(:background ,srcery-256-bright-black))))
+     ((,srcery-class(:background ,srcery-gray-1))
+      (,srcery-256-class(:background ,srcery-256-gray1))))
 
    `(ediff-even-diff-C
-     ((,srcery-class(:background ,srcery-bright-black))
-      (,srcery-256-class(:background ,srcery-256-bright-black))))
+     ((,srcery-class(:background ,srcery-gray-1))
+      (,srcery-256-class(:background ,srcery-256-gray1))))
 
    `(ediff-fine-diff-A
-     ((,srcery-class(:background nil :weight bold))
-      (,srcery-256-class(:background nil :weight bold))))
+     ((,srcery-class(:background ,srcery-red :weight bold))
+      (,srcery-256-class(:background ,srcery-256-red :weight bold))))
 
    `(ediff-fine-diff-Ancestor
-     ((,srcery-class(:background nil :weight bold))
-      (,srcery-256-class(:background nil :weight bold))))
+     ((,srcery-class(:background ,srcery-cyan :weight bold))
+      (,srcery-256-class(:background ,srcery-256-cyan :weight bold))))
 
    `(ediff-fine-diff-B
-     ((,srcery-class(:background nil :weight bold))
-      (,srcery-256-class(:background nil :weight bold))))
+     ((,srcery-class(:background ,srcery-green :weight bold))
+      (,srcery-256-class(:background ,srcery-256-green :weight bold))))
 
    `(ediff-fine-diff-C
-     ((,srcery-class(:background nil :weight bold))
-      (,srcery-256-class(:background nil :weight bold))))
+     ((,srcery-class(:background ,srcery-blue :weight bold))
+      (,srcery-256-class(:background ,srcery-256-blue :weight bold))))
 
    `(ediff-odd-diff-A
-     ((,srcery-class(:background ,srcery-black))
-      (,srcery-256-class(:background ,(if srcery-transparent-background nil srcery-256-black)))))
+     ((,srcery-class(:background ,srcery-gray-2))
+      (,srcery-256-class(:background ,srcery-256-gray2))))
 
    `(ediff-odd-diff-Ancestor
-     ((,srcery-class(:background ,srcery-black))
-      (,srcery-256-class(:background ,(if srcery-transparent-background nil srcery-256-black)))))
+     ((,srcery-class(:background ,srcery-gray-2))
+      (,srcery-256-class(:background ,srcery-256-gray2))))
 
    `(ediff-odd-diff-B
-     ((,srcery-class(:background ,srcery-black))
-      (,srcery-256-class(:background ,(if srcery-transparent-background nil srcery-256-black)))))
+     ((,srcery-class(:background ,srcery-gray-2))
+      (,srcery-256-class(:background ,srcery-256-gray2))))
 
    `(ediff-odd-diff-C
-     ((,srcery-class(:background ,srcery-black))
-      (,srcery-256-class(:background ,(if srcery-transparent-background nil srcery-256-black)))))
-
+     ((,srcery-class(:background ,srcery-gray-2))
+      (,srcery-256-class(:background ,srcery-256-gray2))))
 
    ;; ein
    `(ein:cell-input-area
