@@ -2996,6 +2996,9 @@
      ((,srcery-class :foreground ,srcery-blue)
       (,srcery-256-class :foreground ,srcery-256-blue)))
 
+   `(mmm-default-submode-face
+     ((,srcery-class :foreground ,srcery-magenta)
+      (,srcery-256-class :foreground ,srcery-256-magenta)))
    )
 
   (custom-theme-set-variables
