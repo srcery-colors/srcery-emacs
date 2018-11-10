@@ -12,4 +12,7 @@ mc/region-face
 * TODO Think of some way to sort smerge-upper/lower
 * TODO Fix modeline foreground color being dark in GUI sometimes
 * TODO Symbol highlight transient state
-* TODO Fix spacemacs doc source blocks having white background
+* CANCELLED Fix spacemacs doc source blocks having white background
+  CLOSED: [2018-11-10 Sat 18:37]
+  Space-doc mode tries to hide the meta blocks by setting foreground to default.
+  Affect only terminals with transparent background, works like expected in GUI
