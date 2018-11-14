@@ -3003,8 +3003,8 @@
 
   (custom-theme-set-variables
    'srcery
-   `(ansi-color-names-vector [,srcery-black ,srcery-red ,srcery-green ,srcery-yellow ,srcery-blue ,srcery-magenta ,srcery-cyan ,srcery-white])
-   `(hl-paren-colors '(,srcery-bright-white ,srcery-green ,srcery-blue ,srcery-white))))
+   `(ansi-color-names-vector [,srcery-256-black ,srcery-256-red ,srcery-256-green ,srcery-256-yellow ,srcery-256-blue ,srcery-256-magenta ,srcery-256-cyan ,srcery-256-white])
+   ))
 
 ;;;###autoload
 (when load-file-name
