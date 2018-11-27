@@ -252,8 +252,8 @@
 
    ;; basics
    `(cursor
-     ((,srcery-class (:background ,srcery-bright-white :foreground ,srcery-black :inverse-video t))
-      (,srcery-256-class (:background ,srcery-256-bright-white :foreground ,srcery-256-black :inverse-video t))))
+     ((,srcery-class (:background ,srcery-yellow :foreground ,srcery-black))
+      (,srcery-256-class (:background ,srcery-256-yellow :foreground ,srcery-256-black))))
 
    `(custom-button
      ((,srcery-class (:background ,srcery-black :foreground ,srcery-bright-white :box (:line-width 2 :style released-button)))
