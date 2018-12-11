@@ -332,8 +332,8 @@
       (,srcery-256-class (:foreground ,srcery-256-bright-orange :background ,(if srcery-transparent-background nil srcery-256-black)))))
 
    `(fringe
-     ((,srcery-class (:foreground ,srcery-bright-white))
-      (,srcery-256-class (:foreground ,srcery-256-bright-white))))
+     ((,srcery-class (:foreground ,srcery-bright-white :background ,srcery-black))
+      (,srcery-256-class (:foreground ,srcery-256-bright-white :background ,(if srcery-transparent-background nil srcery-256-black)))))
 
    `(header-line
      ((,srcery-class (:background ,srcery-black))
