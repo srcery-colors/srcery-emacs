@@ -526,8 +526,8 @@
       (,srcery-256-class :foreground ,srcery-256-yellow :weight bold)))
 
    `(cider-deprecated-face
-     ((,srcery-class :background ,srcery-bright-yellow :foreground ,srcery-black)
-      (,srcery-256-class :background ,srcery-256-bright-yellow :foreground ,srcery-256-black)))
+     ((,srcery-class  :foreground ,srcery-bright-yellow :underline t)
+      (,srcery-256-class :foreground ,srcery-256-bright-yellow :underline t)))
 
    `(cider-debug-code-overlay-face
      ((,srcery-class :background ,srcery-bright-blue :foreground ,srcery-black)
