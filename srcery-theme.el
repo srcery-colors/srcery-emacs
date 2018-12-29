@@ -2369,8 +2369,8 @@
 
    ;; show-paren
    `(show-paren-match
-     ((,srcery-class (:background ,srcery-magenta :foreground ,srcery-bright-white))
-      (,srcery-256-class (:background ,srcery-256-magenta :foreground ,srcery-256-bright-white))))
+     ((,srcery-class (:background ,srcery-white :foreground ,srcery-bright-white))
+      (,srcery-256-class (:background ,srcery-256-white :foreground ,srcery-256-bright-white))))
 
    `(show-paren-mismatch
      ((,srcery-class (:background ,srcery-red :foreground ,srcery-bright-white))
@@ -2389,8 +2389,8 @@
       (,srcery-256-class (:background ,srcery-256-magenta :foreground nil))))
 
    `(sp-show-pair-match-face
-     ((,srcery-class (:background ,srcery-magenta :foreground ,srcery-bright-white))
-      (,srcery-256-class (:background ,srcery-256-magenta :foreground ,srcery-256-bright-white))))
+     ((,srcery-class (:background ,srcery-white :foreground ,srcery-bright-white))
+      (,srcery-256-class (:background ,srcery-256-white :foreground ,srcery-256-bright-white))))
 
    `(sp-wrap-overlay-closing-pair
      ((,srcery-class (:background ,srcery-magenta :foreground, srcery-bright-yellow))
