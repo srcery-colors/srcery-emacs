@@ -2385,17 +2385,12 @@
 
    ;; smartparens
    `(sp-pair-overlay-face
-     ((,srcery-class (:background ,srcery-magenta :foreground nil))
-      (,srcery-256-class (:background ,srcery-256-magenta :foreground nil))))
+     ((,srcery-class (:background ,srcery-gray-4 :foreground nil))
+      (,srcery-256-class (:background ,srcery-256-gray4 :foreground nil))))
 
    `(sp-show-pair-match-face
      ((,srcery-class (:foreground ,srcery-bright-yellow :underline t))
       (,srcery-256-class (:foreground ,srcery-256-bright-yellow :underline t))))
-
-   `(sp-wrap-overlay-closing-pair
-     ((,srcery-class (:background ,srcery-magenta :foreground, srcery-bright-yellow))
-      (,srcery-256-class (:background ,srcery-256-magenta :foreground, srcery-256-bright-yellow))))
-
 
    ;; evil-snipe
    `(evil-snipe-first-match-face
