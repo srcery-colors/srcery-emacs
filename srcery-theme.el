@@ -2157,6 +2157,11 @@
      ((,srcery-class (:foreground ,srcery-red))
       (,srcery-256-class (:foreground ,srcery-256-red))))
 
+   `(org-archived
+    ((,srcery-class (:foreground ,srcery-gray-4))
+     (,srcery-256-class (:foreground ,srcery-256-gray4))))
+
+
    ;; perspective
    `(persp-selected-face
      ((,srcery-class (:weight bold :foreground ,srcery-yellow))
