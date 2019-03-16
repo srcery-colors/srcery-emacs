@@ -2374,8 +2374,8 @@
 
    ;; show-paren
    `(show-paren-match
-     ((,srcery-class (:foreground ,srcery-bright-yellow :underline t))
-      (,srcery-256-class (:foreground ,srcery-256-bright-yellow :underline t))))
+     ((,srcery-class (:background ,srcery-bright-magenta :foreground ,srcery-black))
+      (,srcery-256-class (:background ,srcery-256-bright-magenta :foreground ,srcery-256-black))))
 
    `(show-paren-mismatch
      ((,srcery-class (:background ,srcery-red :foreground ,srcery-bright-white))
@@ -2394,8 +2394,8 @@
       (,srcery-256-class (:background ,srcery-256-gray4 :foreground nil))))
 
    `(sp-show-pair-match-face
-     ((,srcery-class (:foreground ,srcery-bright-yellow :underline t))
-      (,srcery-256-class (:foreground ,srcery-256-bright-yellow :underline t))))
+     ((,srcery-class (:background ,srcery-bright-magenta :foreground ,srcery-black))
+      (,srcery-256-class (:background ,srcery-256-bright-magenta :foreground ,srcery-black))))
 
    ;; evil-snipe
    `(evil-snipe-first-match-face
