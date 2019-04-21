@@ -1562,6 +1562,14 @@
      ((,srcery-class (:foreground ,srcery-yellow))
       (,srcery-256-class (:foreground ,srcery-256-yellow))))
 
+   `(nlinum-current-line
+     ((,srcery-class (:foreground ,srcery-white :background ,srcery-black))
+      (,srcery-256-class (:foreground ,srcery-256-white :background ,(if srcery-transparent-background nil srcery-256-black)))))
+
+   `(nlinum-relative-current-face
+     ((,srcery-class (:foreground ,srcery-yellow))
+      (,srcery-256-class (:foreground ,srcery-256-yellow))))
+
    `(line-number
      ((,srcery-class (:foreground ,srcery-white :background ,srcery-black))
       (,srcery-256-class (:foreground ,srcery-256-white :background ,(if srcery-transparent-background nil srcery-256-black)))))
