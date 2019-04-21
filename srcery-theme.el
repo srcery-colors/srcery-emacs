@@ -353,11 +353,11 @@
 
    `(isearch
      ((,srcery-class ,(if srcery-invert-matches
-                          `(:inverse-video t :underline t :weight bold)
+                          `(:inverse-video t)
                         `(:underline t :background ,srcery-gray-4 :weight bold)))
       (,srcery-256-class ,(if srcery-invert-matches
-                              `(:inverse-video t :underline t :weight bold)
-                            `(:underline t :background ,srcery-256-gray4 :weight bold)))))
+                              `(:inverse-video t)
+                            `(:background ,srcery-256-gray4 :weight bold)))))
    `(isearch-fail
     ((,srcery-class (:foreground ,srcery-red))
      (,srcery-256-class (:foreground ,srcery-256-red))))
