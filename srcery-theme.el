@@ -1489,8 +1489,8 @@
       (,srcery-256-class (:background ,srcery-256-bright-black :weight bold))))
 
    `(ivy-minibuffer-match-face-1
-     ((,srcery-class (:weight bold))
-      (,srcery-256-class (:weight bold))))
+     ((,srcery-class (:foreground ,srcery-magenta))
+      (,srcery-256-class (:foreground ,srcery-256-magenta))))
 
    `(ivy-minibuffer-match-face-2
      ((,srcery-class (:foreground ,srcery-magenta :underline t))
