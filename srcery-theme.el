@@ -1489,12 +1489,12 @@
       (,srcery-256-class (:background ,srcery-256-bright-black :weight bold))))
 
    `(ivy-minibuffer-match-face-1
-     ((,srcery-class (:foreground ,srcery-magenta))
-      (,srcery-256-class (:foreground ,srcery-256-magenta))))
+     ((,srcery-class (:foreground ,srcery-bright-magenta))
+      (,srcery-256-class (:foreground ,srcery-256-bright-magenta))))
 
    `(ivy-minibuffer-match-face-2
-     ((,srcery-class (:foreground ,srcery-magenta :underline t))
-      (,srcery-256-class (:foreground ,srcery-256-magenta :underline t))))
+     ((,srcery-class (:foreground ,srcery-bright-magenta :underline t))
+      (,srcery-256-class (:foreground ,srcery-256-bright-magenta :underline t))))
 
    `(ivy-minibuffer-match-face-3
      ((,srcery-class (:foreground ,srcery-yellow :underline t))
