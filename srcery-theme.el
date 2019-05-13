@@ -1493,20 +1493,24 @@
       (,srcery-256-class (:foreground ,srcery-256-bright-magenta))))
 
    `(ivy-minibuffer-match-face-2
-     ((,srcery-class (:foreground ,srcery-bright-magenta :underline t))
-      (,srcery-256-class (:foreground ,srcery-256-bright-magenta :underline t))))
+     ((,srcery-class (:foreground ,srcery-blue))
+      (,srcery-256-class (:foreground ,srcery-256-blue))))
 
    `(ivy-minibuffer-match-face-3
-     ((,srcery-class (:foreground ,srcery-yellow :underline t))
-      (,srcery-256-class (:foreground ,srcery-256-yellow :underline t))))
+     ((,srcery-class (:foreground ,srcery-yellow))
+      (,srcery-256-class (:foreground ,srcery-256-yellow))))
 
    `(ivy-minibuffer-match-face-4
-     ((,srcery-class (:foreground ,srcery-bright-green :underline t))
-      (,srcery-256-class (:foreground ,srcery-256-bright-green :underline t))))
+     ((,srcery-class (:foreground ,srcery-bright-green))
+      (,srcery-256-class (:foreground ,srcery-256-bright-green))))
 
    `(ivy-remote
      ((,srcery-class (:foreground ,srcery-cyan))
       (,srcery-256-class (:foreground ,srcery-256-cyan))))
+
+   `(ivy-highlight-face
+     ((,srcery-class (:underline t))
+      (,srcery-256-class (:underline t))))
 
    ;; latex
    `(font-latex-bold-face
