@@ -68,7 +68,7 @@
   :group 'srcery)
 
 (defcustom srcery-transparent-background nil
-  "Sets black background color to nil in terminal"
+  "Sets black background color to nil in terminal."
   :type 'boolean
   :group 'srcery)
 
