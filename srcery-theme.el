@@ -1,5 +1,5 @@
 ;;; srcery-theme.el --- Dark color theme.
-;; Copyright (C) 2018 Daniel Berg
+;; Copyright (C) 2019 Daniel Berg
 
 ;; Author: Daniel Berg
 ;; URL: https://github.com/srcery-colors/srcery-emacs
@@ -27,8 +27,8 @@
 
 ;; Port of vim-srcery: https://github.com/srcery-colors/srcery-vim , a dark color theme
 ;; with with focus on clearly defined contrastig colors and relative ease of
-;; use. Srcery should play well with a 256 color terminal, provided the terminal
-;; colors are set to srcery colors. See here for sample terminal configs:
+;; use.  Srcery should play well with a 256 color terminal, provided the terminal
+;; colors are set to srcery colors.  See here for sample terminal configs:
 ;; https://github.com/srcery-colors/srcery-terminal
 
 ;;; Credits
@@ -68,7 +68,7 @@
   :group 'srcery)
 
 (defcustom srcery-transparent-background nil
-  "Sets black background color to nil in terminal"
+  "Sets black background color to nil in terminal."
   :type 'boolean
   :group 'srcery)
 
@@ -193,22 +193,22 @@
   :group 'srcery)
 
 (defcustom srcery-dark-red "#5f0000"
-  "Palette xterm 52"
+  "Palette xterm 52."
   :type 'string
   :group 'srcery)
 
 (defcustom srcery-dark-green "#005f00"
-  "Palette xterm 22"
+  "Palette xterm 22."
   :type 'string
   :group 'srcery)
 
 (defcustom srcery-dark-cyan "#005f5f"
-  "Palette xterm 23"
+  "Palette xterm 23."
   :type 'string
   :group 'srcery)
 
 (defcustom srcery-dark-blue "#00005f"
-  "Palette xterm 17"
+  "Palette xterm 17."
   :type 'string
   :group 'srcery)
 
@@ -1489,24 +1489,28 @@
       (,srcery-256-class (:background ,srcery-256-bright-black :weight bold))))
 
    `(ivy-minibuffer-match-face-1
-     ((,srcery-class (:weight bold))
-      (,srcery-256-class (:weight bold))))
+     ((,srcery-class (:foreground ,srcery-bright-magenta))
+      (,srcery-256-class (:foreground ,srcery-256-bright-magenta))))
 
    `(ivy-minibuffer-match-face-2
-     ((,srcery-class (:foreground ,srcery-magenta :underline t))
-      (,srcery-256-class (:foreground ,srcery-256-magenta :underline t))))
+     ((,srcery-class (:foreground ,srcery-blue))
+      (,srcery-256-class (:foreground ,srcery-256-blue))))
 
    `(ivy-minibuffer-match-face-3
-     ((,srcery-class (:foreground ,srcery-yellow :underline t))
-      (,srcery-256-class (:foreground ,srcery-256-yellow :underline t))))
+     ((,srcery-class (:foreground ,srcery-yellow))
+      (,srcery-256-class (:foreground ,srcery-256-yellow))))
 
    `(ivy-minibuffer-match-face-4
-     ((,srcery-class (:foreground ,srcery-bright-green :underline t))
-      (,srcery-256-class (:foreground ,srcery-256-bright-green :underline t))))
+     ((,srcery-class (:foreground ,srcery-bright-green))
+      (,srcery-256-class (:foreground ,srcery-256-bright-green))))
 
    `(ivy-remote
      ((,srcery-class (:foreground ,srcery-cyan))
       (,srcery-256-class (:foreground ,srcery-256-cyan))))
+
+   `(ivy-highlight-face
+     ((,srcery-class (:underline t))
+      (,srcery-256-class (:underline t))))
 
    ;; latex
    `(font-latex-bold-face
