@@ -152,8 +152,8 @@
   :type 'string
   :group 'srcery)
 
-(defcustom srcery-orange "#D75F00"
-  "Palette xterm 166 - orange."
+(defcustom srcery-orange "#FF5F00"
+  "Palette xterm 202 - orange."
   :type 'string
   :group 'srcery)
 
@@ -233,7 +233,7 @@
        (srcery-256-bright-cyan    "brightcyan")
        (srcery-256-bright-white   "brightwhite")
 
-       (srcery-256-orange         "color-166")
+       (srcery-256-orange         "color-202")
        (srcery-256-bright-orange  "color-208")
        (srcery-256-hard-black     "color-233")
        (srcery-256-gray1          "color-235")
