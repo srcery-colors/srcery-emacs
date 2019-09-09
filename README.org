@@ -130,7 +130,6 @@ Colorscheme with clearly defined contrasting colors and a slightly earthy tone.
    - spaceline
    - and others, more coming
 
-    I recommend [[https://github.com/tarsius/paren-face][paren-face]] and [[https://github.com/tsdh/highlight-parentheses.el][highlight-parentheses.el]] for lisp
 ** Troubleshooting
 *** Work in progress
     This theme is a work in progress, if you see something that is off or
