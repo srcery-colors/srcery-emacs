@@ -2396,8 +2396,8 @@
 
    ;; paren-face
    `(parenthesis
-     ((,srcery-class (:foreground ,srcery-gray-5))
-      (,srcery-256-class (:foreground ,srcery-256-gray5))))
+     ((,srcery-class (:foreground ,srcery-white))
+      (,srcery-256-class (:foreground ,srcery-256-white))))
 
 
    ;; smartparens
