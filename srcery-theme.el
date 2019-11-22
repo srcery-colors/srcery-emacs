@@ -213,7 +213,12 @@
   :group 'srcery)
 
 (defcustom srcery-teal "#008080"
-  "Palette xterm 30."
+  "Palette xterm 30 - Teal."
+  :type 'string
+  :group 'srcery)
+
+(defcustom srcery-green3 "#00d700"
+  "Palette xterm 40 - Green3."
   :type 'string
   :group 'srcery)
 
@@ -252,7 +257,8 @@
        (srcery-256-dark-cyan      "color-23")
        (srcery-256-dark-blue      "color-17")
 
-       (srcery-256-teal           "color-30"))
+       (srcery-256-teal           "color-30")
+       (srcery-256-green3         "color-40"))
 
   (custom-theme-set-faces
    'srcery
@@ -723,6 +729,7 @@
      ((,srcery-class (:foreground ,srcery-bright-orange))
       (,srcery-256-class (:foreground ,srcery-256-bright-orange))))
 
+   ;; Dired Plus
    `(diredp-date-time
      ((,srcery-class (:foreground ,srcery-blue))
       (,srcery-256-class (:foreground ,srcery-256-blue))))
@@ -818,6 +825,99 @@
    `(diredp-rare-priv
      ((,srcery-class (:foreground ,srcery-bright-white))
       (,srcery-256-class (:foreground ,srcery-256-bright-white))))
+
+   ;; diredfl
+   `(diredfl-autofile-name
+     ((,srcery-class (:background ,srcery-blue))
+      (,srcery-256-class (:background ,srcery-256-blue))))
+
+   `(diredfl-compressed-file-name
+     ((,srcery-class (:foreground ,srcery-green3))
+      (,srcery-256-class (:foreground ,srcery-256-green3))))
+
+   `(diredfl-compressed-file-suffix
+     ((,srcery-class (:foreground ,srcery-bright-green))
+      (,srcery-256-class (:foreground ,srcery-256-bright-green))))
+
+   `(diredfl-date-time
+     ((,srcery-class (:foreground ,srcery-blue))
+      (,srcery-256-class (:foreground ,srcery-256-blue))))
+
+   `(diredfl-dir-heading
+     ((,srcery-class (:foreground ,srcery-teal))
+      (,srcery-256-class (:foreground ,srcery-256-teal))))
+
+   `(diredfl-dir-name
+     ((,srcery-class (:foreground ,srcery-teal))
+      (,srcery-256-class (:foreground ,srcery-256-teal))))
+
+   `(diredfl-dir-priv
+     ((,srcery-class (:foreground ,srcery-teal))
+      (,srcery-256-class (:foreground ,srcery-256-teal))))
+
+   `(diredfl-exec-priv
+     ((,srcery-class (:foreground ,srcery-bright-green :weight bold))
+      (,srcery-256-class (:foreground ,srcery-256-bright-green :weight bold))))
+
+   `(diredfl-executable-tag
+     ((,srcery-class (:foreground ,srcery-bright-green :weight bold))
+      (,srcery-256-class (:foreground ,srcery-256-bright-green :weight bold))))
+
+   `(diredfl-file-name
+     ((,srcery-class (:foreground ,srcery-bright-white))
+      (,srcery-256-class (:foreground ,srcery-256-bright-white))))
+
+   `(diredfl-file-suffix
+     ((,srcery-class (:foreground ,srcery-bright-yellow))
+      (,srcery-256-class (:foreground ,srcery-256-bright-yellow))))
+
+   `(diredfl-flag-mark
+     ((,srcery-class (:background ,srcery-yellow :foreground ,srcery-black))
+      (,srcery-256-class (:background ,srcery-256-yellow :foreground ,srcery-256-black))))
+
+   `(diredfl-flag-mark-line
+     ((,srcery-class (:foreground ,srcery-yellow))
+      (,srcery-256-class (:foreground ,srcery-256-yellow))))
+
+   `(diredfl-ignored-file-name
+     ((,srcery-class (:foreground ,srcery-white))
+      (,srcery-256-class (:foreground ,srcery-256-white))))
+
+   `(diredfl-link-priv
+     ((,srcery-class (:foreground ,srcery-orange))
+      (,srcery-256-class (:foreground ,srcery-256-orange))))
+
+   `(diredfl-no-priv
+     ((,srcery-class (:foreground ,srcery-white))
+      (,srcery-256-class (:foreground ,srcery-256-white))))
+
+   `(diredfl-number
+     ((,srcery-class (:foreground ,srcery-green))
+      (,srcery-256-class (:foreground ,srcery-256-green))))
+
+   `(diredfl-other-priv
+     ((,srcery-class (:foreground ,srcery-magenta))
+      (,srcery-256-class (:foreground ,srcery-256-magenta))))
+
+   `(diredfl-rare-priv
+     ((,srcery-class (:foreground ,srcery-bright-white))
+      (,srcery-256-class (:foreground ,srcery-256-bright-white))))
+
+   `(diredfl-read-priv
+     ((,srcery-class (:foreground ,srcery-bright-yellow))
+      (,srcery-256-class (:foreground ,srcery-256-bright-yellow))))
+
+   `(diredfl-symlink
+     ((,srcery-class (:foreground ,srcery-bright-orange))
+      (,srcery-256-class (:foreground ,srcery-256-bright-orange))))
+
+   `(diredfl-tagged-autofile-name
+     ((,srcery-class (:foreground ,srcery-magenta))
+      (,srcery-256-class (:foreground ,srcery-256-magenta))))
+
+   `(diredfl-write-priv
+     ((,srcery-class (:foreground ,srcery-red))
+      (,srcery-256-class (:foreground ,srcery-256-red))))
 
    ;; ediff
    `(ediff-current-diff-A
