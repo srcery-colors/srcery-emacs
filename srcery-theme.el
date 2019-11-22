@@ -212,6 +212,11 @@
   :type 'string
   :group 'srcery)
 
+(defcustom srcery-teal "#008080"
+  "Palette xterm 30."
+  :type 'string
+  :group 'srcery)
+
 (let* ((srcery-class '((class color) (min-colors 257)))
 
        (srcery-256-class '((class color) (min-colors 89)))
@@ -245,7 +250,9 @@
        (srcery-256-dark-red       "color-52")
        (srcery-256-dark-green     "color-22")
        (srcery-256-dark-cyan      "color-23")
-       (srcery-256-dark-blue      "color-17"))
+       (srcery-256-dark-blue      "color-17")
+
+       (srcery-256-teal           "color-30"))
 
   (custom-theme-set-faces
    'srcery
