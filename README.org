@@ -123,6 +123,7 @@ Colorscheme with clearly defined contrasting colors and a slightly earthy tone.
    - paren-face
    - cider
    - dired
+   - diredfl
    - flycheck
    - ivy
    - latex
