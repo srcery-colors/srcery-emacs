@@ -361,10 +361,10 @@
    `(highlight
      ((,srcery-class ,(if srcery-invert-matches
                           `(:inverse-video t)
-                        `(:background ,srcery-gray-4 :weight bold)))
+                        `(:background ,srcery-gray-5 :weight bold)))
       (,srcery-256-class ,(if srcery-invert-matches
                               `(:inverse-video t)
-                            `(:background ,srcery-256-gray4 :weight bold)))))
+                            `(:background ,srcery-256-gray5 :weight bold)))))
 
    `(hl-line
      ((,srcery-class (:background ,srcery-bright-black))
@@ -373,10 +373,10 @@
    `(isearch
      ((,srcery-class ,(if srcery-invert-matches
                           `(:inverse-video t)
-                        `(:underline t :background ,srcery-gray-4 :weight bold)))
+                        `(:underline t :background ,srcery-gray-5 :weight bold)))
       (,srcery-256-class ,(if srcery-invert-matches
                               `(:inverse-video t)
-                            `(:background ,srcery-256-gray4 :weight bold)))))
+                            `(:background ,srcery-256-gray5 :weight bold)))))
    `(isearch-fail
     ((,srcery-class (:foreground ,srcery-red))
      (,srcery-256-class (:foreground ,srcery-256-red))))
@@ -384,10 +384,10 @@
    `(lazy-highlight
      ((,srcery-class ,(if srcery-invert-matches
                           `(:inverse-video t)
-                        `(:background ,srcery-gray-4 :weight bold)))
+                        `(:background ,srcery-gray-5 :weight bold)))
       (,srcery-256-class ,(if srcery-invert-matches
                               `(:inverse-video t)
-                            `(:background ,srcery-256-gray4 :weight bold)))))
+                            `(:background ,srcery-256-gray5 :weight bold)))))
 
    `(link
      ((,srcery-class (:inherit font-lock-comment-face :underline t))
@@ -400,10 +400,10 @@
    `(match
      ((,srcery-class ,(if srcery-invert-matches
                           `(:inverse-video t)
-                        `(:background ,srcery-gray-4 :weight bold)))
+                        `(:background ,srcery-gray-5 :weight bold)))
       (,srcery-256-class ,(if srcery-invert-matches
                               `(:inverse-video t)
-                            `(:background ,srcery-256-gray4 :weight bold)))))
+                            `(:background ,srcery-256-gray5 :weight bold)))))
 
    `(minibuffer-prompt
      ((,srcery-class (:weight bold :foreground ,srcery-yellow))
@@ -1113,10 +1113,10 @@
    `(evil-search-highlight-persist-highlight-face
      ((,srcery-class ,(if srcery-invert-matches
                           `(:inverse-video t)
-                        `(:background ,srcery-gray-4 :weight bold)))
+                        `(:background ,srcery-gray-5 :weight bold)))
       (,srcery-256-class ,(if srcery-invert-matches
                               `(:inverse-video t)
-                            `(:background ,srcery-256-gray4 :weight bold)))))
+                            `(:background ,srcery-256-gray5 :weight bold)))))
 
    `(flycheck-error
      ((,srcery-class (:foreground ,srcery-red :underline t))
@@ -2283,8 +2283,8 @@
       (,srcery-256-class (:foreground ,srcery-256-red))))
 
    `(org-archived
-    ((,srcery-class (:foreground ,srcery-gray-4))
-     (,srcery-256-class (:foreground ,srcery-256-gray4))))
+    ((,srcery-class (:foreground ,srcery-gray-5))
+     (,srcery-256-class (:foreground ,srcery-256-gray5))))
 
 
    ;; perspective
@@ -2318,8 +2318,8 @@
       (,srcery-256-class (:inherit match))))
 
    `(popup-scroll-bar-foreground-face
-     ((,srcery-class (:background ,srcery-gray-4))
-      (,srcery-256-class (:background ,srcery-256-gray4))))
+     ((,srcery-class (:background ,srcery-gray-5))
+      (,srcery-256-class (:background ,srcery-256-gray5))))
 
    `(popup-scroll-bar-background-face
      ((,srcery-class (:background ,srcery-bright-black))
@@ -2388,8 +2388,8 @@
       (,srcery-256-class (:foreground ,srcery-256-bright-orange))))
 
    `(spaceline-evil-normal
-     ((,srcery-class (:background ,srcery-gray-4 :foreground ,srcery-bright-white))
-      (,srcery-256-class (:background ,srcery-256-gray4 :foreground ,srcery-256-bright-white))))
+     ((,srcery-class (:background ,srcery-gray-5 :foreground ,srcery-bright-white))
+      (,srcery-256-class (:background ,srcery-256-gray5 :foreground ,srcery-256-bright-white))))
 
    `(spaceline-evil-insert
      ((,srcery-class (:background ,srcery-bright-white :foreground ,srcery-black))
@@ -2515,8 +2515,8 @@
 
    ;; smartparens
    `(sp-pair-overlay-face
-     ((,srcery-class (:background ,srcery-gray-4 :foreground nil))
-      (,srcery-256-class (:background ,srcery-256-gray4 :foreground nil))))
+     ((,srcery-class (:background ,srcery-gray-5 :foreground nil))
+      (,srcery-256-class (:background ,srcery-256-gray5 :foreground nil))))
 
    `(sp-show-pair-match-face
      ((,srcery-class (:background ,srcery-magenta :foreground ,srcery-bright-white))
@@ -2534,8 +2534,8 @@
 
    ;; spacemacs
    `(spacemacs-normal-face
-     ((,srcery-class (:background ,srcery-gray-4 :foreground ,srcery-bright-white))
-      (,srcery-256-class (:background ,srcery-256-gray4 :foreground ,srcery-256-bright-white))))
+     ((,srcery-class (:background ,srcery-gray-5 :foreground ,srcery-bright-white))
+      (,srcery-256-class (:background ,srcery-256-gray5 :foreground ,srcery-256-bright-white))))
 
    `(spacemacs-insert-face
      ((,srcery-class (:background ,srcery-bright-white :foreground ,srcery-black))
@@ -2775,8 +2775,8 @@
       (,srcery-256-class (:background nil :foreground ,srcery-256-green))))
 
    `(whitespace-space
-     ((,srcery-class (:background nil :foreground ,srcery-gray-4))
-      (,srcery-256-class (:background nil :foreground ,srcery-256-gray4))))
+     ((,srcery-class (:background nil :foreground ,srcery-gray-5))
+      (,srcery-256-class (:background nil :foreground ,srcery-256-gray5))))
 
    `(whitespace-space-after-tab
      ((,srcery-class (:background nil :foreground ,srcery-yellow))
