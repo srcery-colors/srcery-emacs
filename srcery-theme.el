@@ -1952,8 +1952,8 @@
       (,srcery-256-class (:foreground ,srcery-256-white))))
 
    `(magithub-ci-no-status
-     ((,srcery-class (:foreground ,srcery-gray-5))
-      (,srcery-256-class (:foreground ,srcery-256-gray5))))
+     ((,srcery-class (:foreground ,srcery-gray-6))
+      (,srcery-256-class (:foreground ,srcery-256-gray6))))
 
    `(magithub-issue-number
      ((,srcery-class (:foreground ,srcery-white))
@@ -2040,16 +2040,16 @@
       (,srcery-256-class (:bold nil :foreground ,srcery-256-cyan))))
 
    `(markdown-html-tag-delimiter-face
-     ((,srcery-class (:bold nil :foreground ,srcery-gray-5))
-      (,srcery-256-class (:bold nil :foreground ,srcery-256-gray5))))
+     ((,srcery-class (:bold nil :foreground ,srcery-gray-6))
+      (,srcery-256-class (:bold nil :foreground ,srcery-256-gray6))))
 
    `(markdown-list-face
-     ((,srcery-class (:bold nil :foreground ,srcery-gray-5))
-      (,srcery-256-class (:bold nil :foreground ,srcery-256-gray5))))
+     ((,srcery-class (:bold nil :foreground ,srcery-gray-6))
+      (,srcery-256-class (:bold nil :foreground ,srcery-256-gray6))))
 
    `(markdown-markup-face
-     ((,srcery-class (:bold nil :foreground ,srcery-gray-5))
-      (,srcery-256-class (:bold nil :foreground ,srcery-256-gray5))))
+     ((,srcery-class (:bold nil :foreground ,srcery-gray-6))
+      (,srcery-256-class (:bold nil :foreground ,srcery-256-gray6))))
 
    ;; mu4e
    `(mu4e-cited-1-face
@@ -3129,7 +3129,7 @@
 
   (custom-theme-set-variables
    'srcery
-   `(ansi-color-names-vector [,srcery-black ,srcery-red ,srcery-green ,srcery-bright-yellow ,srcery-blue ,srcery-magenta ,srcery-cyan ,srcery-gray-5])
+   `(ansi-color-names-vector [,srcery-black ,srcery-red ,srcery-green ,srcery-bright-yellow ,srcery-blue ,srcery-magenta ,srcery-cyan ,srcery-gray-6])
    ))
 
 ;;;###autoload
