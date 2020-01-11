@@ -303,8 +303,8 @@
       (,srcery-256-class (:foreground ,srcery-256-blue))))
 
    `(font-lock-comment-face
-     ((,srcery-class (:foreground ,srcery-white :italic t))
-      (,srcery-256-class (:foreground ,srcery-256-white :italic t))))
+     ((,srcery-class (:foreground ,srcery-bright-black :italic t))
+      (,srcery-256-class (:foreground ,srcery-256-bright-black :italic t))))
 
    `(font-lock-constant-face
      ((,srcery-class (:foreground ,srcery-bright-magenta))
@@ -493,8 +493,8 @@
       (,srcery-256-class (:background nil :box (:color ,srcery-256-yellow :line-width -1 :style nil) :foreground ,srcery-256-yellow))))
 
    `(cider-enlightened-face
-     ((,srcery-class (:background nil :box (:color ,srcery-white :line-width -1 :style nil) :foreground ,srcery-blue))
-      (,srcery-256-class (:background nil :box (:color ,srcery-256-white :line-width -1 :style nil) :foreground ,srcery-256-blue))))
+     ((,srcery-class (:background nil :box (:color ,srcery-bright-black :line-width -1 :style nil) :foreground ,srcery-blue))
+      (,srcery-256-class (:background nil :box (:color ,srcery-256-bright-black :line-width -1 :style nil) :foreground ,srcery-256-blue))))
 
    `(cider-enlightened-local
      ((,srcery-class (:foreground ,srcery-bright-yellow))
@@ -537,8 +537,8 @@
       (,srcery-256-class :foreground ,srcery-256-red :box (:style released-button))))
 
    `(cider-stacktrace-suppressed-button-face
-     ((,srcery-class :foreground ,srcery-white :box (:style pressed-button))
-      (,srcery-256-class :foreground ,srcery-256-white :box (:style pressed-button))))
+     ((,srcery-class :foreground ,srcery-bright-black :box (:style pressed-button))
+      (,srcery-256-class :foreground ,srcery-256-bright-black :box (:style pressed-button))))
 
    `(cider-enlightened-local-face
      ((,srcery-class :foreground ,srcery-yellow :weight bold)
@@ -553,8 +553,8 @@
       (,srcery-256-class :background ,srcery-256-bright-blue :foreground ,srcery-256-black)))
 
    `(cider-docview-table-border-face
-     ((,srcery-class :foreground ,srcery-white)
-      (,srcery-256-class :foreground ,srcery-256-white)))
+     ((,srcery-class :foreground ,srcery-bright-black)
+      (,srcery-256-class :foreground ,srcery-256-bright-black)))
 
    ;; clojure
    `(clojure-keyword-face
@@ -583,16 +583,16 @@
       (,srcery-256-class (:background ,srcery-256-gray2))))
 
    `(company-scrollbar-fg
-     ((,srcery-class (:background ,srcery-white))
-      (,srcery-256-class (:background ,srcery-256-white))))
+     ((,srcery-class (:background ,srcery-bright-black))
+      (,srcery-256-class (:background ,srcery-256-bright-black))))
 
    `(company-template-field
      ((,srcery-class (:inherit region))
       (,srcery-256-class (:inherit region))))
 
    `(company-tooltip
-     ((,srcery-class (:background ,srcery-gray-2 :foreground ,srcery-white))
-      (,srcery-256-class (:background ,srcery-256-gray2 :foreground ,srcery-256-white))))
+     ((,srcery-class (:background ,srcery-gray-2 :foreground ,srcery-bright-black))
+      (,srcery-256-class (:background ,srcery-256-gray2 :foreground ,srcery-256-bright-black))))
 
    `(company-tooltip-annotation
      ((,srcery-class (:foreground ,srcery-red))
@@ -793,8 +793,8 @@
       (,srcery-256-class (:foreground ,srcery-256-bright-white :background ,srcery-256-magenta))))
 
    `(diredp-no-priv
-     ((,srcery-class (:foreground ,srcery-white))
-      (,srcery-256-class (:foreground ,srcery-256-white))))
+     ((,srcery-class (:foreground ,srcery-bright-black))
+      (,srcery-256-class (:foreground ,srcery-256-bright-black))))
 
    `(diredp-flag-mark
      ((,srcery-class (:background ,srcery-green :foreground ,srcery-black))
@@ -813,8 +813,8 @@
       (,srcery-256-class (:background ,srcery-256-red :foreground ,srcery-256-bright-white))))
 
    `(diredp-ignored-file-name
-     ((,srcery-class (:foreground ,srcery-white))
-      (,srcery-256-class (:foreground ,srcery-256-white))))
+     ((,srcery-class (:foreground ,srcery-bright-black))
+      (,srcery-256-class (:foreground ,srcery-256-bright-black))))
 
    `(diredp-link-priv
      ((,srcery-class (:foreground ,srcery-blue))
@@ -886,16 +886,16 @@
       (,srcery-256-class (:foreground ,srcery-256-yellow))))
 
    `(diredfl-ignored-file-name
-     ((,srcery-class (:foreground ,srcery-white))
-      (,srcery-256-class (:foreground ,srcery-256-white))))
+     ((,srcery-class (:foreground ,srcery-bright-black))
+      (,srcery-256-class (:foreground ,srcery-256-bright-black))))
 
    `(diredfl-link-priv
      ((,srcery-class (:foreground ,srcery-orange))
       (,srcery-256-class (:foreground ,srcery-256-orange))))
 
    `(diredfl-no-priv
-     ((,srcery-class (:foreground ,srcery-white))
-      (,srcery-256-class (:foreground ,srcery-256-white))))
+     ((,srcery-class (:foreground ,srcery-bright-black))
+      (,srcery-256-class (:foreground ,srcery-256-bright-black))))
 
    `(diredfl-number
      ((,srcery-class (:foreground ,srcery-green))
@@ -1517,8 +1517,8 @@
 
    ;; highlight-indentation
    `(highlight-indentation-face
-     ((,srcery-class (:background ,srcery-white))
-      (,srcery-256-class (:background ,srcery-256-white))))
+     ((,srcery-class (:background ,srcery-bright-black))
+      (,srcery-256-class (:background ,srcery-256-bright-black))))
 
    ;; highlight-symbol
    `(highlight-symbol-face
@@ -1672,24 +1672,24 @@
 
    ;; Line numbers
    `(linum
-     ((,srcery-class (:foreground ,srcery-white :background ,srcery-black))
-      (,srcery-256-class (:foreground ,srcery-256-white :background ,(if srcery-transparent-background nil srcery-256-black)))))
+     ((,srcery-class (:foreground ,srcery-bright-black :background ,srcery-black))
+      (,srcery-256-class (:foreground ,srcery-256-bright-black :background ,(if srcery-transparent-background nil srcery-256-black)))))
 
    `(linum-relative-current-face
      ((,srcery-class (:foreground ,srcery-yellow))
       (,srcery-256-class (:foreground ,srcery-256-yellow))))
 
    `(nlinum-current-line
-     ((,srcery-class (:foreground ,srcery-white :background ,srcery-black))
-      (,srcery-256-class (:foreground ,srcery-256-white :background ,(if srcery-transparent-background nil srcery-256-black)))))
+     ((,srcery-class (:foreground ,srcery-bright-black :background ,srcery-black))
+      (,srcery-256-class (:foreground ,srcery-256-bright-black :background ,(if srcery-transparent-background nil srcery-256-black)))))
 
    `(nlinum-relative-current-face
      ((,srcery-class (:foreground ,srcery-yellow))
       (,srcery-256-class (:foreground ,srcery-256-yellow))))
 
    `(line-number
-     ((,srcery-class (:foreground ,srcery-white :background ,srcery-black))
-      (,srcery-256-class (:foreground ,srcery-256-white :background ,(if srcery-transparent-background nil srcery-256-black)))))
+     ((,srcery-class (:foreground ,srcery-bright-black :background ,srcery-black))
+      (,srcery-256-class (:foreground ,srcery-256-bright-black :background ,(if srcery-transparent-background nil srcery-256-black)))))
 
    `(line-number-current-line
      ((,srcery-class (:foreground ,srcery-yellow))
@@ -1697,8 +1697,8 @@
 
    ;; Git
    `(diff-context
-     ((,srcery-class :foreground ,srcery-white)
-      (,srcery-256-class :foreground ,srcery-256-white)))
+     ((,srcery-class :foreground ,srcery-bright-black)
+      (,srcery-256-class :foreground ,srcery-256-bright-black)))
 
    ;; magit
    `(magit-blame-culprit
@@ -1811,8 +1811,8 @@
       (,srcery-256-class (:foreground ,srcery-256-yellow :weight bold))))
 
    `(magit-diff-hunk-heading-selection
-     ((,srcery-class (:foreground ,srcery-black :background ,srcery-white :weight bold))
-      (,srcery-256-class (:foreground ,srcery-256-black :background ,srcery-256-white :weight bold))))
+     ((,srcery-class (:foreground ,srcery-black :background ,srcery-bright-black :weight bold))
+      (,srcery-256-class (:foreground ,srcery-256-black :background ,srcery-256-bright-black :weight bold))))
 
 
    `(magit-diff-added
@@ -1824,8 +1824,8 @@
       (,srcery-256-class (:foreground ,srcery-256-red :weight light))))
 
    `(magit-diff-context
-     ((,srcery-class (:foreground ,srcery-white :weight light))
-      (,srcery-256-class (:foreground ,srcery-256-white :weight light))))
+     ((,srcery-class (:foreground ,srcery-bright-black :weight light))
+      (,srcery-256-class (:foreground ,srcery-256-bright-black :weight light))))
 
    `(magit-diff-added-highlight
      ((,srcery-class (:foreground ,srcery-green :weight bold))
@@ -1836,24 +1836,24 @@
       (,srcery-256-class (:foreground ,srcery-256-red :weight bold))))
 
    `(magit-diff-context-highlight
-     ((,srcery-class (:foreground ,srcery-white :weight bold))
-      (,srcery-256-class (:foreground ,srcery-256-white :weight bold))))
+     ((,srcery-class (:foreground ,srcery-bright-black :weight bold))
+      (,srcery-256-class (:foreground ,srcery-256-bright-black :weight bold))))
 
    `(magit-diff-base
-     ((,srcery-class (:foreground ,srcery-white :weight light))
-      (,srcery-256-class (:foreground ,srcery-256-white :weight light))))
+     ((,srcery-class (:foreground ,srcery-bright-black :weight light))
+      (,srcery-256-class (:foreground ,srcery-256-bright-black :weight light))))
 
    `(magit-diff-base-highlight
-     ((,srcery-class (:foreground ,srcery-white :weight bold))
-      (,srcery-256-class (:foreground ,srcery-256-white :weight bold))))
+     ((,srcery-class (:foreground ,srcery-bright-black :weight bold))
+      (,srcery-256-class (:foreground ,srcery-256-bright-black :weight bold))))
 
    `(magit-diff-lines-boundary
-     ((,srcery-class (:background ,srcery-white :foreground ,srcery-black))
-      (,srcery-256-class (:background ,srcery-256-white :foreground ,srcery-256-black))))
+     ((,srcery-class (:background ,srcery-bright-black :foreground ,srcery-black))
+      (,srcery-256-class (:background ,srcery-256-bright-black :foreground ,srcery-256-black))))
 
    `(magit-diff-lines-heading
-     ((,srcery-class (:background ,srcery-white :foreground ,srcery-black))
-      (,srcery-256-class (:background ,srcery-256-white :foreground ,srcery-256-black))))
+     ((,srcery-class (:background ,srcery-bright-black :foreground ,srcery-black))
+      (,srcery-256-class (:background ,srcery-256-bright-black :foreground ,srcery-256-black))))
 
    `(magit-hash
      ((,srcery-class (:foreground ,srcery-yellow))
@@ -1948,20 +1948,20 @@
       (,srcery-256-class (:foreground ,srcery-256-bright-white))))
 
    `(magit-dimmed
-     ((,srcery-class (:foreground ,srcery-white))
-      (,srcery-256-class (:foreground ,srcery-256-white))))
+     ((,srcery-class (:foreground ,srcery-bright-black))
+      (,srcery-256-class (:foreground ,srcery-256-bright-black))))
 
    `(magithub-ci-no-status
      ((,srcery-class (:foreground ,srcery-gray-6))
       (,srcery-256-class (:foreground ,srcery-256-gray6))))
 
    `(magithub-issue-number
-     ((,srcery-class (:foreground ,srcery-white))
-      (,srcery-256-class (:foreground ,srcery-256-white))))
+     ((,srcery-class (:foreground ,srcery-bright-black))
+      (,srcery-256-class (:foreground ,srcery-256-bright-black))))
 
    `(magithub-notification-reason
-     ((,srcery-class (:foreground ,srcery-white))
-      (,srcery-256-class (:foreground ,srcery-256-white))))
+     ((,srcery-class (:foreground ,srcery-bright-black))
+      (,srcery-256-class (:foreground ,srcery-256-bright-black))))
 
    ;; smerge
    `(smerge-base
@@ -2155,8 +2155,8 @@
       (,srcery-256-class (:background ,srcery-256-yellow :foreground ,srcery-256-black))))
 
    `(org-document-info-keyword
-     ((,srcery-class (:foreground ,srcery-white))
-      (,srcery-256-class (:foreground ,srcery-256-white))))
+     ((,srcery-class (:foreground ,srcery-bright-black))
+      (,srcery-256-class (:foreground ,srcery-256-bright-black))))
 
    `(org-document-info
      ((,srcery-class (:foreground ,srcery-bright-magenta))
@@ -2219,12 +2219,12 @@
       (,srcery-256-class (:bold nil :foreground ,srcery-256-bright-magenta))))
 
    `(org-link
-     ((,srcery-class (:foreground ,srcery-white :underline t))
-      (,srcery-256-class (:foreground ,srcery-256-white :underline t))))
+     ((,srcery-class (:foreground ,srcery-bright-black :underline t))
+      (,srcery-256-class (:foreground ,srcery-256-bright-black :underline t))))
 
    `(org-meta-line
-     ((,srcery-class (:foreground ,srcery-white))
-      (,srcery-256-class (:foreground ,srcery-256-white))))
+     ((,srcery-class (:foreground ,srcery-bright-black))
+      (,srcery-256-class (:foreground ,srcery-256-bright-black))))
 
    `(org-mode-line-clock-overrun
      ((,srcery-class (:foreground ,srcery-red))
@@ -2336,20 +2336,20 @@
       (,srcery-256-class (:foreground ,srcery-256-bright-white :background ,srcery-256-gray1))))
 
    `(powerline-inactive1
-     ((,srcery-class (:background ,srcery-gray-1 :foreground ,srcery-white))
-      (,srcery-256-class (:background ,srcery-256-gray1 :foreground ,srcery-256-white))))
+     ((,srcery-class (:background ,srcery-gray-1 :foreground ,srcery-bright-black))
+      (,srcery-256-class (:background ,srcery-256-gray1 :foreground ,srcery-256-bright-black))))
 
    `(powerline-inactive2
-     ((,srcery-class (:background ,srcery-gray-1 :foreground ,srcery-white))
-      (,srcery-256-class (:background ,srcery-256-gray1 :foreground ,srcery-256-white))))
+     ((,srcery-class (:background ,srcery-gray-1 :foreground ,srcery-bright-black))
+      (,srcery-256-class (:background ,srcery-256-gray1 :foreground ,srcery-256-bright-black))))
 
    `(mode-line
-     ((,srcery-class (:foreground ,srcery-white :background ,srcery-gray-1))
-      (,srcery-256-class (:foreground ,srcery-256-white :background ,srcery-256-gray1))))
+     ((,srcery-class (:foreground ,srcery-bright-black :background ,srcery-gray-1))
+      (,srcery-256-class (:foreground ,srcery-256-bright-black :background ,srcery-256-gray1))))
 
    `(mode-line-inactive
-     ((,srcery-class (:foreground ,srcery-white :background ,srcery-gray-1))
-      (,srcery-256-class (:foreground ,srcery-256-white :background ,srcery-256-gray1))))
+     ((,srcery-class (:foreground ,srcery-bright-black :background ,srcery-gray-1))
+      (,srcery-256-class (:foreground ,srcery-256-bright-black :background ,srcery-256-gray1))))
 
    `(mode-line-buffer-id
      ((,srcery-class (:foreground ,srcery-yellow))
@@ -2509,8 +2509,8 @@
 
    ;; paren-face
    `(parenthesis
-     ((,srcery-class (:foreground ,srcery-white))
-      (,srcery-256-class (:foreground ,srcery-256-white))))
+     ((,srcery-class (:foreground ,srcery-bright-black))
+      (,srcery-256-class (:foreground ,srcery-256-bright-black))))
 
 
    ;; smartparens
@@ -2646,8 +2646,8 @@
       (,srcery-256-class (:foreground ,srcery-256-red))))
 
    `(term-color-white
-     ((,srcery-class (:foreground ,srcery-white))
-      (,srcery-256-class (:foreground ,srcery-256-white))))
+     ((,srcery-class (:foreground ,srcery-bright-black))
+      (,srcery-256-class (:foreground ,srcery-256-bright-black))))
 
    `(term-color-yellow
      ((,srcery-class (:foreground ,srcery-yellow))
@@ -2688,8 +2688,8 @@
       (,srcery-256-class (:foreground ,srcery-256-blue))))
 
    `(web-mode-html-tag-bracket-face
-     ((,srcery-class (:foreground ,srcery-white))
-      (,srcery-256-class (:foreground ,srcery-white))))
+     ((,srcery-class (:foreground ,srcery-bright-black))
+      (,srcery-256-class (:foreground ,srcery-bright-black))))
 
    `(web-mode-keyword-face
      ((,srcery-class (:foreground ,srcery-red))
@@ -3009,8 +3009,8 @@
       (,srcery-256-class :foreground ,srcery-256-magenta)))
 
    `(lui-time-stamp-face
-     ((,srcery-class :foreground ,srcery-white)
-      (,srcery-256-class :foreground ,srcery-256-white)))
+     ((,srcery-class :foreground ,srcery-bright-black)
+      (,srcery-256-class :foreground ,srcery-256-bright-black)))
 
    `(slack-profile-image-face
      ((,srcery-class :background ,srcery-bright-white :foreground ,srcery-black)
@@ -3088,8 +3088,8 @@
       (,srcery-256-class :background ,srcery-256-blue :foreground ,srcery-256-black)))
 
    `(custom-comment
-     ((,srcery-class :background ,srcery-white :foreground ,srcery-black)
-      (,srcery-256-class :background ,srcery-256-white :foreground ,srcery-256-black)))
+     ((,srcery-class :background ,srcery-bright-black :foreground ,srcery-black)
+      (,srcery-256-class :background ,srcery-256-bright-black :foreground ,srcery-256-black)))
 
    ;; widget
    `(widget-field
