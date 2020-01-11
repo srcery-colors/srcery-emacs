@@ -567,20 +567,20 @@
       (,srcery-256-class (:background ,srcery-256-bright-white :foreground ,srcery-256-black))))
 
    `(company-preview
-     ((,srcery-class (:background ,srcery-gray-1 :foreground ,srcery-bright-white))
-      (,srcery-256-class (:background ,srcery-256-gray1 :foreground ,srcery-256-bright-white))))
+     ((,srcery-class (:background ,srcery-gray-2 :foreground ,srcery-bright-white))
+      (,srcery-256-class (:background ,srcery-256-gray2 :foreground ,srcery-256-bright-white))))
 
    `(company-preview-common
-     ((,srcery-class (:background ,srcery-gray-1 :foreground ,srcery-bright-white))
-      (,srcery-256-class (:background ,srcery-256-gray1 :foreground ,srcery-256-bright-white))))
+     ((,srcery-class (:background ,srcery-gray-2 :foreground ,srcery-bright-white))
+      (,srcery-256-class (:background ,srcery-256-gray2 :foreground ,srcery-256-bright-white))))
 
    `(company-preview-search
      ((,srcery-class (:inherit match))
       (,srcery-256-class (:inherit match))))
 
    `(company-scrollbar-bg
-     ((,srcery-class (:background ,srcery-gray-1))
-      (,srcery-256-class (:background ,srcery-256-gray1))))
+     ((,srcery-class (:background ,srcery-gray-2))
+      (,srcery-256-class (:background ,srcery-256-gray2))))
 
    `(company-scrollbar-fg
      ((,srcery-class (:background ,srcery-white))
@@ -591,16 +591,16 @@
       (,srcery-256-class (:inherit region))))
 
    `(company-tooltip
-     ((,srcery-class (:background ,srcery-gray-1 :foreground ,srcery-white))
-      (,srcery-256-class (:background ,srcery-256-gray1 :foreground ,srcery-256-white))))
+     ((,srcery-class (:background ,srcery-gray-2 :foreground ,srcery-white))
+      (,srcery-256-class (:background ,srcery-256-gray2 :foreground ,srcery-256-white))))
 
    `(company-tooltip-annotation
      ((,srcery-class (:foreground ,srcery-red))
       (,srcery-256-class (:foreground ,srcery-256-red))))
 
    `(company-tooltip-common
-     ((,srcery-class (:background ,srcery-gray-1 :foreground ,srcery-bright-white))
-      (,srcery-256-class (:background ,srcery-256-gray1 :foreground ,srcery-256-bright-white))))
+     ((,srcery-class (:background ,srcery-gray-2 :foreground ,srcery-bright-white))
+      (,srcery-256-class (:background ,srcery-256-gray2 :foreground ,srcery-256-bright-white))))
 
    `(company-tooltip-common-selection
      ((,srcery-class (:foreground ,srcery-bright-magenta))
@@ -620,8 +620,8 @@
 
    ;; racer
    `(racer-tooltip
-     ((,srcery-class (:foreground ,srcery-bright-white :background ,srcery-gray-1))
-      (,srcery-256-class (:foreground ,srcery-256-bright-white :background ,srcery-256-gray1))))
+     ((,srcery-class (:foreground ,srcery-bright-white :background ,srcery-gray-2))
+      (,srcery-256-class (:foreground ,srcery-256-bright-white :background ,srcery-256-gray2))))
 
    `(racer-help-heading-face
      ((,srcery-class (:foreground ,srcery-bright-white :weight bold))
@@ -943,20 +943,20 @@
       (,srcery-256-class(:background ,srcery-256-dark-blue))))
 
    `(ediff-even-diff-A
-     ((,srcery-class(:background ,srcery-gray-1))
-      (,srcery-256-class(:background ,srcery-256-gray1))))
+     ((,srcery-class(:background ,srcery-gray-2))
+      (,srcery-256-class(:background ,srcery-256-gray2))))
 
    `(ediff-even-diff-Ancestor
-     ((,srcery-class(:background ,srcery-gray-1))
-      (,srcery-256-class(:background ,srcery-256-gray1))))
+     ((,srcery-class(:background ,srcery-gray-2))
+      (,srcery-256-class(:background ,srcery-256-gray2))))
 
    `(ediff-even-diff-B
-     ((,srcery-class(:background ,srcery-gray-1))
-      (,srcery-256-class(:background ,srcery-256-gray1))))
+     ((,srcery-class(:background ,srcery-gray-2))
+      (,srcery-256-class(:background ,srcery-256-gray2))))
 
    `(ediff-even-diff-C
-     ((,srcery-class(:background ,srcery-gray-1))
-      (,srcery-256-class(:background ,srcery-256-gray1))))
+     ((,srcery-class(:background ,srcery-gray-2))
+      (,srcery-256-class(:background ,srcery-256-gray2))))
 
    `(ediff-fine-diff-A
      ((,srcery-class(:background ,srcery-red :weight bold))
@@ -2259,8 +2259,8 @@
       (,srcery-256-class (:foreground ,srcery-256-yellow))))
 
    `(org-table
-     ((,srcery-class (:foreground ,srcery-bright-white :background ,srcery-gray-1))
-      (,srcery-256-class (:foreground ,srcery-256-bright-white :background ,srcery-256-gray1))))
+     ((,srcery-class (:foreground ,srcery-bright-white :background ,srcery-gray-2))
+      (,srcery-256-class (:foreground ,srcery-256-bright-white :background ,srcery-256-gray2))))
 
    `(org-time-grid
      ((,srcery-class (:foreground ,srcery-bright-green))
@@ -2420,8 +2420,8 @@
       (,srcery-256-class (:background ,srcery-256-bright-orange :foreground ,srcery-256-black))))
 
    `(spaceline-read-only
-     ((,srcery-class (:background ,srcery-gray-1 :foreground ,srcery-orange))
-      (,srcery-256-class (:background ,srcery-256-gray1 :foreground ,srcery-256-orange))))
+     ((,srcery-class (:background ,srcery-gray-2 :foreground ,srcery-orange))
+      (,srcery-256-class (:background ,srcery-256-gray2 :foreground ,srcery-256-orange))))
 
    `(spaceline-highlight-face
      ((,srcery-class (:background ,srcery-yellow :foreground ,srcery-black))
@@ -2493,8 +2493,8 @@
       (,srcery-256-class (:background ,srcery-256-green, :foreground ,srcery-256-black))))
 
    `(shm-quarantine-face
-     ((,srcery-class (:background ,srcery-gray-1))
-      (,srcery-256-class (:background ,srcery-256-gray1))))
+     ((,srcery-class (:background ,srcery-gray-2))
+      (,srcery-256-class (:background ,srcery-256-gray2))))
 
 
    ;; show-paren
