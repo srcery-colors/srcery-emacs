@@ -107,12 +107,12 @@
   :type 'string
   :group 'srcery)
 
-(defcustom srcery-white "#918175"
+(defcustom srcery-white "#B6A88D"
   "Palette - white."
   :type 'string
   :group 'srcery)
 
-(defcustom srcery-bright-black "#2D2C29"
+(defcustom srcery-bright-black "#918175"
   "Palette - bright black."
   :type 'string
   :group 'srcery)
@@ -192,6 +192,11 @@
   :type 'string
   :group 'srcery)
 
+(defcustom srcery-gray-6 "#4E4E4E"
+  "Palette xterm 240 - gray 6."
+  :type 'string
+  :group 'srcery)
+
 (defcustom srcery-dark-red "#5f0000"
   "Palette xterm 52."
   :type 'string
@@ -251,6 +256,7 @@
        (srcery-256-gray3          "color-237")
        (srcery-256-gray4          "color-238")
        (srcery-256-gray5          "color-239")
+       (srcery-256-gray6          "color-240")
 
        (srcery-256-dark-red       "color-52")
        (srcery-256-dark-green     "color-22")
