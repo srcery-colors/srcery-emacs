@@ -422,8 +422,8 @@
                             `(:background ,srcery-256-hard-black :weight bold)))))
 
    `(secondary-selection
-     ((,srcery-class (:background ,srcery-gray-2))
-      (,srcery-256-class (:background ,srcery-256-gray2))))
+     ((,srcery-class (:background ,srcery-gray-3))
+      (,srcery-256-class (:background ,srcery-256-gray3))))
 
    `(success
      ((,srcery-class (:foreground ,srcery-green))
@@ -975,20 +975,20 @@
       (,srcery-256-class(:background ,srcery-256-blue :weight bold))))
 
    `(ediff-odd-diff-A
-     ((,srcery-class(:background ,srcery-gray-2))
-      (,srcery-256-class(:background ,srcery-256-gray2))))
+     ((,srcery-class(:background ,srcery-gray-3))
+      (,srcery-256-class(:background ,srcery-256-gray3))))
 
    `(ediff-odd-diff-Ancestor
-     ((,srcery-class(:background ,srcery-gray-2))
-      (,srcery-256-class(:background ,srcery-256-gray2))))
+     ((,srcery-class(:background ,srcery-gray-3))
+      (,srcery-256-class(:background ,srcery-256-gray3))))
 
    `(ediff-odd-diff-B
-     ((,srcery-class(:background ,srcery-gray-2))
-      (,srcery-256-class(:background ,srcery-256-gray2))))
+     ((,srcery-class(:background ,srcery-gray-3))
+      (,srcery-256-class(:background ,srcery-256-gray3))))
 
    `(ediff-odd-diff-C
-     ((,srcery-class(:background ,srcery-gray-2))
-      (,srcery-256-class(:background ,srcery-256-gray2))))
+     ((,srcery-class(:background ,srcery-gray-3))
+      (,srcery-256-class(:background ,srcery-256-gray3))))
 
    ;; ein
    `(ein:cell-input-area
@@ -3093,8 +3093,8 @@
 
    ;; widget
    `(widget-field
-     ((,srcery-class :background ,srcery-gray-2 :foreground ,srcery-bright-white)
-      (,srcery-256-class :background ,srcery-256-gray2 :foreground ,srcery-256-bright-white)))
+     ((,srcery-class :background ,srcery-gray-3 :foreground ,srcery-bright-white)
+      (,srcery-256-class :background ,srcery-256-gray3 :foreground ,srcery-256-bright-white)))
 
    `(widget-documentation
      ((,srcery-class :foreground ,srcery-green)
