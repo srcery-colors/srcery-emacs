@@ -410,8 +410,8 @@
       (,srcery-256-class (:weight bold :foreground ,srcery-256-yellow))))
 
    `(page-break-lines
-     ((,srcery-class (:foreground ,srcery-gray-3))
-      (,srcery-256-class (:foreground ,srcery-256-gray3))))
+     ((,srcery-class (:foreground ,srcery-gray-4))
+      (,srcery-256-class (:foreground ,srcery-256-gray4))))
 
    `(region
      ((,srcery-class ,(if srcery-invert-region
@@ -2328,8 +2328,8 @@
 
    ;; mode-line
    `(powerline-active1
-     ((,srcery-class (:background ,srcery-gray-3 :foreground ,srcery-bright-white))
-      (,srcery-256-class (:background ,srcery-256-gray3 :foreground ,srcery-256-bright-white))))
+     ((,srcery-class (:background ,srcery-gray-4 :foreground ,srcery-bright-white))
+      (,srcery-256-class (:background ,srcery-256-gray4 :foreground ,srcery-256-bright-white))))
 
    `(powerline-active2
      ((,srcery-class (:foreground ,srcery-bright-white :background ,srcery-bright-black))
