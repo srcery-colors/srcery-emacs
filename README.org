@@ -22,9 +22,9 @@ Colorscheme with clearly defined contrasting colors and a slightly earthy tone.
     | blue           |  4 | #2C78BF | 44, 120, 191  |
     | magenta        |  5 | #E02C6D | 224, 44,  109 |
     | cyan           |  6 | #0AAEB3 | 10, 174, 179  |
-    | white          |  7 | #918175 | 145, 129, 117 |
+    | white          |  7 | #D0BFA1 | 208, 191, 161 |
     |----------------+----+---------+---------------|
-    | bright-black   |  8 | #2D2C29 | 45, 44, 41    |
+    | bright-black   |  8 | #918175 | 145, 129, 117 |
     | brright-red    |  9 | #F75341 | 247, 83, 65   |
     | bright-green   | 10 | #98BC37 | 152, 188, 55  |
     | bright-yellow  | 11 | #FED06E | 254, 208, 110 |
