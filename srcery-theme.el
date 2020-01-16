@@ -248,9 +248,9 @@
        (srcery-256-bright-cyan    "brightcyan")
        (srcery-256-bright-white   "brightwhite")
 
-       (srcery-256-orange         "color-202")
-       (srcery-256-bright-orange  "color-208")
-       (srcery-256-hard-black     "color-233")
+       (srcery-256-orange          "color-202")
+       (srcery-256-bright-orange   "color-208")
+       (srcery-256-hard-black      "color-233")
        (srcery-256-gray-1          "color-235")
        (srcery-256-gray-2          "color-236")
        (srcery-256-gray-3          "color-237")
@@ -943,20 +943,20 @@
       (,srcery-256-class(:background ,srcery-256-dark-blue))))
 
    `(ediff-even-diff-A
-     ((,srcery-class(:background ,srcery-hard-black))
-      (,srcery-256-class(:background ,srcery-256-hard-black))))
+     ((,srcery-class(:background ,srcery-gray-1))
+      (,srcery-256-class(:background ,srcery-256-gray-1))))
 
    `(ediff-even-diff-Ancestor
-     ((,srcery-class(:background ,srcery-hard-black))
-      (,srcery-256-class(:background ,srcery-256-hard-black))))
+     ((,srcery-class(:background ,srcery-gray-1))
+      (,srcery-256-class(:background ,srcery-256-gray-1))))
 
    `(ediff-even-diff-B
-     ((,srcery-class(:background ,srcery-hard-black))
-      (,srcery-256-class(:background ,srcery-256-hard-black))))
+     ((,srcery-class(:background ,srcery-gray-1))
+      (,srcery-256-class(:background ,srcery-256-gray-1))))
 
    `(ediff-even-diff-C
-     ((,srcery-class(:background ,srcery-hard-black))
-      (,srcery-256-class(:background ,srcery-256-hard-black))))
+     ((,srcery-class(:background ,srcery-gray-1))
+      (,srcery-256-class(:background ,srcery-256-gray-1))))
 
    `(ediff-fine-diff-A
      ((,srcery-class(:background ,srcery-red :weight bold))
