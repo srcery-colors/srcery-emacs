@@ -3125,6 +3125,35 @@
    `(mmm-default-submode-face
      ((,srcery-class :background ,(if srcery-transparent-background nil srcery-256-black))
       (,srcery-256-class :background nil)))
+
+   ;; rst
+   `(rst-level-1
+     ((,srcery-class :inherit org-level-1)
+      (,srcery-256-class :inherit org-level-1)))
+
+   `(rst-level-2
+     ((,srcery-class :inherit org-level-2)
+      (,srcery-256-class :inherit org-level-2)))
+
+   `(rst-level-3
+     ((,srcery-class :inherit org-level-3)
+      (,srcery-256-class :inherit org-level-3)))
+
+   `(rst-level-4
+     ((,srcery-class :inherit org-level-4)
+      (,srcery-256-class :inherit org-level-4)))
+
+   `(rst-level-5
+     ((,srcery-class :inherit org-level-5)
+      (,srcery-256-class :inherit org-level-5)))
+
+   `(rst-level-6
+     ((,srcery-class :inherit org-level-6)
+      (,srcery-256-class :inherit org-level-6)))
+
+   `(rst-adornment
+     ((,srcery-class :foreground ,srcery-white)
+      (,srcery-256-class :foreground ,srcery-256-white)))
    )
 
   (custom-theme-set-variables
