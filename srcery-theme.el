@@ -269,7 +269,9 @@
   (custom-theme-set-faces
    'srcery
 
+   ;;----------------------------------------------------------------------------
    ;; basics
+   ;;----------------------------------------------------------------------------
    `(cursor
      ((,srcery-class (:background ,srcery-yellow :foreground ,srcery-black))
       (,srcery-256-class (:background ,srcery-256-yellow :foreground ,srcery-256-black))))
@@ -446,7 +448,9 @@
       (,srcery-256-class (:foreground ,srcery-256-bright-white))))
 
 
+   ;;----------------------------------------------------------------------------
    ;; ahs
+   ;;----------------------------------------------------------------------------
    `(ahs-face
      ((,srcery-class (:background ,srcery-magenta))
       (,srcery-256-class (:background ,srcery-256-magenta))))
@@ -459,17 +463,23 @@
      ((,srcery-class (:background ,srcery-bright-red :foreground ,srcery-bright-white))
       (,srcery-256-class (:background ,srcery-256-bright-red :foreground ,srcery-256-bright-white))))
 
+   ;;----------------------------------------------------------------------------
    ;; anzu-mode
+   ;;----------------------------------------------------------------------------
    `(anzu-mode-line
      ((,srcery-class (:foreground ,srcery-yellow :weight bold))
       (,srcery-256-class (:foreground ,srcery-256-yellow :weight bold))))
 
+   ;;----------------------------------------------------------------------------
    ;; auto-complete
+   ;;----------------------------------------------------------------------------
    `(ac-completion-face
      ((,srcery-class (:background ,srcery-gray-2 :foreground ,srcery-bright-white))
       (,srcery-256-class (:background ,srcery-256-gray-2 :foreground ,srcery-256-bright-white))))
 
+   ;;----------------------------------------------------------------------------
    ;; avy
+   ;;----------------------------------------------------------------------------
    `(avy-lead-face
      ((,srcery-class (:background ,srcery-gray-2 :foreground ,srcery-bright-magenta))
       (,srcery-256-class (:background ,srcery-256-gray-2 :foreground ,srcery-256-bright-magenta))))
@@ -487,7 +497,9 @@
       (,srcery-256-class (:background ,srcery-256-gray-2 :foreground ,srcery-256-bright-blue))))
 
 
+   ;;----------------------------------------------------------------------------
    ;; cider
+   ;;----------------------------------------------------------------------------
    `(cider-enlightened
      ((,srcery-class (:background nil :box (:color ,srcery-yellow :line-width -1 :style nil) :foreground ,srcery-yellow))
       (,srcery-256-class (:background nil :box (:color ,srcery-256-yellow :line-width -1 :style nil) :foreground ,srcery-256-yellow))))
@@ -556,12 +568,16 @@
      ((,srcery-class :foreground ,srcery-bright-black)
       (,srcery-256-class :foreground ,srcery-256-bright-black)))
 
+   ;;----------------------------------------------------------------------------
    ;; clojure
+   ;;----------------------------------------------------------------------------
    `(clojure-keyword-face
      ((,srcery-class (:foreground ,srcery-blue))
       (,srcery-256-class (:foreground ,srcery-256-blue))))
 
+   ;;----------------------------------------------------------------------------
    ;; company
+   ;;----------------------------------------------------------------------------
    `(company-echo-common
      ((,srcery-class (:background ,srcery-bright-white :foreground ,srcery-black))
       (,srcery-256-class (:background ,srcery-256-bright-white :foreground ,srcery-256-black))))
@@ -618,7 +634,9 @@
      ((,srcery-class (:foreground ,srcery-magenta))
       (,srcery-256-class (:foreground ,srcery-256-magenta))))
 
+   ;;----------------------------------------------------------------------------
    ;; racer
+   ;;----------------------------------------------------------------------------
    `(racer-tooltip
      ((,srcery-class (:foreground ,srcery-bright-white :background ,srcery-hard-black))
       (,srcery-256-class (:foreground ,srcery-256-bright-white :background ,srcery-256-hard-black))))
@@ -627,7 +645,9 @@
      ((,srcery-class (:foreground ,srcery-bright-white :weight bold))
       (,srcery-256-class (:foreground ,srcery-256-bright-white :weight bold))))
 
+   ;;----------------------------------------------------------------------------
    ;; rust
+   ;;----------------------------------------------------------------------------
    `(rust-builtin-formatting-macro-face
      ((,srcery-class (:foreground ,srcery-blue))
       (,srcery-256-class (:foreground ,srcery-256-blue))))
@@ -644,7 +664,9 @@
      ((,srcery-class (:foreground ,srcery-bright-orange))
       (,srcery-256-class (:foreground ,srcery-256-bright-orange))))
 
+   ;;----------------------------------------------------------------------------
    ;; diff
+   ;;----------------------------------------------------------------------------
    `(diff-added
      ((,srcery-class :background nil :foreground ,srcery-green)
       (,srcery-256-class :background nil :foreground ,srcery-256-green)))
@@ -685,7 +707,9 @@
      ((,srcery-class :background nil :foreground ,srcery-red)
       (,srcery-256-class :background nil :foreground ,srcery-256-red)))
 
+   ;;----------------------------------------------------------------------------
    ;; diff-hl
+   ;;----------------------------------------------------------------------------
    `(diff-hl-change
      ((,srcery-class :foreground ,srcery-blue)
       (,srcery-256-class :foreground ,srcery-256-blue)))
@@ -698,7 +722,9 @@
      ((,srcery-class :foreground ,srcery-green)
       (,srcery-256-class :foreground ,srcery-256-green)))
 
+   ;;----------------------------------------------------------------------------
    ;; dired
+   ;;----------------------------------------------------------------------------
    `(dired-directory
      ((,srcery-class (:foreground ,srcery-blue :background ,srcery-black))
       (,srcery-256-class (:foreground ,srcery-256-blue :background ,(if srcery-transparent-background nil srcery-256-black)))))
@@ -735,7 +761,9 @@
      ((,srcery-class (:foreground ,srcery-bright-orange))
       (,srcery-256-class (:foreground ,srcery-256-bright-orange))))
 
+   ;;----------------------------------------------------------------------------
    ;; Dired Plus
+   ;;----------------------------------------------------------------------------
    `(diredp-date-time
      ((,srcery-class (:foreground ,srcery-blue))
       (,srcery-256-class (:foreground ,srcery-256-blue))))
@@ -832,7 +860,9 @@
      ((,srcery-class (:foreground ,srcery-bright-white))
       (,srcery-256-class (:foreground ,srcery-256-bright-white))))
 
+   ;;----------------------------------------------------------------------------
    ;; diredfl
+   ;;----------------------------------------------------------------------------
    `(diredfl-autofile-name
      ((,srcery-class (:background ,srcery-blue))
       (,srcery-256-class (:background ,srcery-256-blue))))
@@ -925,7 +955,9 @@
      ((,srcery-class (:foreground ,srcery-red))
       (,srcery-256-class (:foreground ,srcery-256-red))))
 
+   ;;----------------------------------------------------------------------------
    ;; ediff
+   ;;----------------------------------------------------------------------------
    `(ediff-current-diff-A
      ((,srcery-class(:background ,srcery-dark-red))
       (,srcery-256-class(:background ,srcery-256-dark-red))))
@@ -990,7 +1022,9 @@
      ((,srcery-class(:background ,srcery-gray-3))
       (,srcery-256-class(:background ,srcery-256-gray-3))))
 
+   ;;----------------------------------------------------------------------------
    ;; ein
+   ;;----------------------------------------------------------------------------
    `(ein:cell-input-area
      ((,srcery-class (:background ,srcery-gray-2))
       (,srcery-256-class (:background ,srcery-256-gray-2))))
@@ -1011,13 +1045,17 @@
      ((,srcery-class (:foreground ,srcery-green :weight bold))
       (,srcery-256-class (:foreground ,srcery-256-green :weight bold))))
 
+   ;;----------------------------------------------------------------------------
    ;;eldoc
+   ;;----------------------------------------------------------------------------
    `(eldoc-highlight-function-argument
      ((,srcery-class (:foreground ,srcery-yellow :weight bold))
       (,srcery-256-class (:foreground ,srcery-256-yellow :weight bold))))
 
 
+   ;;----------------------------------------------------------------------------
    ;; enh-ruby
+   ;;----------------------------------------------------------------------------
    `(enh-ruby-string-delimiter-face
      ((,srcery-class (:foreground ,srcery-bright-green))
       (,srcery-256-class (:foreground ,srcery-256-bright-green))))
@@ -1026,7 +1064,9 @@
      ((,srcery-class (:background ,srcery-black :foreground ,srcery-bright-white))
       (,srcery-256-class (:background ,(if srcery-transparent-background nil srcery-256-black) :foreground ,srcery-256-bright-white))))
 
+   ;;----------------------------------------------------------------------------
    ;; erc
+   ;;----------------------------------------------------------------------------
    `(erc-input-face
      ((,srcery-class (:foreground ,srcery-yellow))
       (,srcery-256-class (:foreground ,srcery-256-yellow))))
@@ -1056,7 +1096,9 @@
       (,srcery-256-class (:foreground ,srcery-256-red))))
 
 
+   ;;----------------------------------------------------------------------------
    ;; eshell
+   ;;----------------------------------------------------------------------------
    `(eshell-ls-archive
      ((,srcery-class (:foreground ,srcery-red :weight bold))
       (,srcery-256-class (:foreground ,srcery-256-red :weight bold))))
@@ -1101,7 +1143,9 @@
      ((,srcery-class (:foreground ,srcery-magenta :weight bold))
       (,srcery-256-class (:foreground ,srcery-256-magenta :weight bold))))
 
+   ;;----------------------------------------------------------------------------
    ;; evil
+   ;;----------------------------------------------------------------------------
    `(evil-ex-substitute-matches
      ((,srcery-class (:background ,srcery-red :foreground ,srcery-bright-white))
       (,srcery-256-class (:background ,srcery-256-red :foreground ,srcery-256-bright-white))))
@@ -1156,7 +1200,9 @@
      ((,srcery-class (:foreground ,srcery-red :underline t))
       (,srcery-256-class (:foreground ,srcery-256-red :underline t))))
 
+   ;;----------------------------------------------------------------------------
    ;; jabber
+   ;;----------------------------------------------------------------------------
    `(jabber-activity-face
      ((,srcery-class (:weight bold :foreground ,srcery-red))
       (,srcery-256-class (:weight bold :foreground ,srcery-256-red))))
@@ -1221,7 +1267,9 @@
      ((,srcery-class (:foreground ,srcery-cyan))
       (,srcery-256-class (:foreground ,srcery-256-cyan))))
 
+   ;;----------------------------------------------------------------------------
    ;; git
+   ;;----------------------------------------------------------------------------
    `(git-commit-summary
      ((,srcery-class (:foreground ,srcery-red))
       (,srcery-256-class (:foreground ,srcery-256-red))))
@@ -1250,7 +1298,9 @@
      ((,srcery-class (:foreground ,srcery-bright-white))
       (,srcery-256-class (:foreground ,srcery-256-bright-white))))
 
+   ;;----------------------------------------------------------------------------
    ;; git-gutter-fr
+   ;;----------------------------------------------------------------------------
    `(git-gutter-fr:added
      ((,srcery-class (:foreground ,srcery-green :weight bold))
       (,srcery-256-class (:foreground ,srcery-256-green :weight bold))))
@@ -1295,13 +1345,17 @@
      ((,srcery-class (:foreground ,srcery-bright-white))
       (,srcery-256-class (:foreground ,srcery-256-bright-white))))
 
+   ;;----------------------------------------------------------------------------
    ;; git-timemachine
+   ;;----------------------------------------------------------------------------
    `(git-timemachine-minibuffer-detail-face
      ((,srcery-class (:foreground ,srcery-blue :weight bold :background ,srcery-blue))
       (,srcery-256-class (:foreground ,srcery-256-blue :weight bold :background ,srcery-256-blue))))
 
 
+   ;;----------------------------------------------------------------------------
    ;; gnus
+   ;;----------------------------------------------------------------------------
    `(gnus-emphasis-highlight-words
      ((,srcery-class (:background ,srcery-green :foreground ,srcery-black))
       (,srcery-256-class (:background ,srcery-256-green :foreground ,srcery-256-black))))
@@ -1326,7 +1380,9 @@
      ((,srcery-class (:background ,srcery-bright-orange :foreground ,srcery-black))
       (,srcery-256-class (:background ,srcery-256-bright-orange :foreground ,srcery-256-black))))
 
+   ;;----------------------------------------------------------------------------
    ;; guide-key
+   ;;----------------------------------------------------------------------------
    `(guide-key/highlight-command-face
      ((,srcery-class (:foreground ,srcery-bright-white))
       (,srcery-256-class (:foreground ,srcery-256-bright-white))))
@@ -1339,7 +1395,9 @@
      ((,srcery-class (:foreground ,srcery-red :weight bold))
       (,srcery-256-class (:foreground ,srcery-256-red :weight bold))))
 
+   ;;----------------------------------------------------------------------------
    ;; helm
+   ;;----------------------------------------------------------------------------
    `(helm-bookmark-directory
      ((,srcery-class (:inherit helm-ff-directory))
       (,srcery-256-class (:inherit helm-ff-directory))))
@@ -1493,7 +1551,9 @@
       (,srcery-256-class (:foreground ,srcery-256-red :background ,(if srcery-transparent-background nil srcery-256-black)))))
 
 
+   ;;----------------------------------------------------------------------------
    ;; helm-swoop
+   ;;----------------------------------------------------------------------------
    `(helm-swoop-target-line-block-face
      ((,srcery-class (:foreground ,srcery-yellow :background ,srcery-black))
       (,srcery-256-class (:foreground ,srcery-256-yellow :background ,(if srcery-transparent-background nil srcery-256-black)))))
@@ -1506,7 +1566,9 @@
      ((,srcery-class (:foreground ,srcery-magenta :underline t))
       (,srcery-256-class (:foreground ,srcery-256-magenta :underline t))))
 
+   ;;----------------------------------------------------------------------------
    ;; highlights
+   ;;----------------------------------------------------------------------------
    `(hi-yellow
      ((,srcery-class (:foreground ,srcery-yellow))
       (,srcery-256-class (:foreground ,srcery-256-yellow))))
@@ -1515,17 +1577,23 @@
      ((,srcery-class (:foreground ,srcery-green))
       (,srcery-256-class (:foreground ,srcery-256-green))))
 
+   ;;----------------------------------------------------------------------------
    ;; highlight-indentation
+   ;;----------------------------------------------------------------------------
    `(highlight-indentation-face
      ((,srcery-class (:background ,srcery-bright-black))
       (,srcery-256-class (:background ,srcery-256-bright-black))))
 
+   ;;----------------------------------------------------------------------------
    ;; highlight-symbol
+   ;;----------------------------------------------------------------------------
    `(highlight-symbol-face
      ((,srcery-class (:background ,srcery-gray-2))
       (,srcery-256-class (:background ,srcery-256-gray-2))))
 
+   ;;----------------------------------------------------------------------------
    ;; hydra
+   ;;----------------------------------------------------------------------------
    `(hydra-face-blue
      ((,srcery-class (:foreground ,srcery-blue))
       (,srcery-256-class (:foreground ,srcery-256-blue))))
@@ -1534,7 +1602,9 @@
      ((,srcery-class (:foreground ,srcery-red))
       (,srcery-256-class (:foreground ,srcery-256-red))))
 
+   ;;----------------------------------------------------------------------------
    ;; ido
+   ;;----------------------------------------------------------------------------
    `(ido-first-match
      ((,srcery-class (:foreground ,srcery-green :weight bold))
       (,srcery-256-class (:foreground ,srcery-256-green :weight bold))))
@@ -1555,7 +1625,9 @@
      ((,srcery-class (:foreground ,srcery-green :underline nil))
       (,srcery-256-class (:foreground ,srcery-256-green :underline nil))))
 
+   ;;----------------------------------------------------------------------------
    ;; info
+   ;;----------------------------------------------------------------------------
    `(info-header-xref
      ((,srcery-class (:foreground ,srcery-yellow :underline t))
       (,srcery-256-class (:foreground ,srcery-256-yellow :underline t))))
@@ -1596,7 +1668,9 @@
      ((,srcery-class (:height 1.2))
       (,srcery-256-class (:height 1.2))))
 
+   ;;----------------------------------------------------------------------------
    ;; ivy
+   ;;----------------------------------------------------------------------------
    `(ivy-current-match
      ((,srcery-class (:background ,srcery-gray-2 :weight bold))
       (,srcery-256-class (:background ,srcery-256-gray-2 :weight bold))))
@@ -1625,7 +1699,9 @@
      ((,srcery-class (:underline t))
       (,srcery-256-class (:underline t))))
 
+   ;;----------------------------------------------------------------------------
    ;; latex
+   ;;----------------------------------------------------------------------------
    `(font-latex-bold-face
      ((,srcery-class (:foreground ,srcery-green))
       (,srcery-256-class (:foreground ,srcery-256-green))))
@@ -1670,7 +1746,9 @@
      ((,srcery-class (:foreground ,srcery-bright-green))
       (,srcery-256-class (:foreground ,srcery-256-bright-green))))
 
+   ;;----------------------------------------------------------------------------
    ;; Line numbers
+   ;;----------------------------------------------------------------------------
    `(linum
      ((,srcery-class (:foreground ,srcery-bright-black :background ,srcery-black))
       (,srcery-256-class (:foreground ,srcery-256-bright-black :background ,(if srcery-transparent-background nil srcery-256-black)))))
@@ -1695,12 +1773,16 @@
      ((,srcery-class (:foreground ,srcery-yellow))
       (,srcery-256-class (:foreground ,srcery-256-yellow))))
 
+   ;;----------------------------------------------------------------------------
    ;; Git
+   ;;----------------------------------------------------------------------------
    `(diff-context
      ((,srcery-class :foreground ,srcery-bright-black)
       (,srcery-256-class :foreground ,srcery-256-bright-black)))
 
+   ;;----------------------------------------------------------------------------
    ;; magit
+   ;;----------------------------------------------------------------------------
    `(magit-blame-culprit
      ((,srcery-class :foreground ,srcery-yellow)
       (,srcery-256-class :foreground ,srcery-256-yellow)))
@@ -1963,7 +2045,9 @@
      ((,srcery-class (:foreground ,srcery-bright-black))
       (,srcery-256-class (:foreground ,srcery-256-bright-black))))
 
+   ;;----------------------------------------------------------------------------
    ;; smerge
+   ;;----------------------------------------------------------------------------
    `(smerge-base
      ((,srcery-class (:foreground ,srcery-bright-white))
       (,srcery-256-class (:foreground ,srcery-256-bright-white))))
@@ -2000,7 +2084,9 @@
      ((,srcery-class (:foreground ,srcery-green))
       (,srcery-256-class (:foreground ,srcery-256-green))))
 
+   ;;----------------------------------------------------------------------------
    ;; man
+   ;;----------------------------------------------------------------------------
    `(Man-overstrike
      ((,srcery-class (:foreground ,srcery-blue :weight bold))
       (,srcery-256-class (:foreground ,srcery-256-blue :weight bold))))
@@ -2014,7 +2100,9 @@
       (,srcery-256-class (:foreground ,srcery-256-green :underline t))))
 
 
+   ;;----------------------------------------------------------------------------
    ;; markdown
+   ;;----------------------------------------------------------------------------
    `(markdown-header-face-1
      ((,srcery-class (:weight bold :foreground ,srcery-blue :height ,(if srcery-org-height 1.3 1.0)))
       (,srcery-256-class (:weight bold :foreground ,srcery-256-blue :height ,(if srcery-org-height 1.3 1.0)))))
@@ -2051,7 +2139,9 @@
      ((,srcery-class (:bold nil :foreground ,srcery-gray-6))
       (,srcery-256-class (:bold nil :foreground ,srcery-256-gray-6))))
 
+   ;;----------------------------------------------------------------------------
    ;; mu4e
+   ;;----------------------------------------------------------------------------
    `(mu4e-cited-1-face
      ((,srcery-class (:foreground ,srcery-bright-white))
       (,srcery-256-class (:foreground ,srcery-256-bright-white))))
@@ -2076,7 +2166,9 @@
      ((,srcery-class (:foreground ,srcery-yellow :weight bold))
       (,srcery-256-class (:foreground ,srcery-256-yellow :weight bold))))
 
+   ;;----------------------------------------------------------------------------
    ;; neotree
+   ;;----------------------------------------------------------------------------
    `(neo-dir-link-face
      ((,srcery-class (:foreground ,srcery-red :weight bold))
       (,srcery-256-class (:foreground ,srcery-256-red :weight bold))))
@@ -2093,7 +2185,9 @@
      ((,srcery-class (:foreground ,srcery-yellow :weight bold))
       (,srcery-256-class (:foreground ,srcery-256-yellow :weight bold))))
 
+   ;;----------------------------------------------------------------------------
    ;; org
+   ;;----------------------------------------------------------------------------
    `(org-agenda-clocking
      ((,srcery-class (:background ,srcery-magenta :foreground ,srcery-green))
       (,srcery-256-class (:background ,srcery-256-magenta :foreground ,srcery-256-green))))
@@ -2287,12 +2381,16 @@
      (,srcery-256-class (:foreground ,srcery-256-gray-5))))
 
 
+   ;;----------------------------------------------------------------------------
    ;; perspective
+   ;;----------------------------------------------------------------------------
    `(persp-selected-face
      ((,srcery-class (:weight bold :foreground ,srcery-yellow))
       (,srcery-256-class (:weight bold :foreground ,srcery-256-yellow))))
 
+   ;;----------------------------------------------------------------------------
    ;; popup
+   ;;----------------------------------------------------------------------------
    `(popup-face
      ((,srcery-class (:background ,srcery-gray-2 :foreground ,srcery-bright-white))
       (,srcery-256-class (:background ,srcery-256-gray-2 :foreground ,srcery-256-bright-white))))
@@ -2326,7 +2424,9 @@
       (,srcery-256-class (:background ,srcery-256-gray-2))))
 
 
+   ;;----------------------------------------------------------------------------
    ;; mode-line
+   ;;----------------------------------------------------------------------------
    `(powerline-active1
      ((,srcery-class (:background ,srcery-gray-4 :foreground ,srcery-bright-white))
       (,srcery-256-class (:background ,srcery-256-gray-4 :foreground ,srcery-256-bright-white))))
@@ -2428,7 +2528,9 @@
       (,srcery-256-class (:background ,srcery-256-yellow :foreground ,srcery-256-black))))
 
 
+   ;;----------------------------------------------------------------------------
    ;; rainbow-delimiters
+   ;;----------------------------------------------------------------------------
    `(rainbow-delimiters-depth-1-face
      ((,srcery-class :foreground ,srcery-bright-white)
       (,srcery-256-class :foreground ,srcery-256-bright-white)))
@@ -2478,7 +2580,9 @@
    ;;    (,srcery-256-class :foreground ,srcery-256-red :overline t :weight bold)))
 
 
+   ;;----------------------------------------------------------------------------
    ;; sh
+   ;;----------------------------------------------------------------------------
    `(sh-heredoc
      ((,srcery-class (:foreground ,srcery-green :weight bold))
       (,srcery-256-class (:foreground ,srcery-256-green :weight bold))))
@@ -2487,7 +2591,9 @@
      ((,srcery-class (:foreground ,srcery-orange))
       (,srcery-256-class (:foreground ,srcery-256-orange))))
 
+   ;;----------------------------------------------------------------------------
    ;; shm
+   ;;----------------------------------------------------------------------------
    `(shm-current-face
      ((,srcery-class (:background ,srcery-green, :foreground ,srcery-black))
       (,srcery-256-class (:background ,srcery-256-green, :foreground ,srcery-256-black))))
@@ -2497,7 +2603,9 @@
       (,srcery-256-class (:background ,srcery-256-hard-black))))
 
 
+   ;;----------------------------------------------------------------------------
    ;; show-paren
+   ;;----------------------------------------------------------------------------
    `(show-paren-match
      ((,srcery-class (:background ,srcery-magenta :foreground ,srcery-bright-white))
       (,srcery-256-class (:background ,srcery-256-magenta :foreground ,srcery-256-bright-white))))
@@ -2507,13 +2615,17 @@
       (,srcery-256-class (:background ,srcery-256-red :foreground ,srcery-256-bright-white))))
 
 
+   ;;----------------------------------------------------------------------------
    ;; paren-face
+   ;;----------------------------------------------------------------------------
    `(parenthesis
      ((,srcery-class (:foreground ,srcery-bright-black))
       (,srcery-256-class (:foreground ,srcery-256-bright-black))))
 
 
+   ;;----------------------------------------------------------------------------
    ;; smartparens
+   ;;----------------------------------------------------------------------------
    `(sp-pair-overlay-face
      ((,srcery-class (:background ,srcery-gray-5 :foreground nil))
       (,srcery-256-class (:background ,srcery-256-gray-5 :foreground nil))))
@@ -2522,7 +2634,9 @@
      ((,srcery-class (:background ,srcery-magenta :foreground ,srcery-bright-white))
       (,srcery-256-class (:background ,srcery-256-magenta :foreground ,srcery-256-bright-white))))
 
+   ;;----------------------------------------------------------------------------
    ;; evil-snipe
+   ;;----------------------------------------------------------------------------
    `(evil-snipe-first-match-face
      ((,srcery-class (:foreground ,srcery-magenta :weight bold))
       (,srcery-256-class (:foreground ,srcery-256-magenta :weight bold))))
@@ -2532,7 +2646,9 @@
       (,srcery-256-class (:foreground ,srcery-256-magenta :weight bold))))
 
 
+   ;;----------------------------------------------------------------------------
    ;; spacemacs
+   ;;----------------------------------------------------------------------------
    `(spacemacs-normal-face
      ((,srcery-class (:background ,srcery-gray-5 :foreground ,srcery-bright-white))
       (,srcery-256-class (:background ,srcery-256-gray-5 :foreground ,srcery-256-bright-white))))
@@ -2594,7 +2710,10 @@
       (,srcery-256-class (:foreground ,srcery-256-yellow :weight bold))))
 
    ;; spacemacs-ido-navigation-ts-face
+
+   ;;----------------------------------------------------------------------------
    ;; swiper
+   ;;----------------------------------------------------------------------------
    `(swiper-line-face
      ((,srcery-class (:background ,srcery-gray-2 :weight bold))
       (,srcery-256-class (:background ,srcery-gray-2 :weight bold))))
@@ -2616,7 +2735,9 @@
       (,srcery-256-class (:foreground ,srcery-256-bright-green :underline t))))
 
 
+   ;;----------------------------------------------------------------------------
    ;; term
+   ;;----------------------------------------------------------------------------
    `(term
      ((,srcery-class (:foreground ,srcery-bright-white :background ,srcery-black))
       (,srcery-256-class (:foreground ,srcery-256-bright-white :background ,(if srcery-transparent-background nil srcery-256-black)))))
@@ -2654,7 +2775,9 @@
       (,srcery-256-class (:foreground ,srcery-256-yellow))))
 
 
+   ;;----------------------------------------------------------------------------
    ;; web-mode
+   ;;----------------------------------------------------------------------------
    `(web-mode-builtin-face
      ((,srcery-class (:inherit ,font-lock-builtin-face))
       (,srcery-256-class (:inherit ,font-lock-builtin-face))))
@@ -2711,7 +2834,9 @@
      ((,srcery-class (:inherit ,font-lock-warning-face))
       (,srcery-256-class (:inherit ,font-lock-warning-face))))
 
+   ;;----------------------------------------------------------------------------
    ;; CSS
+   ;;----------------------------------------------------------------------------
    `(css-selector
      ((,srcery-class (:foreground ,srcery-blue))
       (,srcery-256-class (:foreground ,srcery-256-blue))))
@@ -2720,7 +2845,9 @@
      ((,srcery-class (:foreground ,srcery-yellow))
       (,srcery-256-class (:foreground ,srcery-256-yellow))))
 
+   ;;----------------------------------------------------------------------------
    ;; XML
+   ;;----------------------------------------------------------------------------
    `(nxml-element-local-name
      ((,srcery-class (:foreground ,srcery-blue))
       (,srcery-256-class (:foreground ,srcery-256-blue))))
@@ -2729,7 +2856,9 @@
      ((,srcery-class (:foreground ,srcery-yellow))
       (,srcery-256-class (:foreground ,srcery-256-yellow))))
 
+   ;;----------------------------------------------------------------------------
    ;; which-key
+   ;;----------------------------------------------------------------------------
    `(which-key-command-description-face
      ((,srcery-class (:foreground ,srcery-bright-white))
       (,srcery-256-class (:foreground ,srcery-256-bright-white))))
@@ -2751,13 +2880,17 @@
       (,srcery-256-class (:background ,srcery-256-yellow :foreground ,srcery-256-black))))
 
 
+   ;;----------------------------------------------------------------------------
    ;; which-function-mode
+   ;;----------------------------------------------------------------------------
    `(which-func
      ((,srcery-class (:foreground ,srcery-yellow))
       (,srcery-256-class (:foreground ,srcery-256-yellow))))
 
 
+   ;;----------------------------------------------------------------------------
    ;; whitespace-mode
+   ;;----------------------------------------------------------------------------
    `(whitespace-empty
      ((,srcery-class (:background nil :foreground ,srcery-yellow))
       (,srcery-256-class (:background nil :foreground ,srcery-256-yellow))))
@@ -2795,7 +2928,9 @@
       (,srcery-256-class (:background ,srcery-256-red :foreground ,srcery-256-bright-orange))))
 
 
+   ;;----------------------------------------------------------------------------
    ;; ctbl
+   ;;----------------------------------------------------------------------------
    `(ctbl:face-cell-select
      ((,srcery-class (:foreground ,srcery-black :background ,srcery-bright-magenta))
       (,srcery-256-class (:foreground ,srcery-256-black :background ,srcery-256-bright-magenta))))
@@ -2808,7 +2943,9 @@
      ((,srcery-class (:foreground ,srcery-black :background ,srcery-bright-blue))
       (,srcery-256-class (:foreground ,srcery-256-black :background ,srcery-256-bright-blue))))
 
+   ;;----------------------------------------------------------------------------
    ;; hlt
+   ;;----------------------------------------------------------------------------
    `(hlt-property-highlight
      ((,srcery-class (:foreground ,srcery-black :background ,srcery-yellow))
       (,srcery-256-class (:foreground ,srcery-256-black :background ,srcery-256-yellow))))
@@ -2845,7 +2982,9 @@
      ((,srcery-class (:foreground ,srcery-black :background ,srcery-blue))
       (,srcery-256-class (:foreground ,srcery-256-black :background ,srcery-256-blue))))
 
+   ;;----------------------------------------------------------------------------
    ;; reb
+   ;;----------------------------------------------------------------------------
    `(reb-match-0
      ((,srcery-class (:foreground ,srcery-black :background ,srcery-bright-blue))
       (,srcery-256-class (:foreground ,srcery-256-black :background ,srcery-256-bright-blue))))
@@ -2862,7 +3001,9 @@
      ((,srcery-class (:foreground ,srcery-black :background ,srcery-yellow))
       (,srcery-256-class (:foreground ,srcery-256-black :background ,srcery-256-yellow))))
 
+   ;;----------------------------------------------------------------------------
    ;; other, need more work
+   ;;----------------------------------------------------------------------------
    `(ac-completion-face
      ((,srcery-class (:underline t :foreground ,srcery-red))
       (,srcery-256-class (:underline t :foreground ,srcery-256-red))))
@@ -2999,7 +3140,9 @@
      ((,srcery-class :background ,srcery-bright-blue :foreground ,srcery-bright-white)
       (,srcery-256-class :background ,srcery-256-bright-blue :foreground ,srcery-256-bright-white)))
 
+   ;;----------------------------------------------------------------------------
    ;; Slack
+   ;;----------------------------------------------------------------------------
    `(lui-button-face
      ((,srcery-class :foreground ,srcery-blue)
       (,srcery-256-class :foreground ,srcery-256-blue)))
@@ -3024,7 +3167,9 @@
      ((,srcery-class :foreground ,srcery-yellow :weight bold)
       (,srcery-256-class :foreground ,srcery-256-yellow :weight bold)))
 
+   ;;----------------------------------------------------------------------------
    ;; Message
+   ;;----------------------------------------------------------------------------
    `(message-header-cc
      ((,srcery-class :foreground ,srcery-blue)
       (,srcery-256-class :foreground ,srcery-256-blue)))
@@ -3041,7 +3186,9 @@
      ((,srcery-class :foreground ,srcery-blue)
       (,srcery-256-class :foreground ,srcery-256-blue)))
 
+   ;;----------------------------------------------------------------------------
    ;; Alert
+   ;;----------------------------------------------------------------------------
    `(alert-low-face
      ((,srcery-class :foreground ,srcery-blue :weight bold)
       (,srcery-256-class :foreground ,srcery-256-blue :weight bold)))
@@ -3050,7 +3197,9 @@
      ((,srcery-class :foreground ,srcery-yellow :weight bold)
       (,srcery-256-class :foreground ,srcery-256-yellow :weight bold)))
 
+   ;;----------------------------------------------------------------------------
    ;; Custom
+   ;;----------------------------------------------------------------------------
    `(custom-comment-tag
      ((,srcery-class :foreground ,srcery-blue)
       (,srcery-256-class :foreground ,srcery-256-blue)))
@@ -3091,7 +3240,9 @@
      ((,srcery-class :background ,srcery-bright-black :foreground ,srcery-black)
       (,srcery-256-class :background ,srcery-256-bright-black :foreground ,srcery-256-black)))
 
+   ;;----------------------------------------------------------------------------
    ;; widget
+   ;;----------------------------------------------------------------------------
    `(widget-field
      ((,srcery-class :background ,srcery-gray-3 :foreground ,srcery-bright-white)
       (,srcery-256-class :background ,srcery-256-gray-3 :foreground ,srcery-256-bright-white)))
@@ -3100,7 +3251,9 @@
      ((,srcery-class :foreground ,srcery-green)
       (,srcery-256-class :foreground ,srcery-256-green)))
 
+   ;;----------------------------------------------------------------------------
    ;; Misc
+   ;;----------------------------------------------------------------------------
    `(epa-string
      ((,srcery-class :foreground ,srcery-blue)
       (,srcery-256-class :foreground ,srcery-256-blue)))
@@ -3121,12 +3274,16 @@
      ((,srcery-class :foreground ,srcery-blue)
       (,srcery-256-class :foreground ,srcery-256-blue)))
 
+   ;;----------------------------------------------------------------------------
    ;; mmm
+   ;;----------------------------------------------------------------------------
    `(mmm-default-submode-face
      ((,srcery-class :background ,(if srcery-transparent-background nil srcery-256-black))
       (,srcery-256-class :background nil)))
 
+   ;;----------------------------------------------------------------------------
    ;; rst
+   ;;----------------------------------------------------------------------------
    `(rst-level-1
      ((,srcery-class :inherit org-level-1)
       (,srcery-256-class :inherit org-level-1)))
@@ -3154,6 +3311,7 @@
    `(rst-adornment
      ((,srcery-class :foreground ,srcery-white)
       (,srcery-256-class :foreground ,srcery-256-white)))
+
    )
 
   (custom-theme-set-variables
