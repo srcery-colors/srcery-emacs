@@ -1190,8 +1190,9 @@
      ((,srcery-class (:foreground ,srcery-bright-orange :weight bold))
       (,srcery-256-class (:foreground ,srcery-256-bright-orange :weight bold))))
 
+   ;;----------------------------------------------------------------------------
    ;; Flyspell
-   ;; ------------------------------
+   ;;----------------------------------------------------------------------------
    `(flyspell-duplicate
      ((,srcery-class (:foreground ,srcery-bright-white :underline t))
       (,srcery-256-class (:foreground ,srcery-256-bright-white :underline t))))
