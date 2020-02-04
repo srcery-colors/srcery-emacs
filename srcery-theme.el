@@ -3326,8 +3326,8 @@
       (,srcery-256-class :background ,srcery-256-gray-2)))
 
    `(lsp-ui-doc-header
-     ((,srcery-class :foreground ,srcery-black :background ,srcery-green)
-      (,srcery-256-class :foreground ,srcery-256-black :background ,srcery-256-green)))
+     ((,srcery-class :foreground ,srcery-green)
+      (,srcery-256-class :foreground ,srcery-256-green)))
 
    `(lsp-ui-peek-footer
      ((,srcery-class :foreground ,srcery-bright-white :background ,srcery-gray-3)
