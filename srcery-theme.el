@@ -3274,6 +3274,10 @@
      ((,srcery-class :foreground ,srcery-blue)
       (,srcery-256-class :foreground ,srcery-256-blue)))
 
+   `(lv-separator
+     ((,srcery-class :background ,srcery-white :foreground ,srcery-bright-black)
+      (,srcery-256-class :background ,srcery-256-white :foreground ,srcery-256-bright-black)))
+
    ;;----------------------------------------------------------------------------
    ;; mmm
    ;;----------------------------------------------------------------------------
