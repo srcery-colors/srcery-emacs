@@ -3312,6 +3312,42 @@
      ((,srcery-class :foreground ,srcery-white)
       (,srcery-256-class :foreground ,srcery-256-white)))
 
+   ;;----------------------------------------------------------------------------
+   ;; c/c++
+   ;;----------------------------------------------------------------------------
+
+   `(lsp-ui-doc-background
+     ((,srcery-class :foreground ,srcery-black :background ,srcery-white)
+      (,srcery-256-class :foreground ,srcery-256-black :background ,srcery-256-white)))
+
+   `(lsp-ui-doc-header
+     ((,srcery-class :foreground ,srcery-black :background ,srcery-green)
+      (,srcery-256-class :foreground ,srcery-256-black :background ,srcery-256-green)))
+
+   `(lsp-ui-peek-footer
+     ((,srcery-class :foreground ,srcery-bright-white :background ,srcery-gray-3)
+      (,srcery-256-class :foreground ,srcery-256-bright-white :background ,srcery-256-gray-3)))
+
+   `(lsp-ui-peek-header
+     ((,srcery-class :foreground ,srcery-bright-white :background ,srcery-gray-4)
+      (,srcery-256-class :foreground ,srcery-256-bright-white :background ,srcery-256-gray-4)))
+
+   `(lsp-ui-peek-highlight
+     ((,srcery-class :foreground ,srcery-bright-white :background ,srcery-gray-5)
+      (,srcery-256-class :foreground ,srcery-256-bright-white :background ,srcery-256-gray-5)))
+
+   `(lsp-ui-peek-line-number
+     ((,srcery-class (:foreground ,srcery-bright-black))
+      (,srcery-256-class (:foreground ,srcery-256-bright-black))))
+
+   `(lsp-ui-peek-list
+     ((,srcery-class (:inherit lsp-ui-doc-background))
+      (,srcery-256-class (:inherit lsp-ui-doc-background))))
+
+   `(lsp-ui-peek-peek
+     ((,srcery-class (:inherit lsp-ui-doc-background))
+      (,srcery-256-class (:inherit lsp-ui-doc-background))))
+
    )
 
   (custom-theme-set-variables
