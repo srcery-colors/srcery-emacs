@@ -3322,8 +3322,8 @@
    ;;----------------------------------------------------------------------------
 
    `(lsp-ui-doc-background
-     ((,srcery-class :foreground ,srcery-black :background ,srcery-white)
-      (,srcery-256-class :foreground ,srcery-256-black :background ,srcery-256-white)))
+     ((,srcery-class :background ,srcery-gray-2)
+      (,srcery-256-class :background ,srcery-256-gray-2)))
 
    `(lsp-ui-doc-header
      ((,srcery-class :foreground ,srcery-black :background ,srcery-green)
