@@ -3353,6 +3353,20 @@
      ((,srcery-class (:inherit lsp-ui-doc-background))
       (,srcery-256-class (:inherit lsp-ui-doc-background))))
 
+   ;;----------------------------------------------------------------------------
+   ;; Flymake
+   ;;----------------------------------------------------------------------------
+   `(flymake-error
+     ((,srcery-class (:inherit flycheck-error))
+      (,srcery-256-class (:inherit flycheck-error))))
+
+   `(flymake-note
+     ((,srcery-class (:inherit flycheck-info))
+      (,srcery-256-class (:inherit flycheck-info))))
+
+   `(flymake-warning
+     ((,srcery-class (:inherit flycheck-warning))
+      (,srcery-256-class (:inherit flycheck-warning))))
    )
 
   (custom-theme-set-variables
