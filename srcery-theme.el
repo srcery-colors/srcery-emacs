@@ -1026,8 +1026,8 @@
    ;; ein
    ;;----------------------------------------------------------------------------
    `(ein:cell-input-area
-     ((,srcery-class (:background ,srcery-gray-2))
-      (,srcery-256-class (:background ,srcery-256-gray-2))))
+     ((,srcery-class (:background ,srcery-hard-black))
+      (,srcery-256-class (:background ,srcery-256-hard-black))))
 
    `(ein:cell-input-prompt
      ((,srcery-class (:foreground ,srcery-green))
