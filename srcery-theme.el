@@ -192,7 +192,7 @@
   :type 'string
   :group 'srcery)
 
-(defcustom srcery-gray-6 "#4E4E4E"
+(defcustom srcery-gray-6 "#585858"
   "Palette xterm 240 - gray 6."
   :type 'string
   :group 'srcery)
@@ -418,10 +418,10 @@
    `(region
      ((,srcery-class ,(if srcery-invert-region
                           `(:inverse-video t)
-                        `(:background ,srcery-hard-black :weight bold)))
+                        `(:background ,srcery-gray-3)))
       (,srcery-256-class ,(if srcery-invert-region
                               `(:inverse-video t)
-                            `(:background ,srcery-256-hard-black :weight bold)))))
+                            `(:background ,srcery-256-gray-3)))))
 
    `(secondary-selection
      ((,srcery-class (:background ,srcery-gray-3))
@@ -2445,24 +2445,24 @@
       (,srcery-256-class (:background ,srcery-256-gray-2 :foreground ,srcery-256-bright-black))))
 
    `(mode-line
-     ((,srcery-class (:foreground ,srcery-bright-black :background ,srcery-gray-2))
-      (,srcery-256-class (:foreground ,srcery-256-bright-black :background ,srcery-256-gray-2))))
+     ((,srcery-class (:foreground ,srcery-white :background ,srcery-gray-2))
+      (,srcery-256-class (:foreground ,srcery-256-white :background ,srcery-256-gray-2))))
 
    `(mode-line-inactive
-     ((,srcery-class (:foreground ,srcery-bright-black :background ,srcery-gray-2))
-      (,srcery-256-class (:foreground ,srcery-256-bright-black :background ,srcery-256-gray-2))))
+     ((,srcery-class (:foreground ,srcery-gray-6 :background ,srcery-gray-2))
+      (,srcery-256-class (:foreground ,srcery-256-gray-6 :background ,srcery-256-gray-2))))
 
    `(mode-line-buffer-id
-     ((,srcery-class (:foreground ,srcery-yellow))
-      (,srcery-256-class (:foreground ,srcery-256-yellow))))
+     ((,srcery-class (:weight bold))
+      (,srcery-256-class (:weight bold))))
 
    `(mode-line-highlight
      ((,srcery-class (:background ,srcery-gray-2 :box (:color ,srcery-magenta :line-width 1)))
       (,srcery-256-class (:background ,srcery-256-gray-2 :box (:color ,srcery-256-magenta :line-width 1)))))
 
    `(mode-line-buffer-id-inactive
-     ((,srcery-class (:foreground ,srcery-bright-white))
-      (,srcery-256-class (:foreground ,srcery-256-bright-white))))
+     ((,srcery-class (:weight bold))
+      (,srcery-256-class (:weight bold))))
 
    `(magit-mode-line-process
      ((,srcery-class (:foreground ,srcery-blue))
