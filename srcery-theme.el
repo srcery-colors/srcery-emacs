@@ -3054,8 +3054,8 @@
       (,srcery-256-class (:foreground ,srcery-256-bright-white))))
 
    `(js2-object-property
-     ((,srcery-class (:foreground ,srcery-blue))
-      (,srcery-256-class (:foreground ,srcery-256-blue))))
+     ((,srcery-class (:foreground ,srcery-cyan))
+      (,srcery-256-class (:foreground ,srcery-256-cyan))))
 
    `(js3-error-face
      ((,srcery-class (:underline ,srcery-bright-orange))
