@@ -2353,6 +2353,10 @@
      ((,srcery-class (:foreground ,srcery-yellow))
       (,srcery-256-class (:foreground ,srcery-256-yellow))))
 
+   `(org-drawer
+      ((,srcery-class (:foreground ,srcery-yellow))
+       (,srcery-256-class (:foreground ,srcery-256-yellow))))
+
    `(org-table
      ((,srcery-class (:foreground ,srcery-bright-white :background ,srcery-gray-1))
       (,srcery-256-class (:foreground ,srcery-256-bright-white :background ,srcery-256-gray-1))))
