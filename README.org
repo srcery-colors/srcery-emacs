@@ -4,6 +4,14 @@
 
 Colorscheme with clearly defined contrasting colors and a slightly earthy tone.
 
+** Project status: Looking for contributers and maintainers
+
+   Project is no longer in active development, I plan to further
+   support this theme with bugfixes and minor issues but no new
+   additions will be added unless contributors/maintainers can be
+   found. If you'd like to contribute, please introduce yourself on
+   the [[https://github.com/srcery-colors/srcery-emacs/issues/9][maintainers wanted issue]].
+
 ** Requirements
    Emacs 24 or above
 *** GUI
