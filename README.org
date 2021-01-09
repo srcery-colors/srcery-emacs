@@ -1,4 +1,4 @@
-[[file:img/title.png]]
+[[file:https://raw.githubusercontent.com/srcery-colors/srcery-assets/master/title.png]]
 [[https://melpa.org/#/srcery-theme][file:https://melpa.org/packages/srcery-theme-badge.svg]]
 [[https://stable.melpa.org/#/srcery-theme][file:https://stable.melpa.org/packages/srcery-theme-badge.svg]]
 
@@ -74,13 +74,13 @@ Colorscheme with clearly defined contrasting colors and a slightly earthy tone.
     #+END_SRC
 ** Screenshots
 *** Lisp
-    [[file:img/lisp.png]]
+    [[file:https://raw.githubusercontent.com/srcery-colors/srcery-assets/master/emacs/lisp.png]]
 *** Python / JavaScript
-    [[file:img/py-js.png]]
+    [[file:https://raw.githubusercontent.com/srcery-colors/srcery-assets/master/emacs/py-js.png]]
 *** Rust / Magit
-    [[file:img/rs-magit.png]]
+    [[file:https://raw.githubusercontent.com/srcery-colors/srcery-assets/master/emacs/rs-magit.png]]
 *** Org / C
-    [[file:img/org-c.png]]
+    [[file:https://raw.githubusercontent.com/srcery-colors/srcery-assets/master/emacs/org-c.png]]
 ** Customization
    Srcery has a couple of options that can be tweaked via ~M-x customize~:
 *** srcery-org-height
