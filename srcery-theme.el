@@ -1,4 +1,4 @@
-;;; srcery-theme.el --- Dark color theme.
+;;; srcery-theme.el --- Dark color theme
 ;; Copyright (C) 2019 Daniel Berg
 
 ;; Author: Daniel Berg
@@ -2772,8 +2772,8 @@
       (,srcery-256-class (:foreground ,srcery-256-red))))
 
    `(term-color-white
-     ((,srcery-class (:foreground ,srcery-bright-black))
-      (,srcery-256-class (:foreground ,srcery-256-bright-black))))
+     ((,srcery-class (:foreground ,srcery-white))
+      (,srcery-256-class (:foreground ,srcery-256-white))))
 
    `(term-color-yellow
      ((,srcery-class (:foreground ,srcery-yellow))
