@@ -30,7 +30,7 @@ Colorscheme with clearly defined contrasting colors and a slightly earthy tone.
     | blue           |  4 | #2C78BF | 44, 120, 191  |
     | magenta        |  5 | #E02C6D | 224, 44,  109 |
     | cyan           |  6 | #0AAEB3 | 10, 174, 179  |
-    | white          |  7 | #D0BFA1 | 208, 191, 161 |
+    | white          |  7 | #BAA67F | 186, 166, 127 |
     |----------------+----+---------+---------------|
     | bright-black   |  8 | #918175 | 145, 129, 117 |
     | brright-red    |  9 | #F75341 | 247, 83, 65   |

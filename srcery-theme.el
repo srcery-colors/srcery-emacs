@@ -107,7 +107,7 @@
   :type 'string
   :group 'srcery)
 
-(defcustom srcery-white "#D0BFA1"
+(defcustom srcery-white "#BAA67F"
   "Palette - white."
   :type 'string
   :group 'srcery)
