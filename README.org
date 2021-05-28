@@ -75,6 +75,8 @@ Colorscheme with clearly defined contrasting colors and a slightly earthy tone.
 ** Screenshots
 *** Lisp
     [[file:https://raw.githubusercontent.com/srcery-colors/srcery-assets/master/emacs/lisp.png]]
+    [[https://github.com/tarsius/paren-face][paren-face]] is used to color
+    parenthesis.
 *** Python / JavaScript
     [[file:https://raw.githubusercontent.com/srcery-colors/srcery-assets/master/emacs/py-js.png]]
 *** Rust / Magit
