@@ -142,7 +142,7 @@
   :type 'string
   :group 'srcery)
 
-(defcustom srcery-bright-cyan "#53FDE9"
+(defcustom srcery-bright-cyan "#2BE4D0"
   "Palette - bright cyan."
   :type 'string
   :group 'srcery)

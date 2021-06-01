@@ -38,7 +38,7 @@ Colorscheme with clearly defined contrasting colors and a slightly earthy tone.
     | bright-yellow  | 11 | #FED06E | 254, 208, 110 |
     | bright-blue    | 12 | #68A8E4 | 104, 168, 228 |
     | bright-magenta | 13 | #FF5C8F | 255, 92, 143  |
-    | bright-cyan    | 14 | #53FDE9 | 83, 253, 233  |
+    | bright-cyan    | 14 | #2BE4D0 | 43, 228, 208  |
     | bright-White   | 15 | #FCE8C3 | 252, 232, 195 |
 
     See [[https://github.com/srcery-colors/srcery-terminal][srcery-terminal repository]] for a list of terminal configs.
