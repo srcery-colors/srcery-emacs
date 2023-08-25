@@ -4,7 +4,7 @@
 
 Colorscheme with clearly defined contrasting colors and a slightly earthy tone.
 
-** Project status: Looking for contributers and maintainers
+** Project status: Looking for contributers or maintainers
 
    Project is no longer in active development, I plan to further
    support this theme with bugfixes and minor issues but no new
