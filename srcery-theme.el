@@ -1162,17 +1162,35 @@
                               `(:inverse-video t)
                             `(:background ,srcery-256-gray-5 :weight bold)))))
 
-   `(flycheck-error
+   ;;----------------------------------------------------------------------------
+   ;; Flymake
+   ;;----------------------------------------------------------------------------
+   `(flymake-error
      ((,srcery-class (:foreground ,srcery-red :underline t))
       (,srcery-256-class (:foreground ,srcery-256-red :underline t))))
 
-   `(flycheck-info
+   `(flymake-info
      ((,srcery-class (:foreground ,srcery-bright-white :underline t))
       (,srcery-256-class (:foreground ,srcery-256-bright-white :underline t))))
 
-   `(flycheck-warning
+   `(flymake-warning
      ((,srcery-class (:foreground ,srcery-bright-orange :underline t))
       (,srcery-256-class (:foreground ,srcery-bright-orange :underline t))))
+
+   ;;----------------------------------------------------------------------------
+   ;; Flycheck
+   ;;----------------------------------------------------------------------------
+   `(flycheck-error
+     ((,srcery-class (:inherit flymake-error))
+      (,srcery-256-class (:inherit flymake-error))))
+
+   `(flycheck-note
+     ((,srcery-class (:inherit flymake-info))
+      (,srcery-256-class (:inherit flymake-info))))
+
+   `(flycheck-warning
+     ((,srcery-class (:inherit flymake-warning))
+      (,srcery-256-class (:inherit flymake-warning))))
 
    `(flycheck-error-list-checker-name
      ((,srcery-class (:foreground ,srcery-red))
@@ -3356,21 +3374,6 @@
    `(lsp-ui-peek-peek
      ((,srcery-class (:inherit lsp-ui-doc-background))
       (,srcery-256-class (:inherit lsp-ui-doc-background))))
-
-   ;;----------------------------------------------------------------------------
-   ;; Flymake
-   ;;----------------------------------------------------------------------------
-   `(flymake-error
-     ((,srcery-class (:inherit flycheck-error))
-      (,srcery-256-class (:inherit flycheck-error))))
-
-   `(flymake-note
-     ((,srcery-class (:inherit flycheck-info))
-      (,srcery-256-class (:inherit flycheck-info))))
-
-   `(flymake-warning
-     ((,srcery-class (:inherit flycheck-warning))
-      (,srcery-256-class (:inherit flycheck-warning))))
    )
 
   (custom-theme-set-variables
