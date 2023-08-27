@@ -3342,7 +3342,6 @@
    ;;----------------------------------------------------------------------------
    ;; lsp
    ;;----------------------------------------------------------------------------
-
    `(lsp-ui-doc-background
      ((,srcery-class :background ,srcery-gray-2)
       (,srcery-256-class :background ,srcery-256-gray-2)))
@@ -3374,6 +3373,25 @@
    `(lsp-ui-peek-peek
      ((,srcery-class (:inherit lsp-ui-doc-background))
       (,srcery-256-class (:inherit lsp-ui-doc-background))))
+
+   ;;----------------------------------------------------------------------------
+   ;; orderless
+   ;;----------------------------------------------------------------------------
+   `(orderless-match-face-0
+     ((,srcery-class (:foreground ,srcery-bright-magenta))
+      (,srcery-256-class (:foreground ,srcery-256-bright-magenta))))
+
+   `(orderless-match-face-1
+     ((,srcery-class (:foreground ,srcery-blue))
+      (,srcery-256-class (:foreground ,srcery-256-blue))))
+
+   `(orderless-match-face-2
+     ((,srcery-class (:foreground ,srcery-yellow))
+      (,srcery-256-class (:foreground ,srcery-256-yellow))))
+
+   `(orderless-match-face-3
+     ((,srcery-class (:foreground ,srcery-bright-green))
+      (,srcery-256-class (:foreground ,srcery-256-bright-green))))
    )
 
   (custom-theme-set-variables
