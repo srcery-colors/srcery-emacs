@@ -1368,9 +1368,8 @@
    ;; git-timemachine
    ;;----------------------------------------------------------------------------
    `(git-timemachine-minibuffer-detail-face
-     ((,srcery-class (:foreground ,srcery-blue :weight bold :background ,srcery-blue))
-      (,srcery-256-class (:foreground ,srcery-256-blue :weight bold :background ,srcery-256-blue))))
-
+     ((,srcery-class (:foreground ,srcery-blue :weight bold))
+      (,srcery-256-class (:foreground ,srcery-256-blue :weight bold))))
 
    ;;----------------------------------------------------------------------------
    ;; gnus
