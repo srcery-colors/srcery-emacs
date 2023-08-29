@@ -25,11 +25,11 @@
 
 ;;; Commentary:
 
-;; Port of vim-srcery: https://github.com/srcery-colors/srcery-vim , a dark color theme
-;; with with focus on clearly defined contrastig colors and relative ease of
-;; use.  Srcery should play well with a 256 color terminal, provided the terminal
-;; colors are set to srcery colors.  See here for sample terminal configs:
-;; https://github.com/srcery-colors/srcery-terminal
+;; Port of vim-srcery: https://github.com/srcery-colors/srcery-vim, a dark color
+;; theme with with focus on clearly defined contrasting colors and relative ease
+;; of use.  Srcery should play well with a 256 color terminal, provided the
+;; terminal colors are set to srcery colors.  See here for sample terminal
+;; configs: https://github.com/srcery-colors/srcery-terminal
 
 ;;; Credits
 
