@@ -3391,6 +3391,13 @@
    `(orderless-match-face-3
      ((,srcery-class (:foreground ,srcery-bright-green))
       (,srcery-256-class (:foreground ,srcery-256-bright-green))))
+
+   ;;----------------------------------------------------------------------------
+   ;; OCaml (tuareg)
+   ;;----------------------------------------------------------------------------
+   `(tuareg-font-lock-governing-face
+     ((,srcery-class (:foreground ,srcery-bright-yellow))
+      (,srcery-256-class (:foreground ,srcery-256-bright-yellow))))
    )
 
   (custom-theme-set-variables
