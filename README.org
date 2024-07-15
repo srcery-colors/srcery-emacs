@@ -72,6 +72,16 @@ Colorscheme with clearly defined contrasting colors and a slightly earthy tone.
        dotspacemacs-themes
        '(srcery))
     #+END_SRC
+*** Doom Emacs
+    Include package in ~doom/packages.el~
+    #+BEGIN_SRC elisp
+      (package! srcery-theme)
+    #+END_SRC
+    Set theme in ~doom/config.el~
+    #+BEGIN_SRC elisp
+      (setq doom-theme 'srcery)
+    #+END_SRC
+    Run ~doom sync~ to install the package
 ** Screenshots
 *** Lisp
     [[file:https://raw.githubusercontent.com/srcery-colors/srcery-assets/master/emacs/lisp.png]]
