@@ -3398,6 +3398,21 @@
    `(tuareg-font-lock-governing-face
      ((,srcery-class (:foreground ,srcery-bright-yellow))
       (,srcery-256-class (:foreground ,srcery-256-bright-yellow))))
+
+   ;;----------------------------------------------------------------------------
+   ;; AsciiDoc (adoc)
+   ;;----------------------------------------------------------------------------
+   `(adoc-gen-face
+     ((,srcery-class ())
+      (,srcery-256-class ())))
+
+   `(adoc-verbatim-face
+     ((,srcery-class (:foreground ,srcery-bright-orange))
+      (,srcery-256-class (:foreground ,srcery-256-bright-orange))))
+
+   `(adoc-meta-face
+     ((,srcery-class (:inherit ,font-lock-comment-face))
+      (,srcery-256-class (:foreground ,font-lock-comment-face))))
    )
 
   (custom-theme-set-variables
