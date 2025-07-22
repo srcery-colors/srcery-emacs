@@ -1,4 +1,4 @@
-;;; srcery-theme.el --- Dark color theme
+;;; srcery-theme.el --- Dark color theme      -*- lexical-binding: t; -*-
 ;; Copyright (C) 2019 Daniel Berg
 
 ;; Author: Daniel Berg
